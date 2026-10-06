@@ -1,0 +1,251 @@
+family,test,sample,stat,df,p,n
+pt_candidates_costonly_PDL,raw_mat_wloc_yoy,full,20.33,3,0.0003582,96
+pt_candidates_costonly_PDL,raw_mat_wloc_yoy,ex_infl,5.77,3,0.1324,86
+pt_candidates_costonly_PDL,fao_ffpi_wloc_yoy,full,5.72,3,0.1336,102
+pt_candidates_costonly_PDL,fao_ffpi_wloc_yoy,ex_infl,1.589,3,0.6632,92
+pt_candidates_costonly_PDL,glob_fao_ffpi_nok__yoy,full,3.603,3,0.3137,102
+pt_candidates_costonly_PDL,glob_fao_ffpi_nok__yoy,ex_infl,1.332,3,0.7222,92
+pt_candidates_costonly_PDL,fao_ffpi_sek_yoy,full,7.331,3,0.06874,102
+pt_candidates_costonly_PDL,fao_ffpi_sek_yoy,ex_infl,2.117,3,0.5512,92
+pt_candidates_costonly_PDL,glob_fao_ffpi_eur__yoy,full,6.18,3,0.1108,100
+pt_candidates_costonly_PDL,glob_fao_ffpi_eur__yoy,ex_infl,2.1,3,0.5547,90
+pt_candidates_costonly_PDL,glob_fao_ffpi__yoy,full,5.318,3,0.1575,102
+pt_candidates_costonly_PDL,glob_fao_ffpi__yoy,ex_infl,3.85,3,0.2853,92
+pt_candidates_costonly_PDL,wb_food_wloc_yoy,full,2.331,3,0.5097,102
+pt_candidates_costonly_PDL,wb_food_wloc_yoy,ex_infl,0.5463,3,0.9083,92
+pt_candidates_costonly_PDL,eu_agri_basket_wloc_yoy,full,18.22,3,0.0008216,96
+pt_candidates_costonly_PDL,eu_agri_basket_wloc_yoy,ex_infl,5.541,3,0.1453,86
+pt_candidates_costonly_PDL,eu_agri_basket_yoy,full,18.57,3,0.0007164,96
+pt_candidates_costonly_PDL,eu_agri_basket_yoy,ex_infl,6.705,3,0.09052,86
+pt_candidates_costonly_PDL,eu_agri_raw_milk_price__yoy,full,9.445,3,0.02857,102
+pt_candidates_costonly_PDL,eu_agri_raw_milk_price__yoy,ex_infl,7.32,3,0.06983,92
+pt_candidates_costonly_PDL,eu_agri_pig_carcass_e_price__yoy,full,0.9583,3,0.8113,102
+pt_candidates_costonly_PDL,eu_agri_pig_carcass_e_price__yoy,ex_infl,1.933,3,0.5886,92
+pt_candidates_costonly_PDL,glob_fao_dairy_idx__yoy,full,9.3,3,0.03034,102
+pt_candidates_costonly_PDL,glob_fao_dairy_idx__yoy,ex_infl,6.282,3,0.1069,92
+pt_candidates_costonly_PDL,glob_fao_meat_idx__yoy,full,2.287,3,0.5179,102
+pt_candidates_costonly_PDL,glob_fao_meat_idx__yoy,ex_infl,2.186,3,0.5377,92
+pt_candidates_costonly_PDL,glob_fao_cereals_idx__yoy,full,7.461,3,0.06514,102
+pt_candidates_costonly_PDL,glob_fao_cereals_idx__yoy,ex_infl,5.77,3,0.1318,92
+pt_candidates_costonly_PDL,glob_fao_vegoils_idx__yoy,full,4.76,3,0.1977,102
+pt_candidates_costonly_PDL,glob_fao_vegoils_idx__yoy,ex_infl,3.745,3,0.2973,92
+pt_candidates_costonly_PDL,glob_fao_sugar_idx__yoy,full,3.614,3,0.3123,102
+pt_candidates_costonly_PDL,glob_fao_sugar_idx__yoy,ex_infl,2.996,3,0.3975,92
+pt_candidates_costonly_PDL,w_food_ppi_yoy,full,14.49,3,0.003657,96
+pt_candidates_costonly_PDL,w_food_ppi_yoy,ex_infl,18.23,3,0.0008854,86
+pt_candidates_costonly_PDL,nw_food_ppi_yoy,full,12.79,3,0.007302,96
+pt_candidates_costonly_PDL,nw_food_ppi_yoy,ex_infl,19.58,3,0.0005259,86
+pt_candidates_costonly_PDL,se_ppi_agri_hmpi_idx__yoy,full,20.08,3,0.0003763,102
+pt_candidates_costonly_PDL,se_ppi_agri_hmpi_idx__yoy,ex_infl,23.17,3,0.0001256,92
+pt_candidates_costonly_PDL,se_ppi_food_impi_idx__yoy,full,25.96,3,3.854e-05,102
+pt_candidates_costonly_PDL,se_ppi_food_impi_idx__yoy,ex_infl,14.69,3,0.00344,92
+pt_candidates_costonly_PDL,no_imp_price_food_idx__yoy,full,1.492,3,0.6851,92
+pt_candidates_costonly_PDL,no_imp_price_food_idx__yoy,ex_infl,6.751,3,0.08927,82
+pt_candidates_costonly_PDL,packaging_eu_yoy,full,83.02,3,9.004e-13,96
+pt_candidates_costonly_PDL,packaging_eu_yoy,ex_infl,18.63,3,0.0007586,86
+pt_candidates_costonly_PDL,packaging_us_yoy,full,7.483,3,0.06454,102
+pt_candidates_costonly_PDL,packaging_us_yoy,ex_infl,1.333,3,0.722,92
+pt_candidates_costonly_PDL,se_ppi_paper_packaging_itpi_idx__yoy,full,6.432,3,0.09973,102
+pt_candidates_costonly_PDL,se_ppi_paper_packaging_itpi_idx__yoy,ex_infl,15.16,3,0.002851,92
+pt_candidates_costonly_PDL,se_ppi_plastic_packaging_itpi_idx__yoy,full,8.132,3,0.0493,102
+pt_candidates_costonly_PDL,se_ppi_plastic_packaging_itpi_idx__yoy,ex_infl,2.849,3,0.4204,92
+pt_candidates_costonly_PDL,elec_nordic_loc_yoy,full,27.25,3,2.505e-05,98
+pt_candidates_costonly_PDL,elec_nordic_loc_yoy,ex_infl,4.706,3,0.2032,88
+pt_candidates_costonly_PDL,natgas_eu_eur_yoy,full,142.7,3,1.11e-16,74
+pt_candidates_costonly_PDL,natgas_eu_eur_yoy,ex_infl,14.43,3,0.004649,64
+pt_candidates_costonly_PDL,brent_nok_yoy,full,5.672,3,0.1363,102
+pt_candidates_costonly_PDL,brent_nok_yoy,ex_infl,2.908,3,0.411,92
+pt_candidates_costonly_PDL,w_wage_yoy,full,8.275,3,0.04645,102
+pt_candidates_costonly_PDL,w_wage_yoy,ex_infl,7.777,3,0.05787,92
+pt_candidates_costonly_PDL,no_earn_idx_food_manuf_q__yoy,full,7.924,3,0.05374,102
+pt_candidates_costonly_PDL,no_earn_idx_food_manuf_q__yoy,ex_infl,5.528,3,0.1455,92
+pt_candidates_costonly_PDL,glob_gscpi__lvl,full,18.21,3,0.0007923,102
+pt_candidates_costonly_PDL,glob_gscpi__lvl,ex_infl,7.445,3,0.06633,92
+pt_candidates_costonly_PDL,cost_idx_calib_yoy,full,25.87,3,4.31e-05,96
+pt_candidates_costonly_PDL,cost_idx_calib_yoy,ex_infl,6.726,3,0.08975,86
+pt_main_cost_only,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,20.33,3,0.0003582,96
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,26.35,3,3.758e-05,96
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|w_food_cpi_xvat_yoy,full,19.62,3,0.0004852,96
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,17.08,3,0.001315,96
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|w_food_ppi_yoy,full,20.1,3,0.0004026,96
+pt_main_cost_only,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,5.77,3,0.1324,86
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,8.996,3,0.03571,86
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|w_food_cpi_xvat_yoy,ex_infl,12.3,3,0.009395,86
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,8.937,3,0.03657,86
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|w_food_ppi_yoy,ex_infl,14.92,3,0.003311,86
+pt_main_cost_only,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,18.22,3,0.0008216,96
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,21.23,3,0.0002607,96
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|w_food_cpi_xvat_yoy,full,23.89,3,9.455e-05,96
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,14.45,3,0.003774,96
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|w_food_ppi_yoy,full,20.89,3,0.0002966,96
+pt_main_cost_only,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,5.541,3,0.1453,86
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,10.32,3,0.02082,86
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|w_food_cpi_xvat_yoy,ex_infl,13.5,3,0.005792,86
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,9.832,3,0.02541,86
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|w_food_ppi_yoy,ex_infl,20.4,3,0.0003975,86
+pt_main_cost_only,cost_idx_calib_yoy|cost_idx_calib_yoy,full,25.87,3,4.31e-05,96
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|cost_idx_calib_yoy,full,31.29,3,6.249e-06,96
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|w_food_cpi_xvat_yoy,full,19.59,3,0.0004916,96
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|cost_idx_calib_yoy,full,21.69,3,0.0002183,96
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|w_food_ppi_yoy,full,19.75,3,0.0004614,96
+pt_main_cost_only,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,6.726,3,0.08975,86
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,10.42,3,0.02004,86
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|w_food_cpi_xvat_yoy,ex_infl,12.66,3,0.008115,86
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,10.4,3,0.02021,86
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|w_food_ppi_yoy,ex_infl,14.37,3,0.004112,86
+pt_main_cost_only,packaging_eu_yoy|packaging_eu_yoy,full,83.02,3,9.004e-13,96
+pt_main_cost_plus_cpi,packaging_eu_yoy|packaging_eu_yoy,full,39.4,3,3.77e-07,96
+pt_main_cost_plus_cpi,packaging_eu_yoy|w_food_cpi_xvat_yoy,full,8.58,3,0.0415,96
+pt_main_cost_plus_ppi,packaging_eu_yoy|packaging_eu_yoy,full,24.31,3,8.06e-05,96
+pt_main_cost_plus_ppi,packaging_eu_yoy|w_food_ppi_yoy,full,3.454,3,0.333,96
+pt_main_cost_only,packaging_eu_yoy|packaging_eu_yoy,ex_infl,18.63,3,0.0007586,86
+pt_main_cost_plus_cpi,packaging_eu_yoy|packaging_eu_yoy,ex_infl,6.403,3,0.1027,86
+pt_main_cost_plus_cpi,packaging_eu_yoy|w_food_cpi_xvat_yoy,ex_infl,10.85,3,0.01685,86
+pt_main_cost_plus_ppi,packaging_eu_yoy|packaging_eu_yoy,ex_infl,9.457,3,0.0296,86
+pt_main_cost_plus_ppi,packaging_eu_yoy|w_food_ppi_yoy,ex_infl,3.472,3,0.3316,86
+pt_main_cost_only,w_food_ppi_yoy|w_food_ppi_yoy,full,14.49,3,0.003657,96
+pt_main_cost_only,w_food_ppi_yoy|w_food_ppi_yoy,ex_infl,18.23,3,0.0008854,86
+pt_price_formation,w_food_ppi_yoy~raw_mat_wloc_yoy,full,27.24,4,8.482e-05,90
+pt_price_formation,w_food_ppi_yoy~raw_mat_wloc_yoy,ex_infl,27.51,4,9.198e-05,80
+pt_price_formation,w_food_ppi_yoy~eu_agri_basket_wloc_yoy,full,10.88,4,0.03495,90
+pt_price_formation,w_food_ppi_yoy~eu_agri_basket_wloc_yoy,ex_infl,6.049,4,0.2074,80
+pt_price_formation,w_food_ppi_yoy~fao_ffpi_wloc_yoy,full,30.18,4,2.496e-05,102
+pt_price_formation,w_food_ppi_yoy~fao_ffpi_wloc_yoy,ex_infl,211.4,4,0,92
+pt_price_formation,w_food_ppi_yoy~cost_idx_calib_yoy,full,32.37,4,1.438e-05,90
+pt_price_formation,w_food_ppi_yoy~cost_idx_calib_yoy,ex_infl,28.99,4,5.564e-05,80
+pt_price_formation,w_food_cpi_xvat_yoy~raw_mat_wloc_yoy,full,33.03,4,1.151e-05,90
+pt_price_formation,w_food_cpi_xvat_yoy~raw_mat_wloc_yoy,ex_infl,26.62,4,0.0001246,80
+pt_price_formation,w_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,full,16.47,4,0.004277,90
+pt_price_formation,w_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,ex_infl,14.88,4,0.008186,80
+pt_price_formation,w_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,full,10.2,4,0.04372,106
+pt_price_formation,w_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,ex_infl,25.66,4,0.0001377,96
+pt_price_formation,w_food_cpi_xvat_yoy~cost_idx_calib_yoy,full,36.4,4,3.717e-06,90
+pt_price_formation,w_food_cpi_xvat_yoy~cost_idx_calib_yoy,ex_infl,24.49,4,0.00026,80
+pt_price_formation,nw_food_cpi_xvat_yoy~raw_mat_wloc_yoy,full,41.11,4,8.018e-07,90
+pt_price_formation,nw_food_cpi_xvat_yoy~raw_mat_wloc_yoy,ex_infl,48.88,4,1.115e-07,80
+pt_price_formation,nw_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,full,18.16,4,0.002281,90
+pt_price_formation,nw_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,ex_infl,41.2,4,1.1e-06,80
+pt_price_formation,nw_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,full,9.062,4,0.06737,106
+pt_price_formation,nw_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,ex_infl,21.85,4,0.0005535,96
+pt_price_formation,nw_food_cpi_xvat_yoy~cost_idx_calib_yoy,full,43.46,4,3.8e-07,90
+pt_price_formation,nw_food_cpi_xvat_yoy~cost_idx_calib_yoy,ex_infl,44.77,4,3.732e-07,80
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,full,50.56,7,1.124e-06,96
+pt_gap_PDL,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,full,22.75,3,0.0001406,96
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,ex_infl,38.19,7,5.155e-05,86
+pt_gap_PDL,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,ex_infl,7.671,3,0.06099,86
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,full,63.9,7,3.227e-08,96
+pt_gap_PDL,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,full,15.83,3,0.002133,96
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,ex_infl,43.71,7,1.108e-05,86
+pt_gap_PDL,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,ex_infl,6.904,3,0.08345,86
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,full,36.16,7,6.259e-05,102
+pt_gap_PDL,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,full,6.03,3,0.1177,102
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,ex_infl,26.57,7,0.001408,92
+pt_gap_PDL,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,ex_infl,1.771,3,0.6229,92
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,full,58.09,7,1.466e-07,96
+pt_gap_PDL,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,full,31.16,3,6.17e-06,96
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,ex_infl,42.11,7,1.722e-05,86
+pt_gap_PDL,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,ex_infl,11.11,3,0.01501,86
+pt_gap_unit_restriction,w_food_ppi_yoy-raw_mat_wloc_yoy,full,32.12,7,0.0002421,96
+pt_gap_PDL,w_food_ppi_yoy-raw_mat_wloc_yoy,full,20.55,3,0.0003292,96
+pt_gap_unit_restriction,w_food_ppi_yoy-raw_mat_wloc_yoy,ex_infl,31.35,7,0.0003706,86
+pt_gap_PDL,w_food_ppi_yoy-raw_mat_wloc_yoy,ex_infl,7.493,3,0.06559,86
+pt_gap_unit_restriction,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,full,81.08,7,4.889e-10,96
+pt_gap_PDL,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,full,11.2,3,0.01402,96
+pt_gap_unit_restriction,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,ex_infl,49.21,7,2.525e-06,86
+pt_gap_PDL,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,ex_infl,5.957,3,0.1228,86
+pt_gap_unit_restriction,w_food_ppi_yoy-fao_ffpi_wloc_yoy,full,39.07,7,3.001e-05,96
+pt_gap_PDL,w_food_ppi_yoy-fao_ffpi_wloc_yoy,full,5.617,3,0.1399,96
+pt_gap_unit_restriction,w_food_ppi_yoy-fao_ffpi_wloc_yoy,ex_infl,17.94,7,0.02089,86
+pt_gap_PDL,w_food_ppi_yoy-fao_ffpi_wloc_yoy,ex_infl,2.048,3,0.5653,86
+pt_gap_unit_restriction,w_food_ppi_yoy-cost_idx_calib_yoy,full,51.29,7,9.202e-07,96
+pt_gap_PDL,w_food_ppi_yoy-cost_idx_calib_yoy,full,27.75,3,2.143e-05,96
+pt_gap_unit_restriction,w_food_ppi_yoy-cost_idx_calib_yoy,ex_infl,19.85,7,0.01172,86
+pt_gap_PDL,w_food_ppi_yoy-cost_idx_calib_yoy,ex_infl,12.02,3,0.01038,86
+pt_gap_PDL,price_cost_gap_agri,full,15.45,3,0.002481,96
+pt_gap_PDL,price_cost_gap_agri,ex_infl,7.926,3,0.05493,86
+pt_gap_PDL,price_cost_gap_fao_wloc,full,6.573,3,0.09408,102
+pt_gap_PDL,price_cost_gap_fao_wloc,ex_infl,2.055,3,0.5635,92
+pt_gap_PDL,price_cost_gap_fao_nok,full,4.224,3,0.2452,102
+pt_gap_PDL,price_cost_gap_fao_nok,ex_infl,1.479,3,0.688,92
+pt_gap_PDL,price_cost_gap_ppi,full,13.41,3,0.005669,96
+pt_gap_PDL,price_cost_gap_ppi,ex_infl,8.254,3,0.04805,86
+pt_gap_PDL,nw_price_cost_gap_ppi,full,12.47,3,0.008321,96
+pt_gap_PDL,nw_price_cost_gap_ppi,ex_infl,6.908,3,0.08331,86
+pt_gap_PDL,price_wage_gap,full,4.388,3,0.2296,102
+pt_gap_PDL,price_wage_gap,ex_infl,8.772,3,0.03842,92
+pt_gap_PDL,gap_calib,full,31.16,3,6.17e-06,96
+pt_gap_PDL,gap_calib,ex_infl,11.11,3,0.01501,86
+pt_gap_PDL,gap_raw_xvat_wloc,full,22.75,3,0.0001406,96
+pt_gap_PDL,gap_raw_xvat_wloc,ex_infl,7.671,3,0.06099,86
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-2,full,9.767,1,0.001776,100
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-2,ex_infl,2.433,1,0.1188,90
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L1-4,full,2.782,1,0.0953,98
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L1-4,ex_infl,0.1419,1,0.7064,88
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-3 minus avg L4-7 (acceleration),full,6.773,1,0.009255,95
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,4.901,1,0.02684,85
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-2,full,12.72,1,0.0003612,100
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-2,ex_infl,2.943,1,0.08625,90
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L1-4,full,3.62,1,0.05708,98
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L1-4,ex_infl,0.2965,1,0.5861,88
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-3 minus avg L4-7 (acceleration),full,7.923,1,0.004881,95
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,6.068,1,0.01376,85
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-2,full,39.13,1,3.969e-10,100
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-2,ex_infl,6.38,1,0.01154,90
+pt_rules_of_thumb,packaging_eu_yoy|avg L1-4,full,6.084,1,0.01364,98
+pt_rules_of_thumb,packaging_eu_yoy|avg L1-4,ex_infl,0.7688,1,0.3806,88
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-3 minus avg L4-7 (acceleration),full,8.705,1,0.003173,95
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,14.45,1,0.0001442,85
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-2,full,8.674,1,0.003229,100
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-2,ex_infl,3.365,1,0.06658,90
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L1-4,full,3.506,1,0.06115,98
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L1-4,ex_infl,0.5681,1,0.451,88
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-3 minus avg L4-7 (acceleration),full,4.83,1,0.02796,95
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-3 minus avg L4-7 (acceleration),ex_infl,3.263,1,0.07085,85
+pt_rules_of_thumb,gap_calib|avg L0-2,full,10.19,1,0.001413,100
+pt_rules_of_thumb,gap_calib|avg L0-2,ex_infl,4.832,1,0.02793,90
+pt_rules_of_thumb,gap_calib|avg L1-4,full,5.077,1,0.02424,98
+pt_rules_of_thumb,gap_calib|avg L1-4,ex_infl,1.416,1,0.2341,88
+pt_rules_of_thumb,gap_calib|avg L0-3 minus avg L4-7 (acceleration),full,3.99,1,0.04577,95
+pt_rules_of_thumb,gap_calib|avg L0-3 minus avg L4-7 (acceleration),ex_infl,2.895,1,0.08883,85
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-2,full,10.99,1,0.0009162,100
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-2,ex_infl,5.833,1,0.01573,90
+pt_rules_of_thumb,price_cost_gap_agri|avg L1-4,full,4.284,1,0.03848,98
+pt_rules_of_thumb,price_cost_gap_agri|avg L1-4,ex_infl,1.235,1,0.2665,88
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-3 minus avg L4-7 (acceleration),full,6.88,1,0.008717,95
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-3 minus avg L4-7 (acceleration),ex_infl,5.595,1,0.01801,85
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-2,full,7.673,1,0.005604,100
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-2,ex_infl,3.253,1,0.07131,90
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L1-4,full,3.094,1,0.07857,98
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L1-4,ex_infl,0.6006,1,0.4383,88
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-3 minus avg L4-7 (acceleration),full,4.098,1,0.04293,95
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-3 minus avg L4-7 (acceleration),ex_infl,2.712,1,0.09959,85
+pt_asymmetry_profile,raw_mat_wloc_yoy,full,35.6,3,1.377e-06,96
+pt_asymmetry_profile,raw_mat_wloc_yoy,ex_infl,26.98,3,3.532e-05,86
+pt_asymmetry_profile,eu_agri_basket_wloc_yoy,full,28.41,3,1.763e-05,96
+pt_asymmetry_profile,eu_agri_basket_wloc_yoy,ex_infl,11.19,3,0.01468,86
+pt_asymmetry_profile,cost_idx_calib_yoy,full,38.52,3,5.06e-07,96
+pt_asymmetry_profile,cost_idx_calib_yoy,ex_infl,25.25,3,6.593e-05,86
+pt_asymmetry_profile,packaging_eu_yoy,full,12.84,3,0.00722,96
+pt_asymmetry_profile,packaging_eu_yoy,ex_infl,9.112,3,0.03406,86
+pt_fx_given_usd_commod,w_fx_vs_usd_yoy,full,12.79,3,0.007227,102
+pt_fx_given_usd_commod,w_fx_vs_usd_yoy,ex_infl,7.249,3,0.07218,92
+pt_fx_given_usd_commod,w_fx_vs_eur_yoy,full,2.018,3,0.5709,102
+pt_fx_given_usd_commod,w_fx_vs_eur_yoy,ex_infl,1.93,3,0.5892,92
+pt_fx_given_usd_commod,no_fx_usdnok__yoy,full,7.246,3,0.07144,102
+pt_fx_given_usd_commod,no_fx_usdnok__yoy,ex_infl,5.743,3,0.1336,92
+pt_fx_given_usd_commod,se_usdsek__yoy,full,7.813,3,0.05648,102
+pt_fx_given_usd_commod,se_usdsek__yoy,ex_infl,3.983,3,0.271,92
+pt_fx_given_usd_commod,no_fx_eurnok__yoy,full,1.474,3,0.6892,100
+pt_fx_given_usd_commod,no_fx_eurnok__yoy,ex_infl,2.984,3,0.3997,90
+pt_fx_given_usd_commod,se_eursek__yoy,full,5.831,3,0.1279,102
+pt_fx_given_usd_commod,se_eursek__yoy,ex_infl,4.7,3,0.2036,92
+pt_multicost_block,raw_mat_wloc_yoy,full,28.5,3,2.016e-05,96
+pt_multicost_block,packaging_eu_yoy,full,12.81,3,0.007604,96
+pt_multicost_block,elec_scaled,full,1.238,3,0.7445,96
+pt_multicost_block,w_wage_yoy,full,4.762,3,0.1991,96
+pt_multicost_block,w_food_cpi_xvat_yoy,full,13.25,3,0.00639,96
+pt_multicost_block,raw_mat_wloc_yoy,ex_infl,26.5,3,5.038e-05,86
+pt_multicost_block,packaging_eu_yoy,ex_infl,15.64,3,0.002676,86
+pt_multicost_block,elec_scaled,ex_infl,6.009,3,0.1218,86
+pt_multicost_block,w_wage_yoy,ex_infl,7.681,3,0.0621,86
+pt_multicost_block,w_food_cpi_xvat_yoy,ex_infl,22.9,3,0.0001802,86

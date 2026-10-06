@@ -1,0 +1,17 @@
+test,term,coef,se,p,n
+covid phases on vol_proxy_in,covid_stockpile_q1_2020,8.102,0.7533,5.6e-27,102
+covid phases on vol_proxy_in,covid_lockdown,0.9025,1.553,0.5611,102
+covid phases on vol_proxy_in,covid_base_2021q1,-5.469,1.407,0.0001016,102
+covid phases on vol_proxy_in,reopening,6.113,1.322,3.763e-06,102
+no_retail_foodstores_vol_sa_idx__yoy ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag0,-0.007762,0.01142,0.4966,60
+no_retail_foodstores_vol_sa_idx__yoy ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag1,0.021,0.01635,0.1988,59
+no_retail_foodstores_vol_sa_idx__yoy ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag2,0.02501,0.01229,0.04185,58
+no_retail_foodstores_vol_sa_idx__yoy ~ no_fx_seknok__yoy (excl. 2020-22),lag0,-0.01995,0.03436,0.5616,90
+no_retail_foodstores_vol_sa_idx__yoy ~ no_fx_seknok__yoy (excl. 2020-22),lag1,-0.04734,0.0315,0.1329,90
+no_retail_foodstores_vol_sa_idx__yoy ~ no_fx_seknok__yoy (excl. 2020-22),lag2,-0.07122,0.03822,0.06239,90
+vol_proxy_in ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag0,-0.004653,0.01179,0.6932,60
+vol_proxy_in ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag1,-0.001984,0.01677,0.9058,59
+vol_proxy_in ~ no_border_trade_exp_mnok_s1__yoy (excl. 2020-22),lag2,-0.005784,0.0207,0.78,58
+vol_proxy_in ~ no_fx_seknok__yoy (excl. 2020-22),lag0,-0.003349,0.05056,0.9472,90
+vol_proxy_in ~ no_fx_seknok__yoy (excl. 2020-22),lag1,-0.05477,0.06017,0.3628,90
+vol_proxy_in ~ no_fx_seknok__yoy (excl. 2020-22),lag2,-0.05063,0.06304,0.4219,90

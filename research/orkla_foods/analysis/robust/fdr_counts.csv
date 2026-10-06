@@ -1,0 +1,6 @@
+target,screen_tests,screen_p05,screen_by_q10_nominal,screen_by_q10_calibrated,target_family_tests,target_family_q10,battery_rows,n_ROBUST,n_FRAGILE,n_SPURIOUS,n_NO_EFFECT,pairs,pairs_best_ROBUST,pairs_best_FRAGILE,pairs_best_SPURIOUS,pairs_best_NO_EFFECT
+d_margin,492,241,89,10,612,11,261,7,102,26,126,58,6,35,8,9
+og,492,256,199,85,610,98,257,44,93,31,89,57,21,29,5,2
+d_og,492,249,163,55,612,43,264,23,107,30,104,58,16,38,3,1
+vol_proxy,492,166,58,22,612,22,264,2,45,39,178,58,2,20,14,22
+ALL,1968,912,509,172,2446,174,1046,76,347,126,497,231,45,122,30,34

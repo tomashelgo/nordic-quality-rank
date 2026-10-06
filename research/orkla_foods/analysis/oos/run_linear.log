@@ -1,0 +1,13 @@
+linear d_margin h=0 done in 7.0s
+linear d_margin h=1 done in 6.4s
+linear d_margin h=2 done in 6.9s
+linear d_og h=0 done in 11.2s
+linear d_og h=1 done in 10.4s
+linear d_og h=2 done in 9.9s
+linear og h=0 done in 7.5s
+linear og h=1 done in 6.8s
+linear og h=2 done in 7.3s
+linear d_margin_r4 h=0 done in 3.4s
+linear d_margin_r4 h=1 done in 3.5s
+linear d_margin_r4 h=2 done in 3.3s
+linear stage 85.6 s (814014, 7)

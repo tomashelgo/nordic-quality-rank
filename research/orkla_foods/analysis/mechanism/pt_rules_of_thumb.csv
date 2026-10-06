@@ -1,0 +1,43 @@
+index,window,sample,n,slope,se,t,p,r2,effect_of_10pp,effect_of_1sd
+raw_mat_wloc_yoy,avg L0-2,full,100,-0.05473,0.01751,-3.125,0.001776,0.1684,-0.5473,-0.4803
+raw_mat_wloc_yoy,avg L0-2,ex_infl,90,-0.03108,0.01993,-1.56,0.1188,0.05074,-0.3108,-0.2204
+raw_mat_wloc_yoy,avg L1-4,full,98,-0.03584,0.02149,-1.668,0.0953,0.06925,-0.3584,-0.2928
+raw_mat_wloc_yoy,avg L1-4,ex_infl,88,-0.008115,0.02155,-0.3766,0.7064,0.01398,-0.08115,-0.05295
+raw_mat_wloc_yoy,avg L0-3 minus avg L4-7 (acceleration),full,95,-0.03511,0.01349,-2.602,0.009255,0.1164,-0.3511,-0.4009
+raw_mat_wloc_yoy,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,-0.0262,0.01183,-2.214,0.02684,0.06702,-0.262,-0.2729
+cost_idx_calib_yoy,avg L0-2,full,100,-0.09391,0.02633,-3.567,0.0003612,0.1917,-0.9391,-0.513
+cost_idx_calib_yoy,avg L0-2,ex_infl,90,-0.05933,0.03458,-1.716,0.08625,0.06299,-0.5933,-0.2518
+cost_idx_calib_yoy,avg L1-4,full,98,-0.06344,0.03334,-1.903,0.05708,0.08237,-0.6344,-0.3237
+cost_idx_calib_yoy,avg L1-4,ex_infl,88,-0.02059,0.03782,-0.5445,0.5861,0.01688,-0.2059,-0.08045
+cost_idx_calib_yoy,avg L0-3 minus avg L4-7 (acceleration),full,95,-0.06168,0.02191,-2.815,0.004881,0.1388,-0.6168,-0.441
+cost_idx_calib_yoy,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,-0.04793,0.01946,-2.463,0.01376,0.08259,-0.4793,-0.3071
+packaging_eu_yoy,avg L0-2,full,100,-0.1498,0.02394,-6.255,3.969e-10,0.2266,-1.498,-0.5579
+packaging_eu_yoy,avg L0-2,ex_infl,90,-0.1773,0.07021,-2.526,0.01154,0.09271,-1.773,-0.3211
+packaging_eu_yoy,avg L1-4,full,98,-0.1078,0.04372,-2.466,0.01364,0.1114,-1.078,-0.3874
+packaging_eu_yoy,avg L1-4,ex_infl,88,-0.09086,0.1036,-0.8768,0.3806,0.03026,-0.9086,-0.1559
+packaging_eu_yoy,avg L0-3 minus avg L4-7 (acceleration),full,95,-0.1195,0.04049,-2.95,0.003173,0.2113,-1.195,-0.5507
+packaging_eu_yoy,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,-0.1036,0.02725,-3.801,0.0001442,0.1154,-1.036,-0.3702
+gap_raw_xvat_wloc,avg L0-2,full,100,0.05336,0.01812,2.945,0.003229,0.151,0.5336,0.4554
+gap_raw_xvat_wloc,avg L0-2,ex_infl,90,0.0331,0.01805,1.835,0.06658,0.05806,0.331,0.2401
+gap_raw_xvat_wloc,avg L1-4,full,98,0.0422,0.02254,1.872,0.06115,0.08611,0.422,0.3335
+gap_raw_xvat_wloc,avg L1-4,ex_infl,88,0.01448,0.01921,0.7537,0.451,0.01958,0.1448,0.09981
+gap_raw_xvat_wloc,avg L0-3 minus avg L4-7 (acceleration),full,95,0.02652,0.01207,2.198,0.02796,0.07176,0.2652,0.3054
+gap_raw_xvat_wloc,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,0.02157,0.01194,1.806,0.07085,0.04746,0.2157,0.2218
+gap_calib,avg L0-2,full,100,0.084,0.02632,3.192,0.001413,0.1514,0.84,0.4553
+gap_calib,avg L0-2,ex_infl,90,0.06284,0.02858,2.198,0.02793,0.0751,0.6284,0.2798
+gap_calib,avg L1-4,full,98,0.07463,0.03312,2.253,0.02424,0.1066,0.7463,0.3756
+gap_calib,avg L1-4,ex_infl,88,0.03426,0.02879,1.19,0.2341,0.02946,0.3426,0.1496
+gap_calib,avg L0-3 minus avg L4-7 (acceleration),full,95,0.03751,0.01878,1.998,0.04577,0.06198,0.3751,0.2802
+gap_calib,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,0.03457,0.02032,1.702,0.08883,0.04715,0.3457,0.2209
+price_cost_gap_agri,avg L0-2,full,100,0.05379,0.01623,3.315,0.0009162,0.1798,0.5379,0.4942
+price_cost_gap_agri,avg L0-2,ex_infl,90,0.03549,0.0147,2.415,0.01573,0.08233,0.3549,0.2948
+price_cost_gap_agri,avg L1-4,full,98,0.03692,0.01784,2.07,0.03848,0.08004,0.3692,0.3179
+price_cost_gap_agri,avg L1-4,ex_infl,88,0.01625,0.01462,1.111,0.2665,0.02476,0.1625,0.1278
+price_cost_gap_agri,avg L0-3 minus avg L4-7 (acceleration),full,95,0.02998,0.01143,2.623,0.008717,0.1012,0.2998,0.3712
+price_cost_gap_agri,avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,0.02303,0.009737,2.365,0.01801,0.06509,0.2303,0.2681
+ppi_minus_raw (manufacturer gap),avg L0-2,full,100,0.05832,0.02105,2.77,0.005604,0.1355,0.5832,0.431
+ppi_minus_raw (manufacturer gap),avg L0-2,ex_infl,90,0.03716,0.02061,1.803,0.07131,0.05809,0.3716,0.2407
+ppi_minus_raw (manufacturer gap),avg L1-4,full,98,0.04688,0.02665,1.759,0.07857,0.07859,0.4688,0.3172
+ppi_minus_raw (manufacturer gap),avg L1-4,ex_infl,88,0.01622,0.02092,0.775,0.4383,0.01935,0.1622,0.09862
+ppi_minus_raw (manufacturer gap),avg L0-3 minus avg L4-7 (acceleration),full,95,0.0265,0.01309,2.024,0.04293,0.05856,0.265,0.2706
+ppi_minus_raw (manufacturer gap),avg L0-3 minus avg L4-7 (acceleration),ex_infl,85,0.02206,0.01339,1.647,0.09959,0.04228,0.2206,0.2063

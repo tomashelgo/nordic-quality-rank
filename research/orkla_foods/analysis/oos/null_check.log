@@ -1,0 +1,86 @@
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/null_check.py:42: Pandas4Warning: Starting with pandas version 4.0 all arguments of all will be keyword-only.
+  ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)

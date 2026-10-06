@@ -1,0 +1,268 @@
+{
+ "findings_path": "/home/user/nordic-quality-rank/research/orkla_foods/analysis/mechanism/ (findings.md could not be written: the harness blocks report files from subagents. The findings are in this output. Scripts: mech_utils.py, 01_passthrough.py, 02_organic.py, text_rules.py, 03_text.py, 04_realtime.py, 05_episodes_and_mt.py. Tables: pt_*.csv, og_*.csv, text_*.csv, rt_*.csv, episodes.csv, mt_all_tests.csv, mt_summary_by_family.csv. Figures: fig_pt_lag_profiles.png, fig_pt_level_response.png, fig_pt_price_formation.png, fig_pt_asymmetry.png, fig_pt_fx.png, fig_og_price_volume_validation.png, fig_og_volume_proxy.png, fig_og_leadlag.png, fig_text_timeline.png, fig_text_event_study.png, fig_rt_oos.png)",
+ "top_predictors": [
+  {
+   "target": "d_margin",
+   "feature": "packaging_eu_yoy (EU PPI paper+plastic packaging)",
+   "alignment": "coincident (DL lags 0-6, quadratic PDL); in-sample real-time h=0-2 also significant",
+   "sign": "negative",
+   "effect_size": "Permanent +10% shock: margin level -1.6 to -1.9pp at the trough (lag 3). Rule: +10pp on the avg of lags 0-2 gives -1.5pp on d_margin (full) and -1.8pp (ex 2021Q3-23Q4)",
+   "evidence": "Cost-only PDL p=9e-13 (full), 7.6e-4 (ex). One of only two cost series surviving BY in both full and ex screens (64 tests). Significant in every subsample incl. post-2008 ex-episode (p=0.003) and every robustness spec. Out-of-sample h=0: Clark-West p=0.03 but R\u00b2 vs AR about 0 (-0.04 all, +0.05 ex)",
+   "confidence": "high (coincident) / low (forecasting)"
+  },
+  {
+   "target": "d_margin",
+   "feature": "cost_idx_calib_yoy (calibrated Orkla input-cost index: raw materials 0.40, packaging 0.08, energy 0.005, wages 0.20; normalised)",
+   "alignment": "coincident (DL lags 0-12, cubic PDL)",
+   "sign": "negative, then recovery",
+   "effect_size": "Permanent +10% cost shock: margin -1.1pp (full) / -0.6pp (ex) at the trough (lag 2-3). Ex-episode: half recovered by lag 5 (90% 2-11), back to 0 by lag 6-7, +0.3pp at lag 12. About 15% of the static no-pass-through hit (-7pp)",
+   "evidence": "K12 PDL p=3e-5 (full), 0.003 (ex). Within lags 0-6, p=4e-5 (full), 0.09 (ex). Price-formation pass-through of the index after 12 quarters: 0.96 into food PPI, 0.88 into CPI (full)",
+   "confidence": "high (full) / medium (ex)"
+  },
+  {
+   "target": "d_margin",
+   "feature": "raw_mat_wloc_yoy (mean of EU agri basket and FAO food index, in Orkla-weighted local currency)",
+   "alignment": "coincident (DL lags 0-12, cubic PDL)",
+   "sign": "negative, then recovery",
+   "effect_size": "Permanent +10%: margin -0.67pp at lag 3 (full), -0.35pp at lag 2 (ex). Ex-episode half recovery at lag 5, zero at lag 6-7. Full sample: no half recovery within 12 quarters in 67% of simulations (2021-23 back-to-back shocks)",
+   "evidence": "K6 PDL p=3.6e-4 (full, BY 0.014), 0.13 (ex). K12 p=7.6e-5 (full), 0.013 (ex). Robust across HAC 4/8, event dummies, Easter definition, d_margin_r4. Weak post-2008 ex-episode at lags 0-6 (-0.15pp), but K12 p=0.001",
+   "confidence": "medium-high"
+  },
+  {
+   "target": "d_margin",
+   "feature": "eu_agri_basket_wloc_yoy (EU agri raw-material basket in local currency)",
+   "alignment": "coincident (DL lags 0-12, cubic PDL)",
+   "sign": "negative",
+   "effect_size": "Permanent +10%: -0.66pp (full) / -0.43pp (ex) at lag 2; ex-episode back to 0 by lag 12",
+   "evidence": "K6 PDL p=8e-4 (full, BY 0.019); K12 p=0.036 (ex)",
+   "confidence": "medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "Asymmetry: raw_mat_wloc_yoy split into increases and decreases",
+   "alignment": "coincident (DL lags 0-6, quadratic PDL)",
+   "sign": "increases negative and fast; decreases positive but delayed",
+   "effect_size": "+10pp: -1.06pp by lag 1-2 (full), -0.90pp (ex). -10pp: about 0 for 3 quarters, then +0.47pp (full) / +1.14pp (ex) by lag 6 (+1.7pp with K12 ex)",
+   "evidence": "Equality of the whole lag profile rejected: p=1.4e-6 (full), 3.5e-5 (ex). Cumulative effects differ at lag 2 (p=0.01 full), not at lag 6 (p>=0.13). Same pattern for the agri basket, cost index and packaging (7/8 survive BY)",
+   "confidence": "medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "gap_calib (food CPI ex VAT minus calibrated cost index), avg of lags 0-2",
+   "alignment": "coincident",
+   "sign": "positive",
+   "effect_size": "+10pp gap gives +0.84pp (full) / +0.63pp (ex) on d_margin. Best scaled gap: food CPI ex VAT minus about 0.3 x raw materials (ex weight 0.26-0.34 = raw-material cost share)",
+   "evidence": "HAC p=0.0014 (full), 0.028 (ex). Unit-weight gap restriction (price coef = -cost coef at every lag) rejected in 16/16 tests (p<=0.02). BIC of gap vs separate terms within +/-3",
+   "confidence": "medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "price_cost_gap_agri (panel feature: food CPI minus EU agri basket), avg of lags 0-2",
+   "alignment": "coincident",
+   "sign": "positive",
+   "effect_size": "+10pp gives +0.54pp (full) / +0.36pp (ex)",
+   "evidence": "HAC p=0.0009 (full), 0.016 (ex). Out-of-sample R\u00b2 vs AR negative at all horizons",
+   "confidence": "medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "Cost-inflation acceleration: cost_idx_calib_yoy, avg of lags 0-3 minus avg of lags 4-7 (packaging version also tested)",
+   "alignment": "coincident / partly lagged",
+   "sign": "negative",
+   "effect_size": "+10pp acceleration: -0.62pp (full) / -0.48pp (ex). Packaging acceleration: -1.19 / -1.04pp",
+   "evidence": "Cost index p=0.005 (full), 0.014 (ex); packaging ex p=1.4e-4. Episode anatomy agrees: margin troughs fall during the cost run-up (2007Q2, 3 quarters before the peak) or within 0-2 quarters of the peak",
+   "confidence": "medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "se_eursek__yoy (SEK weakness vs EUR)",
+   "alignment": "real-time h=0 nowcast (published with no lag), DL lags 0-6 PDL",
+   "sign": "negative (weaker SEK lowers margin), recovered within about 4 quarters",
+   "effect_size": "10% SEK depreciation: about -0.4 to -0.5pp at lags 0-1 (in-sample); trough -0.82pp at lag 1 controlling for USD commodity prices",
+   "evidence": "Best real-time d_margin nowcast: out-of-sample R\u00b2 vs AR+Easter +0.06 (all) / +0.09 (ex), Clark-West p=0.011 / 0.002. Does not survive BY over 88 d_margin Clark-West tests. In-sample K6 p=0.13. Management cites weak SEK in 25 quarters (2009, 2018-19, 2023); EUR/SEK is +5.4% in those quarters vs -0.4% otherwise (AUC 0.85, BY 1e-4)",
+   "confidence": "low-medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "w_fx_vs_usd_yoy (Orkla-weighted currency vs USD), controlling for FAO food index in USD",
+   "alignment": "coincident (DL lags 0-6 PDL)",
+   "sign": "negative",
+   "effect_size": "10% depreciation: -0.72pp after 6 quarters (full), -0.29pp (ex); about 0 with K12 ex",
+   "evidence": "p=0.007 (full), 0.07 (ex). FX-driven and USD-commodity-driven cost changes have equal pass-through (p=0.31). EUR/NOK and FX vs EUR: n.s.",
+   "confidence": "low-medium"
+  },
+  {
+   "target": "d_margin",
+   "feature": "w_food_cpi_xvat_yoy (output price) inside cost+price DL",
+   "alignment": "coincident",
+   "sign": "positive (restores margin)",
+   "effect_size": "Multi-cost model ex-episode: +0.26pp per 1pp food CPI at lags 0-1. Lag profile poorly identified (collinear with lagged costs)",
+   "evidence": "Block p=5e-4 (full), 0.009 (ex) with raw materials. Multi-cost ex p=1.8e-4",
+   "confidence": "medium (sign) / low (lag shape)"
+  },
+  {
+   "target": "d_margin",
+   "feature": "w_wage_yoy (Orkla-weighted wage growth), multi-cost model",
+   "alignment": "coincident",
+   "sign": "negative",
+   "effect_size": "1pp faster wage growth: -0.22pp by lag 2 (ex), -0.13pp (full), about labour's ~20% revenue share",
+   "evidence": "Block p=0.06 (ex), 0.20 (full)",
+   "confidence": "low"
+  },
+  {
+   "target": "price (Orkla reported price component, 2022Q2-2026Q2)",
+   "feature": "w_food_cpi_xvat_yoy / nw_food_cpi_xvat_yoy (food CPI ex VAT)",
+   "alignment": "coincident (Nordic CPI is published with no lag, so usable as a nowcast)",
+   "sign": "positive",
+   "effect_size": "Orkla price = -0.23 + 0.97 x Orkla-weighted CPI ex VAT (R\u00b2 0.85). Nordic CPI ex VAT: slope 1.27, R\u00b2 0.91. Cumulative price level 2021->2025/26 = 79-95% of the CPI ex VAT increase",
+   "evidence": "n=17, conservative small-sample p<1e-6. Correlation 0.92-0.95 at lag 0, falling to 0.55-0.66 when CPI leads Orkla by 2 quarters",
+   "confidence": "high within the episode (n=17)"
+  },
+  {
+   "target": "price (Orkla reported price component)",
+   "feature": "w_food_ppi_yoy / nw_food_ppi_yoy (food-manufacturing PPI), lagged 1 quarter",
+   "alignment": "real-time h=0 (PPI published 1 quarter late)",
+   "sign": "positive",
+   "effect_size": "Slope 0.77 (Orkla-weighted) / 0.91 (Nordic), R\u00b2 0.90-0.92. Orkla price follows manufacturer PPI by about 1 quarter",
+   "evidence": "n=17, p<1e-6. Price formation: raw materials reach PPI with half of the 12-quarter pass-through by lag 2-3, and CPI by lag 4-5",
+   "confidence": "high within the episode"
+  },
+  {
+   "target": "og",
+   "feature": "w_food_cpi_xvat_yoy (food CPI ex VAT; India-blended variant similar)",
+   "alignment": "coincident; real-time h=0 also significant in sample",
+   "sign": "positive",
+   "effect_size": "theta = 0.62 (se 0.07) full, 0.59 (0.21) ex; sum over lags 0-3: 0.75. Implied volume elasticity to food inflation about -0.25 to -0.4, assuming price pass-through of 0.9-1.0",
+   "evidence": "p~1e-20 (full). Out-of-sample: adding CPI to AR gives R\u00b2 +0.02 at h=0 (Clark-West p 0.11-0.15); no gain at h>=1",
+   "confidence": "high (coincident) / low (forecasting)"
+  },
+  {
+   "target": "og",
+   "feature": "w_ec_food_ind_sell_price_exp_lvl (food manufacturers' selling-price expectations, EC survey)",
+   "alignment": "real-time h=0-2",
+   "sign": "positive",
+   "effect_size": "Out-of-sample R\u00b2 vs AR +0.09 / +0.07 / +0.11 at h=0/1/2 (all quarters); about 0 ex-episode. Leads Orkla's price component by 2-3 quarters (lag 3: R\u00b2 0.79, n=17)",
+   "evidence": "Clark-West p=0.07-0.08. Not significant after BY",
+   "confidence": "low"
+  },
+  {
+   "target": "vol_proxy (og minus food CPI ex VAT; corr 0.83 with reported volume/mix 2022-26) and volume_mix",
+   "feature": "w_food_rel_xvat_yoy (relative food inflation: food CPI ex VAT minus headline CPI)",
+   "alignment": "coincident; real-time h=1 weaker",
+   "sign": "negative",
+   "effect_size": "-0.84pp volume per 1pp (full); 1 SD gives -1.45pp. -0.62pp (ex), -0.39pp at real-time h=1. 2022-26: volume_mix slope -1.0, corr -0.70",
+   "evidence": "Coincident t=-4.9 (BY<0.001), ex t=-2.5 (BY 0.31), h=1 t=-2.7 (full). Only consistent term in a joint model with real wage, confidence and unemployment. Part of the full-sample effect may reflect incomplete price pass-through (theta<1) rather than volume",
+   "confidence": "medium"
+  },
+  {
+   "target": "vol_proxy",
+   "feature": "w_hh_real_inc_yoy (real disposable income, 2008+)",
+   "alignment": "coincident; lag 1 in 2022-26",
+   "sign": "positive",
+   "effect_size": "+0.91pp volume per 1pp (full), +0.45pp (ex). 2022-26: volume_mix corr 0.76 at lag 1",
+   "evidence": "Full t=3.5 (BY 0.03); ex t=1.5 (n.s.); real-time h=1 n.s.",
+   "confidence": "low-medium"
+  },
+  {
+   "target": "vol_proxy",
+   "feature": "w_gdp_vol_yoy (Orkla-weighted real GDP growth)",
+   "alignment": "coincident",
+   "sign": "positive",
+   "effect_size": "+0.33pp (full) / +0.25pp (ex) volume per 1pp GDP",
+   "evidence": "t=3.3 (full, BY 0.054), 2.3 (ex). Not significant in real time",
+   "confidence": "low-medium"
+  },
+  {
+   "target": "vol_proxy",
+   "feature": "se_na_hhcons_food_sa__yoy (Swedish household food consumption, national accounts)",
+   "alignment": "coincident and real-time h=0-1",
+   "sign": "positive",
+   "effect_size": "+0.45pp (full) / +0.29pp (ex) per 1pp",
+   "evidence": "t=3.9 (full, BY 0.009), 2.2 (ex); real-time h=1 t=3.3 / 2.4",
+   "confidence": "low-medium"
+  },
+  {
+   "target": "volume_mix (2022Q2-2026Q2 only)",
+   "feature": "w_cons_conf_z / nw_cons_conf_z (consumer confidence)",
+   "alignment": "coincident and lag 1",
+   "sign": "positive",
+   "effect_size": "+2.8 to +3.7pp volume/mix per 1 SD confidence; corr 0.71-0.76",
+   "evidence": "n=17, BY p=0.008-0.012. Single episode, collinear with real income, real wages and relative prices. Full-sample vol_proxy: t=1.2 (full), -0.8 (ex), so not robust",
+   "confidence": "low"
+  },
+  {
+   "target": "d_og",
+   "feature": "w_food_ppi_dyoy (change in food PPI inflation)",
+   "alignment": "real-time h=0",
+   "sign": "positive",
+   "effect_size": "Out-of-sample R\u00b2 vs AR +0.01 (all) / +0.09 (ex)",
+   "evidence": "Clark-West p=0.008 / 0.038. Not significant after BY across 168 Clark-West tests",
+   "confidence": "low"
+  },
+  {
+   "target": "d_margin (text evidence)",
+   "feature": "Management 'price increases lag costs' theme vs raw_mat_wloc_yoy (avg of t, t-1)",
+   "alignment": "coincident (event study)",
+   "sign": "theme quarters have much higher cost inflation and lower d_margin",
+   "effect_size": "Raw-material inflation 12.6% vs 1.3%; d_margin -1.06 vs +0.23pp. Theme coefficient on d_margin -1.29pp (p=0.009)",
+   "evidence": "HAC p=3e-4, permutation p=0.01, BY(HAC) 0.007; ex-episode p=0.004. AUC 0.81",
+   "confidence": "medium"
+  },
+  {
+   "target": "management cost-pressure mentions (lead/lag)",
+   "feature": "fao_ffpi_wloc_yoy / raw_mat_wloc_yoy lagged 2 quarters",
+   "alignment": "lagged (timing analysis)",
+   "sign": "positive",
+   "effect_size": "AUC for 'input costs up' mentions peaks at lag 2: 0.77 for FAO local ccy (0.64 at lag 0); 0.71 for raw materials and the cost index. FX mentions peak at lag 0-1 (AUC 0.85-0.88)",
+   "evidence": "Event study p(HAC)=0.005 for FAO (BY 0.07). Indicates a ~2-quarter hedging/contract lag between spot commodities and Orkla's costs, consistent with the margin trough at lag 1-3",
+   "confidence": "medium"
+  }
+ ],
+ "negative_findings": [
+  "No mechanism model beats an AR(last reported d_margin) + Easter benchmark out of sample after multiple-testing control: 0 of 168 Clark-West tests survive BY. Cost-index, raw-material and gap DL models have negative out-of-sample R\u00b2 at h=0-4 (-0.07 to -0.3), and multi-variable DLs overfit badly (R\u00b2 as low as -3.8). The mechanisms are strong but mostly coincident (lags 0-2).",
+  "The unit-weight price-cost gap (food CPI minus raw-material inflation, equal and opposite coefficients at every lag) is rejected in all 16 specifications (p<=0.02, mostly <1e-4). Long-run homogeneity cannot be rejected in 13/16, but the lag sums are imprecise.",
+  "Energy (Nordic electricity, EU gas, Brent in NOK) has no margin effect once raw materials and packaging are controlled (multi-cost block p=0.74 full, 0.12 ex). The large full-sample screening significance of gas and electricity comes from 2021-23 only and disappears ex-episode.",
+  "Food-manufacturing PPI is not a usable cost proxy outside 2021-23. Ex-episode its sign flips positive (+1.2pp per 10% at lag 12): it behaves like the manufacturers' own selling price.",
+  "Global FAO and World Bank food indices (USD, EUR, NOK, SEK or local currency) are weaker margin predictors than the EU agri basket and EU packaging. FAO's p_BY is >=0.07 in both samples.",
+  "Real wage growth does not lead or explain Orkla volumes outside 2022-23. Full-sample vol_proxy t=0.6; ex-episode it is negative (coincident t=-1.5, real-time h=0 t=-3.7). The lead/lag profile has no significant positive lead at 1-4 quarters. The 2022-26 co-movement (corr 0.72 at lag 1) is one episode.",
+  "Consumer confidence (level), unemployment (level and change), retail food volumes, the policy rate and the saving rate have no robust full-sample relation with implied volume (|t|<2.3; confidence is negative ex-episode and in the joint model).",
+  "Cross-border shopping (Norwegian same-day trips, old survey) and SEK/NOK have no effect on Orkla volume or Norwegian grocery volumes once the 2020-22 border closures are blanked (1 of 12 lag tests p=0.01, none after BY). Unblanked, the series gives spurious p~1e-30 from COVID leverage.",
+  "EUR/NOK and the Orkla-weighted currency vs EUR have no margin effect once FAO USD commodity prices are controlled.",
+  "Management-cited volume weakness (46 quarters) is unrelated to macro volume indicators (AUC 0.36-0.53 for retail volumes, real wages, confidence, relative prices). It is largely idiosyncratic (Bakers 2010-11, Rieber 2013-14, destocking, campaigns, Czech ERP), though it matches the implied volume proxy (-3.5pp vs 0).",
+  "A plain 'input costs up' mention (64% of quarters) does not discriminate margin outcomes (-0.2pp, n.s.); only 'price increases lag costs' (-1.29pp) and 'costs stable or lower' (+0.74pp) do.",
+  "Post-2008 ex-episode, short-lag (0-6) raw-material effects on margins are small and insignificant (-0.15pp per 10% at lag 2). Outside 2007-08 and 2021-23, cost shocks are largely absorbed within the quarter under the Nordic definitions."
+ ],
+ "key_numbers": [
+  "Margin level response to a permanent +10% raw-material shock (local ccy, K12 cubic PDL): trough -0.67pp at lag 3 (full) / -0.35pp at lag 2 (ex 2021Q3-23Q4); ex-episode half recovered by lag 5 (90% 2-11), zero by lag 6-7",
+  "Calibrated cost index +10%: trough -1.09pp (full) / -0.61pp (ex) at lag 2-3, vs a static no-pass-through accounting hit of -7pp (realised hit about 9-16%)",
+  "EU packaging PPI +10%: margin -1.6 to -1.9pp at lag 3. Rule: +10pp avg over lags 0-2 gives -1.5pp d_margin (full, t=-6.3) / -1.8pp (ex, t=-2.5)",
+  "Price-cost gap rule: +10pp in (food CPI ex VAT - calibrated cost index), avg lags 0-2, gives +0.84pp (full, p=0.001) / +0.63pp (ex, p=0.03) d_margin; best ex-episode gap weight on raw materials 0.26-0.34 (= cost share)",
+  "Cost acceleration (avg lags 0-3 minus avg lags 4-7 of the cost index): +10pp gives -0.62pp (full) / -0.48pp (ex) d_margin",
+  "Asymmetry: +10pp raw-material inflation gives -1.06pp within 1-2q; -10pp gives about 0 for 3q then +0.5pp (full) / +1.1pp (ex) by lag 6; profile equality p=1.4e-6 / 3.5e-5",
+  "FX: 10% SEK depreciation vs EUR gives about -0.4 to -0.8pp at lag 0-1, recovered within about 4q; Orkla-weighted currency vs USD 10% weaker gives -0.72pp after 6q (full, p=0.007), -0.29pp (ex)",
+  "Wages: 1pp faster wage growth gives -0.22pp margin by lag 2 (ex, p=0.06), about labour's ~20% revenue share",
+  "Price formation: 12-quarter pass-through of raw materials into food PPI 0.62 (full) / 0.31 (ex), half reached by lag 2-3; into food CPI ex VAT 0.56 / 0.28, half by lag 4-5; calibrated cost index into PPI 0.96 / CPI 0.88 (full)",
+  "Orkla price component 2022Q2-26Q2 = -0.23 + 0.97 x Orkla-weighted food CPI ex VAT (R\u00b2 0.85); Nordic CPI ex VAT R\u00b2 0.91; food PPI lagged 1q R\u00b2 0.90 (slope 0.77); cumulative Orkla price increase = 79-95% of CPI ex VAT (by calendar quarter)",
+  "Organic growth sensitivity to food CPI ex VAT: 0.62 (se 0.07) same quarter, 0.75 sum over lags 0-3 (full); 0.59 / 0.73 ex-episode",
+  "Implied volume proxy (og - food CPI ex VAT) vs reported volume/mix 2022-26: corr 0.83 (0.90 excl. 2025), slope 0.79",
+  "Relative food inflation (food CPI ex VAT - CPI): -0.84pp volume per 1pp (full, t=-4.9), -0.62pp (ex), -0.39pp real-time h=1",
+  "Episodes: margin trough 0-2q after the raw-material inflation peak (2007: 3q before); y/y margin back to >=0 0-4q after the peak; PPI peaks +0-2q, CPI ex VAT +2-3q, Orkla price +4q (2021-23: raw materials peak 2022Q2 +33%, margin trough 2022Q3 -3.0pp, recovery 2023Q2, Orkla price peak 2023Q2 16.3%)",
+  "Text: 22 regex themes on 102 notes, 17 manual corrections, kappa 0.86 (input-cost pressure) and >=0.93 for every other theme; 'price increases lag costs' quarters have raw-material inflation 12.6% vs 1.3% and d_margin -1.06 vs +0.23pp; management cost mentions align best with FAO local-ccy inflation 2q earlier (AUC 0.77)",
+  "Real time: best d_margin nowcast is EUR/SEK DL at h=0, out-of-sample R\u00b2 vs AR +0.06/+0.09 (Clark-West p=0.011/0.002); AR+Easter benchmark R\u00b2 vs prevailing mean 0.27 at h=0",
+  "Multiple testing: 1,097 tests in 21 families; 421 raw p<0.05; 199 BY<0.05 within family; 175 Holm<0.05 within family; 179 BY<0.05 across all tests; 0/168 real-time Clark-West tests survive BY; cost-candidate screen 64 tests (10 survive BY full sample, 4 ex-episode)"
+ ],
+ "caveats": [
+  "findings.md was NOT written: the harness blocks report files from subagents. The findings are in this output; all scripts, CSVs and PNGs are in /home/user/nordic-quality-rank/research/orkla_foods/analysis/mechanism/. No files under data/ or common.py were changed; nothing was committed.",
+  "Full-sample cost results rest on two episodes: 2007-08 (definition A, incl. CEE, Russia and ingredients) and 2021-23. Ex-episode magnitudes are about half and short-lag effects are imprecise in post-2008 ex-episode data.",
+  "Macro proxies are not Orkla's cost basket: the calibrated weights (raw materials 0.40, packaging 0.08, energy 0.02 x 0.25, wages 0.20) are assumptions. Spot FAO/EU prices vs contract and hedged buying and regulated Nordic agricultural prices attenuate coefficients. The 'about 15% of the static hit' figure blends true pass-through with attenuation.",
+  "The implied volume proxy assumes price pass-through of 1. This holds in 2022-26 (slope 0.97) but the level ratio is 0.79-0.95 and 2025 departs from it (food CPI about 4% vs Orkla price about 1%, driven by non-Orkla categories). Before 2022, the negative proxy vs food-inflation relation partly reflects incomplete price pass-through, not volume.",
+  "The 2022Q2-2026Q2 price/volume validation has n=17 and one cycle. Drivers there (confidence, real income, real wages, relative prices, retail volumes) are collinear and cannot be separated. Conservative small-sample p-values (max of HAC-t and OLS-t) were used.",
+  "HAC with about 100 overlapping y/y observations: unrestricted 7-lag chi\u00b2 Wald tests over-reject, so F reference distributions plus PDL/ridge restrictions were used. Dropping 2021Q3-23Q4 creates a gap that C.nw_ols treats as contiguous (minor).",
+  "The 12-lag specification goes beyond the brief's lags 0-6. It was needed because margin recovery takes 5-7+ quarters. Lag 0-6 results are reported throughout as well.",
+  "M&A, definition and distribution-agreement effects (Bakers 2012, Rieber 2013-14, Ham\u00e9 2016-17, Tropicana/PepsiCo 2015-16, India 2014-22, Sweden ERP 2021) are noise in d_margin and og; event dummies are a robustness check only.",
+  "Latest-vintage macro data; geographic weights come from annual reports published after year end. The real-time evaluation handles publication lags, not revisions. The COVID dummy is excluded from real-time models.",
+  "The text themes come from paraphrased drivers_note texts, not full reports. The circular-shift permutation p-value has a floor of about 0.01, so BY is also reported on HAC p-values (p_BY_family_hac).",
+  "Cross-border shopping (old survey s1) is blanked for 2020Q1-2022Q4 (border closures); unblanked it gives spurious p~1e-30.",
+  "common.py: (1) nw_ols does not drop regressors that are constant within a subsample (e.g. def_A after 2008, india), giving rank-deficient designs and SingularMatrixWarning; worked around locally in 02_organic.ols() and mech_utils.fit_dl. (2) Subsamples via NaN make HAC treat non-consecutive quarters as adjacent. (3) load_targets d_og_r4 differences og_r4 across definition breaks without a flag (not used here)."
+ ]
+}
