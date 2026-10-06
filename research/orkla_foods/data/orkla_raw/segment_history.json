@@ -1,0 +1,472 @@
+{
+ "prepared": "2026-10-06",
+ "latest_report_used": "Q2 2026",
+ "companion_files": [
+  "segment_history.md",
+  "restatements.csv",
+  "geo_weights.csv",
+  "ma_events.csv"
+ ],
+ "segment_definitions": [
+  {
+   "id": "A",
+   "label": "Orkla Foods (2000-2007 definition)",
+   "periods": "2000Q1-2007Q4",
+   "scope": "Nordic food incl. Bakers (Stabburet, Bakers, Procordia, Abba Seafood, Beauvais, Felix Abba) + Orkla Food Ingredients + Orkla Foods International (CEE; Russia SladCo/Krupskaya from 2005/2006; MTR India from 2007)",
+   "restated_history": [
+    "Feb-2006 xls 2004Q1-2005Q3 sub-segments (IFRS)",
+    "Q4-2007 xls 2005Q1-2007Q4"
+   ]
+  },
+  {
+   "id": "B",
+   "label": "Orkla Foods Nordic",
+   "periods": "sub-segment 2004Q1-2007Q4 (excl. Baltics); main food segment within Orkla Brands 2008Q1-2012Q4 (incl. Baltics)",
+   "scope": "Nordic food incl. Bakers (to 2012Q1), Panda (FI confectionery, 2005-) and Kalev (EE confectionery, 2010-); Baltic food cos only from 2008",
+   "restated_history": [
+    "Q1-2008 xls: 2007 quarters on 2008 definition",
+    "Oct-2012 xls: 2011Q1-2012Q2 (unchanged)"
+   ]
+  },
+  {
+   "id": "C",
+   "label": "Orkla Foods (2013-2014 definition)",
+   "periods": "2013Q1-2014Q3",
+   "scope": "Nordic+Baltic food excl. Panda/Kalev confectionery; Rieber & Son Nordic food from 1 May 2013",
+   "restated_history": [
+    "Apr-2013 pdf: 2011Q1-2012Q4 quarterly (incl. IAS 19R)",
+    "Apr-2013 xlsx: 2010-2012 annual"
+   ]
+  },
+  {
+   "id": "D",
+   "label": "Orkla Foods (2015-2022 definition)",
+   "periods": "2013Q1 (restated)-2022Q2",
+   "scope": "C + Orkla Foods International (MTR India, Vitana CZ, Felix Austria); Hame CZ/SK from 2016Q2; Eastern India from 2021Q2",
+   "restated_history": [
+    "Jan-2015 pdf: 2013Q1-2014Q3 quarterly",
+    "Apr-2015 xlsx: 2012-2014 annual",
+    "Feb-2020 file: 2018-2019 quarterly (identical to original)"
+   ]
+  },
+  {
+   "id": "E",
+   "label": "Orkla Foods Europe",
+   "periods": "2022Q3-2024Q4 (comparatives back to 2021)",
+   "scope": "D excluding Orkla India (MTR + Eastern)",
+   "restated_history": [
+    "Q3-2022, Q4-2022, Q1-2023, Q2-2023, Q3-2023 report comparatives (2021 H1/Q3/Q4/FY, 2022 Q1-Q4)"
+   ]
+  },
+  {
+   "id": "F",
+   "label": "Orkla Foods (renamed Feb-2025)",
+   "periods": "2025Q1- (name used in Q4-2024 report)",
+   "scope": "same as E",
+   "restated_history": []
+  }
+ ],
+ "events": [
+  {
+   "effective": "<=2000",
+   "type": "reporting frequency",
+   "change": "Four-monthly (tertial) reporting; Orkla Foods a business area in Branded Consumer Goods",
+   "size_nokm": "OF 1999 revenue 10,757",
+   "restatement": null
+  },
+  {
+   "effective": "2001Q1",
+   "type": "reporting frequency/metric",
+   "change": "First quarterly report; 2000 quarters given as comparatives; segment profit = operating profit before goodwill amortisation (NGAAP)",
+   "size_nokm": "OF FY2000 11,039 / 787",
+   "restatement": "2000 quarterly comparatives in 2001 reports"
+  },
+  {
+   "effective": "2003Q1",
+   "type": "internal reporting",
+   "change": "Superfish moved from Abba Seafood to Orkla Foods International; OFI also takes Orkla Brands' non-Nordic development",
+   "size_nokm": "~500",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2003/reorganisation-at-orkla-foods/"
+   ]
+  },
+  {
+   "effective": "2005Q1",
+   "type": "accounting/metric",
+   "change": "IFRS adopted (2004 restated); segment profit = EBITA (before amortisation and other revenues/expenses); SladCo consolidated in OFI",
+   "size_nokm": "SladCo ~1,075",
+   "restatement": "18 Apr 2005 IFRS restatement (group, quarterly 2004)",
+   "links": [
+    "https://www.orkla.com/media/press-releases/2005/restatement-of-accounts-for-2004-on-the-basis-of-ifrs/"
+   ]
+  },
+  {
+   "effective": "2005Q4",
+   "type": "segment detail",
+   "change": "Orkla Foods reported with sub-segments Orkla Foods Nordic (incl. Bakers), Orkla Food Ingredients, Orkla Foods International",
+   "size_nokm": null,
+   "restatement": "3 Feb 2006 xls: 2004Q1-2005Q3",
+   "links": [
+    "https://www.orkla.com/files/Public/19690/3174333/encl-historic-quarterly-figures.xls"
+   ]
+  },
+  {
+   "effective": "2008Q1",
+   "type": "scope/label",
+   "change": "Orkla Foods + Orkla Brands merged into business area 'Orkla Brands' (effective 18 Feb 2008): Orkla Foods Nordic (+Baltic food cos from OFI), Orkla Brands Nordic, Orkla Brands International (former OFI excl. Baltics, incl. Russian confectionery), Orkla Food Ingredients",
+   "size_nokm": "+257 into Orkla Foods Nordic (2007)",
+   "restatement": "Q1-2008 xls: 2007Q1-Q4",
+   "links": [
+    "https://www.orkla.com/media/press-releases/2008/orkla-foods-and-orkla-brands-to-be-consolidated-into-a-single-organisation/",
+    "https://www.orkla.com/files/Public/19690/3173820/quarterly-figures-q1-2008.xls"
+   ]
+  },
+  {
+   "effective": "2009Q1",
+   "type": "scope (not restated)",
+   "change": "Orkla Foods Romania moved from Orkla Brands International to Orkla Food Ingredients",
+   "size_nokm": "small",
+   "restatement": null
+  },
+  {
+   "effective": "2012Q1",
+   "type": "divestment",
+   "change": "Bakers sold (deconsolidated Q1-2012)",
+   "size_nokm": "~1,200",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2011/orkla-brands-sells-bakers/"
+   ]
+  },
+  {
+   "effective": "2013Q1",
+   "type": "scope/label/accounting",
+   "change": "New BCG structure: Orkla Foods (Nordic food; Panda/Kalev confectionery to Orkla Confectionery & Snacks), Orkla International (Orkla Brands Russia, Felix Austria, MTR); IAS 19R and IFRS 11 restatement",
+   "size_nokm": "-590 (2011)",
+   "restatement": "11 Apr 2013 pdf 2011Q1-2012Q4; 4 Apr 2013 xlsx 2010-2012",
+   "links": [
+    "https://www.orkla.com/files/111/R/1692214/omarbeidede-historiske-tall-for-2011-og-2012.pdf",
+    "https://www.orkla.com/files/Public/19690/3172745/segment-information-2010-2012--annual-report-note-9.xlsx"
+   ]
+  },
+  {
+   "effective": "2013Q2",
+   "type": "acquisition",
+   "change": "Rieber & Son consolidated 1 May 2013 (Nordic food to Orkla Foods; Vitana, Delecta, Chaka to Orkla International)",
+   "size_nokm": "~4,300 total; ~2,700 into Orkla Foods (est.)",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2013/orkla-asa-acquisition-of-rieber-son-now-completed/"
+   ]
+  },
+  {
+   "effective": "2014Q4",
+   "type": "scope",
+   "change": "Orkla International wound up (1 Dec 2014): MTR, Vitana, Felix Austria into Orkla Foods; Orkla Brands Russia discontinued; Chaka to OCS",
+   "size_nokm": "+~1,300 (2013: 9,797 -> 11,110)",
+   "restatement": "16 Jan 2015 pdf 2013Q1-2014Q3; 23 Apr 2015 xlsx 2012-2014",
+   "links": [
+    "https://www.orkla.com/files/111/R/1887727/restated-figures-bcg-2013-2014.pdf",
+    "https://www.orkla.com/files/Public/19690/3172048/segment-information-2012-2014--annual-report-note-8.xlsx"
+   ]
+  },
+  {
+   "effective": "2015Q1",
+   "type": "metric",
+   "change": "EBITA replaced by EBIT (adj.) (after amortisation of intangibles); 2014 restated (1,495 -> 1,488); 'organic growth' terminology",
+   "size_nokm": "-7 EBIT/yr",
+   "restatement": "Q1-2015 report / AR2014 note"
+  },
+  {
+   "effective": "2015Q4",
+   "type": "scope (not restated)",
+   "change": "NP Foods drinks (Gutta) into Orkla Foods Latvija from 1 Oct 2015",
+   "size_nokm": "small",
+   "restatement": null
+  },
+  {
+   "effective": "2016Q1-Q2",
+   "type": "acquisition/metric",
+   "change": "Kavli DK (1 Mar 2016), Hame CZ/SK (1 Apr 2016); ESMA APM table organic/FX/structure from Q2-2016",
+   "size_nokm": "+~1,900",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2016/orkla-asa-orklas-acquisition-of-hame-completed/"
+   ]
+  },
+  {
+   "effective": "2017Q4",
+   "type": "metric",
+   "change": "Organic growth row added to business-area tables (2016 comparative)",
+   "size_nokm": null,
+   "restatement": null
+  },
+  {
+   "effective": "2018Q4",
+   "type": "metric",
+   "change": "Underlying EBIT (adj.) growth APM introduced",
+   "size_nokm": null,
+   "restatement": null
+  },
+  {
+   "effective": "2019Q1",
+   "type": "accounting",
+   "change": "IFRS 16 (modified retrospective; no restatement of 2018); negligible EBIT effect, EBITDA higher",
+   "size_nokm": "~0 EBIT",
+   "restatement": null
+  },
+  {
+   "effective": "2020Q1",
+   "type": "group structure (food unchanged)",
+   "change": "Orkla Consumer Investments created; Orkla Foods unchanged",
+   "size_nokm": "0",
+   "restatement": "6 Feb 2020 restated segment financials 2018-2019",
+   "links": [
+    "https://www.orkla.com/files/Public/19690/3176571/orkla--restated-segment-financials-2018-2019.docx"
+   ]
+  },
+  {
+   "effective": "2020Q4",
+   "type": "scope (not restated)",
+   "change": "Frodinge moved from Orkla Foods Sverige to Orkla Food Ingredients",
+   "size_nokm": "small",
+   "restatement": null
+  },
+  {
+   "effective": "2021Q2",
+   "type": "acquisition",
+   "change": "Eastern Condiments (India, 67.8%) consolidated 1 Apr 2021",
+   "size_nokm": "~1,150",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2021/orkla-has-completed-a-substantial-acquisition-in-indian-spices-and-food-product/"
+   ]
+  },
+  {
+   "effective": "2022Q1",
+   "type": "divestment",
+   "change": "Exit Russia (Hame Foods ZAO)",
+   "size_nokm": "-184",
+   "restatement": null,
+   "links": [
+    "https://www.orkla.com/media/press-releases/2022/orkla-to-cease-its-operations-in-russia/"
+   ]
+  },
+  {
+   "effective": "2022Q3",
+   "type": "scope/label",
+   "change": "Orkla India carved out; Orkla Foods -> Orkla Foods Europe",
+   "size_nokm": "-1,869 (2021)",
+   "restatement": "comparatives in Q3-2022/Q4-2022/Q1-Q3 2023 reports",
+   "links": [
+    "https://www.orkla.com/files/Main/19690/3655785/q3-2022-report.pdf",
+    "https://www.orkla.com/files/Main/19690/3714175/q4-2022-external-report.pdf"
+   ]
+  },
+  {
+   "effective": "2023Q2",
+   "type": "group structure/metric",
+   "change": "Portfolio-company model; OFE scope unchanged; price vs volume/mix, contribution ratio, ROCE; organic growth formally adjusts for material distribution agreements and intra-group transfers",
+   "size_nokm": "0",
+   "restatement": "15 Jun 2023 historical financial information (not retrievable)",
+   "links": [
+    "https://www.orkla.com/media/press-releases/2023/orkla-publishes-historical-financial-information-on-11-portfolio-companies/",
+    "https://www.orkla.com/files/Main/19690/3804826/q2-2023-external-report.pdf"
+   ]
+  },
+  {
+   "effective": "2025-02",
+   "type": "label",
+   "change": "Orkla Foods Europe renamed Orkla Foods (no scope change)",
+   "size_nokm": "0",
+   "restatement": null
+  },
+  {
+   "effective": "2026Q2",
+   "type": "scope (not restated)",
+   "change": "Poltsamaa factory/brands sold; Quaker distribution ended; small Danish distribution agreement to OFI",
+   "size_nokm": "small",
+   "restatement": null
+  }
+ ],
+ "profit_metric_history": [
+  {
+   "period": "1990s-2004",
+   "metric": "Operating profit before goodwill amortisation (NGAAP; 'EBITA' in 2002-04 reports), before other revenues and expenses"
+  },
+  {
+   "period": "2005-2014",
+   "metric": "EBITA (adj.) under IFRS: before amortisation of intangibles and other income/expenses; 2011-12 restated for IAS 19R"
+  },
+  {
+   "period": "2015-",
+   "metric": "EBIT (adj.): operating profit before other income and expenses (OIE); 2014 restated"
+  },
+  {
+   "period": "2019-",
+   "metric": "EBIT (adj.) incl. IFRS 16 (no restatement; negligible EBIT effect)"
+  }
+ ],
+ "organic_growth_history": [
+  {
+   "period": "2001-2002",
+   "term": "growth for continuing business",
+   "definition": "adjusted for acquisitions/divestments"
+  },
+  {
+   "period": "2003-2014",
+   "term": "underlying growth (text)",
+   "definition": "excluding acquisitions and divestments and currency translation effects (+ other considerable structural changes from ~2013)"
+  },
+  {
+   "period": "2015Q1-",
+   "term": "organic growth (text)",
+   "definition": "excluding acquired and sold companies and currency translation effects"
+  },
+  {
+   "period": "2016Q2-",
+   "term": "organic growth (APM table organic/FX/structure)",
+   "definition": "acquired companies excluded 12 months after transaction date; sold companies excluded pro forma 12 months prior; FX neutralised at prior-year rates"
+  },
+  {
+   "period": "2017Q4-",
+   "term": "organic growth row in segment tables",
+   "definition": "same"
+  },
+  {
+   "period": "2018Q4-",
+   "term": "underlying EBIT (adj.) growth",
+   "definition": "EBIT (adj.) change adjusted for M&A and FX"
+  },
+  {
+   "period": "2021- (practice), 2023Q2- (formal)",
+   "term": "distribution agreements / intra-group transfers",
+   "definition": "material distribution agreements won/lost and intra-group transfers treated as structure"
+  },
+  {
+   "period": "2023Q2-",
+   "term": "price vs volume/mix",
+   "definition": "price = net customer price change at unchanged volume; volume/mix = residual"
+  },
+  {
+   "period": "all",
+   "term": "hyperinflation",
+   "definition": "no explicit adjustment; no hyperinflationary operations in the food segment"
+  }
+ ],
+ "splice_overlaps": [
+  {
+   "from": "A",
+   "to": "B (2005-07 sub-segment)",
+   "overlap": "2004Q1-2007Q4 (B is inside A)"
+  },
+  {
+   "from": "B (2005-07)",
+   "to": "B (2008-12)",
+   "overlap": "2007Q1-Q4"
+  },
+  {
+   "from": "B",
+   "to": "C",
+   "overlap": "2011Q1-2012Q2"
+  },
+  {
+   "from": "C",
+   "to": "D",
+   "overlap": "2013Q1-2014Q3 (C from original 2013-14 reports)"
+  },
+  {
+   "from": "D",
+   "to": "E",
+   "overlap": "2021H1, 2021Q3-2022Q4"
+  },
+  {
+   "from": "E",
+   "to": "F",
+   "overlap": "identical"
+  }
+ ],
+ "pre_2000": {
+  "quarterly_available": false,
+  "summary": "Orkla reported four-monthly (tertial) interim results until 2000; first quarterly report Q1 2001 with 2000 quarterly comparatives. Tertial and annual Orkla Foods figures for the 1990s are online via Hugin-hosted reports.",
+  "annual_orkla_foods": [
+   {
+    "year": 1992,
+    "revenue": 4114,
+    "op_profit": 334
+   },
+   {
+    "year": 1993,
+    "revenue": 4527,
+    "op_profit": 359
+   },
+   {
+    "year": 1994,
+    "revenue": 5286,
+    "op_profit": 362
+   },
+   {
+    "year": 1995,
+    "revenue": 7003,
+    "op_profit": 368,
+    "op_profit_before_goodwill": 442
+   },
+   {
+    "year": 1996,
+    "revenue": 10527,
+    "op_profit": 608,
+    "op_profit_before_goodwill": 772
+   },
+   {
+    "year": 1997,
+    "revenue": 10094,
+    "op_profit": 655,
+    "op_profit_before_goodwill": 824
+   },
+   {
+    "year": 1998,
+    "revenue": 10238,
+    "op_profit": 579,
+    "op_profit_before_goodwill": 741
+   },
+   {
+    "year": 1999,
+    "revenue": 10757,
+    "op_profit": 709,
+    "op_profit_before_goodwill": 873
+   }
+  ],
+  "tertial_examples": [
+   {
+    "period": "1995 Sep-Dec",
+    "revenue": 3383,
+    "op_profit": 175
+   },
+   {
+    "period": "1996 Sep-Dec",
+    "revenue": 3563,
+    "op_profit": 257
+   },
+   {
+    "period": "1998 Sep-Dec",
+    "revenue": 3743,
+    "op_profit": 248
+   },
+   {
+    "period": "1999 Sep-Dec",
+    "revenue": 4066,
+    "op_profit": 285
+   }
+  ],
+  "sources": [
+   "http://reports.huginonline.com/778051.pdf",
+   "http://reports.huginonline.com/hugin/755868.pdf",
+   "http://reports.huginonline.com/hugin/801318.pdf",
+   "http://reports.huginonline.com/hugin/801309.pdf",
+   "http://reports.huginonline.com/hugin/801324.pdf",
+   "http://reports.huginonline.com/770477.pdf"
+  ],
+  "breaks": "1991 Nora merger; 1995 Procordia Food + Abba Seafood from Volvo (revenue ~doubled 1994-96); 1997 Kotlin; 1998 Guseppe; 1999 KaKa"
+ }
+}
