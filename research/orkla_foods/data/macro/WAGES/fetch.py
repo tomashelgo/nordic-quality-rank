@@ -39,6 +39,8 @@ Formulas:
   * expected real wage growth (%): 100*((1+E[w]/100)/(1+E[pi]/100)-1) from the same respondent group
 
 Usage:  python3 fetch.py            (downloads to a temp dir, writes CSVs next to this file)
+        optional env WAGES_PROSPERA_CACHE=<dir> re-uses previously downloaded Prospera/Origo spreadsheets
+        (~220 files, ~40 MB; only the quarterly rounds containing wage tables are used).
 """
 import datetime as dt
 import io
@@ -358,7 +360,9 @@ def norway_wages():
              f"09175 NACE={nace}: Lonn / SysselsatteNormL", 55,
              "Computed: wages and salaries (NOK mn, unadjusted) / full-time-equivalent employees (1000). "
              "Strong seasonality (holiday pay in Q2) -> use y/y changes. Longest quarterly total-economy wage "
-             "measure for Norway (1995-). Revised with each QNA release.")
+             "measure for Norway (1995-). Revised with each QNA release. Quarterly timing of the wage bill is "
+             "distorted around the 2015 switch to a-ordningen (y/y 2015Q2 ~+10%, 2015Q3 ~-2%; annual sums are fine) - "
+             "consider 4-quarter sums or dummies.")
 
     # --- a-ordningen based quarterly earnings (2016-)
     df = ssb("11654", {"Region": ["Ialt"], "NACE2007": ["00-99"], "ContentsCode": ["GjMdTotal"]})
@@ -515,7 +519,9 @@ def norway_expectations():
             note += "Same data as SURVEYS/no_nbes_bl_infl_exp_12m. "
         if "real_wage" in sid:
             note += "Question asked since 2023Q1 only."
-        save(sid, s, desc, "NO", "Q", "% (expected growth)", "NSA", src,
+        unit = ("% (expected CPI inflation)" if "_infl_" in sid else
+                "% (expected real wage growth)" if "real_wage" in sid else "% (expected wage growth)")
+        save(sid, s, desc, "NO", "Q", unit, "NSA", src,
              f"{url.split('?')[0]} sheet '{sheet}', block '{block}', group '{group[1]}', Average", -45, note)
 
     # Regional Network: expected annual wage growth, all sectors (current year), 2005-
@@ -743,9 +749,9 @@ def sweden_expectations():
     note0 = ("Quarterly survey (Mar/Jun/Sep/Dec; 2005-2009 rounds 1-4 dated by round number), published before quarter "
              "end. Parsed from the per-survey spreadsheets (2005Q4-). ")
     save("se_exp_wage_1y_lmp", lmp_w.dropna(), "Sweden expected wage increase coming 12 months, labour market parties (avg of employee and employer organisations), mean",
-         "SE", "Q", "% (expected growth)", "NSA", src, q, -15, note0 + "Simple average of the two organisation-group means.")
+         "SE", "Q", "% (expected wage growth)", "NSA", src, q, -15, note0 + "Simple average of the two organisation-group means.")
     save("se_exp_wage_1y_all", col("wage", "all", 1).dropna(), "Sweden expected wage increase coming 12 months, all interviewees (labour market parties + purchasing managers), mean",
-         "SE", "Q", "% (expected growth)", "NSA", src, q, -15, note0 + "Money market players are not asked about wages.")
+         "SE", "Q", "% (expected wage growth)", "NSA", src, q, -15, note0 + "Money market players are not asked about wages.")
     save("se_exp_cpi_1y_lmp", lmp_p.dropna(), "Sweden expected CPI inflation coming 12 months, labour market parties (avg of employee and employer organisations), mean",
          "SE", "Q", "% (expected inflation)", "NSA", src, q, -15, note0)
     save("se_exp_cpi_1y_all", col("cpi", "all", 1).dropna(), "Sweden expected CPI inflation coming 12 months, all interviewees, mean (quarterly survey)",
@@ -763,7 +769,7 @@ def denmark():
     d["date"] = d["TID"].map(parse_period)
     tot = d[(d.BRANCHE07 == "TOT") & (d.SEKTOR == 1000)].set_index("date")["value"].sort_index().dropna()
     save("dk_wage_idx_total_q", tot, "Denmark standardised index of average earnings, all sectors, all industries", "DK", "Q",
-         "index (DST base)", "NSA", "Statistics Denmark SBLON1", "SBLON1 BRANCHE07=TOT SEKTOR=1000 VARIA1=100", 75,
+         "index 2016=100", "NSA", "Statistics Denmark SBLON1", "SBLON1 BRANCHE07=TOT SEKTOR=1000 VARIA1=100", 75,
          "Standardised (composition-adjusted) earnings index incl. irregular payments, 2016Q1-. For longer history see "
          "dk_wage_idx_private_q.")
 
@@ -949,7 +955,7 @@ def derived():
             name = {"econ": "economists", "social": "social partners", "business": "business leaders"}[grp]
             save(f"no_exp_real_wage_{grp}_q", real_growth(S[wid], S[pid]),
                  f"Norway expected real wage growth, {name} (expected wage growth this year vs expected CPI inflation next 12 months)",
-                 "NO", "Q", "% (expected real growth)", "NSA", "computed from Norges Bank Expectations Survey",
+                 "NO", "Q", "% (expected real wage growth)", "NSA", "computed from Norges Bank Expectations Survey",
                  f"{wid} & {pid}", -45,
                  "E[real] = 100*((1+E[w]/100)/(1+E[pi]/100)-1), same respondent group and survey round. Horizon mismatch: "
                  "wage question refers to the current calendar year, inflation to the next 12 months (no current-year "
@@ -957,7 +963,7 @@ def derived():
     if "se_exp_wage_1y_lmp" in S and "se_exp_cpi_1y_lmp" in S:
         save("se_exp_real_wage_1y_lmp", real_growth(S["se_exp_wage_1y_lmp"], S["se_exp_cpi_1y_lmp"]),
              "Sweden expected real wage growth next 12 months, labour market parties (Prospera/Origo)", "SE", "Q",
-             "% (expected real growth)", "NSA", "computed from Riksbank expectations survey", "se_exp_wage_1y_lmp & se_exp_cpi_1y_lmp", -15,
+             "% (expected real wage growth)", "NSA", "computed from Riksbank expectations survey", "se_exp_wage_1y_lmp & se_exp_cpi_1y_lmp", -15,
              "E[real] = 100*((1+E[w]/100)/(1+E[pi]/100)-1); both 1-year-ahead means of the same respondents (avg of "
              "employee and employer organisations). CPI (KPI) expectations; KPIF expectations only from 2017.")
 

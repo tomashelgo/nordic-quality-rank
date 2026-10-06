@@ -197,7 +197,8 @@ def cpi():
     s = ssb_series("14708", {"KPIavledetSerie": ["KPI-JAE"], "ContentsCode": ["KPIsesong"]})
     save("no_cpi_ate_sa_idx", s, "CPI-ATE, seasonally adjusted", "M", "index 2025=100", "SA",
          "SSB table 14708", "14708 KPIavledetSerie=KPI-JAE ContentsCode=KPIsesong", 10,
-         "SSB backcast to 1985 for the seasonally adjusted CPI-ATE.")
+         "Seasonally adjusted CPI-ATE as published in SSB table 14708, which starts 2002-12 "
+         "(same span as the unadjusted no_cpi_ate_idx).")
 
     # Food groups, COICOP 2018 (table 14700, from 2000M01), 2025=100
     groups = [
@@ -472,9 +473,10 @@ def electricity():
 
     step("Electricity (Nord Pool spot via Energi Data Service)")
     base = "https://api.energidataservice.dk/dataset/"
-    r = http_get(base + 'Elspotprices?start=1999-01-01T00:00&end=2025-10-01T00:00&filter={"PriceArea":["NO2","SYSTEM"]}'
+    r = http_get(base + 'Elspotprices?start=1999-01-01T00:00&end=2025-10-01T00:00&filter={"PriceArea":["NO2","SYSTEM","SYS"]}'
                  '&columns=HourDK,PriceArea,SpotPriceEUR&limit=0', timeout=600)
     old = pd.DataFrame(r.json()["records"])
+    old["PriceArea"] = old["PriceArea"].replace({"SYS": "SYSTEM"})  # system price is coded 'SYS' before 2011 (qa-B)
     old["t"] = pd.to_datetime(old["HourDK"])
     time.sleep(10)
     r = http_get(base + 'DayAheadPrices?start=2025-10-01T00:00&filter={"PriceArea":["NO2"]}'
@@ -487,9 +489,14 @@ def electricity():
     cutoff = pd.Timestamp.today().normalize().replace(day=1)
     for area, sid in [("NO2", "no_elspot_no2_eur"), ("SYSTEM", "no_elspot_system_eur")]:
         x = allp[allp.PriceArea == area]
-        m = x.groupby(x.t.dt.to_period("M"))["SpotPriceEUR"].mean()
+        g = x.groupby(x.t.dt.to_period("M"))["SpotPriceEUR"]
+        m, cnt = g.mean(), g.count()
         m.index = m.index.to_timestamp()
+        cnt.index = m.index
         m = m[m.index < cutoff]
+        # drop months the source covers only partly (e.g. SYSTEM stops on 2025-02-06; 15-min data has 4x rows) (qa-B)
+        rows = pd.Series(m.index.days_in_month * 24 * np.where(m.index >= "2025-10-01", 4, 1), index=m.index)
+        m = m[cnt.reindex(m.index) >= 0.95 * rows]
         desc = {"NO2": "Nord Pool day-ahead spot price, bidding zone NO2 (Southern Norway), monthly average",
                 "SYSTEM": "Nord Pool system price (Nordic), monthly average"}[area]
         note = ("Hourly prices (Elspotprices, to 2025-09) and 15-minute prices (DayAheadPrices, from 2025-10, "

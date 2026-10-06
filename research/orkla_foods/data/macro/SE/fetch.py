@@ -183,7 +183,7 @@ def food_vat():
 # ----------------------------------------------------------------------------------------------
 # Series specification
 # ----------------------------------------------------------------------------------------------
-M, Q = "monthly", "quarterly"
+M, Q = "M", "Q"  # same frequency codes as the other macro catalogs (qa-B)
 CPI_COICOP = "PR/PR0101/PR0101A/KPI2020COICOPM"
 PPI = "PR/PR0301/PR0301G/PPI2020M"
 HMPI, IMPI, ITPI = "000001I3", "000001I0", "000004XU"
@@ -345,7 +345,7 @@ def main():
             results[sid] = s
             fn = f"{sid}.csv"
             with open(os.path.join(OUT, fn), "w", newline="") as f:
-                w = csv.writer(f)
+                w = csv.writer(f, lineterminator="\n")  # LF line endings like the other folders (qa-B)
                 w.writerow(["date", "value"])
                 for d, v in s.items():
                     w.writerow([d, f"{v:.6g}" if abs(v) < 1e6 else f"{v:.10g}"])
