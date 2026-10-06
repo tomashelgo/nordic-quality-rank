@@ -9,7 +9,8 @@ Sources (all public, no API key needed):
   * SCB PxWeb API v1  https://api.scb.se/OV0104/v1/doris/en/ssd/   (GET metadata, POST query)
   * Riksbank SWEA API https://api.riksbank.se/swea/v1/              (ObservationAggregates, monthly avg)
   * Energi Data Service (Energinet, DK) https://api.energidataservice.dk/  (Nord Pool day-ahead prices
-    for Swedish bidding areas: 'SE' = whole-Sweden area until 2011-10, 'SE3' from 2011-11;
+    for Swedish bidding areas: 'SE' = whole-Sweden area until 2010-12, 'SE3' from 2011-11;
+    2011-01..2011-10 is missing for Swedish areas in EDS and is filled with the Nord Pool SYSTEM price;
     dataset Elspotprices (hourly, until 2025-09-30) and DayAheadPrices (15-min MTU, from 2025-10-01))
   * Food VAT rate: hard-coded from legislation (no API). Sources:
       - Skatteverket, "Skatter i Sverige 2004", table 6.3 (VAT rates 1991-2004: food 25/18/21/21/21/12...)
@@ -45,19 +46,21 @@ SESSION.headers.update(UA)
 TODAY = dt.date.today()
 
 
-def http(method, url, **kw):
+def http(method, url, wait429=None, **kw):
     last = None
-    for i in range(10):
+    waits = wait429 or [15 + 10 * i for i in range(10)]
+    for i in range(len(waits)):
         try:
-            r = SESSION.request(method, url, timeout=120, **kw)
+            r = SESSION.request(method, url, timeout=180, **kw)
             if r.status_code in (429, 503):
-                time.sleep(15 + 10 * i)
+                last = f"HTTP {r.status_code}"
+                time.sleep(waits[i])
                 continue
             r.raise_for_status()
             return r
         except Exception as e:  # proxy disconnects happen under load: back off and retry
             last = e
-            time.sleep(4 + 3 * i)
+            time.sleep(min(waits[i], 4 + 3 * i))
     raise RuntimeError(f"failed {method} {url}: {last}")
 
 
@@ -120,14 +123,15 @@ def swea_monthly(series_id, start="1980-01-01"):
 
 
 # ----------------------------------------------------------------------------------------------
-# Electricity day-ahead price, Swedish bidding area SE3 (Stockholm), spliced with 'SE' before 2011-11
+# Electricity day-ahead price, Swedish bidding area SE3 (Stockholm), spliced with 'SE' (to 2010-12) and SYSTEM (2011-01..10)
 # ----------------------------------------------------------------------------------------------
 def eds_fetch(dataset, area, tcol, pcol, start, end):
     # One request per area/range (EDS rate-limits many consecutive requests with HTTP 429).
     url = (f"{EDS}{dataset}?start={start}T00:00&end={end}T00:00&limit=0&timezone=UTC"
            f"&columns={tcol},{pcol}&filter=" + requests.utils.quote(json.dumps({"PriceArea": [area]})))
-    r = http("GET", url)
-    time.sleep(20)
+    # EDS throttles bursts of large requests (HTTP 429, no Retry-After header): long back-off between retries.
+    r = http("GET", url, wait429=[60, 120, 180, 240, 300, 300, 300])
+    time.sleep(30)
     df = pd.DataFrame(r.json().get("records", []))
     df.to_csv(os.path.join(RAW, f"eds_{dataset}_{area}.csv"), index=False)
     df[tcol] = pd.to_datetime(df[tcol])
@@ -140,12 +144,12 @@ def eds_fetch(dataset, area, tcol, pcol, start, end):
 
 
 def electricity_se3():
-    a = eds_fetch("Elspotprices", "SE", "HourUTC", "SpotPriceEUR", "1999-07-01", "2011-11-01")
-    b = eds_fetch("Elspotprices", "SE3", "HourUTC", "SpotPriceEUR", "2011-10-31", "2025-10-01")
-    c = eds_fetch("DayAheadPrices", "SE3", "TimeUTC", "DayAheadPriceEUR", "2025-09-30", (TODAY + dt.timedelta(days=2)).isoformat())
     # EDS has no Swedish area price for 2011-01..2011-10 (area 'SE' ends 2010-12, SE3 starts late 2011-10):
     # fill those months with the Nord Pool system price (area 'SYSTEM'), flagged in the catalog notes.
     g = eds_fetch("Elspotprices", "SYSTEM", "HourUTC", "SpotPriceEUR", "2010-12-31", "2011-11-01")
+    a = eds_fetch("Elspotprices", "SE", "HourUTC", "SpotPriceEUR", "1999-07-01", "2011-01-01")
+    b = eds_fetch("Elspotprices", "SE3", "HourUTC", "SpotPriceEUR", "2011-10-31", "2025-10-01")
+    c = eds_fetch("DayAheadPrices", "SE3", "TimeUTC", "DayAheadPriceEUR", "2025-09-30", (TODAY + dt.timedelta(days=2)).isoformat())
     a = a[a.index < "2011-01-01"]
     g = g[(g.index >= "2011-01-01") & (g.index < "2011-11-01")]
     b = b[(b.index >= "2011-11-01") & (b.index < "2025-10-01")]

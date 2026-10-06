@@ -115,6 +115,17 @@ def to_monthly_mean(s: pd.Series) -> pd.Series:
     return m
 
 
+def trim_leading_fragments(s: pd.Series, max_gap_months=3) -> pd.Series:
+    """Drop isolated early observations: start after the last gap longer than max_gap_months."""
+    s = s.dropna().sort_index()
+    if len(s) < 2:
+        return s
+    p = s.index.to_period("M")
+    gaps = (p[1:] - p[:-1]).map(lambda x: x.n)
+    big = [i for i, g in enumerate(gaps) if g > max_gap_months + 1]
+    return s.iloc[big[-1] + 1:] if big else s
+
+
 def drop_incomplete(s: pd.Series) -> pd.Series:
     return s[s.index < CUR_MONTH]
 
@@ -223,7 +234,8 @@ WB_PRICES = [  # (header in 'Monthly Prices', id, description, extra note)
      "Basis change Jan-2025 (Dutch -> US Gulf) causes a level break."),
     ("Palm oil", "glob_wb_palm_oil", "Palm oil, Malaysia (RBD/crude; basis changed several times)",
      "Several basis changes (2001, 2021, 2024-11, 2025-02, 2026-01 replacement series)."),
-    ("Sunflower oil", "glob_wb_sunflower_oil", "Sunflower oil, EU/NW Europe FOB Rotterdam", "Starts 2002."),
+    ("Sunflower oil", "glob_wb_sunflower_oil", "Sunflower oil, EU/NW Europe FOB Rotterdam",
+     "Starts 2002-02; 5 missing months in 2002 (07, 09-12) in the source."),
     ("Rapeseed oil", "glob_wb_rapeseed_oil", "Rapeseed oil, Dutch, FOB Rotterdam", "Starts 2002."),
     ("Sugar, world", "glob_wb_sugar_world", "Sugar, ISA daily price raw, FOB Caribbean", ""),
     ("Sugar, EU", "glob_wb_sugar_eu", "Sugar, EU negotiated import price for raw ACP sugar, CIF European ports",
@@ -450,7 +462,7 @@ def weekly_to_monthly(recs) -> pd.Series:
     v = [parse_price(r["price"]) for r in recs]
     s = pd.Series(v, index=d)
     s = s[~s.index.duplicated()]
-    return to_monthly_mean(s)
+    return drop_incomplete(to_monthly_mean(s))
 
 
 @safe
@@ -492,10 +504,11 @@ def block_agri():
     # beef (weekly) young bulls R3
     j = agri_get("beef/prices", "agri_beef.json", memberStateCodes="EU", productCodes="AR3",
                  beginDate="01/01/1990", endDate=end)
-    add("eu_agri_beef_young_bulls_r3_price", weekly_to_monthly(j),
+    add("eu_agri_beef_young_bulls_r3_price", trim_leading_fragments(weekly_to_monthly(j)),
         description="EU average beef carcass price, young bulls class R3 (reference grade)", country="EU",
         unit="EUR per 100 kg carcass weight", source=src,
-        source_query=f"{AGRI}/beef/prices?memberStateCodes=EU&productCodes=AR3", lag=7, notes=wk_note)
+        source_query=f"{AGRI}/beef/prices?memberStateCodes=EU&productCodes=AR3", lag=7,
+        notes=wk_note + "Isolated 1996-03/04 observations dropped (no data 1996-05..1999-11); continuous from 1999-12.")
 
     # poultry (monthly) whole broiler 65% selling price; products filter rejected by API -> filter locally
     j = agri_get("poultry/prices/month", "agri_poultry.json", memberStateCodes="EU", years=yrs)
@@ -597,7 +610,7 @@ def block_electricity():
             se = eds_monthly(["SE"], end="2011-11-01")
             s = pd.concat([se[se.index < s.index.min()], s])
             extra = ("Before 2011-11 (split of Sweden into SE1-SE4) the single Swedish area price ('SE' in the "
-                     "dataset) is used.")
+                     "dataset, 2000-01..2010-12) is used. GAP 2011-01..2011-10: no Swedish price in the source.")
         if area == "NO2":
             extra = ("Norwegian bidding-zone definitions were reorganised several times before 2010; early values "
                      "are the dataset's NO2 mapping (southern Norway).")
