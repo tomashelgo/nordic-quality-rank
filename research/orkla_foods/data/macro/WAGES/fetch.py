@@ -213,13 +213,16 @@ def estat(dataset, **filters):
     return pd.Series(df["value"].values, index=df["time"].map(parse_period)).sort_index().dropna()
 
 
-def yoy_splice(new, old):
+def yoy_splice(new, old, switch="first"):
     """Chain two quarterly NSA indices so that y/y growth is preserved within each source.
-    Levels of `old` are kept up to the switch quarter (first quarter where `new` has a y/y rate, i.e.
-    new.start + 1 year); from then on I_t = I_{t-4} * new_t / new_{t-4}.  This avoids the spurious y/y
-    jumps a single-quarter level splice creates when the two sources have different seasonal patterns."""
+    Levels of `old` are kept up to the switch quarter; from then on I_t = I_{t-4} * new_t / new_{t-4}.
+    switch='first': first quarter where `new` has a y/y rate (new.start + 1 year);
+    switch='last' : quarter after the last observation of `old` (use old as long as it exists).
+    This avoids the spurious y/y jumps a single-quarter level splice creates when the two sources have
+    different seasonal patterns."""
     new, old = new.dropna().sort_index(), old.dropna().sort_index()
-    switch = new.index.min() + pd.DateOffset(years=1)
+    switch = (new.index.min() + pd.DateOffset(years=1)) if switch == "first" else \
+        max(new.index.min() + pd.DateOffset(years=1), old.index.max() + pd.DateOffset(months=3))
     out = old[old.index < switch].to_dict()
     for t in new.index[new.index >= switch]:
         t4 = t - pd.DateOffset(years=1)
@@ -770,19 +773,21 @@ def denmark():
         mid = pd.Series(m["value"].values, index=m["TID"].map(parse_period)).sort_index().dropna()
         o = dst("ILON2X", {"ERHVERV": [branch_old], "Tid": ["*"]})
         old = pd.Series(o["value"].values, index=o["TID"].map(parse_period)).sort_index().dropna()
-        return rebase(yoy_splice(new, yoy_splice(mid, old)), 2015)
+        return rebase(yoy_splice(new, yoy_splice(mid, old), switch="last"), 2015)
 
     s = private_chain("TOT", "TOT", "TOT")
     save("dk_wage_idx_private_q", s, "Denmark index of average earnings, corporations and organisations (private sector), spliced",
-         "DK", "Q", "index 2015=100", "NSA", "Statistics Denmark SBLON1 (y/y from 2017Q1), ILON12 (2006Q1-2016Q4), ILON2X (1994Q1-2005Q4)",
+         "DK", "Q", "index 2015=100", "NSA", "Statistics Denmark ILON12 (2006Q1 to its last quarter, 2025Q4), SBLON1 (after), ILON2X (1994Q1-2005Q4)",
          "SBLON1 BRANCHE07=TOT SEKTOR=1046; ILON12 ERHVERV=TOT EJSÆSON; ILON2X ERHVERV=TOT", 75,
-         "y/y-preserving chain (switches 2006Q1 and 2017Q1): standardised earnings index from 2017, implicit wage index "
-         "before. Private sector only (public sector before 2016 in separate tables).")
+         "y/y-preserving chain: implicit wage index ILON2X to 2005, ILON12 from 2006Q1 as long as it is published "
+         "(currently to 2025Q4), then y/y of the standardised earnings index SBLON1 (the new headline, 2016Q1-). ILON is "
+         "preferred while available because SBLON y/y is noisier at industry level. Private sector only.")
     s = private_chain("CA", "CA", "1509")
     save("dk_wage_idx_food_manuf_q", s, "Denmark index of average earnings, manufacture of food, beverages and tobacco (private), spliced",
-         "DK", "Q", "index 2015=100", "NSA", "Statistics Denmark SBLON1 (y/y from 2017Q1), ILON12 (2006Q1-2016Q4), ILON2X (1996Q1-2005Q4)",
+         "DK", "Q", "index 2015=100", "NSA", "Statistics Denmark ILON12 (2006Q1-last), SBLON1 (after), ILON2X (1996Q1-2005Q4)",
          "SBLON1 BRANCHE07=CA SEKTOR=1046; ILON12 ERHVERV=CA EJSÆSON; ILON2X ERHVERV=1509", 75,
-         "y/y-preserving chain (switches 2006Q1 and 2017Q1); DB07 CA (food, beverages, tobacco); DB03 1509 before 2005.")
+         "y/y-preserving chain as dk_wage_idx_private_q (ILON2X 1509 to 2005, ILON12 CA 2006Q1-2025Q4, SBLON1 CA after); "
+         "DB07 CA = food, beverages, tobacco; DB03 1509 before 2005. SBLON1 CA y/y is volatile (e.g. 7.1% in 2017Q1).")
 
     n = dst("NKN3", {"TRANSAKT": ["B6G"], "PRISENHED": ["RKV_M"], "Tid": ["*"]})
     s = pd.Series(n["value"].values, index=n["TID"].map(parse_period)).sort_index().dropna()
