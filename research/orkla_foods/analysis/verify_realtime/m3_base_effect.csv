@@ -1,0 +1,97 @@
+feature,k,spec,sample,b,t,p,n
+eu_ppi_dom_c105_idx__yoy,6,plain,full,0.06021,4.007,6.138e-05,96
+eu_ppi_dom_c105_idx__yoy,6,plain,ex_infl,0.05973,4.553,5.279e-06,86
+eu_ppi_dom_c105_idx__yoy,6,own d_margin_{t-k-1} (screen spec),full,0.06858,3.429,0.0006062,95
+eu_ppi_dom_c105_idx__yoy,6,own d_margin_{t-k-1} (screen spec),ex_infl,0.0723,3.622,0.0002918,85
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4},full,0.05664,3.497,0.0004701,96
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4},ex_infl,0.05996,4.249,2.15e-05,86
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4..t-6},full,0.05429,3.121,0.001804,96
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4..t-6},ex_infl,0.05718,3.692,0.0002221,86
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4} + x_{t-2},full,0.04752,2.96,0.003078,96
+eu_ppi_dom_c105_idx__yoy,6,base d_margin_{t-4} + x_{t-2},ex_infl,0.0557,3.388,0.0007046,86
+eu_ppi_dom_c105_idx__yoy,6,margin level_{t-4} dev from 8q mean,full,0.05921,3.839,0.0001235,94
+eu_ppi_dom_c105_idx__yoy,6,margin level_{t-4} dev from 8q mean,ex_infl,0.06009,4.663,3.118e-06,84
+eu_ppi_dom_c105_idx__yoy,6,events,full,0.03074,2.478,0.01319,96
+eu_ppi_dom_c105_idx__yoy,6,events,ex_infl,0.0306,2.526,0.01155,86
+eu_ppi_dom_c105_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,0.03909,1.405,0.1601,96
+eu_ppi_dom_c105_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.0603,2.842,0.004478,86
+se_ppi_food_hmpi_idx__yoy,6,plain,full,0.08025,3.924,8.71e-05,100
+se_ppi_food_hmpi_idx__yoy,6,plain,ex_infl,0.08987,4.478,7.519e-06,90
+se_ppi_food_hmpi_idx__yoy,6,own d_margin_{t-k-1} (screen spec),full,0.07873,3.047,0.002314,95
+se_ppi_food_hmpi_idx__yoy,6,own d_margin_{t-k-1} (screen spec),ex_infl,0.09199,3.49,0.0004834,85
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4},full,0.07723,3.444,0.0005722,98
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4},ex_infl,0.09406,4.045,5.241e-05,88
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4..t-6},full,0.07144,2.981,0.002871,96
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4..t-6},ex_infl,0.08892,3.566,0.000362,86
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4} + x_{t-2},full,0.08059,3.845,0.0001206,98
+se_ppi_food_hmpi_idx__yoy,6,base d_margin_{t-4} + x_{t-2},ex_infl,0.09413,3.999,6.362e-05,88
+se_ppi_food_hmpi_idx__yoy,6,margin level_{t-4} dev from 8q mean,full,0.08016,3.493,0.0004768,94
+se_ppi_food_hmpi_idx__yoy,6,margin level_{t-4} dev from 8q mean,ex_infl,0.0915,3.944,7.997e-05,84
+se_ppi_food_hmpi_idx__yoy,6,events,full,0.05162,3.246,0.001172,100
+se_ppi_food_hmpi_idx__yoy,6,events,ex_infl,0.05747,4.171,3.028e-05,90
+se_ppi_food_hmpi_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,0.05917,1.324,0.1853,98
+se_ppi_food_hmpi_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.1005,2.832,0.004624,88
+eu_ppi_dom_c107_idx__yoy,5,plain,full,0.07846,3.544,0.0003936,97
+eu_ppi_dom_c107_idx__yoy,5,plain,ex_infl,0.0803,5.64,1.698e-08,87
+eu_ppi_dom_c107_idx__yoy,5,own d_margin_{t-k-1} (screen spec),full,0.06704,2.634,0.008431,96
+eu_ppi_dom_c107_idx__yoy,5,own d_margin_{t-k-1} (screen spec),ex_infl,0.06635,3.988,6.659e-05,86
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4},full,0.07216,2.846,0.004422,97
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4},ex_infl,0.08252,4.807,1.533e-06,87
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4..t-6},full,0.06671,2.371,0.01776,96
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4..t-6},ex_infl,0.07754,3.952,7.753e-05,86
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4} + x_{t-2},full,0.1043,3.941,8.1e-05,97
+eu_ppi_dom_c107_idx__yoy,5,base d_margin_{t-4} + x_{t-2},ex_infl,0.09063,5.325,1.011e-07,87
+eu_ppi_dom_c107_idx__yoy,5,margin level_{t-4} dev from 8q mean,full,0.07674,3.149,0.001637,94
+eu_ppi_dom_c107_idx__yoy,5,margin level_{t-4} dev from 8q mean,ex_infl,0.08198,5.318,1.048e-07,84
+eu_ppi_dom_c107_idx__yoy,5,events,full,0.05448,2.896,0.003776,97
+eu_ppi_dom_c107_idx__yoy,5,events,ex_infl,0.05753,4.429,9.465e-06,87
+eu_ppi_dom_c107_idx__yoy,5,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,0.03722,0.8382,0.4019,97
+eu_ppi_dom_c107_idx__yoy,5,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.08621,2.977,0.002913,87
+se_cpi_idx__yoy,6,plain,full,0.1517,4.142,3.439e-05,100
+se_cpi_idx__yoy,6,plain,ex_infl,0.144,4.307,1.652e-05,90
+se_cpi_idx__yoy,6,own d_margin_{t-k-1} (screen spec),full,0.152,3.353,0.0007985,95
+se_cpi_idx__yoy,6,own d_margin_{t-k-1} (screen spec),ex_infl,0.1462,3.133,0.001729,85
+se_cpi_idx__yoy,6,base d_margin_{t-4},full,0.1518,3.784,0.0001542,98
+se_cpi_idx__yoy,6,base d_margin_{t-4},ex_infl,0.1641,4.134,3.568e-05,88
+se_cpi_idx__yoy,6,base d_margin_{t-4..t-6},full,0.1421,3.384,0.0007148,96
+se_cpi_idx__yoy,6,base d_margin_{t-4..t-6},ex_infl,0.154,3.564,0.0003649,86
+se_cpi_idx__yoy,6,base d_margin_{t-4} + x_{t-2},full,0.2476,4.653,3.278e-06,98
+se_cpi_idx__yoy,6,base d_margin_{t-4} + x_{t-2},ex_infl,0.2036,4.085,4.412e-05,88
+se_cpi_idx__yoy,6,margin level_{t-4} dev from 8q mean,full,0.1484,3.711,0.0002063,94
+se_cpi_idx__yoy,6,margin level_{t-4} dev from 8q mean,ex_infl,0.1421,3.838,0.000124,84
+se_cpi_idx__yoy,6,events,full,0.09684,3.238,0.001202,100
+se_cpi_idx__yoy,6,events,ex_infl,0.09296,3.475,0.0005116,90
+se_cpi_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,0.1483,2.231,0.02568,98
+se_cpi_idx__yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.1934,3.438,0.0005871,88
+packaging_eu_yoy,6,plain,full,0.06419,2.217,0.02665,96
+packaging_eu_yoy,6,plain,ex_infl,0.09741,3.461,0.0005373,86
+packaging_eu_yoy,6,own d_margin_{t-k-1} (screen spec),full,0.06378,1.856,0.0634,95
+packaging_eu_yoy,6,own d_margin_{t-k-1} (screen spec),ex_infl,0.1072,2.953,0.00315,85
+packaging_eu_yoy,6,base d_margin_{t-4},full,0.04943,1.553,0.1205,96
+packaging_eu_yoy,6,base d_margin_{t-4},ex_infl,0.08012,2.858,0.004267,86
+packaging_eu_yoy,6,base d_margin_{t-4..t-6},full,0.04027,1.163,0.245,96
+packaging_eu_yoy,6,base d_margin_{t-4..t-6},ex_infl,0.07154,2.441,0.01464,86
+packaging_eu_yoy,6,base d_margin_{t-4} + x_{t-2},full,0.04119,1.36,0.1739,96
+packaging_eu_yoy,6,base d_margin_{t-4} + x_{t-2},ex_infl,0.04394,0.9787,0.3277,86
+packaging_eu_yoy,6,margin level_{t-4} dev from 8q mean,full,0.05834,1.836,0.06629,94
+packaging_eu_yoy,6,margin level_{t-4} dev from 8q mean,ex_infl,0.09536,3.022,0.002511,84
+packaging_eu_yoy,6,events,full,0.03172,1.562,0.1183,96
+packaging_eu_yoy,6,events,ex_infl,0.06834,3.661,0.0002515,86
+packaging_eu_yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,-0.04249,-1.139,0.2545,96
+packaging_eu_yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.04926,1.498,0.1341,86
+eu_agri_basket_yoy,6,plain,full,0.01564,1.503,0.1327,96
+eu_agri_basket_yoy,6,plain,ex_infl,0.01797,1.663,0.09627,86
+eu_agri_basket_yoy,6,own d_margin_{t-k-1} (screen spec),full,0.01269,1.037,0.2997,95
+eu_agri_basket_yoy,6,own d_margin_{t-k-1} (screen spec),ex_infl,0.01705,1.348,0.1776,85
+eu_agri_basket_yoy,6,base d_margin_{t-4},full,0.01024,0.8855,0.3759,96
+eu_agri_basket_yoy,6,base d_margin_{t-4},ex_infl,0.01221,1.182,0.2371,86
+eu_agri_basket_yoy,6,base d_margin_{t-4..t-6},full,0.004277,0.3533,0.7239,96
+eu_agri_basket_yoy,6,base d_margin_{t-4..t-6},ex_infl,0.006368,0.6223,0.5337,86
+eu_agri_basket_yoy,6,base d_margin_{t-4} + x_{t-2},full,0.004069,0.3582,0.7202,96
+eu_agri_basket_yoy,6,base d_margin_{t-4} + x_{t-2},ex_infl,0.007797,0.6865,0.4924,86
+eu_agri_basket_yoy,6,margin level_{t-4} dev from 8q mean,full,0.01397,1.321,0.1866,94
+eu_agri_basket_yoy,6,margin level_{t-4} dev from 8q mean,ex_infl,0.01741,1.614,0.1064,84
+eu_agri_basket_yoy,6,events,full,0.004859,0.6111,0.5411,96
+eu_agri_basket_yoy,6,events,ex_infl,0.007671,0.8966,0.3699,86
+eu_agri_basket_yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",full,-0.01605,-1.202,0.2294,96
+eu_agri_basket_yoy,6,"target = 2-year margin change (d_m_t + d_m_{t-4}), HAC8",ex_infl,0.002747,0.2605,0.7945,86

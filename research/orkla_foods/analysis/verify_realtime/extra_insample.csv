@@ -1,0 +1,26 @@
+claim,test,var,b,t,p,n
+O1,og ~ w_food_cpi_xvat | ex_infl,x,0.5989,2.573,0.01008,92
+O1,og ~ w_food_cpi_xvat | ex_infl & ex 2007Q2-09Q2,x,0.6221,1.674,0.09407,83
+O1,og ~ w_food_cpi_xvat | ex_infl & ex 2008-10,x,0.213,0.8078,0.4192,80
+O1,"og ~ w_food_cpi_xvat | ex_infl & ex 2007Q2-09Q2, quality A/B",x,0.5814,1.437,0.1507,72
+O6,og ~ w_policy_rate_d4 k=3 | ex_infl,x,0.9579,3.717,0.0002017,92
+O6,og ~ w_policy_rate_d4 k=3 | ex_infl & ex 2007Q2-09Q2,x,1.028,3.867,0.0001102,83
+O6,og ~ w_policy_rate_d4 k=3 | ex_infl & ex 2008-10,x,0.4559,1.536,0.1246,80
+O6,og ~ w_policy_rate_d4 k=3 | 2011+ ex_infl,x,0.4614,1.272,0.2034,52
+O6,og ~ w_policy_rate_d4 k=4 | ex_infl,x,0.9323,3.63,0.000283,92
+O6,og ~ w_policy_rate_d4 k=4 | ex_infl & ex 2007Q2-09Q2,x,0.9481,3.355,0.0007928,83
+O6,og ~ w_policy_rate_d4 k=4 | ex_infl & ex 2008-10,x,0.4958,1.893,0.05838,80
+O6,og ~ w_policy_rate_d4 k=4 | 2011+ ex_infl,x,0.3308,0.9484,0.3429,52
+M1,d_margin ~ packaging coincident | ex_infl,x,-0.1772,-3.058,0.002232,92
+M1,d_margin ~ packaging + easter_shift + d_easter_window | ex_infl,x,-0.1788,-3.068,0.002155,92
+M1,d_margin ~ packaging coincident | ex_infl & ex 2007Q2-09Q2,x,-0.1502,-3.686,0.0002281,83
+M1,d_margin ~ packaging + easter_shift + d_easter_window | ex_infl & ex 2007Q2-09Q2,x,-0.1518,-3.991,6.582e-05,83
+M1,d_margin ~ raw_mat_wloc avg L0-3 | full,x,-0.05321,-2.751,0.005948,99
+M1,d_margin ~ raw_mat_wloc avg L0-3 | ex_infl,x,-0.02598,-1.214,0.2246,89
+M1,d_margin ~ raw_mat_wloc avg L0-3 | ex_infl & ex 2007Q2-09Q2,x,-0.02716,-1.561,0.1185,80
+M3,d_margin ~ eu_ppi_dom_c105_idx__yoy k=6 | ex_infl,x,0.05973,4.553,5.279e-06,86
+M3,d_margin ~ eu_ppi_dom_c105_idx__yoy k=6 | ex_infl & ex 2007Q2-09Q2,x,0.0553,4.846,1.257e-06,77
+M3,d_margin ~ eu_ppi_dom_c105_idx__yoy k=6 | 2010+ ex_infl,x,0.06159,4.931,8.182e-07,56
+M3,d_margin ~ se_ppi_food_hmpi_idx__yoy k=6 | ex_infl,x,0.08987,4.478,7.519e-06,90
+M3,d_margin ~ se_ppi_food_hmpi_idx__yoy k=6 | ex_infl & ex 2007Q2-09Q2,x,0.08095,5.333,9.635e-08,81
+M3,d_margin ~ se_ppi_food_hmpi_idx__yoy k=6 | 2010+ ex_infl,x,0.08681,4.23,2.332e-05,56

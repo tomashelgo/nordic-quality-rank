@@ -280,16 +280,21 @@ def alpha_grid(method, y, A, X, w, n_alpha=25):
 # Evaluation helpers
 # ----------------------------------------------------------------------------------------------
 def hac_mean_test(d, lags=4):
-    """t-stat of mean(d) with Newey-West SE; returns (t, one-sided p for mean>0)."""
-    import statsmodels.api as sm
+    """t-stat of mean(d) with Newey-West (Bartlett, `lags`) SE; returns (t, one-sided p for mean>0).
+    Numerically identical to statsmodels OLS(d, 1).fit(cov_type='HAC', maxlags=lags) (checked), but fast."""
     from scipy import stats
     d = np.asarray(d, float)
     d = d[np.isfinite(d)]
     n = len(d)
     if n < 8 or np.allclose(d, d[0]):
         return np.nan, np.nan
-    r = sm.OLS(d, np.ones(n)).fit(cov_type='HAC', cov_kwds={'maxlags': lags})
-    t = r.tvalues[0]
+    u = d - d.mean()
+    v = u @ u / n
+    for l in range(1, lags + 1):
+        v += 2 * (1 - l / (lags + 1)) * (u[l:] @ u[:-l]) / n
+    if v <= 0:
+        return np.nan, np.nan
+    t = d.mean() / np.sqrt(v / n)
     return t, 1 - stats.norm.cdf(t)
 
 

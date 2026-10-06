@@ -31,21 +31,26 @@ FC = FC[np.array([v == 'bench' or v == L.PRIMARY[t] for t, v in zip(FC.target, F
 
 
 def shade(ax, x_of):
-    for (a, b), lab in [(('2020Q1', '2021Q2'), 'COVID'), (('2021Q3', '2023Q4'), 'inflation\n2021Q3-23Q4')]:
+    for (a, b), lab, yy in [(('2020Q1', '2021Q2'), 'COVID', 1.0), (('2021Q3', '2023Q4'), 'inflation', 0.94)]:
         ax.axvspan(x_of(pd.Period(a, 'Q')) - 0.5, x_of(pd.Period(b, 'Q')) + 0.5, color=SHADE, zorder=0, lw=0)
-        ax.text((x_of(pd.Period(a, 'Q')) + x_of(pd.Period(b, 'Q'))) / 2, 1.0, lab, transform=ax.get_xaxis_transform(),
+        ax.text((x_of(pd.Period(a, 'Q')) + x_of(pd.Period(b, 'Q'))) / 2, yy, lab, transform=ax.get_xaxis_transform(),
                 ha='center', va='top', fontsize=7, color=MUTED)
 
 
+S5 = '#e87ba4'
+
+
 def pick_models(tgt, h):
-    """Models to display: real-time combination, LASSO, best theory (ex post), best univariate (ex post)."""
+    """Models to display: equal-weight combination, first PCA factor, LASSO, best theory and best single
+    feature (the last two picked ex post on the full 2010+ sample, so they are optimistic by construction)."""
     r = R[(R.target == tgt) & (R.h == h) & (R['sample'] == 'full2010')]
     th = r[r.family == 'theory'].sort_values('rmse').iloc[0]
     un = r[(r.family == 'univariate') & (~r.short_sample)].sort_values('rmse').iloc[0]
-    return [('comb_adaptive', 'Combination, top-k (k chosen in real time)', S1),
-            ('lasso', 'LASSO (all core features)', S2),
-            (th.model, f'Best theory model, ex post pick: {th.model}', S3),
-            (un.model, f'Best single feature, ex post pick: {un.feature} (p={un.lags})', S4)]
+    return [('comb_all_mean', 'Mean of all single-feature forecasts', S1),
+            ('pca_k1', 'First principal component of core features', S2),
+            (th.model, f'Best theory model (ex post): {th.model}', S3),
+            (un.model, f'Best single feature (ex post): {un.feature}', S4),
+            ('lasso', 'LASSO (all core features)', S5)]
 
 
 def wide(tgt, h):
@@ -57,7 +62,7 @@ def wide(tgt, h):
 
 def fig_cssed(tgt):
     base = L.BASE_NAME[tgt]
-    fig, axes = plt.subplots(1, 3, figsize=(13, 4.2), sharey=False)
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5.2), sharey=False)
     for ax, h in zip(axes, L.HS):
         W, y = wide(tgt, h)
         per = W.index
@@ -76,19 +81,18 @@ def fig_cssed(tgt):
         ax.set_title(HLAB[h], loc='left')
         if h == 0:
             ax.set_ylabel(f'Cumulative SSE({base}) - SSE(model)')
-    h_, l_ = axes[0].get_legend_handles_labels()
-    fig.legend(h_, ['Combination, top-k (k chosen in real time)', 'LASSO (all core features)',
-                    'Best theory model (ex post pick, differs by panel)',
-                    'Best single feature (ex post pick, differs by panel)'], loc='lower center', ncol=4, fontsize=8)
+        ax.legend(fontsize=6.5, loc='lower left')
+    fig.text(0.01, 0.01, 'Theory and single-feature picks are chosen ex post on 2010Q1-2026Q2 RMSE (optimistic); '
+             'combination, PCA and LASSO are fully real-time.', fontsize=7.5, color=INK2)
     fig.suptitle(f'{LABEL[tgt]}: cumulative squared-error gain vs the {base.upper()} benchmark '
                  f'(rising = model beats benchmark)', x=0.01, ha='left', color=INK, fontsize=11)
-    fig.tight_layout(rect=(0, 0.07, 1, 0.95))
+    fig.tight_layout(rect=(0, 0.03, 1, 0.95))
     fig.savefig(f'{OUT}/fig_cssed_{tgt}.png', dpi=150)
     plt.close(fig)
 
 
 def fig_fva():
-    fig, axes = plt.subplots(4, 2, figsize=(13, 13))
+    fig, axes = plt.subplots(4, 2, figsize=(14, 16))
     for r_, tgt in enumerate(L.TARGETS):
         base = L.BASE_NAME[tgt]
         for c_, h in enumerate([0, 1]):
@@ -110,7 +114,7 @@ def fig_fva():
             ax.set_xticks(ticks)
             ax.set_xticklabels([str(per[i].year) for i in ticks])
             ax.set_title(f'{LABEL[tgt]} - {HLAB[h]}', loc='left')
-            ax.legend(fontsize=7, loc='lower left', ncol=2)
+            ax.legend(fontsize=7, loc='upper center', bbox_to_anchor=(0.5, -0.09), ncol=4)
     fig.tight_layout()
     fig.savefig(f'{OUT}/fig_forecast_vs_actual.png', dpi=140)
     plt.close(fig)
@@ -118,11 +122,11 @@ def fig_fva():
 
 def fig_r2_heatmap():
     models = ['ar', 'ar_bic', 'naive', 'rw', 'theory_best_ex_post', 'uni_best_ex_post', 'comb_adaptive', 'comb_all_mean',
-              'comb_dmspe', 'comb_top5', 'lasso', 'enet', 'ridge', 'pca_bic', 'pca_k3', 'rf_resid', 'gbm_resid']
+              'comb_dmspe', 'comb_top5', 'lasso', 'enet', 'ridge', 'pca_k1', 'pca_bic', 'rf_resid', 'gbm_resid']
     cols = [(t, h) for t in L.TARGETS for h in L.HS]
     cmap = LinearSegmentedColormap.from_list('div', ['#c23a3a', '#e34948', '#f2a8a3', SHADE, '#9ec5f4', '#3987e5',
                                                      '#1c5cab'])
-    fig, axes = plt.subplots(1, 2, figsize=(15, 7.5))
+    fig, axes = plt.subplots(1, 2, figsize=(17, 7.5), gridspec_kw={'wspace': 0.05})
     for ax, s in zip(axes, ['full2010', 'exinfl2010']):
         M = np.full((len(models), len(cols)), np.nan)
         for j, (t, h) in enumerate(cols):
@@ -147,9 +151,10 @@ def fig_r2_heatmap():
                     ax.text(j, i, f'{M[i, j]:.2f}', ha='center', va='center', fontsize=6.5,
                             color=INK if abs(M[i, j]) < 0.35 else 'white')
         ax.set_xticks(range(len(cols)))
-        ax.set_xticklabels([f'{t}\nh={h}' for t, h in cols], fontsize=7)
+        short = {'d_margin': 'd_margin', 'd_og': 'd_og', 'og': 'og', 'd_margin_r4': 'dm_r4'}
+        ax.set_xticklabels([f'{short[t]}\nh={h}' for t, h in cols], fontsize=7)
         ax.set_yticks(range(len(models)))
-        ax.set_yticklabels(models, fontsize=8)
+        ax.set_yticklabels(models if s == 'full2010' else [], fontsize=8)
         ax.grid(False)
         ax.set_title({'full2010': 'OOS R2 vs nested base (AR; og-level AR for d_og), 2010Q1-2026Q2',
                       'exinfl2010': 'Same, excluding 2021Q3-2023Q4'}[s], loc='left')
@@ -186,7 +191,7 @@ def fig_lasso_heat():
         ax.set_xticks(tk)
         ax.set_xticklabels([origins[i][:4] for i in tk], fontsize=7)
         ax.grid(False)
-        ax.set_title(f'{tgt}, h=0: LASSO selection by forecast quarter (white dash = negative coef)', loc='left',
+        ax.set_title(f'{tgt}, h=0: LASSO selection per forecast quarter (white dash = negative)', loc='left',
                      fontsize=9)
     fig.tight_layout()
     fig.savefig(f'{OUT}/fig_lasso_selection_heatmap.png', dpi=140)

@@ -39,7 +39,7 @@ def simulate_target(T, tgt, rng):
     src = 'og' if tgt == 'd_og' else tgt
     s = T[src].astype(float)
     Z = pd.concat([s.shift(k) for k in range(1, 5)], axis=1)
-    ok = s.notna() & Z.notna().all(1) & ~T.index.isin(L.TRAIN_EXCL)
+    ok = s.notna() & Z.notna().all(axis=1) & ~T.index.isin(L.TRAIN_EXCL)
     A = np.column_stack([np.ones(ok.sum()), Z[ok].values])
     beta = np.linalg.lstsq(A, s[ok].values, rcond=None)[0]
     e = s[ok].values - A @ beta
