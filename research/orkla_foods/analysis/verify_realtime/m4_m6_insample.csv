@@ -1,0 +1,19 @@
+test,b,t,p,n
+d_margin ~ NO 10y d4 | ex_infl,-0.8393,-3.64,0.0002731,92
+d_margin ~ NO 10y d4 + packaging + raw_mat avg | ex_infl,-0.7854,-3.749,0.0001773,89
+d_margin ~ NO 10y d4 | ex_infl & ex 2007Q2-09Q2,-0.6418,-3.436,0.0005899,83
+d_margin ~ NO 10y d4 + packaging + raw_mat avg | ex_infl & ex 2007Q2-09Q2,-0.6194,-3.212,0.001318,80
+d_margin ~ NO 10y d4 | 2010+ ex_infl,-0.7752,-2.792,0.005235,56
+d_margin ~ NO 10y d4 + packaging + raw_mat avg | 2010+ ex_infl,-0.8218,-3.048,0.002307,56
+d_margin ~ w_cons_conf_z rt h0 | ex_infl,-0.6482,-2.818,0.004837,92
+d_margin ~ w_cons_conf_z rt h0 + packaging(rt) | ex_infl,-0.5299,-2.396,0.01658,91
+d_margin ~ w_cons_conf_z rt h0 + NO 10y d4 (rt) | ex_infl,-0.5535,-3.188,0.001434,92
+d_margin ~ w_cons_conf_z rt h1 | ex_infl,-0.5729,-2.845,0.004439,92
+d_margin ~ w_cons_conf_z rt h1 + packaging(rt) | ex_infl,-0.5265,-2.615,0.008927,90
+d_margin ~ w_cons_conf_z rt h1 + NO 10y d4 (rt) | ex_infl,-0.5136,-3.137,0.001708,92
+d_margin ~ w_real_wage_yoy rt h0 | ex_infl,-0.2231,-1.905,0.05673,92
+d_margin ~ w_real_wage_yoy rt h0 + packaging(rt) | ex_infl,-0.2369,-1.9,0.05745,91
+d_margin ~ w_real_wage_yoy rt h0 + NO 10y d4 (rt) | ex_infl,-0.1861,-2.006,0.04483,92
+d_margin ~ w_real_wage_yoy rt h1 | ex_infl,-0.2207,-2.579,0.009899,92
+d_margin ~ w_real_wage_yoy rt h1 + packaging(rt) | ex_infl,-0.21,-1.989,0.04676,90
+d_margin ~ w_real_wage_yoy rt h1 + NO 10y d4 (rt) | ex_infl,-0.2016,-3.104,0.001907,92

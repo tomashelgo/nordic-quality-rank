@@ -1,0 +1,274 @@
+{
+ "findings_path": "/home/user/nordic-quality-rank/research/orkla_foods/analysis/oos/ (findings.md was NOT written: the harness blocks subagents from writing report .md files, so the findings are in this output. Main tables: oos_results.csv, oos_summary.csv, oos_top_univariate.csv, lasso_selection_freq.csv, null_check.csv, coef_signs.csv, live_forecasts.csv. Figures: fig_cssed_{d_margin,d_og,og,d_margin_r4}.png, fig_forecast_vs_actual.png, fig_oos_r2_heatmap.png, fig_lasso_selection_heatmap.png. Scripts: oos_lib.py, run_forecasts.py, evaluate.py, null_check.py, coef_signs.py, figures.py, live_forecasts.py)",
+ "top_predictors": [
+  {
+   "target": "d_og (equivalently og)",
+   "feature": "Organic growth's own level lags og(t-h-1) and og(t-4): the og-level AR benchmark, not a macro variable",
+   "alignment": "realtime h=0,1,2 (own lags known at the forecast date)",
+   "sign": "+ on og(t-1), about -1 on og(t-4); full-sample fit d_og = 0.54 + 0.68*og(t-1) - 1.05*og(t-4)",
+   "effect_size": "d_og RMSE 3.31/3.35/3.56 vs 4.34/4.45/4.53 for an AR in d_og's own lags; OOS R2 vs zero 0.49/0.47/0.40",
+   "evidence": "Expanding-window OOS 2010Q1-2026Q2 (66 quarters); direction hit rate 65-77% (Pesaran-Timmermann p<=0.007). This is the benchmark any macro model must beat.",
+   "confidence": "high"
+  },
+  {
+   "target": "og (h=0 nowcast)",
+   "feature": "Pre-specified Nordic theory model: nw_food_cpi_xvat_yoy + nw_real_wage_yoy + nw_cons_conf_z, on the og AR base",
+   "alignment": "realtime h=0",
+   "sign": "real wage -, confidence -, food CPI +",
+   "effect_size": "RMSE -5.7% vs og AR (OOS R2 +0.11 vs AR); excluding 2021Q3-23Q4 -7.8%; 2015+ -7.2%",
+   "evidence": "Clark-West p=0.004 full; 0.010 excluding inflation; 0.003 from 2015; hit rate 68% vs 56%. BY q within 30 multivariate models = 0.32, so it does not survive FDR control. Not usable live as of 2026-10-06 because September CPI is not yet published.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "nw_real_wage_yoy (Nordic real wage growth y/y)",
+   "alignment": "realtime h=0 (feature lag 1, so the previous quarter's value)",
+   "sign": "- (all 66 origins). Acts as an inflation proxy: real wages fall when Orkla is pricing up.",
+   "effect_size": "RMSE ratio og 0.945, d_og 0.937 (p=2: 0.932)",
+   "evidence": "CW p=0.001 full; excluding inflation 0.965 / 0.959 (p=0.001); 2015+ 0.91. Best family BY q=0.15 (d_og p=2), so it does not survive. Top LASSO pick for d_og h=0 (selected 68%).",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "nw_cons_conf_z (Nordic consumer confidence z-score)",
+   "alignment": "realtime h=0-1",
+   "sign": "- (all origins); also an inflation proxy",
+   "effect_size": "RMSE ratio 0.953-0.954 at h=0, 0.960-0.964 at h=1",
+   "evidence": "CW p=0.009 (h=0); excluding inflation 0.953 (p=0.011); 2015+ 0.929 (p=0.005). Does not survive BY.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "fao_ffpi_sek_yoy (FAO food price index in SEK, y/y)",
+   "alignment": "realtime h=2 (also h=1)",
+   "sign": "+ (all origins): commodity-price pass-through about two quarters later",
+   "effect_size": "h=2 RMSE ratio og 0.878, d_og 0.891; h=1 about 0.94-0.95",
+   "evidence": "CW p=0.020 / 0.019 full; excluding inflation 0.957 (p=0.012) / 0.962 (p=0.007); 2015+ 0.866 / 0.870. Does not survive BY.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "no_ssb_bts_consgoods_home_price_exp__d4 (Norwegian consumer-goods producers' home-market price expectations, 4-quarter change)",
+   "alignment": "realtime h=2",
+   "sign": "+ (all origins)",
+   "effect_size": "RMSE ratio og 0.897, d_og 0.919",
+   "evidence": "CW p=0.010 / 0.012 full; excluding inflation 0.943 (p=0.005) / 0.959 (p=0.008); 2015+ 0.877 / 0.895. Does not survive BY.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "og (h=2)",
+   "feature": "w_unemp_d4 (Orkla-weighted unemployment rate, 4-quarter change)",
+   "alignment": "realtime h=2",
+   "sign": "- (all origins): demand channel",
+   "effect_size": "RMSE ratio full 0.968; excluding inflation 0.949; excluding COVID and inflation 0.931",
+   "evidence": "CW p=0.026 full (does not survive). Excluding 2021Q3-23Q4: p=2e-8, survives BY and Holm within family and globally. The only clean normal-times predictor. d_og h=2 excluding inflation 0.975 (p=0.015).",
+   "confidence": "moderate"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "no_earn_idx_food_manuf_q__yoy (Norwegian food-manufacturing earnings growth)",
+   "alignment": "realtime h=2",
+   "sign": "- (all origins); mechanism unclear, possibly a late-cycle wage catch-up proxy",
+   "effect_size": "RMSE ratio og 0.945, d_og 0.933; 2015+ 0.907 / 0.887",
+   "evidence": "CW p=0.003 / 0.002 full; excluding inflation p=0.023; 2015+ p<0.001, survives Holm for d_og in the 2015+ sample only.",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "wb_food_sek_yoy (World Bank food commodity index in SEK)",
+   "alignment": "realtime h=1",
+   "sign": "+",
+   "effect_size": "og RMSE ratio 0.934",
+   "evidence": "CW p=0.018 full, but about 1.00 excluding inflation: driven by 2021-23.",
+   "confidence": "low"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "se_nier_food_mfg_sell_price_exp__lvl (Swedish food manufacturers' selling-price expectations); also EC food-industry selling-price expectations",
+   "alignment": "realtime h=1-2",
+   "sign": "+",
+   "effect_size": "RMSE ratio 0.93-0.94",
+   "evidence": "CW p about 0.045-0.06 full; about 1.00 excluding inflation, so inflation-episode only.",
+   "confidence": "low"
+  },
+  {
+   "target": "d_og (h=2)",
+   "feature": "Random forest on the og-level AR residuals (all core features)",
+   "alignment": "realtime h=2",
+   "sign": "nonlinear",
+   "effect_size": "RMSE ratio 0.955; og 0.974",
+   "evidence": "CW p=0.006 full; excluding inflation 0.966 (p=0.024); 2015+ 0.936 (p=0.005). Does not survive BY within the 30-model family.",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "us_ppi_corrugated_boxes_idx__yoy (US corrugated-box PPI, packaging cost)",
+   "alignment": "realtime h=0,1,2",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio 0.946 / 0.902 / 0.920 vs the d_margin AR",
+   "evidence": "CW p=0.035 / 0.029 / 0.037; excluding inflation 0.960 (p=0.013) / 0.956 (p=0.023) / 0.979; 2015+ 0.935 / 0.861 / 0.869. Does not survive BY (q=1.0).",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "eu_ppi_plastic_products_idx__yoy (EU plastic-products PPI)",
+   "alignment": "realtime h=0-1",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio 0.947 / 0.913",
+   "evidence": "CW p about 0.067 full; excluding inflation 0.961 (p=0.012) at h=0; 2015+ 0.914 / 0.842.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "packaging_eu_yoy (EU packaging PPI composite)",
+   "alignment": "realtime h=0",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio 0.965; 2015+ 0.927",
+   "evidence": "CW p=0.073 full; excluding inflation 0.982 (p=0.018).",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "Pre-specified input-cost theory model: fao_ffpi_wloc_yoy + w_wage_yoy + packaging_eu_yoy, on the AR base",
+   "alignment": "realtime h=0",
+   "sign": "all three negative",
+   "effect_size": "RMSE -4.7% vs AR; excluding inflation -3.8%",
+   "evidence": "CW p=0.031 full; 0.006 excluding inflation and excluding COVID+inflation. Fails at h=1 (1.002) and h=2 (1.102). BY q about 0.15-0.18 in the ex-inflation samples.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "pca_k1: first principal component of the about 190 core features (a food-chain inflation factor: high food and packaging PPI, low real wages, confidence and price-cost gap)",
+   "alignment": "realtime h=0,1,2",
+   "sign": "- (higher food-chain inflation lowers the margin change)",
+   "effect_size": "RMSE ratio 0.963 / 0.958 / 0.939; the only model beating the zero-change benchmark at h=2 (-2.2%)",
+   "evidence": "CW p=0.036 / 0.014 / 0.039; excluding inflation 0.970 (p=0.008) / 0.973 (p=0.019) / 1.000. It is 1 of 6 PCA variants tried (PCA with BIC-chosen k is 0.997 / 0.975 / 0.946), so there is mild selection.",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "comb_all_mean: equal-weight mean of about 196 single-feature ARDL forecasts",
+   "alignment": "realtime h=0,1,2",
+   "sign": "n/a",
+   "effect_size": "RMSE ratio 0.985 / 0.984 / 0.984 vs AR; but 2.5% worse than zero change at h=2",
+   "evidence": "CW p=0.079 / 0.034 / 0.018 full; excluding inflation 0.988 (p=0.013) / 0.976 (p=0.018) / 0.974 (p=0.032). DM vs best benchmark not significant.",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "no_ssb_bts_consgoods_home_price_exp__d4 (Norwegian producers' price expectations, 4-quarter change)",
+   "alignment": "realtime h=1-2",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio 0.959 / 0.938",
+   "evidence": "CW p=0.024 / 0.035; excluding inflation 0.974 (p=0.022) / 0.946 (p=0.041). Top LASSO pick at h=1 (70% of origins).",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "no_govbond_10y__d4 / w_gov10y_d4 / se_gov_bond_10y__d4 (change in 10-year government yields)",
+   "alignment": "realtime h=0,1,2",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio 0.931 / 0.901 / 0.920 full sample (the best single features ex post)",
+   "evidence": "CW p about 0.02-0.05 full, but about 1.00 excluding 2021Q3-23Q4. The gain is entirely the 2022 rate shock coinciding with the margin squeeze.",
+   "confidence": "low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "price_cost_gap_ppi / nw_price_cost_gap_ppi (food CPI minus food PPI inflation)",
+   "alignment": "realtime h=1-2",
+   "sign": "+ (92-100% of origins)",
+   "effect_size": "full 0.96-1.02; 2015+ 0.916-0.947",
+   "evidence": "Full sample not significant (p 0.07-0.4); 2015+ p=0.018-0.04; excluding inflation about 1.0.",
+   "confidence": "low"
+  },
+  {
+   "target": "d_margin",
+   "feature": "Own AR lags d_margin(t-1), d_margin(t-4): the benchmark",
+   "alignment": "realtime h=0",
+   "sign": "+0.57 on lag 1, -0.17 on lag 4",
+   "effect_size": "OOS R2 vs zero 0.28 at h=0, 0.02 at h=1, -0.09 at h=2",
+   "evidence": "Hit rate 74% at h=0 (PT p<0.001). Calendar (Easter) terms make it worse (RMSE +12%).",
+   "confidence": "high"
+  },
+  {
+   "target": "d_margin_r4",
+   "feature": "ridge / LASSO on all core features (unpenalised AR base)",
+   "alignment": "realtime h=0",
+   "sign": "mixed",
+   "effect_size": "RMSE ratio 0.915 / 0.946 vs AR; excluding inflation 0.949 / 0.954",
+   "evidence": "CW p=0.008 / 0.014 full; 0.027 / 0.026 excluding inflation. Neither beats the BIC-selected AR (OOS R2 vs it -0.01 / -0.08). Fails at h=1-2.",
+   "confidence": "low"
+  },
+  {
+   "target": "d_margin_r4",
+   "feature": "comb_all_mean (equal-weight single-feature combination)",
+   "alignment": "realtime h=2",
+   "sign": "n/a",
+   "effect_size": "RMSE ratio 0.967; excluding inflation 0.973",
+   "evidence": "CW p=0.006 full, 0.031 excluding inflation; Diebold-Mariano vs best benchmark p=0.018, the only DM-significant result.",
+   "confidence": "low-moderate"
+  },
+  {
+   "target": "d_margin_r4",
+   "feature": "eu_ppi_plastic_products_idx__yoy, us_ppi_corrugated_boxes_idx__yoy, w_gov10y_d4 (packaging cost and yields)",
+   "alignment": "realtime h=1-2",
+   "sign": "- (all origins)",
+   "effect_size": "RMSE ratio as low as 0.794 (plastics, h=2) full sample",
+   "evidence": "CW p about 0.04-0.06 full; about 1.00 excluding inflation: driven by 2021-23.",
+   "confidence": "low"
+  },
+  {
+   "target": "og / d_og",
+   "feature": "Collective macro information (reality check)",
+   "alignment": "realtime h=0,1,2",
+   "sign": "n/a",
+   "effect_size": "34-42% of univariate models beat the base vs 13-20% under a bootstrap null",
+   "evidence": "null_check.csv (40 draws, null target, real features): bootstrap p<=0.025 at every og/d_og horizon. For d_margin 28-35% vs about 15% (p 0.05-0.125). But the best single model is no better than the best noise draw (e.g. d_margin h=0: 0.931 vs null mean 0.966), so picking the winner ex post is data mining.",
+   "confidence": "moderate"
+  }
+ ],
+ "negative_findings": [
+  "No univariate model survives Benjamini-Yekutieli or Holm over the full 2010Q1-2026Q2 sample: 0 of about 396 tests in each target x h family and 0 of 4,752 globally. Best family BY q = 0.15.",
+  "No multivariate model (theory, penalised, PCA, combination, trees) survives BY within its 30-model family in any sample. Best q about 0.15.",
+  "Penalised regressions on all core features (LASSO, elastic net, ridge) mostly lose to the AR for d_margin, og and d_og. OOS R2 vs base -0.03 to -1.0; e.g. elastic net d_margin h=2 RMSE ratio 1.41, LASSO 1.21.",
+  "LASSO selection is unstable. LASSO keeps 5-18 of about 188 candidates per origin. The top full-period selection frequency is only 0.5-0.7, and sub-period frequencies swing from 0% to 100%: e.g. Norwegian food import prices are selected at 100% of d_margin_r4 origins in 2010-14 and 10% in 2015-19.",
+  "Theory-guided margin models built on price-cost gap + FX + electricity, FAO + USD + oil, pass-through (food CPI/PPI changes) or the Nordic price-cost gap do not beat the AR: RMSE ratio 1.00-1.18 at all horizons.",
+  "The d_og theory models specified ex ante in change form (food CPI dyoy, real wage dyoy, confidence d4) add nothing on the og-level base: ratios 1.01-1.08. Only the level versions on og work, and only at h=0.",
+  "Current-quarter food CPI (nw_food_cpi_xvat_yoy, w_food_cpi_xvat_yoy) does not improve organic-growth forecasts beyond og's own persistence: RMSE ratio 1.00-1.13.",
+  "Organic-growth gains from combinations and PCA are concentrated in 2021Q3-2023Q4. Excluding it, combination ratios are 0.99-1.00 (not significant).",
+  "Most rolling-4Q margin (d_margin_r4) gains vanish outside the inflation episode. Nothing beats the BIC-selected AR at h=0-1.",
+  "Changes in 10-year yields look like the best margin predictors over the full sample (-7 to -10% RMSE), but the RMSE ratio is about 1.00 excluding 2021Q3-23Q4.",
+  "PCA with 3 or more factors and PCA with BIC-chosen k are worse than PCA with 1 factor and often worse than the AR. Gradient boosting on residuals is worse than the base almost everywhere.",
+  "Real-time top-k selection with adaptive k is not better than plain equal weights. comb_top1 (follow the past winner) is 1-26% worse than the base.",
+  "Easter calendar terms hurt out of sample: AR+cal RMSE is 6-12% above pure AR for d_margin, og and d_og. The pre-committed AR+cal base was therefore replaced; against it, macro models looked spuriously good.",
+  "For d_margin at h=2 the zero-change forecast beats every AR. Macro models built on the AR barely recover to the zero benchmark; only PCA with 1 factor beats it, by 2.2%.",
+  "Directional accuracy is rarely improved: d_margin h=0 base 74% vs combinations 68-70%. The exception is the Nordic og nowcast (68% vs 56%).",
+  "Diebold-Mariano tests against the best benchmark are insignificant for every multivariate model except comb_all_mean for d_margin_r4 at h=2 (p=0.018)."
+ ],
+ "key_numbers": [
+  "Out-of-sample quarters: 66 (2010Q1-2026Q2), 56 excluding 2021Q3-23Q4, 50 excluding COVID and inflation, 46 from 2015, 36 from 2015 excluding inflation. Expanding window re-estimated every quarter; univariate burn-in from 2006Q1.",
+  "Tests per sample: 4,752 univariate (12 target x h cells x about 396) and 360 multivariate. oos_results.csv has 52,035 rows: target x h x base variant x model x sample.",
+  "Benchmark RMSE at h=0/1/2. d_margin: AR 1.059 / 1.236 / 1.303 vs zero 1.251. d_og: og-level AR 3.305 / 3.353 / 3.558 vs d_og AR 4.336 / 4.449 / 4.525 vs zero 4.607. og: AR 3.298 / 3.352 / 3.610. d_margin_r4: BIC-AR 0.380 / 0.650 / 0.862.",
+  "d_margin AR OOS R2 vs zero: 0.28 / 0.02 / -0.09; hit rate 74% at h=0. og-level AR for d_og: OOS R2 vs zero 0.49 / 0.47 / 0.40.",
+  "Nordic og nowcast (food CPI ex VAT + real wage + confidence): RMSE -5.7% (CW p=0.004); excluding inflation -7.8% (p=0.010); 2015+ -7.2% (p=0.003).",
+  "d_margin input-cost theory model at h=0: RMSE -4.7% (CW p=0.031); excluding inflation -3.8% (p=0.006).",
+  "d_margin PCA with 1 factor: RMSE ratio 0.963 / 0.958 / 0.939 (CW p 0.036 / 0.014 / 0.039). Equal-weight combination: 0.985 / 0.984 / 0.984 (CW p 0.08 / 0.03 / 0.02).",
+  "Best single features ex post (full sample): d_margin 0.931 / 0.901 / 0.905; og 0.945 / 0.934 / 0.878; d_og 0.932 / 0.932 / 0.891; d_margin_r4 0.894 / 0.844 / 0.794. Bootstrap null mean of the best ratio is about 0.93-0.97, so these are only modestly better than chance.",
+  "Share of univariate models beating the base: og/d_og 34-42% vs 13-20% under the null (bootstrap p<=0.025); d_margin 28-35% vs about 15% (p 0.05-0.125).",
+  "Only multiple-testing survivors: w_unemp_d4 for og at h=2 excluding inflation (BY q<0.001 globally); in the 2015+ sample, no_earn_idx_food_manuf_q__yoy for d_og at h=2 (Holm) and se_eursek__yoy for d_og at h=0 (2015+ excluding inflation, Holm).",
+  "Live forecasts (as of 2026-10-06), 2026Q3 / 2026Q4 / 2027Q1. d_margin AR +0.37 / +0.17 / +0.12 pp; combination +0.36 / +0.14 / +0.07. d_og og-level AR -1.18 / -0.57 / -3.50 pp. og AR -0.40 / -0.11 / +0.03 %. d_margin_r4 AR +0.23 / +0.18 / +0.29 pp. Expected errors: about 1.0-1.3 pp for d_margin, 3.3-3.6 pp for organic growth."
+ ],
+ "caveats": [
+  "findings.md was not written: the harness blocks subagents from writing report .md files. All findings are in this output; tables and figures are in the oos directory.",
+  "The base was changed after the benchmark race (disclosed). The pre-committed AR+Easter base was replaced by pure AR (d_margin, og, d_margin_r4) and by the og-level AR (d_og), because the calendar terms hurt OOS and the d_og-own-lag AR is far worse. The decision used benchmark performance only and makes the test harder. All models were also run on the pre-committed base; see the 'variant' column in oos_results.csv.",
+  "d_og and og forecasting are essentially the same problem, because og_py ~ og(t-4) is known in advance. Organic-growth conclusions should be read from the og results, or from d_og on the og-level base with level-form features.",
+  "Ex-post picks are optimistic by construction: the 'best single feature', the 'best theory model' and PCA with 1 factor (1 of 6 PCA variants) were chosen on full-sample RMSE. Only the combinations, LASSO/ridge/EN, PCA-BIC and the trees are fully real-time.",
+  "The 2021Q3-2023Q4 episode (10 quarters) dominates many full-sample gains; always read the ex-inflation columns. Gains of 2-5% RMSE over 56-66 quarters are within one or two large errors.",
+  "Macro data are latest vintage (revisions not handled), so national-accounts and real-wage results are mildly optimistic. Publication lags are respected via C.align realtime. Composite geographic weights use annual-report shares published after year end.",
+  "Pandemic quarters 2020Q1-2021Q2 are excluded from estimation but included in evaluation; the excovinfl2010 sample drops them too. d_og definition-break quarters are down-weighted in estimation (w_d_og) but evaluated unweighted.",
+  "The bootstrap null (AR(4) target with block-bootstrapped residuals, real features) has no 2022-23-type episode, so the 'more models beat the base than chance' result partly reflects that single episode.",
+  "Live forecasts skip models whose features are not yet published as of 2026-10-06 (e.g. September CPI): 174 of 196 univariate models are available, and the Nordic og nowcast model is unavailable.",
+  "No bug found in common.py. Usage note: C.align shifts within the panel's own index, which ends at 2026Q3, so F must be reindexed before aligning to forecast beyond the panel (live_forecasts.py does this).",
+  "Implementation notes. The arcal multivariate file (forecasts_multi_arcal.pkl) came from the first run. That run's linear stage had an exploding-coefficient bug from exact collinearity of the two Easter measures in short windows. It was fixed with a pseudo-inverse and all linear forecasts were regenerated; the multi stage uses its own least-squares solver and was unaffected. Penalised paths use coordinate-descent tolerance 1e-4 (minor convergence warnings at the smallest penalties). Clark-West and Diebold-Mariano use Newey-West with 4 lags, implemented in numpy and checked to match statsmodels exactly."
+ ]
+}

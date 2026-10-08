@@ -1,0 +1,481 @@
+target,driver,label,mode,h,sample,n,coef,se,t,p,effect_1sd,r2,p_BY_within_target_alignment,p_BY_family,n_tests_family
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,full,102,0.1462,0.2572,0.5684,0.5698,0.3074,0.353,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,ex_infl,92,-0.4293,0.2823,-1.521,0.1283,-0.5556,0.3855,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,post2008,74,0.1321,0.2584,0.5112,0.6092,0.2973,0.4473,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,full,102,-0.459,0.2058,-2.231,0.0257,-0.965,0.5811,0.3608,0.6079,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,ex_infl,92,-0.4044,0.2695,-1.5,0.1335,-0.5234,0.4646,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),coincident,0,post2008,74,-0.5335,0.2023,-2.638,0.00835,-1.201,0.6595,0.1546,0.2602,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,full,102,0.06461,0.2427,0.2662,0.7901,0.1441,0.3463,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,ex_infl,92,-0.3441,0.2079,-1.655,0.09788,-0.5934,0.3904,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,post2008,74,0.0582,0.251,0.2319,0.8166,0.1366,0.4413,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,full,102,-0.4446,0.191,-2.328,0.01992,-0.9917,0.5879,0.2945,0.4865,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,ex_infl,92,-0.3493,0.2014,-1.734,0.08289,-0.6023,0.4735,0.7053,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),coincident,0,post2008,74,-0.5453,0.1965,-2.775,0.005515,-1.28,0.671,0.129,0.1964,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,full,73,0.9103,0.2603,3.498,0.000469,1.236,0.5649,0.01463,0.03102,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,ex_infl,63,0.4502,0.3043,1.48,0.139,0.4792,0.4777,1,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,post2008,73,0.9103,0.2603,3.498,0.000469,1.236,0.5649,0.01463,0.03102,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,full,73,0.5436,0.3971,1.369,0.171,0.7379,0.6209,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,ex_infl,63,0.2894,0.3557,0.8134,0.416,0.308,0.5241,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),coincident,0,post2008,73,0.5436,0.3971,1.369,0.171,0.7379,0.6209,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),coincident,0,full,102,0.6696,0.5551,1.206,0.2277,0.5536,0.3698,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),coincident,0,ex_infl,92,-0.4229,0.5461,-0.7743,0.4387,-0.2424,0.3602,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),coincident,0,post2008,74,0.663,0.5488,1.208,0.227,0.5831,0.466,1,1,480
+og,w_cons_conf_z,consumer confidence (z),coincident,0,full,102,-1.637,0.5412,-3.025,0.002482,-1.354,0.5873,0.09958,0.1117,480
+og,w_cons_conf_z,consumer confidence (z),coincident,0,ex_infl,92,-1.404,0.5761,-2.438,0.01478,-0.805,0.4803,0.2306,0.3963,480
+og,w_cons_conf_z,consumer confidence (z),coincident,0,post2008,74,-1.718,0.593,-2.897,0.003768,-1.511,0.6559,0.1073,0.1508,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,full,102,0.6006,0.507,1.185,0.2362,0.5638,0.371,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,ex_infl,92,-0.5859,0.4663,-1.256,0.209,-0.3731,0.3679,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,post2008,74,0.6445,0.492,1.31,0.1902,0.6338,0.4722,1,1,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,full,102,-1.408,0.4391,-3.208,0.001338,-1.322,0.5854,0.07514,0.06883,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,ex_infl,92,-1.365,0.4688,-2.912,0.003593,-0.8692,0.491,0.1073,0.1474,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),coincident,0,post2008,74,-1.37,0.5231,-2.619,0.008811,-1.347,0.6464,0.1546,0.272,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,full,102,0.8613,0.369,2.334,0.0196,0.7607,0.403,0.4005,0.4849,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,ex_infl,92,0.2784,0.4541,0.6131,0.5398,0.1923,0.3589,1,1,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,post2008,74,0.905,0.3815,2.373,0.01767,0.9037,0.5081,0.4005,0.4533,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,full,102,0.06964,0.3728,0.1868,0.8518,0.06151,0.542,1,1,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,ex_infl,92,-0.1519,0.4742,-0.3202,0.7488,-0.1049,0.4403,1,1,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",coincident,0,post2008,74,0.1746,0.4383,0.3983,0.6904,0.1744,0.6092,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",coincident,0,full,102,-0.3261,0.5518,-0.5909,0.5546,-0.2205,0.348,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",coincident,0,ex_infl,92,-0.2803,0.4674,-0.5997,0.5487,-0.1811,0.3571,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",coincident,0,post2008,74,-0.554,0.6344,-0.8733,0.3825,-0.3932,0.449,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",coincident,0,full,102,-0.5338,0.4527,-1.179,0.2384,-0.361,0.55,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",coincident,0,ex_infl,92,-0.07227,0.5071,-0.1425,0.8867,-0.04671,0.4396,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",coincident,0,post2008,74,-0.8579,0.4289,-2,0.04545,-0.6088,0.6272,0.6078,0.9383,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",coincident,0,full,102,0.7877,0.8132,0.9686,0.3327,0.5016,0.3595,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",coincident,0,ex_infl,92,-0.1367,0.4536,-0.3013,0.7632,-0.08612,0.355,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",coincident,0,post2008,74,0.6183,0.942,0.6564,0.5116,0.4053,0.4483,1,1,480
+og,w_unemp_lvl,"unemployment rate, level",coincident,0,full,102,-1.154,0.6079,-1.898,0.05771,-0.7346,0.5586,0.6233,1,480
+og,w_unemp_lvl,"unemployment rate, level",coincident,0,ex_infl,92,-1.382,0.7958,-1.736,0.08254,-0.8704,0.468,0.7053,1,480
+og,w_unemp_lvl,"unemployment rate, level",coincident,0,post2008,74,-1.68,0.5554,-3.026,0.002482,-1.101,0.6391,0.09958,0.1117,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,full,102,0.2361,0.2757,0.8564,0.3918,0.5081,0.3639,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,ex_infl,92,0.1336,0.335,0.3987,0.6901,0.1784,0.356,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,post2008,74,0.2386,0.2791,0.8547,0.3927,0.5125,0.4604,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,full,102,-0.3123,0.1976,-1.581,0.114,-0.6721,0.5583,0.9145,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,ex_infl,92,0.1177,0.284,0.4143,0.6787,0.1571,0.4405,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),coincident,0,post2008,74,-0.3449,0.1974,-1.747,0.08059,-0.741,0.6271,0.7053,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,full,102,0.1413,0.2445,0.5779,0.5633,0.327,0.3537,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,ex_infl,92,-0.08065,0.2525,-0.3194,0.7494,-0.1173,0.3553,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,post2008,74,0.1723,0.2503,0.6883,0.4912,0.4211,0.4538,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,full,102,-0.2661,0.1444,-1.843,0.06532,-0.6157,0.5604,0.6613,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,ex_infl,92,-0.02429,0.2144,-0.1133,0.9098,-0.03532,0.4395,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),coincident,0,post2008,74,-0.265,0.1497,-1.77,0.07672,-0.6479,0.6252,0.7053,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,full,102,0.08352,0.1474,0.5665,0.5711,0.3336,0.3526,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,ex_infl,92,-0.1083,0.1329,-0.8154,0.4148,-0.3362,0.3604,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,post2008,74,0.1061,0.1485,0.7145,0.4749,0.4805,0.4534,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,full,102,-0.1572,0.08239,-1.908,0.05646,-0.6278,0.5588,0.6233,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,ex_infl,92,-0.06346,0.1203,-0.5275,0.5979,-0.1969,0.4412,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),coincident,0,post2008,74,-0.1717,0.08992,-1.91,0.05617,-0.7776,0.6263,0.6233,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,full,102,0.4519,0.115,3.93,8.493e-05,1.207,0.4497,0.003975,0.009175,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,ex_infl,92,0.2922,0.1318,2.218,0.02658,0.6251,0.3872,0.4665,0.6176,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,post2008,74,0.4728,0.1083,4.367,1.262e-05,1.388,0.5609,0.0007088,0.001779,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,full,102,0.1739,0.1659,1.049,0.2944,0.4645,0.548,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,ex_infl,92,0.1957,0.1614,1.213,0.2252,0.4187,0.4504,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),coincident,0,post2008,74,0.2679,0.1676,1.599,0.1099,0.7863,0.6225,0.9076,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,full,102,0.3264,0.09886,3.302,0.0009606,0.7522,0.3901,0.02697,0.05367,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,ex_infl,92,0.2514,0.108,2.327,0.01997,0.5881,0.3887,0.4005,0.4865,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,post2008,74,0.354,0.1004,3.525,0.0004234,0.8545,0.494,0.01463,0.03017,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,full,102,0.2135,0.1092,1.954,0.05066,0.4919,0.558,0.6233,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,ex_infl,92,0.1673,0.1207,1.386,0.1657,0.3914,0.4504,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),coincident,0,post2008,74,0.2571,0.1029,2.499,0.01244,0.6205,0.6324,0.2055,0.3506,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,full,102,-0.8346,0.1706,-4.892,9.96e-07,-1.454,0.544,6.992e-05,0.0001899,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,ex_infl,92,-0.6149,0.2413,-2.548,0.01083,-0.8002,0.4309,0.2764,0.3105,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,post2008,74,-0.8473,0.1706,-4.967,6.784e-07,-1.616,0.6374,6.35e-05,0.0001466,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,full,102,-0.9213,0.3189,-2.889,0.003862,-1.605,0.6024,0.1073,0.1513,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,ex_infl,92,-0.9572,0.5251,-1.823,0.0683,-1.246,0.484,0.6613,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),coincident,0,post2008,74,-1.049,0.2844,-3.688,0.000226,-2,0.6798,0.01586,0.01778,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,full,102,-0.3778,0.06636,-5.693,1.246e-08,-1.165,0.4762,3.5e-06,5.049e-06,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,ex_infl,92,-0.4052,0.2136,-1.896,0.0579,-0.5963,0.3921,0.9032,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,post2008,74,-0.3517,0.06822,-5.155,2.539e-07,-1.233,0.5615,3.565e-05,6.859e-05,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,full,102,0.6211,0.0664,9.354,8.428e-21,1.914,0.5405,1.183e-18,1.366e-17,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,ex_infl,92,0.5901,0.2155,2.739,0.006166,0.8685,0.4373,0.1319,0.2126,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),coincident,0,post2008,74,0.6473,0.06821,9.491,2.299e-21,2.27,0.6069,6.456e-19,7.452e-18,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",coincident,0,full,102,-0.4119,0.3771,-1.092,0.2748,-0.4766,0.3657,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",coincident,0,ex_infl,92,0.1028,0.312,0.3296,0.7417,0.103,0.3556,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",coincident,0,post2008,74,-0.2639,0.4156,-0.635,0.5254,-0.3151,0.4475,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",coincident,0,full,102,0.1363,0.2712,0.5025,0.6153,0.1577,0.5433,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",coincident,0,ex_infl,92,0.05751,0.3047,0.1888,0.8503,0.05758,0.4397,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",coincident,0,post2008,74,0.4864,0.2512,1.936,0.05282,0.5807,0.6237,0.6233,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",coincident,0,full,102,0.1671,0.2963,0.5641,0.5727,0.2787,0.3477,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",coincident,0,ex_infl,92,0.2825,0.2759,1.024,0.3059,0.4756,0.3662,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",coincident,0,post2008,74,0.6038,0.335,1.802,0.07147,0.8402,0.4706,1,1,480
+og,w_policy_rate_lvl,"policy rate, level",coincident,0,full,102,0.7114,0.2618,2.718,0.006577,1.186,0.585,0.1319,0.222,480
+og,w_policy_rate_lvl,"policy rate, level",coincident,0,ex_infl,92,0.8521,0.2977,2.862,0.004205,1.435,0.5051,0.1073,0.1603,480
+og,w_policy_rate_lvl,"policy rate, level",coincident,0,post2008,74,1.268,0.2168,5.848,4.984e-09,1.764,0.7103,4.665e-07,3.231e-06,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,full,101,-0.3611,0.1786,-2.021,0.04323,-0.5503,0.3714,0.7141,0.904,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,ex_infl,91,-0.174,0.1935,-0.8992,0.3686,-0.2563,0.361,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,post2008,73,-0.4166,0.1836,-2.269,0.02326,-0.6365,0.4721,0.4355,0.5585,480
+og,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,full,101,-0.2913,0.1887,-1.544,0.1226,-0.444,0.5529,0.9561,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,ex_infl,91,-0.1218,0.1839,-0.6621,0.5079,-0.1793,0.4387,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",coincident,0,post2008,73,-0.3523,0.193,-1.826,0.06785,-0.5382,0.623,0.6613,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,full,60,-0.004653,0.01179,-0.3945,0.6932,-0.07048,0.358,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,ex_infl,60,-0.004653,0.01179,-0.3945,0.6932,-0.07048,0.358,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,post2008,48,-0.004482,0.01278,-0.3507,0.7258,-0.07008,0.4523,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,full,60,-0.006061,0.01215,-0.4989,0.6179,-0.09179,0.4457,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,ex_infl,60,-0.006061,0.01215,-0.4989,0.6179,-0.09179,0.4457,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),coincident,0,post2008,48,-0.004587,0.01291,-0.3552,0.7224,-0.07171,0.5395,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,full,102,-0.02514,0.05975,-0.4207,0.674,-0.1448,0.3462,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,ex_infl,92,-0.02516,0.05454,-0.4613,0.6446,-0.1463,0.3567,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,post2008,74,-0.06029,0.0865,-0.697,0.4858,-0.2991,0.4462,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,full,102,-0.02763,0.05708,-0.4841,0.6283,-0.1591,0.5436,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,ex_infl,92,-0.01809,0.05385,-0.336,0.7369,-0.1052,0.4405,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",coincident,0,post2008,74,-0.05972,0.0769,-0.7767,0.4374,-0.2963,0.6135,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,full,102,0.1372,0.2718,0.5048,0.6137,0.29,0.3517,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,ex_infl,92,-0.704,0.1911,-3.683,0.0002304,-0.9164,0.4338,0.01617,0.01778,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,post2008,74,0.1588,0.2537,0.626,0.5313,0.3572,0.4503,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,full,102,-0.7913,0.1681,-4.706,2.525e-06,-1.673,0.5665,8.862e-05,0.0004092,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,ex_infl,92,-0.4911,0.2177,-2.256,0.02409,-0.6393,0.4645,0.2255,0.5741,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,0,post2008,74,-0.8143,0.1659,-4.909,9.174e-07,-1.832,0.6362,4.293e-05,0.0001858,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,full,102,-0.02209,0.2641,-0.08366,0.9333,-0.04974,0.3447,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,ex_infl,92,-0.5751,0.1497,-3.843,0.0001216,-1.011,0.4608,0.01138,0.01126,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,post2008,74,0.0196,0.2572,0.07622,0.9392,0.04597,0.44,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,full,102,-0.7097,0.1764,-4.022,5.762e-05,-1.598,0.5519,0.001618,0.00667,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,ex_infl,92,-0.4426,0.1401,-3.16,0.001577,-0.7782,0.4848,0.02214,0.07742,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,0,post2008,74,-0.744,0.1869,-3.981,6.85e-05,-1.745,0.6135,0.001749,0.007655,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,full,73,0.6792,0.2314,2.934,0.003341,0.9218,0.512,0.1042,0.1406,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,ex_infl,63,0.1824,0.2741,0.6654,0.5058,0.1936,0.4608,1,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,post2008,73,0.6792,0.2314,2.934,0.003341,0.9218,0.512,0.1042,0.1406,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,full,73,0.3941,0.3457,1.14,0.2543,0.5349,0.4968,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,ex_infl,63,0.4678,0.3018,1.55,0.1211,0.4966,0.5589,0.9446,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,0,post2008,73,0.3941,0.3457,1.14,0.2543,0.5349,0.4968,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,0,full,102,0.6696,0.5551,1.206,0.2277,0.5536,0.3698,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,0,ex_infl,92,-0.4229,0.5461,-0.7743,0.4387,-0.2424,0.3602,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,0,post2008,74,0.663,0.5488,1.208,0.227,0.5831,0.466,1,1,480
+og,w_cons_conf_z,consumer confidence (z),realtime,0,full,102,-2.31,0.4591,-5.031,4.887e-07,-1.909,0.569,2.744e-05,0.0001131,480
+og,w_cons_conf_z,consumer confidence (z),realtime,0,ex_infl,92,-1.51,0.6364,-2.372,0.01768,-0.8653,0.4715,0.1712,0.4533,480
+og,w_cons_conf_z,consumer confidence (z),realtime,0,post2008,74,-2.362,0.41,-5.761,8.376e-09,-2.077,0.6413,7.84e-07,4.524e-06,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,full,102,0.6006,0.507,1.185,0.2362,0.5638,0.371,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,ex_infl,92,-0.5859,0.4663,-1.256,0.209,-0.3731,0.3679,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,post2008,74,0.6445,0.492,1.31,0.1902,0.6338,0.4722,1,1,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,full,102,-2.188,0.4575,-4.783,1.728e-06,-2.054,0.561,6.933e-05,0.0002948,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,ex_infl,92,-1.476,0.5751,-2.566,0.01027,-0.94,0.4778,0.1109,0.3027,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,0,post2008,74,-2.193,0.4285,-5.117,3.104e-07,-2.156,0.6204,2.179e-05,7.739e-05,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,full,102,0.8613,0.369,2.334,0.0196,0.7607,0.403,0.4586,0.4849,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,ex_infl,92,0.2784,0.4541,0.6131,0.5398,0.1923,0.3589,1,1,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,post2008,74,0.905,0.3815,2.373,0.01767,0.9037,0.5081,0.4509,0.4533,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,full,102,-1.158,0.3488,-3.321,0.0008958,-1.023,0.5087,0.01402,0.0511,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,ex_infl,92,-0.6322,0.4584,-1.379,0.1678,-0.4366,0.4501,1,1,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,0,post2008,74,-1.216,0.3492,-3.483,0.0004965,-1.214,0.5823,0.008714,0.03198,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,0,full,102,0.5154,0.6756,0.763,0.4455,0.3502,0.3532,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,0,ex_infl,92,0.1429,0.5983,0.2388,0.8113,0.09316,0.3552,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,0,post2008,74,0.3941,0.7681,0.5132,0.6078,0.281,0.4446,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,0,full,102,-1.513,0.6205,-2.438,0.01476,-1.028,0.4827,0.148,0.3963,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,0,ex_infl,92,-0.616,0.7482,-0.8232,0.4104,-0.4016,0.4399,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,0,post2008,74,-2.065,0.5455,-3.785,0.0001539,-1.472,0.5888,0.003221,0.01385,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,0,full,102,1.147,0.7863,1.459,0.1445,0.7318,0.3802,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,0,ex_infl,92,0.2106,0.5041,0.4177,0.6762,0.133,0.3558,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,0,post2008,74,1.116,0.8868,1.259,0.2081,0.7436,0.4717,1,1,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,0,full,102,-1.698,0.6271,-2.708,0.006772,-1.083,0.4648,0.08267,0.2263,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,0,ex_infl,92,-1.306,0.7068,-1.848,0.06466,-0.8247,0.4659,0.5367,1,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,0,post2008,74,-1.939,0.7458,-2.6,0.009312,-1.292,0.5317,0.1046,0.2821,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,full,101,0.3243,0.2305,1.407,0.1595,0.7012,0.3889,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,ex_infl,91,0.03962,0.2388,0.1659,0.8682,0.0536,0.3696,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,post2008,74,0.3248,0.2283,1.423,0.1548,0.704,0.4742,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,full,101,-0.6973,0.2378,-2.932,0.003369,-1.508,0.5253,0.04504,0.1406,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,ex_infl,91,0.3311,0.308,1.075,0.2823,0.4479,0.452,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,0,post2008,74,-0.7916,0.2107,-3.757,0.000172,-1.716,0.5969,0.003221,0.0143,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,full,101,0.2554,0.2271,1.125,0.2607,0.5936,0.3826,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,ex_infl,91,-0.1971,0.2093,-0.9421,0.3462,-0.2888,0.3738,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,post2008,74,0.3037,0.2129,1.427,0.1537,0.7469,0.4788,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,full,101,-0.6032,0.1601,-3.768,0.0001643,-1.402,0.537,0.003221,0.0143,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,ex_infl,91,-0.01516,0.2499,-0.06069,0.9516,-0.02221,0.4448,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,0,post2008,74,-0.6498,0.1428,-4.55,5.37e-06,-1.598,0.5972,0.0001675,0.0007911,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,full,102,0.1961,0.1241,1.579,0.1143,0.7798,0.3865,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,ex_infl,92,0.04886,0.1472,0.3319,0.7399,0.1526,0.3558,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,post2008,74,0.2234,0.1207,1.851,0.06421,1.008,0.4965,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,full,102,-0.2556,0.1385,-1.845,0.06499,-1.017,0.4644,0.5367,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,ex_infl,92,0.09018,0.1104,0.8165,0.4142,0.2816,0.4334,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,0,post2008,74,-0.2814,0.1508,-1.865,0.06214,-1.27,0.5276,0.5367,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,full,102,0.3011,0.1093,2.754,0.00588,0.7937,0.3895,0.1651,0.2049,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,ex_infl,92,0.1121,0.135,0.8305,0.4063,0.234,0.3592,1,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,post2008,74,0.3189,0.103,3.098,0.001952,0.9204,0.4913,0.07828,0.0944,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,full,102,-0.214,0.1466,-1.46,0.1444,-0.564,0.4298,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,ex_infl,92,-0.05885,0.09825,-0.5989,0.5492,-0.1229,0.4305,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,0,post2008,74,-0.2137,0.1555,-1.374,0.1694,-0.6168,0.4863,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,full,102,0.09896,0.1087,0.9103,0.3627,0.2284,0.3486,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,ex_infl,92,-0.0253,0.1317,-0.1921,0.8476,-0.05631,0.3547,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,post2008,74,0.1334,0.1093,1.22,0.2224,0.3243,0.4474,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,full,102,0.3143,0.143,2.198,0.02798,0.7256,0.4499,0.2534,0.6431,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,ex_infl,92,0.1082,0.2076,0.5215,0.602,0.2409,0.4325,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,0,post2008,74,0.413,0.1476,2.798,0.005148,1.004,0.5326,0.06571,0.1896,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,full,102,-0.6601,0.1518,-4.347,1.381e-05,-1.149,0.4702,0.003877,0.001864,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,ex_infl,92,-0.4718,0.2285,-2.064,0.03898,-0.589,0.396,0.8419,0.8311,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,post2008,74,-0.6422,0.1535,-4.185,2.855e-05,-1.219,0.5511,0.004009,0.003559,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,full,102,-0.4544,0.3544,-1.282,0.1998,-0.7909,0.4367,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,ex_infl,92,-0.2112,0.2445,-0.8636,0.3878,-0.2637,0.4338,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,0,post2008,74,-0.4495,0.4106,-1.095,0.2737,-0.8535,0.4907,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,full,102,-0.3292,0.09363,-3.516,0.0004376,-1.013,0.4413,0.02457,0.03017,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,ex_infl,92,-0.1649,0.1694,-0.9738,0.3301,-0.2445,0.361,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,post2008,74,-0.3072,0.09169,-3.351,0.0008063,-1.075,0.5287,0.03774,0.04839,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,full,102,0.5849,0.07354,7.954,1.805e-15,1.8,0.4964,2.534e-13,1.462e-12,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,ex_infl,92,0.6228,0.1876,3.32,0.0008988,0.9232,0.4493,0.01402,0.0511,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,0,post2008,74,0.6188,0.07393,8.37,5.749e-17,2.165,0.5608,1.614e-14,6.21e-14,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,0,full,102,-0.4119,0.3771,-1.092,0.2748,-0.4766,0.3657,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,0,ex_infl,92,0.1028,0.312,0.3296,0.7417,0.103,0.3556,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,0,post2008,74,-0.2639,0.4156,-0.635,0.5254,-0.3151,0.4475,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,0,full,102,0.4898,0.3269,1.499,0.134,0.5668,0.4387,0.9963,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,0,ex_infl,92,0.184,0.3725,0.494,0.6213,0.1842,0.4325,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,0,post2008,74,0.898,0.3522,2.55,0.01078,1.072,0.5348,0.1121,0.3105,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,0,full,102,0.1671,0.2963,0.5641,0.5727,0.2787,0.3477,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,0,ex_infl,92,0.2825,0.2759,1.024,0.3059,0.4756,0.3662,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,0,post2008,74,0.6038,0.335,1.802,0.07147,0.8402,0.4706,1,1,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,0,full,102,0.8126,0.3074,2.644,0.0082,1.355,0.4656,0.09593,0.2596,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,0,ex_infl,92,0.8708,0.2669,3.263,0.001102,1.466,0.5057,0.01629,0.06054,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,0,post2008,74,1.392,0.3606,3.859,0.0001137,1.937,0.5765,0.00266,0.01084,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,full,102,0.01002,0.1861,0.05386,0.957,0.01532,0.3445,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,ex_infl,92,0.2021,0.2046,0.9876,0.3234,0.2923,0.3626,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,post2008,74,0.1132,0.2384,0.4747,0.635,0.1721,0.442,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,full,102,-0.3117,0.2848,-1.094,0.2738,-0.4763,0.4336,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,ex_infl,92,0.2471,0.1653,1.495,0.1348,0.3575,0.4402,0.9963,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,0,post2008,74,-0.4688,0.3015,-1.555,0.1199,-0.7128,0.5051,0.9446,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,full,59,-0.001984,0.01677,-0.1183,0.9058,-0.02706,0.3572,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,ex_infl,59,-0.001984,0.01677,-0.1183,0.9058,-0.02706,0.3572,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,post2008,48,-0.01015,0.01666,-0.6089,0.5426,-0.1384,0.4536,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,full,59,-0.02259,0.02362,-0.9567,0.3387,-0.3082,0.3493,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,ex_infl,59,-0.02259,0.02362,-0.9567,0.3387,-0.3082,0.3493,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,0,post2008,48,-0.03171,0.02436,-1.302,0.1929,-0.4325,0.4155,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,full,102,-0.02514,0.05975,-0.4207,0.674,-0.1448,0.3462,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,ex_infl,92,-0.02516,0.05454,-0.4613,0.6446,-0.1463,0.3567,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,post2008,74,-0.06029,0.0865,-0.697,0.4858,-0.2991,0.4462,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,full,102,-0.05072,0.07115,-0.7129,0.4759,-0.2921,0.4232,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,ex_infl,92,0.0133,0.05578,0.2385,0.8115,0.07737,0.4299,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,0,post2008,74,-0.1081,0.09605,-1.125,0.2605,-0.5361,0.4916,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,full,102,0.1639,0.2162,0.7584,0.4482,0.355,0.3554,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,ex_infl,92,-0.357,0.1838,-1.942,0.05217,-0.5119,0.3818,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,post2008,74,0.2158,0.189,1.142,0.2535,0.4901,0.4588,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,full,102,-0.689,0.2386,-2.888,0.003875,-1.492,0.4478,0.06524,0.1513,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,ex_infl,92,-0.1293,0.2358,-0.5483,0.5835,-0.1854,0.3985,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,1,post2008,74,-0.7437,0.2769,-2.686,0.007239,-1.689,0.4935,0.09239,0.2394,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,full,102,0.04475,0.2055,0.2177,0.8276,0.1038,0.3454,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,ex_infl,92,-0.3055,0.1413,-2.162,0.0306,-0.5775,0.3908,0.9765,0.6887,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,post2008,74,0.1152,0.1993,0.578,0.5633,0.273,0.4457,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,full,102,-0.5604,0.2284,-2.454,0.01413,-1.3,0.4176,0.1368,0.3881,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,ex_infl,92,-0.1697,0.1524,-1.114,0.2654,-0.3209,0.4051,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,1,post2008,74,-0.6069,0.2931,-2.071,0.03838,-1.439,0.4518,0.317,0.8238,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,full,72,0.0342,0.2283,0.1498,0.8809,0.04668,0.4458,1,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,ex_infl,62,-0.2598,0.2968,-0.8754,0.3814,-0.2826,0.4661,1,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,post2008,72,0.0342,0.2283,0.1498,0.8809,0.04668,0.4458,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,full,72,-0.3634,0.4546,-0.7994,0.4241,-0.496,0.3835,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,ex_infl,62,-0.02073,0.3487,-0.05946,0.9526,-0.02255,0.5231,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,1,post2008,72,-0.3634,0.4546,-0.7994,0.4241,-0.496,0.3835,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,1,full,102,0.6863,0.6095,1.126,0.2602,0.5634,0.3692,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,1,ex_infl,92,-0.6861,0.5286,-1.298,0.1943,-0.4091,0.3703,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,1,post2008,74,0.6523,0.6072,1.074,0.2827,0.5724,0.4634,1,1,480
+og,w_cons_conf_z,consumer confidence (z),realtime,1,full,102,-2.787,0.5155,-5.407,6.397e-08,-2.288,0.5256,5.988e-06,2.073e-05,480
+og,w_cons_conf_z,consumer confidence (z),realtime,1,ex_infl,92,-1.975,0.6921,-2.853,0.004328,-1.177,0.4603,0.06752,0.1631,480
+og,w_cons_conf_z,consumer confidence (z),realtime,1,post2008,74,-2.862,0.5143,-5.564,2.638e-08,-2.511,0.5838,3.703e-06,9.499e-06,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,full,102,0.5537,0.5351,1.035,0.3008,0.5171,0.3663,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,ex_infl,92,-0.6488,0.4171,-1.555,0.1199,-0.4384,0.3734,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,post2008,74,0.5702,0.5349,1.066,0.2864,0.5611,0.4645,1,1,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,full,102,-2.49,0.515,-4.834,1.335e-06,-2.325,0.5036,7.497e-05,0.0002404,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,ex_infl,92,-1.704,0.5868,-2.904,0.003681,-1.152,0.4557,0.06524,0.1491,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,1,post2008,74,-2.507,0.5439,-4.61,4.025e-06,-2.467,0.5459,0.0001884,0.0006212,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,full,102,0.967,0.4491,2.153,0.0313,0.8541,0.4164,0.9765,0.6996,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,ex_infl,92,-0.2068,0.4929,-0.4195,0.6749,-0.1417,0.3567,1,1,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,post2008,74,0.9974,0.4265,2.338,0.01937,0.996,0.5213,0.7769,0.4849,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,full,102,-1.503,0.3606,-4.169,3.065e-05,-1.328,0.4708,0.001076,0.003679,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,ex_infl,92,-1.259,0.457,-2.755,0.005869,-0.8628,0.4691,0.07847,0.2049,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,1,post2008,74,-1.529,0.394,-3.88,0.0001043,-1.527,0.5245,0.003254,0.01033,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,1,full,102,1.046,0.8321,1.257,0.2087,0.712,0.3795,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,1,ex_infl,92,0.005515,0.5681,0.009708,0.9923,0.003525,0.3545,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,1,post2008,74,0.865,0.9061,0.9546,0.3398,0.6222,0.4627,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,1,full,102,-2.066,0.6738,-3.065,0.002173,-1.406,0.4389,0.04694,0.1036,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,1,ex_infl,92,-1.099,0.687,-1.6,0.1096,-0.7024,0.4293,0.7894,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,1,post2008,74,-2.671,0.6225,-4.291,1.782e-05,-1.921,0.5492,0.0007148,0.00231,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,1,full,102,1.155,0.7395,1.562,0.1183,0.7364,0.3842,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,1,ex_infl,92,0.1572,0.4433,0.3547,0.7228,0.09923,0.3553,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,1,post2008,74,1.127,0.8174,1.379,0.168,0.7593,0.4759,1,1,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,1,full,102,-1.938,0.6961,-2.785,0.005357,-1.236,0.3923,0.07522,0.1929,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,1,ex_infl,92,-1.663,0.5964,-2.788,0.005298,-1.049,0.4619,0.07522,0.1929,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,1,post2008,74,-2.095,0.8487,-2.469,0.01356,-1.412,0.4368,0.136,0.3756,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,full,100,0.3564,0.1778,2.004,0.04505,0.7744,0.3938,1,0.936,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,ex_infl,90,0.05806,0.2914,0.1993,0.8421,0.08065,0.3703,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,post2008,74,0.3944,0.1664,2.371,0.01776,0.8619,0.4876,0.7769,0.4533,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,full,100,-0.8091,0.3439,-2.353,0.01862,-1.758,0.4525,0.1742,0.4714,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,ex_infl,90,0.3979,0.3304,1.204,0.2285,0.5528,0.4247,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,1,post2008,74,-0.9121,0.3489,-2.614,0.008942,-1.993,0.5046,0.1004,0.2734,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,full,100,0.2978,0.1723,1.729,0.08387,0.6954,0.3909,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,ex_infl,90,-0.02909,0.2995,-0.09711,0.9226,-0.0431,0.37,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,post2008,74,0.3857,0.136,2.837,0.004559,0.9529,0.4993,0.4267,0.1698,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,full,100,-0.7177,0.249,-2.882,0.00395,-1.676,0.4767,0.06524,0.1524,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,ex_infl,90,0.09976,0.2703,0.3691,0.712,0.1478,0.4127,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,1,post2008,74,-0.79,0.2481,-3.184,0.00145,-1.952,0.5243,0.03393,0.07269,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,full,102,0.2108,0.1242,1.697,0.08978,0.8378,0.3911,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,ex_infl,92,-0.03843,0.1348,-0.2852,0.7755,-0.1153,0.3554,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,post2008,74,0.2071,0.1291,1.604,0.1087,0.9343,0.4863,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,full,102,-0.3082,0.1739,-1.772,0.07635,-1.225,0.3854,0.5955,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,ex_infl,92,0.01134,0.09428,0.1203,0.9043,0.03402,0.3954,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,1,post2008,74,-0.3981,0.1915,-2.079,0.03759,-1.796,0.4555,0.317,0.8177,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,full,102,0.2841,0.08546,3.324,0.0008875,0.7495,0.3907,0.1613,0.0511,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,ex_infl,92,0.2623,0.1083,2.422,0.01544,0.5594,0.3887,0.7769,0.4068,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,post2008,74,0.2789,0.08577,3.251,0.001149,0.8095,0.4854,0.1613,0.06205,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,full,102,0.004613,0.1543,0.0299,0.9762,0.01217,0.3198,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,ex_infl,92,0.1521,0.1328,1.146,0.252,0.3244,0.4056,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,1,post2008,74,-0.0111,0.1701,-0.06528,0.948,-0.03224,0.3549,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,full,102,0.007536,0.1072,0.07027,0.944,0.01746,0.3445,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,ex_infl,92,0.001973,0.1135,0.01738,0.9861,0.004411,0.3545,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,post2008,74,0.04201,0.1111,0.3783,0.7052,0.1032,0.4406,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,full,102,0.4635,0.1804,2.57,0.01018,1.074,0.3913,0.1058,0.3026,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,ex_infl,92,0.2519,0.1872,1.346,0.1783,0.5633,0.4158,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,1,post2008,74,0.5861,0.1975,2.967,0.003004,1.44,0.4748,0.06026,0.1316,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,full,102,-0.3361,0.1234,-2.723,0.006477,-0.5862,0.3766,0.4547,0.221,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,ex_infl,92,-0.2295,0.1868,-1.228,0.2193,-0.2887,0.3638,1,1,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,post2008,74,-0.2589,0.1275,-2.031,0.04228,-0.4913,0.4583,1,0.8957,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,full,102,-0.5571,0.4173,-1.335,0.182,-0.9715,0.3485,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,ex_infl,92,-0.1988,0.2886,-0.6889,0.4909,-0.2501,0.3992,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,1,post2008,74,-0.4814,0.4683,-1.028,0.304,-0.9135,0.3754,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,full,102,-0.1885,0.1046,-1.802,0.07157,-0.58,0.3756,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,ex_infl,92,0.06701,0.1846,0.363,0.7166,0.1079,0.3558,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,post2008,74,-0.1528,0.1007,-1.517,0.1292,-0.5342,0.4615,1,1,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,full,102,0.4892,0.09384,5.213,1.859e-07,1.506,0.4126,1.305e-05,5.476e-05,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,ex_infl,92,0.5016,0.1552,3.232,0.001229,0.8073,0.4299,0.03137,0.06529,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,1,post2008,74,0.5272,0.09247,5.701,1.19e-08,1.843,0.4686,3.341e-06,5.049e-06,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,1,full,102,-0.3174,0.3259,-0.9742,0.33,-0.3698,0.3573,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,1,ex_infl,92,0.06879,0.2723,0.2526,0.8006,0.0714,0.3551,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,1,post2008,74,-0.1168,0.3358,-0.3479,0.728,-0.1405,0.4414,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,1,full,102,0.7774,0.3721,2.089,0.03667,0.9055,0.3759,0.317,0.803,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,1,ex_infl,92,0.3071,0.3153,0.9739,0.3301,0.3187,0.4058,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,1,post2008,74,1.218,0.4609,2.642,0.008249,1.464,0.4741,0.09651,0.2596,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,1,full,102,0.2336,0.272,0.859,0.3903,0.3986,0.3511,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,1,ex_infl,92,0.1912,0.2565,0.7454,0.456,0.3313,0.3605,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,1,post2008,74,0.6557,0.3323,1.974,0.04843,0.9351,0.4774,1,0.9873,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,1,full,102,0.7693,0.3314,2.321,0.02027,1.312,0.3658,0.1836,0.4903,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,1,ex_infl,92,0.9782,0.2732,3.58,0.0003431,1.695,0.5004,0.009633,0.02586,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,1,post2008,74,1.181,0.4435,2.662,0.007768,1.684,0.4325,0.09484,0.2518,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,full,102,-0.1072,0.1963,-0.546,0.5851,-0.1639,0.3468,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,ex_infl,92,-0.2816,0.1978,-1.424,0.1545,-0.3903,0.3704,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,post2008,74,0.04074,0.2435,0.1673,0.8671,0.06187,0.4401,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,full,102,-0.6288,0.311,-2.022,0.04316,-0.9613,0.386,0.3463,0.904,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,ex_infl,92,-0.1807,0.1861,-0.971,0.3315,-0.2504,0.4011,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,1,post2008,74,-0.8729,0.3383,-2.58,0.009872,-1.326,0.4638,0.1058,0.2963,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,full,58,-0.005784,0.0207,-0.2794,0.78,-0.07766,0.3551,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,ex_infl,58,-0.005784,0.0207,-0.2794,0.78,-0.07766,0.3551,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,post2008,48,0.0001903,0.0219,0.00869,0.9931,0.002523,0.4517,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,full,58,-0.02254,0.01732,-1.302,0.1931,-0.3027,0.3097,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,ex_infl,58,-0.02254,0.01732,-1.302,0.1931,-0.3027,0.3097,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,1,post2008,48,-0.02708,0.0195,-1.388,0.1651,-0.359,0.3486,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,full,102,-0.04878,0.06758,-0.7218,0.4704,-0.2794,0.3505,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,ex_infl,92,-0.05789,0.05908,-0.9798,0.3272,-0.3358,0.3651,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,post2008,74,-0.01192,0.09858,-0.1209,0.9038,-0.0593,0.4401,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,full,102,-0.1511,0.09164,-1.649,0.09921,-0.8656,0.3698,0.7331,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,ex_infl,92,-0.06095,0.07146,-0.8528,0.3938,-0.3535,0.4061,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,1,post2008,74,-0.2288,0.1352,-1.692,0.09064,-1.138,0.4217,0.6879,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,full,102,0.2234,0.1748,1.278,0.2011,0.4938,0.3642,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,ex_infl,92,-0.04166,0.2182,-0.191,0.8485,-0.06545,0.3549,1,1,480
+vol_proxy_in,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,post2008,74,0.1303,0.1863,0.6995,0.4842,0.2979,0.4465,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,full,102,-0.5376,0.3159,-1.702,0.0888,-1.188,0.3341,0.6394,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,ex_infl,92,0.2382,0.2048,1.163,0.2447,0.3742,0.3941,1,1,480
+og,w_real_wage_yoy,real wage growth (Orkla-wtd),realtime,2,post2008,74,-0.7309,0.3296,-2.218,0.02657,-1.671,0.4092,0.3243,0.6176,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,full,102,0.1643,0.1679,0.9784,0.3279,0.3936,0.357,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,ex_infl,92,-0.04178,0.1562,-0.2675,0.7891,-0.08551,0.3552,1,1,480
+vol_proxy_in,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,post2008,74,0.08214,0.1892,0.4342,0.6641,0.1957,0.4428,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,full,102,-0.3818,0.281,-1.359,0.1742,-0.915,0.3044,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,ex_infl,92,0.09433,0.1374,0.6864,0.4925,0.1931,0.3859,1,1,480
+og,nw_real_wage_yoy,real wage growth (NO+SE),realtime,2,post2008,74,-0.5708,0.3286,-1.737,0.08237,-1.36,0.3671,0.6209,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,full,71,-0.3545,0.2573,-1.378,0.1683,-0.487,0.465,1,1,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,ex_infl,61,-0.6977,0.3148,-2.216,0.02668,-0.8077,0.5183,1,0.6176,480
+vol_proxy_in,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,post2008,71,-0.3545,0.2573,-1.378,0.1683,-0.487,0.465,1,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,full,71,-0.647,0.3745,-1.728,0.08403,-0.8889,0.3294,0.6209,1,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,ex_infl,61,-0.5975,0.234,-2.553,0.01067,-0.6917,0.5684,0.1665,0.3105,480
+og,w_hh_real_inc_yoy,real disposable income (Orkla-wtd),realtime,2,post2008,71,-0.647,0.3745,-1.728,0.08403,-0.8889,0.3294,0.6209,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,2,full,102,0.4045,0.5744,0.7042,0.4813,0.3315,0.353,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,2,ex_infl,92,-0.702,0.4973,-1.412,0.158,-0.4401,0.3739,1,1,480
+vol_proxy_in,w_cons_conf_z,consumer confidence (z),realtime,2,post2008,74,0.3405,0.5831,0.584,0.5592,0.3002,0.4462,1,1,480
+og,w_cons_conf_z,consumer confidence (z),realtime,2,full,102,-2.642,0.708,-3.732,0.00019,-2.165,0.4442,0.01334,0.01539,480
+og,w_cons_conf_z,consumer confidence (z),realtime,2,ex_infl,92,-1.445,0.7506,-1.924,0.0543,-0.9057,0.4218,0.5082,1,480
+og,w_cons_conf_z,consumer confidence (z),realtime,2,post2008,74,-2.704,0.7685,-3.518,0.0004348,-2.384,0.4829,0.01737,0.03017,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,full,102,0.249,0.4914,0.5067,0.6124,0.2325,0.3489,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,ex_infl,92,-0.6824,0.3755,-1.817,0.06916,-0.4962,0.3807,1,1,480
+vol_proxy_in,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,post2008,74,0.2454,0.5081,0.483,0.6291,0.2429,0.4445,1,1,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,full,102,-2.318,0.6694,-3.462,0.0005356,-2.164,0.4269,0.01737,0.03338,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,ex_infl,92,-1.421,0.6535,-2.175,0.02962,-1.033,0.4305,0.3353,0.676,480
+og,nw_cons_conf_z,consumer confidence NO+SE (z),realtime,2,post2008,74,-2.309,0.763,-3.026,0.00248,-2.285,0.4504,0.05358,0.1117,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,full,102,0.7314,0.4388,1.667,0.09557,0.6459,0.3855,1,1,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,ex_infl,92,-0.3756,0.5144,-0.7301,0.4653,-0.2595,0.3618,1,1,480
+vol_proxy_in,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,post2008,74,0.7379,0.4101,1.799,0.07197,0.7368,0.4838,1,1,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,full,102,-1.508,0.4334,-3.479,0.0005033,-1.332,0.4106,0.01737,0.03198,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,ex_infl,92,-1.213,0.4899,-2.477,0.01325,-0.8386,0.4526,0.186,0.3701,480
+og,w_cons_conf_z_d4,"consumer confidence, y/y change",realtime,2,post2008,74,-1.519,0.4732,-3.21,0.001326,-1.517,0.445,0.03721,0.06883,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,2,full,102,1.211,0.8847,1.369,0.1711,0.8226,0.3951,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,2,ex_infl,92,-0.1299,0.6277,-0.207,0.836,-0.08116,0.355,1,1,480
+vol_proxy_in,w_unemp_d4,"unemployment rate, y/y change",realtime,2,post2008,74,0.9721,0.9095,1.069,0.2851,0.7109,0.4725,1,1,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,2,full,102,-2.213,0.7421,-2.981,0.002869,-1.503,0.4059,0.05755,0.1274,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,2,ex_infl,92,-1.533,0.629,-2.437,0.01479,-0.9576,0.4519,0.1915,0.3963,480
+og,w_unemp_d4,"unemployment rate, y/y change",realtime,2,post2008,74,-2.68,0.713,-3.76,0.0001702,-1.96,0.4999,0.01334,0.0143,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,2,full,102,1.108,0.651,1.702,0.0888,0.7048,0.3849,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,2,ex_infl,92,0.2109,0.429,0.4917,0.6229,0.1331,0.3562,1,1,480
+vol_proxy_in,w_unemp_lvl,"unemployment rate, level",realtime,2,post2008,74,1.11,0.7179,1.547,0.122,0.7561,0.4788,1,1,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,2,full,102,-1.632,0.8593,-1.899,0.05755,-1.038,0.3202,0.5213,1,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,2,ex_infl,92,-1.471,0.6049,-2.432,0.015,-0.9285,0.4423,0.1915,0.3986,480
+og,w_unemp_lvl,"unemployment rate, level",realtime,2,post2008,74,-1.642,1.004,-1.635,0.1021,-1.118,0.341,0.7165,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,full,99,0.2464,0.2159,1.141,0.2539,0.5377,0.3744,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,ex_infl,89,-0.3232,0.2607,-1.24,0.215,-0.4518,0.3846,1,1,480
+vol_proxy_in,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,post2008,74,0.3017,0.2273,1.328,0.1843,0.6672,0.4689,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,full,99,-0.7878,0.3704,-2.127,0.03343,-1.719,0.3925,0.3476,0.737,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,ex_infl,89,0.1436,0.3468,0.4139,0.6789,0.2007,0.4023,1,1,480
+og,w_retail_food_vol_yoy,retail food volumes (Orkla-wtd),realtime,2,post2008,74,-0.8281,0.4158,-1.992,0.0464,-1.831,0.4133,0.4493,0.9519,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,full,99,0.2149,0.1868,1.151,0.2499,0.5044,0.3749,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,ex_infl,89,-0.3564,0.2752,-1.295,0.1952,-0.5079,0.3934,1,1,480
+vol_proxy_in,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,post2008,74,0.3058,0.1791,1.707,0.08773,0.7626,0.4796,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,full,99,-0.7126,0.2659,-2.68,0.007368,-1.672,0.4247,0.1293,0.2412,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,ex_infl,89,-0.1352,0.2779,-0.4866,0.6265,-0.1927,0.4031,1,1,480
+og,nw_retail_food_vol_yoy,grocery volumes (NO+SE),realtime,2,post2008,74,-0.7411,0.2928,-2.532,0.01136,-1.848,0.4448,0.1678,0.3229,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,full,102,0.1852,0.1186,1.562,0.1184,0.7415,0.3865,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,ex_infl,92,-0.01239,0.1229,-0.1008,0.9197,-0.03593,0.3546,1,1,480
+vol_proxy_in,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,post2008,74,0.1595,0.1273,1.254,0.21,0.7201,0.4713,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,full,102,-0.2127,0.1861,-1.143,0.2532,-0.8513,0.2971,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,ex_infl,92,0.006004,0.09167,0.06549,0.9478,0.01741,0.3829,1,1,480
+og,no_qna_hh_food_cons_sa_mnok__yoy,NO household food consumption (QNA),realtime,2,post2008,74,-0.3064,0.2215,-1.384,0.1665,-1.383,0.3525,1,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,full,102,0.06197,0.09671,0.6408,0.5217,0.1649,0.3468,1,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,ex_infl,92,-0.005608,0.1125,-0.04987,0.9602,-0.01258,0.3545,1,1,480
+vol_proxy_in,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,post2008,74,-0.0003316,0.09093,-0.003647,0.9971,-0.0009678,0.4399,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,full,102,0.01893,0.1671,0.1133,0.9098,0.05036,0.2591,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,ex_infl,92,0.08291,0.1598,0.5188,0.6039,0.186,0.3859,1,1,480
+og,se_na_hhcons_food_sa__yoy,SE household food consumption (NA),realtime,2,post2008,74,-0.0471,0.1747,-0.2695,0.7875,-0.1374,0.2806,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,full,102,-0.1514,0.1857,-0.8156,0.4147,-0.3526,0.3525,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,ex_infl,92,-0.06994,0.1762,-0.3969,0.6914,-0.155,0.3564,1,1,480
+vol_proxy_in,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,post2008,74,-0.1072,0.1855,-0.5781,0.5632,-0.2652,0.4439,1,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,full,102,0.6888,0.2269,3.036,0.002398,1.604,0.3889,0.05358,0.1117,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,ex_infl,92,0.3297,0.227,1.453,0.1463,0.7309,0.4156,0.9442,1,480
+og,w_gdp_vol_yoy,real GDP growth (Orkla-wtd),realtime,2,post2008,74,0.8593,0.2216,3.878,0.0001052,2.125,0.4895,0.01334,0.01033,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,full,102,0.01875,0.172,0.109,0.9132,0.03282,0.3446,1,1,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,ex_infl,92,-0.009604,0.2249,-0.04271,0.9659,-0.0132,0.3545,1,1,480
+vol_proxy_in,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,post2008,74,0.09587,0.203,0.4722,0.6368,0.1818,0.4424,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,full,102,-0.7678,0.435,-1.765,0.07758,-1.344,0.3147,0.6209,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,ex_infl,92,-0.3695,0.2866,-1.289,0.1974,-0.5078,0.3968,1,1,480
+og,w_food_rel_xvat_yoy,relative food price (food CPI ex VAT - CPI),realtime,2,post2008,74,-0.8142,0.5099,-1.597,0.1103,-1.544,0.3372,0.7555,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,full,102,-0.02766,0.1021,-0.271,0.7864,-0.08523,0.3451,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,ex_infl,92,0.1363,0.1536,0.8874,0.3748,0.2716,0.3633,1,1,480
+vol_proxy_in,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,post2008,74,0.009992,0.1046,0.09555,0.9239,0.03494,0.4399,1,1,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,full,102,0.3312,0.09594,3.452,0.0005568,1.021,0.3137,0.01737,0.03405,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,ex_infl,92,0.2644,0.09947,2.658,0.007867,0.5268,0.3944,0.1299,0.2524,480
+og,w_food_cpi_xvat_yoy,food CPI ex VAT (own price),realtime,2,post2008,74,0.3636,0.09292,3.913,9.133e-05,1.271,0.3478,0.01334,0.009548,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,2,full,102,-0.1493,0.3177,-0.47,0.6383,-0.1744,0.3473,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,2,ex_infl,92,0.1748,0.2576,0.6785,0.4975,0.1897,0.3586,1,1,480
+vol_proxy_in,w_policy_rate_d4,"policy rate, y/y change",realtime,2,post2008,74,0.08503,0.3118,0.2727,0.7851,0.103,0.4407,1,1,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,2,full,102,1.062,0.3625,2.93,0.003385,1.241,0.3649,0.06336,0.1406,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,2,ex_infl,92,0.6115,0.2815,2.172,0.02985,0.6637,0.4275,0.3353,0.6766,480
+og,w_policy_rate_d4,"policy rate, y/y change",realtime,2,post2008,74,1.443,0.4532,3.183,0.001458,1.747,0.4556,0.03721,0.07269,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,2,full,102,0.2877,0.2902,0.9914,0.3215,0.4999,0.3549,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,2,ex_infl,92,0.1359,0.2568,0.5293,0.5966,0.2402,0.3577,1,1,480
+vol_proxy_in,w_policy_rate_lvl,"policy rate, level",realtime,2,post2008,74,0.6639,0.395,1.681,0.09284,0.9646,0.4802,1,1,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,2,full,102,0.6817,0.3751,1.817,0.06916,1.184,0.2975,0.5884,1,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,2,ex_infl,92,0.9798,0.2755,3.556,0.0003765,1.732,0.4997,0.01737,0.02773,480
+og,w_policy_rate_lvl,"policy rate, level",realtime,2,post2008,74,0.8749,0.5631,1.554,0.1203,1.271,0.3254,0.8041,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,full,102,0.1315,0.2557,0.5144,0.607,0.2003,0.3478,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,ex_infl,92,-0.1615,0.2102,-0.7683,0.4423,-0.2202,0.3598,1,1,480
+vol_proxy_in,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,post2008,74,0.4378,0.2841,1.541,0.1233,0.6656,0.4696,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,full,102,-0.6849,0.3638,-1.882,0.05979,-1.043,0.3324,0.5247,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,ex_infl,92,-0.1357,0.1953,-0.6946,0.4873,-0.185,0.386,1,1,480
+og,w_hh_saving_d4,"household saving rate, y/y change",realtime,2,post2008,74,-0.9194,0.4316,-2.13,0.03314,-1.398,0.3904,0.3476,0.7356,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,full,57,0.01428,0.02,0.7139,0.4753,0.193,0.3568,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,ex_infl,57,0.01428,0.02,0.7139,0.4753,0.193,0.3568,1,1,480
+vol_proxy_in,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,post2008,48,0.02048,0.02175,0.9418,0.3463,0.2721,0.4606,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,full,57,0.004386,0.02322,0.1889,0.8502,0.05926,0.2984,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,ex_infl,57,0.004386,0.02322,0.1889,0.8502,0.05926,0.2984,1,1,480
+og,no_border_trade_exp_mnok_s1__yoy,NO cross-border shopping spend (2005-22),realtime,2,post2008,48,0.006026,0.02791,0.2159,0.8291,0.08007,0.3341,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,full,102,-0.01998,0.0712,-0.2806,0.7791,-0.1144,0.3455,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,ex_infl,92,-0.06391,0.05926,-1.079,0.2808,-0.3703,0.368,1,1,480
+vol_proxy_in,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,post2008,74,0.06884,0.09684,0.7109,0.4772,0.3433,0.4472,1,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,full,102,-0.1791,0.08626,-2.076,0.03785,-1.026,0.3309,0.3796,0.8178,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,ex_infl,92,-0.09617,0.06647,-1.447,0.148,-0.5571,0.411,0.9442,1,480
+og,no_fx_seknok__yoy,"SEK per NOK (+ = NOK stronger, cheaper SE shopping)",realtime,2,post2008,74,-0.2447,0.1383,-1.77,0.07679,-1.22,0.3612,0.6209,1,480

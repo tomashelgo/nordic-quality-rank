@@ -1,0 +1,5 @@
+quarter,base,end,years,orkla_price_cum_pct,w_food_cpi_xvat_yoy_cum_pct,nw_food_cpi_xvat_yoy_cum_pct,w_food_ppi_yoy_cum_pct,ratio_orkla_to_wCPIxvat,ratio_orkla_to_nwCPIxvat,ratio_orkla_to_wPPI
+Q1,2022Q1,2026Q1,4,24.1,27.68,28.23,27.8,0.8707,0.8538,0.867
+Q2,2021Q2,2026Q2,5,30.35,32.04,31.52,37.82,0.9471,0.9627,0.8024
+Q3,2021Q3,2025Q3,4,28.62,32.67,31.81,34.97,0.8761,0.8997,0.8185
+Q4,2021Q4,2025Q4,4,25.29,31.92,31.93,32.39,0.7922,0.7919,0.7808

@@ -1,0 +1,1098 @@
+family,test,sample,stat,df,p,n,source,p_BY_family,p_Holm_family,p_BY_global,p_Holm_global
+pt_candidates_costonly_PDL,raw_mat_wloc_yoy,full,20.33,3,0.0003582,96,mt_tests_passthrough.csv,0.01428,0.02078,0.02239,0.346
+pt_candidates_costonly_PDL,raw_mat_wloc_yoy,ex_infl,5.77,3,0.1324,86,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,fao_ffpi_wloc_yoy,full,5.72,3,0.1336,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,fao_ffpi_wloc_yoy,ex_infl,1.589,3,0.6632,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi_nok__yoy,full,3.603,3,0.3137,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi_nok__yoy,ex_infl,1.332,3,0.7222,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,fao_ffpi_sek_yoy,full,7.331,3,0.06874,102,mt_tests_passthrough.csv,0.7067,1,1,1
+pt_candidates_costonly_PDL,fao_ffpi_sek_yoy,ex_infl,2.117,3,0.5512,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi_eur__yoy,full,6.18,3,0.1108,100,mt_tests_passthrough.csv,0.9344,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi_eur__yoy,ex_infl,2.1,3,0.5547,90,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi__yoy,full,5.318,3,0.1575,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_ffpi__yoy,ex_infl,3.85,3,0.2853,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,wb_food_wloc_yoy,full,2.331,3,0.5097,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,wb_food_wloc_yoy,ex_infl,0.5463,3,0.9083,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,eu_agri_basket_wloc_yoy,full,18.22,3,0.0008216,96,mt_tests_passthrough.csv,0.01919,0.04272,0.04065,0.7649
+pt_candidates_costonly_PDL,eu_agri_basket_wloc_yoy,ex_infl,5.541,3,0.1453,86,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,eu_agri_basket_yoy,full,18.57,3,0.0007164,96,mt_tests_passthrough.csv,0.01919,0.0394,0.03699,0.6713
+pt_candidates_costonly_PDL,eu_agri_basket_yoy,ex_infl,6.705,3,0.09052,86,mt_tests_passthrough.csv,0.8328,1,1,1
+pt_candidates_costonly_PDL,eu_agri_raw_milk_price__yoy,full,9.445,3,0.02857,102,mt_tests_passthrough.csv,0.4337,1,0.6402,1
+pt_candidates_costonly_PDL,eu_agri_raw_milk_price__yoy,ex_infl,7.32,3,0.06983,92,mt_tests_passthrough.csv,0.7067,1,1,1
+pt_candidates_costonly_PDL,eu_agri_pig_carcass_e_price__yoy,full,0.9583,3,0.8113,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,eu_agri_pig_carcass_e_price__yoy,ex_infl,1.933,3,0.5886,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_dairy_idx__yoy,full,9.3,3,0.03034,102,mt_tests_passthrough.csv,0.4386,1,0.6672,1
+pt_candidates_costonly_PDL,glob_fao_dairy_idx__yoy,ex_infl,6.282,3,0.1069,92,mt_tests_passthrough.csv,0.9273,1,1,1
+pt_candidates_costonly_PDL,glob_fao_meat_idx__yoy,full,2.287,3,0.5179,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_meat_idx__yoy,ex_infl,2.186,3,0.5377,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_cereals_idx__yoy,full,7.461,3,0.06514,102,mt_tests_passthrough.csv,0.7067,1,1,1
+pt_candidates_costonly_PDL,glob_fao_cereals_idx__yoy,ex_infl,5.77,3,0.1318,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_vegoils_idx__yoy,full,4.76,3,0.1977,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_vegoils_idx__yoy,ex_infl,3.745,3,0.2973,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_sugar_idx__yoy,full,3.614,3,0.3123,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_fao_sugar_idx__yoy,ex_infl,2.996,3,0.3975,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,w_food_ppi_yoy,full,14.49,3,0.003657,96,mt_tests_passthrough.csv,0.06531,0.1755,0.1376,1
+pt_candidates_costonly_PDL,w_food_ppi_yoy,ex_infl,18.23,3,0.0008854,86,mt_tests_passthrough.csv,0.0192,0.04516,0.04289,0.8217
+pt_candidates_costonly_PDL,nw_food_ppi_yoy,full,12.79,3,0.007302,96,mt_tests_passthrough.csv,0.1167,0.3359,0.2353,1
+pt_candidates_costonly_PDL,nw_food_ppi_yoy,ex_infl,19.58,3,0.0005259,86,mt_tests_passthrough.csv,0.01774,0.02945,0.02857,0.497
+pt_candidates_costonly_PDL,se_ppi_agri_hmpi_idx__yoy,full,20.08,3,0.0003763,102,mt_tests_passthrough.csv,0.01428,0.02145,0.02285,0.362
+pt_candidates_costonly_PDL,se_ppi_agri_hmpi_idx__yoy,ex_infl,23.17,3,0.0001256,92,mt_tests_passthrough.csv,0.006356,0.00741,0.009668,0.1243
+pt_candidates_costonly_PDL,se_ppi_food_impi_idx__yoy,full,25.96,3,3.854e-05,102,mt_tests_passthrough.csv,0.002617,0.002351,0.003769,0.03904
+pt_candidates_costonly_PDL,se_ppi_food_impi_idx__yoy,ex_infl,14.69,3,0.00344,92,mt_tests_passthrough.csv,0.06528,0.1686,0.1318,1
+pt_candidates_costonly_PDL,no_imp_price_food_idx__yoy,full,1.492,3,0.6851,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,no_imp_price_food_idx__yoy,ex_infl,6.751,3,0.08927,82,mt_tests_passthrough.csv,0.8328,1,1,1
+pt_candidates_costonly_PDL,packaging_eu_yoy,full,83.02,3,9.004e-13,96,mt_tests_passthrough.csv,1.367e-10,5.673e-11,4.678e-10,9.751e-10
+pt_candidates_costonly_PDL,packaging_eu_yoy,ex_infl,18.63,3,0.0007586,86,mt_tests_passthrough.csv,0.01919,0.04096,0.03845,0.7093
+pt_candidates_costonly_PDL,packaging_us_yoy,full,7.483,3,0.06454,102,mt_tests_passthrough.csv,0.7067,1,1,1
+pt_candidates_costonly_PDL,packaging_us_yoy,ex_infl,1.333,3,0.722,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,se_ppi_paper_packaging_itpi_idx__yoy,full,6.432,3,0.09973,102,mt_tests_passthrough.csv,0.8906,1,1,1
+pt_candidates_costonly_PDL,se_ppi_paper_packaging_itpi_idx__yoy,ex_infl,15.16,3,0.002851,92,mt_tests_passthrough.csv,0.05771,0.1425,0.1145,1
+pt_candidates_costonly_PDL,se_ppi_plastic_packaging_itpi_idx__yoy,full,8.132,3,0.0493,102,mt_tests_passthrough.csv,0.6508,1,0.9735,1
+pt_candidates_costonly_PDL,se_ppi_plastic_packaging_itpi_idx__yoy,ex_infl,2.849,3,0.4204,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,elec_nordic_loc_yoy,full,27.25,3,2.505e-05,98,mt_tests_passthrough.csv,0.002535,0.001553,0.00267,0.02555
+pt_candidates_costonly_PDL,elec_nordic_loc_yoy,ex_infl,4.706,3,0.2032,88,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,natgas_eu_eur_yoy,full,142.7,3,1.11e-16,74,mt_tests_passthrough.csv,3.37e-14,7.104e-15,1.025e-13,1.209e-13
+pt_candidates_costonly_PDL,natgas_eu_eur_yoy,ex_infl,14.43,3,0.004649,64,mt_tests_passthrough.csv,0.07842,0.2185,0.1659,1
+pt_candidates_costonly_PDL,brent_nok_yoy,full,5.672,3,0.1363,102,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,brent_nok_yoy,ex_infl,2.908,3,0.411,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,w_wage_yoy,full,8.275,3,0.04645,102,mt_tests_passthrough.csv,0.641,1,0.925,1
+pt_candidates_costonly_PDL,w_wage_yoy,ex_infl,7.777,3,0.05787,92,mt_tests_passthrough.csv,0.7028,1,1,1
+pt_candidates_costonly_PDL,no_earn_idx_food_manuf_q__yoy,full,7.924,3,0.05374,102,mt_tests_passthrough.csv,0.6798,1,1,1
+pt_candidates_costonly_PDL,no_earn_idx_food_manuf_q__yoy,ex_infl,5.528,3,0.1455,92,mt_tests_passthrough.csv,1,1,1,1
+pt_candidates_costonly_PDL,glob_gscpi__lvl,full,18.21,3,0.0007923,102,mt_tests_passthrough.csv,0.01919,0.04199,0.03992,0.7392
+pt_candidates_costonly_PDL,glob_gscpi__lvl,ex_infl,7.445,3,0.06633,92,mt_tests_passthrough.csv,0.7067,1,1,1
+pt_candidates_costonly_PDL,cost_idx_calib_yoy,full,25.87,3,4.31e-05,96,mt_tests_passthrough.csv,0.002617,0.002586,0.004072,0.04357
+pt_candidates_costonly_PDL,cost_idx_calib_yoy,ex_infl,6.726,3,0.08975,86,mt_tests_passthrough.csv,0.8328,1,1,1
+pt_main_cost_only,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,20.33,3,0.0003582,96,mt_tests_passthrough.csv,0.003497,0.002866,0.02239,0.346
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,26.35,3,3.758e-05,96,mt_tests_passthrough.csv,0.0006776,0.0005261,0.003719,0.03811
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|w_food_cpi_xvat_yoy,full,19.62,3,0.0004852,96,mt_tests_passthrough.csv,0.003799,0.005337,0.02725,0.4609
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,full,17.08,3,0.001315,96,mt_tests_passthrough.csv,0.01016,0.01315,0.05974,1
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|w_food_ppi_yoy,full,20.1,3,0.0004026,96,mt_tests_passthrough.csv,0.00416,0.005168,0.02408,0.3861
+pt_main_cost_only,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,5.77,3,0.1324,86,mt_tests_passthrough.csv,0.4256,0.2692,1,1
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,8.996,3,0.03571,86,mt_tests_passthrough.csv,0.138,0.1071,0.7631,1
+pt_main_cost_plus_cpi,raw_mat_wloc_yoy|w_food_cpi_xvat_yoy,ex_infl,12.3,3,0.009395,86,mt_tests_passthrough.csv,0.05082,0.06577,0.283,1
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|raw_mat_wloc_yoy,ex_infl,8.937,3,0.03657,86,mt_tests_passthrough.csv,0.1413,0.127,0.7795,1
+pt_main_cost_plus_ppi,raw_mat_wloc_yoy|w_food_ppi_yoy,ex_infl,14.92,3,0.003311,86,mt_tests_passthrough.csv,0.02224,0.0298,0.1298,1
+pt_main_cost_only,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,18.22,3,0.0008216,96,mt_tests_passthrough.csv,0.004322,0.00531,0.04065,0.7649
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,21.23,3,0.0002607,96,mt_tests_passthrough.csv,0.00282,0.003128,0.01693,0.2529
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|w_food_cpi_xvat_yoy,full,23.89,3,9.455e-05,96,mt_tests_passthrough.csv,0.001279,0.001229,0.007782,0.09427
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,full,14.45,3,0.003774,96,mt_tests_passthrough.csv,0.02224,0.03019,0.1401,1
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|w_food_ppi_yoy,full,20.89,3,0.0002966,96,mt_tests_passthrough.csv,0.00416,0.004152,0.01911,0.2874
+pt_main_cost_only,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,5.541,3,0.1453,86,mt_tests_passthrough.csv,0.4256,0.2692,1,1
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,10.32,3,0.02082,86,mt_tests_passthrough.csv,0.08663,0.1011,0.4976,1
+pt_main_cost_plus_cpi,eu_agri_basket_wloc_yoy|w_food_cpi_xvat_yoy,ex_infl,13.5,3,0.005792,86,mt_tests_passthrough.csv,0.03916,0.05213,0.199,1
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|eu_agri_basket_wloc_yoy,ex_infl,9.832,3,0.02541,86,mt_tests_passthrough.csv,0.1145,0.127,0.5851,1
+pt_main_cost_plus_ppi,eu_agri_basket_wloc_yoy|w_food_ppi_yoy,ex_infl,20.4,3,0.0003975,86,mt_tests_passthrough.csv,0.00416,0.005168,0.02395,0.3816
+pt_main_cost_only,cost_idx_calib_yoy|cost_idx_calib_yoy,full,25.87,3,4.31e-05,96,mt_tests_passthrough.csv,0.0006312,0.0003879,0.004072,0.04357
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|cost_idx_calib_yoy,full,31.29,3,6.249e-06,96,mt_tests_passthrough.csv,0.000169,9.373e-05,0.0007992,0.006455
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|w_food_cpi_xvat_yoy,full,19.59,3,0.0004916,96,mt_tests_passthrough.csv,0.003799,0.005337,0.02743,0.4665
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|cost_idx_calib_yoy,full,21.69,3,0.0002183,96,mt_tests_passthrough.csv,0.00416,0.003275,0.01475,0.2128
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|w_food_ppi_yoy,full,19.75,3,0.0004614,96,mt_tests_passthrough.csv,0.00416,0.005168,0.02652,0.4402
+pt_main_cost_only,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,6.726,3,0.08975,86,mt_tests_passthrough.csv,0.3286,0.2692,1,1
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,10.42,3,0.02004,86,mt_tests_passthrough.csv,0.08663,0.1011,0.4857,1
+pt_main_cost_plus_cpi,cost_idx_calib_yoy|w_food_cpi_xvat_yoy,ex_infl,12.66,3,0.008115,86,mt_tests_passthrough.csv,0.04877,0.06492,0.2565,1
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|cost_idx_calib_yoy,ex_infl,10.4,3,0.02021,86,mt_tests_passthrough.csv,0.09938,0.1213,0.4884,1
+pt_main_cost_plus_ppi,cost_idx_calib_yoy|w_food_ppi_yoy,ex_infl,14.37,3,0.004112,86,mt_tests_passthrough.csv,0.02224,0.03019,0.1499,1
+pt_main_cost_only,packaging_eu_yoy|packaging_eu_yoy,full,83.02,3,9.004e-13,96,mt_tests_passthrough.csv,2.637e-11,9.004e-12,4.678e-10,9.751e-10
+pt_main_cost_plus_cpi,packaging_eu_yoy|packaging_eu_yoy,full,39.4,3,3.77e-07,96,mt_tests_passthrough.csv,2.039e-05,6.032e-06,7.346e-05,0.0003981
+pt_main_cost_plus_cpi,packaging_eu_yoy|w_food_cpi_xvat_yoy,full,8.58,3,0.0415,96,mt_tests_passthrough.csv,0.1497,0.1071,0.8625,1
+pt_main_cost_plus_ppi,packaging_eu_yoy|packaging_eu_yoy,full,24.31,3,8.06e-05,96,mt_tests_passthrough.csv,0.00416,0.00129,0.00698,0.08076
+pt_main_cost_plus_ppi,packaging_eu_yoy|w_food_ppi_yoy,full,3.454,3,0.333,96,mt_tests_passthrough.csv,1,0.6632,1,1
+pt_main_cost_only,packaging_eu_yoy|packaging_eu_yoy,ex_infl,18.63,3,0.0007586,86,mt_tests_passthrough.csv,0.004322,0.00531,0.03845,0.7093
+pt_main_cost_plus_cpi,packaging_eu_yoy|packaging_eu_yoy,ex_infl,6.403,3,0.1027,86,mt_tests_passthrough.csv,0.3472,0.1071,1,1
+pt_main_cost_plus_cpi,packaging_eu_yoy|w_food_cpi_xvat_yoy,ex_infl,10.85,3,0.01685,86,mt_tests_passthrough.csv,0.08286,0.1011,0.4271,1
+pt_main_cost_plus_ppi,packaging_eu_yoy|packaging_eu_yoy,ex_infl,9.457,3,0.0296,86,mt_tests_passthrough.csv,0.1232,0.127,0.6584,1
+pt_main_cost_plus_ppi,packaging_eu_yoy|w_food_ppi_yoy,ex_infl,3.472,3,0.3316,86,mt_tests_passthrough.csv,1,0.6632,1,1
+pt_main_cost_only,w_food_ppi_yoy|w_food_ppi_yoy,full,14.49,3,0.003657,96,mt_tests_passthrough.csv,0.0153,0.01463,0.1376,1
+pt_main_cost_only,w_food_ppi_yoy|w_food_ppi_yoy,ex_infl,18.23,3,0.0008854,86,mt_tests_passthrough.csv,0.004322,0.00531,0.04289,0.8217
+pt_price_formation,w_food_ppi_yoy~raw_mat_wloc_yoy,full,27.24,4,8.482e-05,90,mt_tests_passthrough.csv,0.0006406,0.001103,0.007204,0.0849
+pt_price_formation,w_food_ppi_yoy~raw_mat_wloc_yoy,ex_infl,27.51,4,9.198e-05,80,mt_tests_passthrough.csv,0.0006412,0.001104,0.007646,0.0918
+pt_price_formation,w_food_ppi_yoy~eu_agri_basket_wloc_yoy,full,10.88,4,0.03495,90,mt_tests_passthrough.csv,0.1508,0.1398,0.7527,1
+pt_price_formation,w_food_ppi_yoy~eu_agri_basket_wloc_yoy,ex_infl,6.049,4,0.2074,80,mt_tests_passthrough.csv,0.7831,0.2074,1,1
+pt_price_formation,w_food_ppi_yoy~fao_ffpi_wloc_yoy,full,30.18,4,2.496e-05,102,mt_tests_passthrough.csv,0.0002262,0.0003744,0.00267,0.02548
+pt_price_formation,w_food_ppi_yoy~fao_ffpi_wloc_yoy,ex_infl,211.4,4,0,92,mt_tests_passthrough.csv,0,0,0,0
+pt_price_formation,w_food_ppi_yoy~cost_idx_calib_yoy,full,32.37,4,1.438e-05,90,mt_tests_passthrough.csv,0.0001448,0.0002301,0.001684,0.01477
+pt_price_formation,w_food_ppi_yoy~cost_idx_calib_yoy,ex_infl,28.99,4,5.564e-05,80,mt_tests_passthrough.csv,0.0004584,0.000779,0.005083,0.05603
+pt_price_formation,w_food_cpi_xvat_yoy~raw_mat_wloc_yoy,full,33.03,4,1.151e-05,90,mt_tests_passthrough.csv,0.0001304,0.0001957,0.001407,0.01186
+pt_price_formation,w_food_cpi_xvat_yoy~raw_mat_wloc_yoy,ex_infl,26.62,4,0.0001246,80,mt_tests_passthrough.csv,0.0008065,0.001371,0.009668,0.1235
+pt_price_formation,w_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,full,16.47,4,0.004277,90,mt_tests_passthrough.csv,0.0204,0.02566,0.1546,1
+pt_price_formation,w_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,ex_infl,14.88,4,0.008186,80,mt_tests_passthrough.csv,0.03709,0.04093,0.2572,1
+pt_price_formation,w_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,full,10.2,4,0.04372,106,mt_tests_passthrough.csv,0.1801,0.1398,0.8886,1
+pt_price_formation,w_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,ex_infl,25.66,4,0.0001377,96,mt_tests_passthrough.csv,0.0008319,0.001377,0.0105,0.1362
+pt_price_formation,w_food_cpi_xvat_yoy~cost_idx_calib_yoy,full,36.4,4,3.717e-06,90,mt_tests_passthrough.csv,4.812e-05,6.691e-05,0.000515,0.003858
+pt_price_formation,w_food_cpi_xvat_yoy~cost_idx_calib_yoy,ex_infl,24.49,4,0.00026,80,mt_tests_passthrough.csv,0.001473,0.00234,0.01693,0.2525
+pt_price_formation,nw_food_cpi_xvat_yoy~raw_mat_wloc_yoy,full,41.11,4,8.018e-07,90,mt_tests_passthrough.csv,1.453e-05,1.604e-05,0.0001418,0.0008427
+pt_price_formation,nw_food_cpi_xvat_yoy~raw_mat_wloc_yoy,ex_infl,48.88,4,1.115e-07,80,mt_tests_passthrough.csv,5.052e-06,2.565e-06,2.99e-05,0.000119
+pt_price_formation,nw_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,full,18.16,4,0.002281,90,mt_tests_passthrough.csv,0.01148,0.01597,0.09577,1
+pt_price_formation,nw_food_cpi_xvat_yoy~eu_agri_basket_wloc_yoy,ex_infl,41.2,4,1.1e-06,80,mt_tests_passthrough.csv,1.661e-05,2.09e-05,0.0001759,0.001151
+pt_price_formation,nw_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,full,9.062,4,0.06737,106,mt_tests_passthrough.csv,0.2654,0.1398,1,1
+pt_price_formation,nw_food_cpi_xvat_yoy~fao_ffpi_wloc_yoy,ex_infl,21.85,4,0.0005535,96,mt_tests_passthrough.csv,0.002951,0.004428,0.02948,0.5214
+pt_price_formation,nw_food_cpi_xvat_yoy~cost_idx_calib_yoy,full,43.46,4,3.8e-07,90,mt_tests_passthrough.csv,8.609e-06,8.21e-06,7.346e-05,0.0004009
+pt_price_formation,nw_food_cpi_xvat_yoy~cost_idx_calib_yoy,ex_infl,44.77,4,3.732e-07,80,mt_tests_passthrough.csv,8.609e-06,8.21e-06,7.346e-05,0.0003945
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,full,50.56,7,1.124e-06,96,mt_tests_passthrough.csv,1.216e-05,1.349e-05,0.0001763,0.001175
+pt_gap_PDL,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,full,22.75,3,0.0001406,96,mt_tests_passthrough.csv,0.003652,0.004077,0.01053,0.1389
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,ex_infl,38.19,7,5.155e-05,86,mt_tests_passthrough.csv,0.0002788,0.0003609,0.004762,0.05196
+pt_gap_PDL,w_food_cpi_xvat_yoy-raw_mat_wloc_yoy,ex_infl,7.671,3,0.06099,86,mt_tests_passthrough.csv,0.4169,0.9149,1,1
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,full,63.9,7,3.227e-08,96,mt_tests_passthrough.csv,8.728e-07,4.84e-07,9.25e-06,3.45e-05
+pt_gap_PDL,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,full,15.83,3,0.002133,96,mt_tests_passthrough.csv,0.03957,0.05546,0.09047,1
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,ex_infl,43.71,7,1.108e-05,86,mt_tests_passthrough.csv,8.562e-05,0.0001108,0.001375,0.01142
+pt_gap_PDL,w_food_cpi_xvat_yoy-eu_agri_basket_wloc_yoy,ex_infl,6.904,3,0.08345,86,mt_tests_passthrough.csv,0.4926,0.9997,1,1
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,full,36.16,7,6.259e-05,102,mt_tests_passthrough.csv,0.0003078,0.0003755,0.005595,0.0629
+pt_gap_PDL,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,full,6.03,3,0.1177,102,mt_tests_passthrough.csv,0.6369,1,1,1
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,ex_infl,26.57,7,0.001408,92,mt_tests_passthrough.csv,0.00544,0.004224,0.06281,1
+pt_gap_PDL,w_food_cpi_xvat_yoy-fao_ffpi_wloc_yoy,ex_infl,1.771,3,0.6229,92,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,full,58.09,7,1.466e-07,96,mt_tests_passthrough.csv,2.643e-06,2.052e-06,3.693e-05,0.0001561
+pt_gap_PDL,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,full,31.16,3,6.17e-06,96,mt_tests_passthrough.csv,0.0004007,0.0001974,0.0007992,0.006386
+pt_gap_unit_restriction,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,ex_infl,42.11,7,1.722e-05,86,mt_tests_passthrough.csv,0.0001164,0.000155,0.001988,0.01767
+pt_gap_PDL,w_food_cpi_xvat_yoy-cost_idx_calib_yoy,ex_infl,11.11,3,0.01501,86,mt_tests_passthrough.csv,0.1392,0.3002,0.3863,1
+pt_gap_unit_restriction,w_food_ppi_yoy-raw_mat_wloc_yoy,full,32.12,7,0.0002421,96,mt_tests_passthrough.csv,0.001091,0.00121,0.01597,0.2353
+pt_gap_PDL,w_food_ppi_yoy-raw_mat_wloc_yoy,full,20.55,3,0.0003292,96,mt_tests_passthrough.csv,0.007126,0.008888,0.02105,0.3187
+pt_gap_unit_restriction,w_food_ppi_yoy-raw_mat_wloc_yoy,ex_infl,31.35,7,0.0003706,86,mt_tests_passthrough.csv,0.001542,0.001482,0.02282,0.3569
+pt_gap_PDL,w_food_ppi_yoy-raw_mat_wloc_yoy,ex_infl,7.493,3,0.06559,86,mt_tests_passthrough.csv,0.4259,0.9149,1,1
+pt_gap_unit_restriction,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,full,81.08,7,4.889e-10,96,mt_tests_passthrough.csv,2.645e-08,7.822e-09,2.139e-07,5.275e-07
+pt_gap_PDL,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,full,11.2,3,0.01402,96,mt_tests_passthrough.csv,0.1392,0.2944,0.37,1
+pt_gap_unit_restriction,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,ex_infl,49.21,7,2.525e-06,86,mt_tests_passthrough.csv,2.276e-05,2.778e-05,0.0003558,0.002626
+pt_gap_PDL,w_food_ppi_yoy-eu_agri_basket_wloc_yoy,ex_infl,5.957,3,0.1228,86,mt_tests_passthrough.csv,0.6379,1,1,1
+pt_gap_unit_restriction,w_food_ppi_yoy-fao_ffpi_wloc_yoy,full,39.07,7,3.001e-05,96,mt_tests_passthrough.csv,0.0001804,0.0002401,0.00308,0.03052
+pt_gap_PDL,w_food_ppi_yoy-fao_ffpi_wloc_yoy,full,5.617,3,0.1399,96,mt_tests_passthrough.csv,0.6988,1,1,1
+pt_gap_unit_restriction,w_food_ppi_yoy-fao_ffpi_wloc_yoy,ex_infl,17.94,7,0.02089,86,mt_tests_passthrough.csv,0.07062,0.02344,0.4976,1
+pt_gap_PDL,w_food_ppi_yoy-fao_ffpi_wloc_yoy,ex_infl,2.048,3,0.5653,86,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_unit_restriction,w_food_ppi_yoy-cost_idx_calib_yoy,full,51.29,7,9.202e-07,96,mt_tests_passthrough.csv,1.216e-05,1.196e-05,0.000153,0.0009644
+pt_gap_PDL,w_food_ppi_yoy-cost_idx_calib_yoy,full,27.75,3,2.143e-05,96,mt_tests_passthrough.csv,0.0009277,0.0006429,0.002344,0.0219
+pt_gap_unit_restriction,w_food_ppi_yoy-cost_idx_calib_yoy,ex_infl,19.85,7,0.01172,86,mt_tests_passthrough.csv,0.04226,0.02344,0.3194,1
+pt_gap_PDL,w_food_ppi_yoy-cost_idx_calib_yoy,ex_infl,12.02,3,0.01038,86,mt_tests_passthrough.csv,0.1226,0.2284,0.3018,1
+pt_gap_PDL,price_cost_gap_agri,full,15.45,3,0.002481,96,mt_tests_passthrough.csv,0.04028,0.06203,0.1016,1
+pt_gap_PDL,price_cost_gap_agri,ex_infl,7.926,3,0.05493,86,mt_tests_passthrough.csv,0.4169,0.8789,1,1
+pt_gap_PDL,price_cost_gap_fao_wloc,full,6.573,3,0.09408,102,mt_tests_passthrough.csv,0.5312,0.9997,1,1
+pt_gap_PDL,price_cost_gap_fao_wloc,ex_infl,2.055,3,0.5635,92,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_PDL,price_cost_gap_fao_nok,full,4.224,3,0.2452,102,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_PDL,price_cost_gap_fao_nok,ex_infl,1.479,3,0.688,92,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_PDL,price_cost_gap_ppi,full,13.41,3,0.005669,96,mt_tests_passthrough.csv,0.0818,0.1361,0.1955,1
+pt_gap_PDL,price_cost_gap_ppi,ex_infl,8.254,3,0.04805,86,mt_tests_passthrough.csv,0.39,0.8169,0.9533,1
+pt_gap_PDL,nw_price_cost_gap_ppi,full,12.47,3,0.008321,96,mt_tests_passthrough.csv,0.1081,0.1914,0.259,1
+pt_gap_PDL,nw_price_cost_gap_ppi,ex_infl,6.908,3,0.08331,86,mt_tests_passthrough.csv,0.4926,0.9997,1,1
+pt_gap_PDL,price_wage_gap,full,4.388,3,0.2296,102,mt_tests_passthrough.csv,1,1,1,1
+pt_gap_PDL,price_wage_gap,ex_infl,8.772,3,0.03842,92,mt_tests_passthrough.csv,0.3326,0.6916,0.8058,1
+pt_gap_PDL,gap_calib,full,31.16,3,6.17e-06,96,mt_tests_passthrough.csv,0.0004007,0.0001974,0.0007992,0.006386
+pt_gap_PDL,gap_calib,ex_infl,11.11,3,0.01501,86,mt_tests_passthrough.csv,0.1392,0.3002,0.3863,1
+pt_gap_PDL,gap_raw_xvat_wloc,full,22.75,3,0.0001406,96,mt_tests_passthrough.csv,0.003652,0.004077,0.01053,0.1389
+pt_gap_PDL,gap_raw_xvat_wloc,ex_infl,7.671,3,0.06099,86,mt_tests_passthrough.csv,0.4169,0.9149,1,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-2,full,9.767,1,0.001776,100,mt_tests_passthrough.csv,0.05379,0.06571,0.0769,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-2,ex_infl,2.433,1,0.1188,90,mt_tests_passthrough.csv,0.6168,1,1,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L1-4,full,2.782,1,0.0953,98,mt_tests_passthrough.csv,0.5248,1,1,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L1-4,ex_infl,0.1419,1,0.7064,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-3 minus avg L4-7 (acceleration),full,6.773,1,0.009255,95,mt_tests_passthrough.csv,0.1402,0.2869,0.2808,1
+pt_rules_of_thumb,raw_mat_wloc_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,4.901,1,0.02684,85,mt_tests_passthrough.csv,0.242,0.6442,0.608,1
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-2,full,12.72,1,0.0003612,100,mt_tests_passthrough.csv,0.02188,0.01445,0.02241,0.3482
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-2,ex_infl,2.943,1,0.08625,90,mt_tests_passthrough.csv,0.5045,1,1,1
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L1-4,full,3.62,1,0.05708,98,mt_tests_passthrough.csv,0.4149,1,1,1
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L1-4,ex_infl,0.2965,1,0.5861,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-3 minus avg L4-7 (acceleration),full,7.923,1,0.004881,95,mt_tests_passthrough.csv,0.09855,0.166,0.1734,1
+pt_rules_of_thumb,cost_idx_calib_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,6.068,1,0.01376,85,mt_tests_passthrough.csv,0.1667,0.3956,0.3643,1
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-2,full,39.13,1,3.969e-10,100,mt_tests_passthrough.csv,7.213e-08,1.667e-08,1.833e-07,4.287e-07
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-2,ex_infl,6.38,1,0.01154,90,mt_tests_passthrough.csv,0.1613,0.3462,0.318,1
+pt_rules_of_thumb,packaging_eu_yoy|avg L1-4,full,6.084,1,0.01364,98,mt_tests_passthrough.csv,0.1667,0.3956,0.3643,1
+pt_rules_of_thumb,packaging_eu_yoy|avg L1-4,ex_infl,0.7688,1,0.3806,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-3 minus avg L4-7 (acceleration),full,8.705,1,0.003173,95,mt_tests_passthrough.csv,0.07335,0.1142,0.1256,1
+pt_rules_of_thumb,packaging_eu_yoy|avg L0-3 minus avg L4-7 (acceleration),ex_infl,14.45,1,0.0001442,85,mt_tests_passthrough.csv,0.0131,0.005912,0.0107,0.1422
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-2,full,8.674,1,0.003229,100,mt_tests_passthrough.csv,0.07335,0.1142,0.1272,1
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-2,ex_infl,3.365,1,0.06658,90,mt_tests_passthrough.csv,0.4469,1,1,1
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L1-4,full,3.506,1,0.06115,98,mt_tests_passthrough.csv,0.4274,1,1,1
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L1-4,ex_infl,0.5681,1,0.451,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-3 minus avg L4-7 (acceleration),full,4.83,1,0.02796,95,mt_tests_passthrough.csv,0.242,0.6442,0.6286,1
+pt_rules_of_thumb,gap_raw_xvat_wloc|avg L0-3 minus avg L4-7 (acceleration),ex_infl,3.263,1,0.07085,85,mt_tests_passthrough.csv,0.4469,1,1,1
+pt_rules_of_thumb,gap_calib|avg L0-2,full,10.19,1,0.001413,100,mt_tests_passthrough.csv,0.05135,0.05369,0.06281,1
+pt_rules_of_thumb,gap_calib|avg L0-2,ex_infl,4.832,1,0.02793,90,mt_tests_passthrough.csv,0.242,0.6442,0.6286,1
+pt_rules_of_thumb,gap_calib|avg L1-4,full,5.077,1,0.02424,98,mt_tests_passthrough.csv,0.242,0.606,0.5613,1
+pt_rules_of_thumb,gap_calib|avg L1-4,ex_infl,1.416,1,0.2341,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,gap_calib|avg L0-3 minus avg L4-7 (acceleration),full,3.99,1,0.04577,95,mt_tests_passthrough.csv,0.3466,0.8696,0.9213,1
+pt_rules_of_thumb,gap_calib|avg L0-3 minus avg L4-7 (acceleration),ex_infl,2.895,1,0.08883,85,mt_tests_passthrough.csv,0.5045,1,1,1
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-2,full,10.99,1,0.0009162,100,mt_tests_passthrough.csv,0.04162,0.03573,0.04352,0.8457
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-2,ex_infl,5.833,1,0.01573,90,mt_tests_passthrough.csv,0.1787,0.4247,0.4011,1
+pt_rules_of_thumb,price_cost_gap_agri|avg L1-4,full,4.284,1,0.03848,98,mt_tests_passthrough.csv,0.3179,0.8081,0.8058,1
+pt_rules_of_thumb,price_cost_gap_agri|avg L1-4,ex_infl,1.235,1,0.2665,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-3 minus avg L4-7 (acceleration),full,6.88,1,0.008717,95,mt_tests_passthrough.csv,0.1402,0.2789,0.2674,1
+pt_rules_of_thumb,price_cost_gap_agri|avg L0-3 minus avg L4-7 (acceleration),ex_infl,5.595,1,0.01801,85,mt_tests_passthrough.csv,0.1925,0.4683,0.4483,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-2,full,7.673,1,0.005604,100,mt_tests_passthrough.csv,0.1018,0.1849,0.1941,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-2,ex_infl,3.253,1,0.07131,90,mt_tests_passthrough.csv,0.4469,1,1,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L1-4,full,3.094,1,0.07857,98,mt_tests_passthrough.csv,0.4759,1,1,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L1-4,ex_infl,0.6006,1,0.4383,88,mt_tests_passthrough.csv,1,1,1,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-3 minus avg L4-7 (acceleration),full,4.098,1,0.04293,95,mt_tests_passthrough.csv,0.3392,0.8586,0.8812,1
+pt_rules_of_thumb,ppi_minus_raw (manufacturer gap)|avg L0-3 minus avg L4-7 (acceleration),ex_infl,2.712,1,0.09959,85,mt_tests_passthrough.csv,0.5323,1,1,1
+pt_asymmetry_profile,raw_mat_wloc_yoy,full,35.6,3,1.377e-06,96,mt_tests_passthrough.csv,1.497e-05,9.639e-06,0.0002081,0.001436
+pt_asymmetry_profile,raw_mat_wloc_yoy,ex_infl,26.98,3,3.532e-05,86,mt_tests_passthrough.csv,0.000192,0.0001766,0.003538,0.03585
+pt_asymmetry_profile,eu_agri_basket_wloc_yoy,full,28.41,3,1.763e-05,96,mt_tests_passthrough.csv,0.0001278,0.0001058,0.002002,0.01807
+pt_asymmetry_profile,eu_agri_basket_wloc_yoy,ex_infl,11.19,3,0.01468,86,mt_tests_passthrough.csv,0.0456,0.02936,0.3842,1
+pt_asymmetry_profile,cost_idx_calib_yoy,full,38.52,3,5.06e-07,96,mt_tests_passthrough.csv,1.1e-05,4.048e-06,9.348e-05,0.0005328
+pt_asymmetry_profile,cost_idx_calib_yoy,ex_infl,25.25,3,6.593e-05,86,mt_tests_passthrough.csv,0.0002867,0.0002637,0.005831,0.06619
+pt_asymmetry_profile,packaging_eu_yoy,full,12.84,3,0.00722,96,mt_tests_passthrough.csv,0.02616,0.02166,0.2342,1
+pt_asymmetry_profile,packaging_eu_yoy,ex_infl,9.112,3,0.03406,86,mt_tests_passthrough.csv,0.09257,0.03406,0.7354,1
+pt_fx_given_usd_commod,w_fx_vs_usd_yoy,full,12.79,3,0.007227,102,mt_tests_passthrough.csv,0.2691,0.08672,0.2342,1
+pt_fx_given_usd_commod,w_fx_vs_usd_yoy,ex_infl,7.249,3,0.07218,92,mt_tests_passthrough.csv,0.672,0.7144,1,1
+pt_fx_given_usd_commod,w_fx_vs_eur_yoy,full,2.018,3,0.5709,102,mt_tests_passthrough.csv,1,1,1,1
+pt_fx_given_usd_commod,w_fx_vs_eur_yoy,ex_infl,1.93,3,0.5892,92,mt_tests_passthrough.csv,1,1,1,1
+pt_fx_given_usd_commod,no_fx_usdnok__yoy,full,7.246,3,0.07144,102,mt_tests_passthrough.csv,0.672,0.7144,1,1
+pt_fx_given_usd_commod,no_fx_usdnok__yoy,ex_infl,5.743,3,0.1336,92,mt_tests_passthrough.csv,0.8292,1,1,1
+pt_fx_given_usd_commod,se_usdsek__yoy,full,7.813,3,0.05648,102,mt_tests_passthrough.csv,0.672,0.6213,1,1
+pt_fx_given_usd_commod,se_usdsek__yoy,ex_infl,3.983,3,0.271,92,mt_tests_passthrough.csv,1,1,1,1
+pt_fx_given_usd_commod,no_fx_eurnok__yoy,full,1.474,3,0.6892,100,mt_tests_passthrough.csv,1,1,1,1
+pt_fx_given_usd_commod,no_fx_eurnok__yoy,ex_infl,2.984,3,0.3997,90,mt_tests_passthrough.csv,1,1,1,1
+pt_fx_given_usd_commod,se_eursek__yoy,full,5.831,3,0.1279,102,mt_tests_passthrough.csv,0.8292,1,1,1
+pt_fx_given_usd_commod,se_eursek__yoy,ex_infl,4.7,3,0.2036,92,mt_tests_passthrough.csv,1,1,1,1
+pt_multicost_block,raw_mat_wloc_yoy,full,28.5,3,2.016e-05,96,mt_tests_passthrough.csv,0.0005905,0.0002016,0.002235,0.02062
+pt_multicost_block,packaging_eu_yoy,full,12.81,3,0.007604,96,mt_tests_passthrough.csv,0.03712,0.03834,0.2431,1
+pt_multicost_block,elec_scaled,full,1.238,3,0.7445,96,mt_tests_passthrough.csv,1,0.7445,1,1
+pt_multicost_block,w_wage_yoy,full,4.762,3,0.1991,96,mt_tests_passthrough.csv,0.648,0.3982,1,1
+pt_multicost_block,w_food_cpi_xvat_yoy,full,13.25,3,0.00639,96,mt_tests_passthrough.csv,0.03712,0.03834,0.2133,1
+pt_multicost_block,raw_mat_wloc_yoy,ex_infl,26.5,3,5.038e-05,86,mt_tests_passthrough.csv,0.0007378,0.0004534,0.004706,0.05083
+pt_multicost_block,packaging_eu_yoy,ex_infl,15.64,3,0.002676,86,mt_tests_passthrough.csv,0.01959,0.01873,0.1085,1
+pt_multicost_block,elec_scaled,ex_infl,6.009,3,0.1218,86,mt_tests_passthrough.csv,0.4459,0.3654,1,1
+pt_multicost_block,w_wage_yoy,ex_infl,7.681,3,0.0621,86,mt_tests_passthrough.csv,0.2598,0.2484,1,1
+pt_multicost_block,w_food_cpi_xvat_yoy,ex_infl,22.9,3,0.0001802,86,mt_tests_passthrough.csv,0.001759,0.001442,0.01259,0.1764
+og_price_validation,w_food_cpi_xvat_yoy|k=0,2022Q2-2026Q2,134.6,1,1.258e-07,17,mt_tests_organic.csv,1.319e-06,1.635e-06,3.268e-05,0.0001341
+og_price_validation,w_food_cpi_xvat_yoy|k=1,2022Q2-2026Q2,243.4,1,2.15e-07,17,mt_tests_organic.csv,1.503e-06,2.365e-06,4.831e-05,0.0002283
+og_price_validation,nw_food_cpi_xvat_yoy|k=0,2022Q2-2026Q2,271.3,1,3.094e-09,17,mt_tests_organic.csv,6.488e-08,4.95e-08,1.225e-06,3.332e-06
+og_price_validation,nw_food_cpi_xvat_yoy|k=1,2022Q2-2026Q2,69.65,1,2.602e-05,17,mt_tests_organic.csv,0.0001169,0.0001301,0.002738,0.02651
+og_price_validation,w_food_cpi_yoy|k=0,2022Q2-2026Q2,139,1,1.833e-07,17,mt_tests_organic.csv,1.503e-06,2.2e-06,4.415e-05,0.000195
+og_price_validation,w_food_cpi_yoy|k=1,2022Q2-2026Q2,243.4,1,2.15e-07,17,mt_tests_organic.csv,1.503e-06,2.365e-06,4.831e-05,0.0002283
+og_price_validation,w_food_ppi_yoy|k=0,2022Q2-2026Q2,45.81,1,4.064e-05,17,mt_tests_organic.csv,0.0001704,0.0001626,0.003928,0.04113
+og_price_validation,w_food_ppi_yoy|k=1,2022Q2-2026Q2,197.3,1,7.438e-09,17,mt_tests_organic.csv,9.359e-08,1.041e-07,2.576e-06,7.988e-06
+og_price_validation,nw_food_ppi_yoy|k=0,2022Q2-2026Q2,62.12,1,6.705e-06,17,mt_tests_organic.csv,3.245e-05,4.023e-05,0.0008445,0.00692
+og_price_validation,nw_food_ppi_yoy|k=1,2022Q2-2026Q2,295.2,1,1.06e-09,17,mt_tests_organic.csv,3.334e-08,1.802e-08,4.406e-07,1.143e-06
+og_price_validation,no_cpi_food_idx__yoy|k=0,2022Q2-2026Q2,90.11,1,2.217e-06,17,mt_tests_organic.csv,1.162e-05,1.552e-05,0.0003233,0.002308
+og_price_validation,no_cpi_food_idx__yoy|k=1,2022Q2-2026Q2,4.938,1,0.04208,17,mt_tests_organic.csv,0.1557,0.08416,0.868,1
+og_price_validation,se_cpi_food_idx__yoy|k=0,2022Q2-2026Q2,74.54,1,8.622e-07,17,mt_tests_organic.csv,4.931e-06,6.898e-06,0.0001493,0.0009053
+og_price_validation,se_cpi_food_idx__yoy|k=1,2022Q2-2026Q2,164.6,1,2.548e-07,17,mt_tests_organic.csv,1.603e-06,2.365e-06,5.431e-05,0.0002698
+og_price_validation,ea_hicp_food_idx__yoy|k=0,2022Q2-2026Q2,338.8,1,1.405e-10,17,mt_tests_organic.csv,8.839e-09,2.529e-09,6.871e-08,1.519e-07
+og_price_validation,ea_hicp_food_idx__yoy|k=1,2022Q2-2026Q2,190.7,1,4.743e-09,17,mt_tests_organic.csv,7.46e-08,7.114e-08,1.792e-06,5.103e-06
+og_price_validation,w_ec_food_ind_sell_price_exp_lvl|k=0,2022Q2-2026Q2,1.736,1,0.2475,17,mt_tests_organic.csv,0.865,0.2475,1,1
+og_price_validation,w_ec_food_ind_sell_price_exp_lvl|k=1,2022Q2-2026Q2,9.538,1,0.01375,17,mt_tests_organic.csv,0.05406,0.04125,0.3643,1
+og_volume_validation,w_real_wage_yoy|L0,2022Q2-2026Q2,14.03,1,0.01918,17,mt_tests_organic.csv,0.1233,0.2685,0.4731,1
+og_volume_validation,w_real_wage_yoy|L1,2022Q2-2026Q2,62.47,1,0.0007574,17,mt_tests_organic.csv,0.013,0.02272,0.03845,0.7089
+og_volume_validation,nw_real_wage_yoy|L0,2022Q2-2026Q2,13.85,1,0.01553,17,mt_tests_organic.csv,0.1085,0.2485,0.3972,1
+og_volume_validation,nw_real_wage_yoy|L1,2022Q2-2026Q2,27.8,1,0.00106,17,mt_tests_organic.csv,0.0131,0.02756,0.04923,0.9741
+og_volume_validation,w_hh_real_inc_yoy|L0,2022Q2-2026Q2,38.89,1,0.0002042,16,mt_tests_organic.csv,0.008202,0.007147,0.01391,0.1993
+og_volume_validation,w_hh_real_inc_yoy|L1,2022Q2-2026Q2,112.7,1,0.0005385,17,mt_tests_organic.csv,0.01236,0.01723,0.02888,0.5078
+og_volume_validation,w_cons_conf_z|L0,2022Q2-2026Q2,120.2,1,0.000506,17,mt_tests_organic.csv,0.01236,0.0167,0.02767,0.4787
+og_volume_validation,w_cons_conf_z|L1,2022Q2-2026Q2,45.37,1,0.0001516,17,mt_tests_organic.csv,0.008202,0.005609,0.01115,0.1493
+og_volume_validation,nw_cons_conf_z|L0,2022Q2-2026Q2,132,1,0.0001044,17,mt_tests_organic.csv,0.008202,0.003967,0.008409,0.1039
+og_volume_validation,nw_cons_conf_z|L1,2022Q2-2026Q2,73.11,1,0.0004674,17,mt_tests_organic.csv,0.01236,0.01589,0.02652,0.4454
+og_volume_validation,w_cons_conf_z_d4|L0,2022Q2-2026Q2,3.89,1,0.1299,17,mt_tests_organic.csv,0.6957,1,1,1
+og_volume_validation,w_cons_conf_z_d4|L1,2022Q2-2026Q2,29.62,1,0.01057,17,mt_tests_organic.csv,0.07719,0.1832,0.302,1
+og_volume_validation,w_unemp_d4|L0,2022Q2-2026Q2,0.5166,1,0.4841,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,w_unemp_d4|L1,2022Q2-2026Q2,2.439,1,0.1407,17,mt_tests_organic.csv,0.7292,1,1,1
+og_volume_validation,w_unemp_lvl|L0,2022Q2-2026Q2,12.06,1,0.01018,17,mt_tests_organic.csv,0.07719,0.1832,0.3018,1
+og_volume_validation,w_unemp_lvl|L1,2022Q2-2026Q2,19.76,1,0.006046,17,mt_tests_organic.csv,0.05112,0.1232,0.2043,1
+og_volume_validation,w_retail_food_vol_yoy|L0,2022Q2-2026Q2,14.5,1,0.02422,17,mt_tests_organic.csv,0.1441,0.2906,0.5613,1
+og_volume_validation,w_retail_food_vol_yoy|L1,2022Q2-2026Q2,86.13,1,0.0006801,17,mt_tests_organic.csv,0.013,0.02108,0.03556,0.6386
+og_volume_validation,nw_retail_food_vol_yoy|L0,2022Q2-2026Q2,6.151,1,0.07082,17,mt_tests_organic.csv,0.4064,0.779,1,1
+og_volume_validation,nw_retail_food_vol_yoy|L1,2022Q2-2026Q2,81.57,1,0.0008399,17,mt_tests_organic.csv,0.013,0.02436,0.04131,0.7803
+og_volume_validation,no_qna_hh_food_cons_sa_mnok__yoy|L0,2022Q2-2026Q2,16.35,1,0.002748,17,mt_tests_organic.csv,0.02759,0.0632,0.1109,1
+og_volume_validation,no_qna_hh_food_cons_sa_mnok__yoy|L1,2022Q2-2026Q2,85.06,1,0.002117,17,mt_tests_organic.csv,0.02267,0.05081,0.09025,1
+og_volume_validation,se_na_hhcons_food_sa__yoy|L0,2022Q2-2026Q2,18.44,1,0.01622,17,mt_tests_organic.csv,0.1086,0.2485,0.4123,1
+og_volume_validation,se_na_hhcons_food_sa__yoy|L1,2022Q2-2026Q2,26.41,1,0.005865,17,mt_tests_organic.csv,0.05112,0.1232,0.1995,1
+og_volume_validation,w_gdp_vol_yoy|L0,2022Q2-2026Q2,12.04,1,0.02065,17,mt_tests_organic.csv,0.1276,0.2685,0.4961,1
+og_volume_validation,w_gdp_vol_yoy|L1,2022Q2-2026Q2,0.1583,1,0.736,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,w_food_rel_xvat_yoy|L0,2022Q2-2026Q2,27.28,1,0.0017,17,mt_tests_organic.csv,0.01951,0.0425,0.07399,1
+og_volume_validation,w_food_rel_xvat_yoy|L1,2022Q2-2026Q2,68.55,1,0.003521,17,mt_tests_organic.csv,0.03328,0.07746,0.1343,1
+og_volume_validation,w_food_cpi_xvat_yoy|L0,2022Q2-2026Q2,66.8,1,0.0009504,17,mt_tests_organic.csv,0.013,0.02661,0.04489,0.8763
+og_volume_validation,w_food_cpi_xvat_yoy|L1,2022Q2-2026Q2,61.9,1,0.0001953,17,mt_tests_organic.csv,0.008202,0.007031,0.01342,0.1908
+og_volume_validation,w_policy_rate_d4|L0,2022Q2-2026Q2,33.82,1,0.0009707,17,mt_tests_organic.csv,0.013,0.02661,0.04533,0.893
+og_volume_validation,w_policy_rate_d4|L1,2022Q2-2026Q2,26.38,1,0.008436,17,mt_tests_organic.csv,0.06777,0.1603,0.2597,1
+og_volume_validation,w_policy_rate_lvl|L0,2022Q2-2026Q2,0.1218,1,0.7469,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,w_policy_rate_lvl|L1,2022Q2-2026Q2,0.4895,1,0.5254,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,w_hh_saving_d4|L0,2022Q2-2026Q2,6.732,1,0.09543,16,mt_tests_organic.csv,0.5287,0.9543,1,1
+og_volume_validation,w_hh_saving_d4|L1,2022Q2-2026Q2,0.3147,1,0.6224,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,no_fx_seknok__yoy|L0,2022Q2-2026Q2,0.1754,1,0.6875,17,mt_tests_organic.csv,1,1,1,1
+og_volume_validation,no_fx_seknok__yoy|L1,2022Q2-2026Q2,0.5038,1,0.528,17,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|coincident0,full,0.3231,1,0.5698,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|coincident0,ex_infl,2.313,1,0.1283,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|coincident0,post2008,0.2613,1,0.6092,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|coincident0,full,4.976,1,0.0257,102,mt_tests_organic.csv,0.608,1,0.5902,1
+og_volume_drivers,og|w_real_wage_yoy|coincident0,ex_infl,2.251,1,0.1335,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|coincident0,post2008,6.957,1,0.00835,74,mt_tests_organic.csv,0.2602,1,0.259,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|coincident0,full,0.07087,1,0.7901,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|coincident0,ex_infl,2.74,1,0.09788,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|coincident0,post2008,0.05377,1,0.8166,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|coincident0,full,5.418,1,0.01992,102,mt_tests_organic.csv,0.4866,1,0.4854,1
+og_volume_drivers,og|nw_real_wage_yoy|coincident0,ex_infl,3.007,1,0.08289,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|coincident0,post2008,7.702,1,0.005515,74,mt_tests_organic.csv,0.1964,1,0.1918,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|coincident0,full,12.23,1,0.000469,73,mt_tests_organic.csv,0.03102,0.2031,0.02652,0.4465
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|coincident0,ex_infl,2.189,1,0.139,63,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|coincident0,post2008,12.23,1,0.000469,73,mt_tests_organic.csv,0.03102,0.2031,0.02652,0.4465
+og_volume_drivers,og|w_hh_real_inc_yoy|coincident0,full,1.874,1,0.171,73,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|coincident0,ex_infl,0.6616,1,0.416,63,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|coincident0,post2008,1.874,1,0.171,73,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|coincident0,full,1.455,1,0.2277,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|coincident0,ex_infl,0.5996,1,0.4387,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|coincident0,post2008,1.459,1,0.227,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z|coincident0,full,9.154,1,0.002482,102,mt_tests_organic.csv,0.1117,1,0.1016,1
+og_volume_drivers,og|w_cons_conf_z|coincident0,ex_infl,5.942,1,0.01478,92,mt_tests_organic.csv,0.3961,1,0.3842,1
+og_volume_drivers,og|w_cons_conf_z|coincident0,post2008,8.392,1,0.003768,74,mt_tests_organic.csv,0.1508,1,0.1401,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|coincident0,full,1.403,1,0.2362,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|coincident0,ex_infl,1.579,1,0.209,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|coincident0,post2008,1.716,1,0.1902,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_cons_conf_z|coincident0,full,10.29,1,0.001338,102,mt_tests_organic.csv,0.06883,0.5593,0.06012,1
+og_volume_drivers,og|nw_cons_conf_z|coincident0,ex_infl,8.479,1,0.003593,92,mt_tests_organic.csv,0.1474,1,0.1364,1
+og_volume_drivers,og|nw_cons_conf_z|coincident0,post2008,6.861,1,0.008811,74,mt_tests_organic.csv,0.272,1,0.2693,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|coincident0,full,5.447,1,0.0196,102,mt_tests_organic.csv,0.4849,1,0.4792,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|coincident0,ex_infl,0.3759,1,0.5398,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|coincident0,post2008,5.629,1,0.01767,74,mt_tests_organic.csv,0.4532,1,0.444,1
+og_volume_drivers,og|w_cons_conf_z_d4|coincident0,full,0.0349,1,0.8518,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z_d4|coincident0,ex_infl,0.1025,1,0.7488,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z_d4|coincident0,post2008,0.1587,1,0.6904,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|coincident0,full,0.3492,1,0.5546,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|coincident0,ex_infl,0.3596,1,0.5487,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|coincident0,post2008,0.7627,1,0.3825,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|coincident0,full,1.39,1,0.2384,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|coincident0,ex_infl,0.02031,1,0.8867,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|coincident0,post2008,4.002,1,0.04545,74,mt_tests_organic.csv,0.9382,1,0.9171,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|coincident0,full,0.9382,1,0.3327,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|coincident0,ex_infl,0.09081,1,0.7632,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|coincident0,post2008,0.4308,1,0.5116,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|coincident0,full,3.602,1,0.05771,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|coincident0,ex_infl,3.014,1,0.08254,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|coincident0,post2008,9.154,1,0.002482,74,mt_tests_organic.csv,0.1117,1,0.1016,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|coincident0,full,0.7334,1,0.3918,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|coincident0,ex_infl,0.159,1,0.6901,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|coincident0,post2008,0.7305,1,0.3927,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|coincident0,full,2.498,1,0.114,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|coincident0,ex_infl,0.1716,1,0.6787,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|coincident0,post2008,3.053,1,0.08059,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|coincident0,full,0.334,1,0.5633,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|coincident0,ex_infl,0.102,1,0.7494,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|coincident0,post2008,0.4738,1,0.4912,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|coincident0,full,3.397,1,0.06532,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|coincident0,ex_infl,0.01284,1,0.9098,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|coincident0,post2008,3.133,1,0.07672,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,full,0.3209,1,0.5711,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,ex_infl,0.6649,1,0.4148,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,post2008,0.5106,1,0.4749,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,full,3.639,1,0.05646,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,ex_infl,0.2782,1,0.5979,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|coincident0,post2008,3.647,1,0.05617,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|coincident0,full,15.45,1,8.493e-05,102,mt_tests_organic.csv,0.009175,0.0383,0.007204,0.08493
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|coincident0,ex_infl,4.918,1,0.02658,92,mt_tests_organic.csv,0.6176,1,0.6067,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|coincident0,post2008,19.07,1,1.262e-05,74,mt_tests_organic.csv,0.001778,0.00578,0.00152,0.01299
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|coincident0,full,1.099,1,0.2944,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|coincident0,ex_infl,1.471,1,0.2252,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|coincident0,post2008,2.556,1,0.1099,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|coincident0,full,10.9,1,0.0009606,102,mt_tests_organic.csv,0.05368,0.4063,0.04512,0.8847
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|coincident0,ex_infl,5.415,1,0.01997,92,mt_tests_organic.csv,0.4866,1,0.4854,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|coincident0,post2008,12.43,1,0.0004234,74,mt_tests_organic.csv,0.03018,0.1846,0.02496,0.4052
+og_volume_drivers,og|w_gdp_vol_yoy|coincident0,full,3.819,1,0.05066,102,mt_tests_organic.csv,1,1,0.9956,1
+og_volume_drivers,og|w_gdp_vol_yoy|coincident0,ex_infl,1.922,1,0.1657,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|coincident0,post2008,6.247,1,0.01244,74,mt_tests_organic.csv,0.3506,1,0.3369,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|coincident0,full,23.94,1,9.96e-07,102,mt_tests_organic.csv,0.0001899,0.0004621,0.0001623,0.001043
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|coincident0,ex_infl,6.493,1,0.01083,92,mt_tests_organic.csv,0.3106,1,0.3052,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|coincident0,post2008,24.68,1,6.784e-07,74,mt_tests_organic.csv,0.0001466,0.0003161,0.0001226,0.0007137
+og_volume_drivers,og|w_food_rel_xvat_yoy|coincident0,full,8.348,1,0.003862,102,mt_tests_organic.csv,0.1513,1,0.1425,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|coincident0,ex_infl,3.323,1,0.0683,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|coincident0,post2008,13.6,1,0.000226,74,mt_tests_organic.csv,0.01778,0.09944,0.01515,0.2201
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|coincident0,full,32.41,1,1.246e-08,102,mt_tests_organic.csv,5.048e-06,5.894e-06,3.836e-06,1.334e-05
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|coincident0,ex_infl,3.597,1,0.0579,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|coincident0,post2008,26.57,1,2.539e-07,74,mt_tests_organic.csv,6.857e-05,0.0001191,5.431e-05,0.0002691
+og_volume_drivers,og|w_food_cpi_xvat_yoy|coincident0,full,87.5,1,8.428e-21,102,mt_tests_organic.csv,1.366e-17,4.037e-18,1.031e-17,9.212e-18
+og_volume_drivers,og|w_food_cpi_xvat_yoy|coincident0,ex_infl,7.501,1,0.006166,92,mt_tests_organic.csv,0.2126,1,0.2067,1
+og_volume_drivers,og|w_food_cpi_xvat_yoy|coincident0,post2008,90.07,1,2.299e-21,74,mt_tests_organic.csv,7.451e-18,1.104e-18,5.699e-18,2.52e-18
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|coincident0,full,1.193,1,0.2748,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|coincident0,ex_infl,0.1087,1,0.7417,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|coincident0,post2008,0.4033,1,0.5254,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|coincident0,full,0.2525,1,0.6153,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|coincident0,ex_infl,0.03563,1,0.8503,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|coincident0,post2008,3.75,1,0.05282,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|coincident0,full,0.3182,1,0.5727,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|coincident0,ex_infl,1.048,1,0.3059,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|coincident0,post2008,3.249,1,0.07147,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_lvl|coincident0,full,7.385,1,0.006577,102,mt_tests_organic.csv,0.222,1,0.2178,1
+og_volume_drivers,og|w_policy_rate_lvl|coincident0,ex_infl,8.193,1,0.004205,92,mt_tests_organic.csv,0.1603,1,0.1526,1
+og_volume_drivers,og|w_policy_rate_lvl|coincident0,post2008,34.2,1,4.984e-09,74,mt_tests_organic.csv,3.231e-06,2.372e-06,1.801e-06,5.358e-06
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|coincident0,full,4.086,1,0.04323,101,mt_tests_organic.csv,0.9039,1,0.883,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|coincident0,ex_infl,0.8085,1,0.3686,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|coincident0,post2008,5.149,1,0.02326,73,mt_tests_organic.csv,0.5584,1,0.5493,1
+og_volume_drivers,og|w_hh_saving_d4|coincident0,full,2.384,1,0.1226,101,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|coincident0,ex_infl,0.4384,1,0.5079,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|coincident0,post2008,3.334,1,0.06785,73,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|coincident0,full,0.1557,1,0.6932,60,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|coincident0,ex_infl,0.1557,1,0.6932,60,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|coincident0,post2008,0.123,1,0.7258,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|coincident0,full,0.2489,1,0.6179,60,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|coincident0,ex_infl,0.2489,1,0.6179,60,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|coincident0,post2008,0.1262,1,0.7224,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|coincident0,full,0.177,1,0.674,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|coincident0,ex_infl,0.2128,1,0.6446,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|coincident0,post2008,0.4858,1,0.4858,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|coincident0,full,0.2344,1,0.6283,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|coincident0,ex_infl,0.1129,1,0.7369,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|coincident0,post2008,0.6032,1,0.4374,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime0,full,0.2548,1,0.6137,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime0,ex_infl,13.57,1,0.0002304,92,mt_tests_organic.csv,0.01778,0.1011,0.01532,0.2242
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime0,post2008,0.3919,1,0.5313,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime0,full,22.15,1,2.525e-06,102,mt_tests_organic.csv,0.0004092,0.001164,0.0003558,0.002626
+og_volume_drivers,og|w_real_wage_yoy|realtime0,ex_infl,5.088,1,0.02409,92,mt_tests_organic.csv,0.5741,1,0.561,1
+og_volume_drivers,og|w_real_wage_yoy|realtime0,post2008,24.09,1,9.174e-07,74,mt_tests_organic.csv,0.0001858,0.0004266,0.000153,0.0009624
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime0,full,0.006999,1,0.9333,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime0,ex_infl,14.77,1,0.0001216,92,mt_tests_organic.csv,0.01126,0.05423,0.009537,0.1206
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime0,post2008,0.005809,1,0.9392,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime0,full,16.18,1,5.762e-05,102,mt_tests_organic.csv,0.006669,0.0261,0.005207,0.05797
+og_volume_drivers,og|nw_real_wage_yoy|realtime0,ex_infl,9.987,1,0.001577,92,mt_tests_organic.csv,0.07744,0.6545,0.069,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime0,post2008,15.85,1,6.85e-05,74,mt_tests_organic.csv,0.007655,0.03096,0.005994,0.06871
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime0,full,8.611,1,0.003341,73,mt_tests_organic.csv,0.1407,1,0.1298,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime0,ex_infl,0.4428,1,0.5058,63,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime0,post2008,8.611,1,0.003341,73,mt_tests_organic.csv,0.1407,1,0.1298,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime0,full,1.3,1,0.2543,73,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime0,ex_infl,2.403,1,0.1211,63,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime0,post2008,1.3,1,0.2543,73,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime0,full,1.455,1,0.2277,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime0,ex_infl,0.5996,1,0.4387,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime0,post2008,1.459,1,0.227,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z|realtime0,full,25.31,1,4.887e-07,102,mt_tests_organic.csv,0.0001131,0.0002282,9.233e-05,0.0005151
+og_volume_drivers,og|w_cons_conf_z|realtime0,ex_infl,5.628,1,0.01768,92,mt_tests_organic.csv,0.4532,1,0.444,1
+og_volume_drivers,og|w_cons_conf_z|realtime0,post2008,33.19,1,8.376e-09,74,mt_tests_organic.csv,4.524e-06,3.979e-06,2.785e-06,8.987e-06
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime0,full,1.403,1,0.2362,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime0,ex_infl,1.579,1,0.209,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime0,post2008,1.716,1,0.1902,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_cons_conf_z|realtime0,full,22.88,1,1.728e-06,102,mt_tests_organic.csv,0.0002948,0.0007983,0.0002565,0.001801
+og_volume_drivers,og|nw_cons_conf_z|realtime0,ex_infl,6.587,1,0.01027,92,mt_tests_organic.csv,0.3026,1,0.3018,1
+og_volume_drivers,og|nw_cons_conf_z|realtime0,post2008,26.18,1,3.104e-07,74,mt_tests_organic.csv,7.738e-05,0.0001453,6.451e-05,0.0003284
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime0,full,5.447,1,0.0196,102,mt_tests_organic.csv,0.4849,1,0.4792,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime0,ex_infl,0.3759,1,0.5398,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime0,post2008,5.629,1,0.01767,74,mt_tests_organic.csv,0.4532,1,0.444,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime0,full,11.03,1,0.0008958,102,mt_tests_organic.csv,0.05111,0.3807,0.04294,0.8286
+og_volume_drivers,og|w_cons_conf_z_d4|realtime0,ex_infl,1.902,1,0.1678,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime0,post2008,12.13,1,0.0004965,74,mt_tests_organic.csv,0.03198,0.214,0.02752,0.4707
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime0,full,0.5821,1,0.4455,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime0,ex_infl,0.05703,1,0.8113,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime0,post2008,0.2633,1,0.6078,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|realtime0,full,5.945,1,0.01476,102,mt_tests_organic.csv,0.3961,1,0.3842,1
+og_volume_drivers,og|w_unemp_d4|realtime0,ex_infl,0.6777,1,0.4104,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|realtime0,post2008,14.32,1,0.0001539,74,mt_tests_organic.csv,0.01386,0.06849,0.01122,0.1514
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime0,full,2.129,1,0.1445,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime0,ex_infl,0.1745,1,0.6762,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime0,post2008,1.585,1,0.2081,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|realtime0,full,7.333,1,0.006772,102,mt_tests_organic.csv,0.2263,1,0.2216,1
+og_volume_drivers,og|w_unemp_lvl|realtime0,ex_infl,3.414,1,0.06466,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|realtime0,post2008,6.762,1,0.009312,74,mt_tests_organic.csv,0.2821,1,0.2815,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime0,full,1.979,1,0.1595,101,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime0,ex_infl,0.02753,1,0.8682,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime0,post2008,2.024,1,0.1548,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime0,full,8.596,1,0.003369,101,mt_tests_organic.csv,0.1407,1,0.1303,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime0,ex_infl,1.156,1,0.2823,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime0,post2008,14.11,1,0.000172,74,mt_tests_organic.csv,0.01429,0.07602,0.01212,0.1686
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime0,full,1.265,1,0.2607,101,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime0,ex_infl,0.8875,1,0.3462,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime0,post2008,2.035,1,0.1537,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime0,full,14.2,1,0.0001643,101,mt_tests_organic.csv,0.01429,0.07295,0.01177,0.1613
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime0,ex_infl,0.003683,1,0.9516,91,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime0,post2008,20.7,1,5.37e-06,74,mt_tests_organic.csv,0.0007911,0.002465,0.00072,0.005563
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,full,2.494,1,0.1143,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,ex_infl,0.1102,1,0.7399,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,post2008,3.425,1,0.06421,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,full,3.405,1,0.06499,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,ex_infl,0.6667,1,0.4142,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime0,post2008,3.479,1,0.06214,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime0,full,7.587,1,0.00588,102,mt_tests_organic.csv,0.2049,1,0.1995,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime0,ex_infl,0.6897,1,0.4063,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime0,post2008,9.595,1,0.001952,74,mt_tests_organic.csv,0.09442,0.8081,0.08408,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime0,full,2.13,1,0.1444,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime0,ex_infl,0.3587,1,0.5492,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime0,post2008,1.889,1,0.1694,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime0,full,0.8286,1,0.3627,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime0,ex_infl,0.03691,1,0.8476,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime0,post2008,1.489,1,0.2224,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime0,full,4.829,1,0.02798,102,mt_tests_organic.csv,0.6431,1,0.6286,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime0,ex_infl,0.2719,1,0.602,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime0,post2008,7.827,1,0.005148,74,mt_tests_organic.csv,0.1896,1,0.1813,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime0,full,18.9,1,1.381e-05,102,mt_tests_organic.csv,0.001865,0.006311,0.00164,0.0142
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime0,ex_infl,4.262,1,0.03898,92,mt_tests_organic.csv,0.8311,1,0.8121,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime0,post2008,17.51,1,2.855e-05,74,mt_tests_organic.csv,0.003559,0.01299,0.002967,0.02906
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime0,full,1.644,1,0.1998,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime0,ex_infl,0.7459,1,0.3878,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime0,post2008,1.198,1,0.2737,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime0,full,12.36,1,0.0004376,102,mt_tests_organic.csv,0.03018,0.1899,0.02544,0.4179
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime0,ex_infl,0.9483,1,0.3301,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime0,post2008,11.23,1,0.0008063,74,mt_tests_organic.csv,0.04839,0.3443,0.04038,0.7515
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime0,full,63.27,1,1.805e-15,102,mt_tests_organic.csv,1.462e-12,8.61e-13,1.25e-12,1.96e-12
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime0,ex_infl,11.03,1,0.0008988,92,mt_tests_organic.csv,0.05111,0.3811,0.04294,0.8305
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime0,post2008,70.06,1,5.749e-17,74,mt_tests_organic.csv,6.211e-14,2.748e-14,5.974e-14,6.266e-14
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime0,full,1.193,1,0.2748,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime0,ex_infl,0.1087,1,0.7417,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime0,post2008,0.4033,1,0.5254,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime0,full,2.246,1,0.134,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime0,ex_infl,0.2441,1,0.6213,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime0,post2008,6.501,1,0.01078,74,mt_tests_organic.csv,0.3106,1,0.3051,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime0,full,0.3182,1,0.5727,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime0,ex_infl,1.048,1,0.3059,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime0,post2008,3.249,1,0.07147,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime0,full,6.989,1,0.0082,102,mt_tests_organic.csv,0.2596,1,0.2572,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime0,ex_infl,10.65,1,0.001102,92,mt_tests_organic.csv,0.06053,0.465,0.05089,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime0,post2008,14.89,1,0.0001137,74,mt_tests_organic.csv,0.01084,0.05082,0.009002,0.1129
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime0,full,0.002901,1,0.957,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime0,ex_infl,0.9753,1,0.3234,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime0,post2008,0.2254,1,0.635,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime0,full,1.198,1,0.2738,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime0,ex_infl,2.236,1,0.1348,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime0,post2008,2.419,1,0.1199,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime0,full,0.014,1,0.9058,59,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime0,ex_infl,0.014,1,0.9058,59,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime0,post2008,0.3707,1,0.5426,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime0,full,0.9152,1,0.3387,59,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime0,ex_infl,0.9152,1,0.3387,59,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime0,post2008,1.695,1,0.1929,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime0,full,0.177,1,0.674,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime0,ex_infl,0.2128,1,0.6446,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime0,post2008,0.4858,1,0.4858,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime0,full,0.5082,1,0.4759,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime0,ex_infl,0.05687,1,0.8115,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime0,post2008,1.266,1,0.2605,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime1,full,0.5751,1,0.4482,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime1,ex_infl,3.77,1,0.05217,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime1,post2008,1.304,1,0.2535,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime1,full,8.341,1,0.003875,102,mt_tests_organic.csv,0.1513,1,0.1425,1
+og_volume_drivers,og|w_real_wage_yoy|realtime1,ex_infl,0.3006,1,0.5835,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime1,post2008,7.213,1,0.007239,74,mt_tests_organic.csv,0.2394,1,0.2342,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime1,full,0.04741,1,0.8276,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime1,ex_infl,4.675,1,0.0306,92,mt_tests_organic.csv,0.6887,1,0.6712,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime1,post2008,0.334,1,0.5633,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime1,full,6.022,1,0.01413,102,mt_tests_organic.csv,0.3881,1,0.3717,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime1,ex_infl,1.241,1,0.2654,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime1,post2008,4.288,1,0.03838,74,mt_tests_organic.csv,0.8238,1,0.8058,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime1,full,0.02244,1,0.8809,72,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime1,ex_infl,0.7663,1,0.3814,62,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime1,post2008,0.02244,1,0.8809,72,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime1,full,0.639,1,0.4241,72,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime1,ex_infl,0.003535,1,0.9526,62,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime1,post2008,0.639,1,0.4241,72,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime1,full,1.268,1,0.2602,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime1,ex_infl,1.685,1,0.1943,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime1,post2008,1.154,1,0.2827,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z|realtime1,full,29.24,1,6.397e-08,102,mt_tests_organic.csv,2.073e-05,3.013e-05,1.773e-05,6.832e-05
+og_volume_drivers,og|w_cons_conf_z|realtime1,ex_infl,8.141,1,0.004328,92,mt_tests_organic.csv,0.1631,1,0.1558,1
+og_volume_drivers,og|w_cons_conf_z|realtime1,post2008,30.96,1,2.638e-08,74,mt_tests_organic.csv,9.5e-06,1.245e-05,7.832e-06,2.823e-05
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime1,full,1.071,1,0.3008,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime1,ex_infl,2.419,1,0.1199,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime1,post2008,1.136,1,0.2864,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_cons_conf_z|realtime1,full,23.37,1,1.335e-06,102,mt_tests_organic.csv,0.0002404,0.0006181,0.0002055,0.001394
+og_volume_drivers,og|nw_cons_conf_z|realtime1,ex_infl,8.435,1,0.003681,92,mt_tests_organic.csv,0.1491,1,0.1378,1
+og_volume_drivers,og|nw_cons_conf_z|realtime1,post2008,21.25,1,4.025e-06,74,mt_tests_organic.csv,0.0006212,0.001851,0.0005485,0.004174
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime1,full,4.636,1,0.0313,102,mt_tests_organic.csv,0.6996,1,0.6811,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime1,ex_infl,0.176,1,0.6749,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime1,post2008,5.468,1,0.01937,74,mt_tests_organic.csv,0.4849,1,0.4764,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime1,full,17.38,1,3.065e-05,102,mt_tests_organic.csv,0.003679,0.01392,0.003107,0.03114
+og_volume_drivers,og|w_cons_conf_z_d4|realtime1,ex_infl,7.59,1,0.005869,92,mt_tests_organic.csv,0.2049,1,0.1995,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime1,post2008,15.06,1,0.0001043,74,mt_tests_organic.csv,0.01033,0.04683,0.008409,0.1039
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime1,full,1.58,1,0.2087,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime1,ex_infl,9.424e-05,1,0.9923,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime1,post2008,0.9112,1,0.3398,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|realtime1,full,9.397,1,0.002173,102,mt_tests_organic.csv,0.1036,0.8974,0.0917,1
+og_volume_drivers,og|w_unemp_d4|realtime1,ex_infl,2.559,1,0.1096,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|realtime1,post2008,18.41,1,1.782e-05,74,mt_tests_organic.csv,0.00231,0.008126,0.002002,0.01825
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime1,full,2.439,1,0.1183,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime1,ex_infl,0.1258,1,0.7228,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime1,post2008,1.9,1,0.168,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|realtime1,full,7.755,1,0.005357,102,mt_tests_organic.csv,0.1929,1,0.1871,1
+og_volume_drivers,og|w_unemp_lvl|realtime1,ex_infl,7.775,1,0.005298,92,mt_tests_organic.csv,0.1929,1,0.1858,1
+og_volume_drivers,og|w_unemp_lvl|realtime1,post2008,6.095,1,0.01356,74,mt_tests_organic.csv,0.3756,1,0.3636,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime1,full,4.017,1,0.04505,100,mt_tests_organic.csv,0.9359,1,0.9114,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime1,ex_infl,0.0397,1,0.8421,90,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime1,post2008,5.619,1,0.01776,74,mt_tests_organic.csv,0.4532,1,0.4447,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime1,full,5.537,1,0.01862,100,mt_tests_organic.csv,0.4715,1,0.4607,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime1,ex_infl,1.45,1,0.2285,90,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime1,post2008,6.834,1,0.008942,74,mt_tests_organic.csv,0.2734,1,0.2723,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime1,full,2.988,1,0.08387,100,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime1,ex_infl,0.00943,1,0.9226,90,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime1,post2008,8.047,1,0.004559,74,mt_tests_organic.csv,0.1698,1,0.1634,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime1,full,8.307,1,0.00395,100,mt_tests_organic.csv,0.1524,1,0.1447,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime1,ex_infl,0.1362,1,0.712,90,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime1,post2008,10.14,1,0.00145,74,mt_tests_organic.csv,0.0727,0.6046,0.06412,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,full,2.878,1,0.08978,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,ex_infl,0.08131,1,0.7755,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,post2008,2.573,1,0.1087,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,full,3.141,1,0.07635,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,ex_infl,0.01447,1,0.9043,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime1,post2008,4.323,1,0.03759,74,mt_tests_organic.csv,0.8176,1,0.7972,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime1,full,11.05,1,0.0008875,102,mt_tests_organic.csv,0.05111,0.3781,0.04289,0.8218
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime1,ex_infl,5.866,1,0.01544,92,mt_tests_organic.csv,0.4068,1,0.3962,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime1,post2008,10.57,1,0.001149,74,mt_tests_organic.csv,0.06206,0.4837,0.05277,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime1,full,0.0008937,1,0.9762,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime1,ex_infl,1.312,1,0.252,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime1,post2008,0.004262,1,0.948,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime1,full,0.004937,1,0.944,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime1,ex_infl,0.000302,1,0.9861,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime1,post2008,0.1431,1,0.7052,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime1,full,6.604,1,0.01018,102,mt_tests_organic.csv,0.3026,1,0.3018,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime1,ex_infl,1.812,1,0.1783,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime1,post2008,8.805,1,0.003004,74,mt_tests_organic.csv,0.1316,1,0.1195,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime1,full,7.413,1,0.006477,102,mt_tests_organic.csv,0.221,1,0.2154,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime1,ex_infl,1.509,1,0.2193,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime1,post2008,4.124,1,0.04228,74,mt_tests_organic.csv,0.8956,1,0.87,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime1,full,1.782,1,0.182,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime1,ex_infl,0.4745,1,0.4909,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime1,post2008,1.057,1,0.304,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime1,full,3.247,1,0.07157,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime1,ex_infl,0.1318,1,0.7166,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime1,post2008,2.302,1,0.1292,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime1,full,27.17,1,1.859e-07,102,mt_tests_organic.csv,5.477e-05,8.737e-05,4.415e-05,0.0001976
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime1,ex_infl,10.45,1,0.001229,92,mt_tests_organic.csv,0.0653,0.5162,0.05614,1
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime1,post2008,32.5,1,1.19e-08,74,mt_tests_organic.csv,5.048e-06,5.641e-06,3.805e-06,1.276e-05
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime1,full,0.949,1,0.33,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime1,ex_infl,0.06382,1,0.8006,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime1,post2008,0.121,1,0.728,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime1,full,4.366,1,0.03667,102,mt_tests_organic.csv,0.803,1,0.7796,1
+og_volume_drivers,og|w_policy_rate_d4|realtime1,ex_infl,0.9485,1,0.3301,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime1,post2008,6.979,1,0.008249,74,mt_tests_organic.csv,0.2596,1,0.2578,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime1,full,0.7379,1,0.3903,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime1,ex_infl,0.5556,1,0.456,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime1,post2008,3.895,1,0.04843,74,mt_tests_organic.csv,0.9872,1,0.9586,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime1,full,5.388,1,0.02027,102,mt_tests_organic.csv,0.4903,1,0.4884,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime1,ex_infl,12.82,1,0.0003431,92,mt_tests_organic.csv,0.02586,0.1503,0.02177,0.3318
+og_volume_drivers,og|w_policy_rate_lvl|realtime1,post2008,7.086,1,0.007768,74,mt_tests_organic.csv,0.2518,1,0.2474,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime1,full,0.2981,1,0.5851,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime1,ex_infl,2.027,1,0.1545,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime1,post2008,0.02799,1,0.8671,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime1,full,4.089,1,0.04316,102,mt_tests_organic.csv,0.9039,1,0.883,1
+og_volume_drivers,og|w_hh_saving_d4|realtime1,ex_infl,0.9429,1,0.3315,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime1,post2008,6.658,1,0.009872,74,mt_tests_organic.csv,0.2962,1,0.2963,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime1,full,0.07805,1,0.78,58,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime1,ex_infl,0.07805,1,0.78,58,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime1,post2008,7.552e-05,1,0.9931,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime1,full,1.694,1,0.1931,58,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime1,ex_infl,1.694,1,0.1931,58,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime1,post2008,1.927,1,0.1651,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime1,full,0.521,1,0.4704,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime1,ex_infl,0.96,1,0.3272,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime1,post2008,0.01461,1,0.9038,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime1,full,2.718,1,0.09921,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime1,ex_infl,0.7273,1,0.3938,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime1,post2008,2.863,1,0.09064,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime2,full,1.634,1,0.2011,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime2,ex_infl,0.03647,1,0.8485,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_real_wage_yoy|realtime2,post2008,0.4893,1,0.4842,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime2,full,2.896,1,0.0888,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime2,ex_infl,1.353,1,0.2447,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_real_wage_yoy|realtime2,post2008,4.919,1,0.02657,74,mt_tests_organic.csv,0.6176,1,0.6067,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime2,full,0.9573,1,0.3279,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime2,ex_infl,0.07156,1,0.7891,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_real_wage_yoy|realtime2,post2008,0.1885,1,0.6641,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime2,full,1.846,1,0.1742,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime2,ex_infl,0.4711,1,0.4925,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_real_wage_yoy|realtime2,post2008,3.018,1,0.08237,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime2,full,1.898,1,0.1683,71,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime2,ex_infl,4.911,1,0.02668,61,mt_tests_organic.csv,0.6176,1,0.6067,1
+og_volume_drivers,vol_proxy_in|w_hh_real_inc_yoy|realtime2,post2008,1.898,1,0.1683,71,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime2,full,2.985,1,0.08403,71,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime2,ex_infl,6.519,1,0.01067,61,mt_tests_organic.csv,0.3106,1,0.3038,1
+og_volume_drivers,og|w_hh_real_inc_yoy|realtime2,post2008,2.985,1,0.08403,71,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime2,full,0.4959,1,0.4813,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime2,ex_infl,1.993,1,0.158,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z|realtime2,post2008,0.341,1,0.5592,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z|realtime2,full,13.93,1,0.00019,102,mt_tests_organic.csv,0.01539,0.08379,0.01316,0.1858
+og_volume_drivers,og|w_cons_conf_z|realtime2,ex_infl,3.704,1,0.0543,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z|realtime2,post2008,12.38,1,0.0004348,74,mt_tests_organic.csv,0.03018,0.1891,0.02544,0.4157
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime2,full,0.2567,1,0.6124,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime2,ex_infl,3.303,1,0.06916,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_cons_conf_z|realtime2,post2008,0.2333,1,0.6291,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_cons_conf_z|realtime2,full,11.99,1,0.0005356,102,mt_tests_organic.csv,0.03338,0.2298,0.02888,0.5056
+og_volume_drivers,og|nw_cons_conf_z|realtime2,ex_infl,4.731,1,0.02962,92,mt_tests_organic.csv,0.676,1,0.6584,1
+og_volume_drivers,og|nw_cons_conf_z|realtime2,post2008,9.155,1,0.00248,74,mt_tests_organic.csv,0.1117,1,0.1016,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime2,full,2.778,1,0.09557,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime2,ex_infl,0.5331,1,0.4653,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_cons_conf_z_d4|realtime2,post2008,3.237,1,0.07197,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime2,full,12.1,1,0.0005033,102,mt_tests_organic.csv,0.03198,0.2164,0.02767,0.4766
+og_volume_drivers,og|w_cons_conf_z_d4|realtime2,ex_infl,6.136,1,0.01325,92,mt_tests_organic.csv,0.3702,1,0.3565,1
+og_volume_drivers,og|w_cons_conf_z_d4|realtime2,post2008,10.31,1,0.001326,74,mt_tests_organic.csv,0.06883,0.5556,0.05991,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime2,full,1.873,1,0.1711,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime2,ex_infl,0.04285,1,0.836,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_d4|realtime2,post2008,1.142,1,0.2851,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_d4|realtime2,full,8.889,1,0.002869,102,mt_tests_organic.csv,0.1274,1,0.1147,1
+og_volume_drivers,og|w_unemp_d4|realtime2,ex_infl,5.941,1,0.01479,92,mt_tests_organic.csv,0.3961,1,0.3842,1
+og_volume_drivers,og|w_unemp_d4|realtime2,post2008,14.13,1,0.0001702,74,mt_tests_organic.csv,0.01429,0.0754,0.01209,0.167
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime2,full,2.896,1,0.0888,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime2,ex_infl,0.2417,1,0.6229,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_unemp_lvl|realtime2,post2008,2.392,1,0.122,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|realtime2,full,3.607,1,0.05755,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_unemp_lvl|realtime2,ex_infl,5.916,1,0.015,92,mt_tests_organic.csv,0.3985,1,0.3863,1
+og_volume_drivers,og|w_unemp_lvl|realtime2,post2008,2.673,1,0.1021,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime2,full,1.302,1,0.2539,99,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime2,ex_infl,1.538,1,0.215,89,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_retail_food_vol_yoy|realtime2,post2008,1.762,1,0.1843,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime2,full,4.524,1,0.03343,99,mt_tests_organic.csv,0.737,1,0.7237,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime2,ex_infl,0.1713,1,0.6789,89,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_retail_food_vol_yoy|realtime2,post2008,3.967,1,0.0464,74,mt_tests_organic.csv,0.9518,1,0.925,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime2,full,1.324,1,0.2499,99,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime2,ex_infl,1.678,1,0.1952,89,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|nw_retail_food_vol_yoy|realtime2,post2008,2.915,1,0.08773,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime2,full,7.181,1,0.007368,99,mt_tests_organic.csv,0.2412,1,0.2365,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime2,ex_infl,0.2368,1,0.6265,89,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|nw_retail_food_vol_yoy|realtime2,post2008,6.409,1,0.01136,74,mt_tests_organic.csv,0.323,1,0.318,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,full,2.439,1,0.1184,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,ex_infl,0.01016,1,0.9197,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,post2008,1.571,1,0.21,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,full,1.305,1,0.2532,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,ex_infl,0.004289,1,0.9478,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_qna_hh_food_cons_sa_mnok__yoy|realtime2,post2008,1.914,1,0.1665,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime2,full,0.4106,1,0.5217,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime2,ex_infl,0.002487,1,0.9602,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|se_na_hhcons_food_sa__yoy|realtime2,post2008,1.33e-05,1,0.9971,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime2,full,0.01284,1,0.9098,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime2,ex_infl,0.2692,1,0.6039,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|se_na_hhcons_food_sa__yoy|realtime2,post2008,0.07264,1,0.7875,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime2,full,0.6652,1,0.4147,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime2,ex_infl,0.1575,1,0.6914,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_gdp_vol_yoy|realtime2,post2008,0.3342,1,0.5632,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime2,full,9.217,1,0.002398,102,mt_tests_organic.csv,0.1117,0.988,0.1002,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime2,ex_infl,2.11,1,0.1463,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_gdp_vol_yoy|realtime2,post2008,15.04,1,0.0001052,74,mt_tests_organic.csv,0.01033,0.04713,0.008409,0.1046
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime2,full,0.01189,1,0.9132,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime2,ex_infl,0.001824,1,0.9659,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_rel_xvat_yoy|realtime2,post2008,0.2229,1,0.6368,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime2,full,3.115,1,0.07758,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime2,ex_infl,1.661,1,0.1974,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_rel_xvat_yoy|realtime2,post2008,2.55,1,0.1103,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime2,full,0.07346,1,0.7864,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime2,ex_infl,0.7876,1,0.3748,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_food_cpi_xvat_yoy|realtime2,post2008,0.009129,1,0.9239,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime2,full,11.92,1,0.0005568,102,mt_tests_organic.csv,0.03405,0.2383,0.02948,0.5239
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime2,ex_infl,7.063,1,0.007867,92,mt_tests_organic.csv,0.2524,1,0.2496,1
+og_volume_drivers,og|w_food_cpi_xvat_yoy|realtime2,post2008,15.31,1,9.133e-05,74,mt_tests_organic.csv,0.009548,0.0411,0.007646,0.09124
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime2,full,0.2209,1,0.6383,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime2,ex_infl,0.4604,1,0.4975,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_d4|realtime2,post2008,0.07437,1,0.7851,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_d4|realtime2,full,8.588,1,0.003385,102,mt_tests_organic.csv,0.1407,1,0.1303,1
+og_volume_drivers,og|w_policy_rate_d4|realtime2,ex_infl,4.718,1,0.02985,92,mt_tests_organic.csv,0.6765,1,0.6608,1
+og_volume_drivers,og|w_policy_rate_d4|realtime2,post2008,10.13,1,0.001458,74,mt_tests_organic.csv,0.0727,0.6065,0.06413,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime2,full,0.9829,1,0.3215,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime2,ex_infl,0.2801,1,0.5966,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_policy_rate_lvl|realtime2,post2008,2.824,1,0.09284,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime2,full,3.303,1,0.06916,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_policy_rate_lvl|realtime2,ex_infl,12.65,1,0.0003765,92,mt_tests_organic.csv,0.02773,0.1645,0.02285,0.362
+og_volume_drivers,og|w_policy_rate_lvl|realtime2,post2008,2.414,1,0.1203,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime2,full,0.2646,1,0.607,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime2,ex_infl,0.5903,1,0.4423,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|w_hh_saving_d4|realtime2,post2008,2.375,1,0.1233,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime2,full,3.543,1,0.05979,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime2,ex_infl,0.4825,1,0.4873,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|w_hh_saving_d4|realtime2,post2008,4.539,1,0.03314,74,mt_tests_organic.csv,0.7357,1,0.7193,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime2,full,0.5096,1,0.4753,57,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime2,ex_infl,0.5096,1,0.4753,57,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_border_trade_exp_mnok_s1__yoy|realtime2,post2008,0.8869,1,0.3463,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime2,full,0.03568,1,0.8502,57,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime2,ex_infl,0.03568,1,0.8502,57,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_border_trade_exp_mnok_s1__yoy|realtime2,post2008,0.04662,1,0.8291,48,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime2,full,0.07871,1,0.7791,102,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime2,ex_infl,1.163,1,0.2808,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,vol_proxy_in|no_fx_seknok__yoy|realtime2,post2008,0.5054,1,0.4772,74,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime2,full,4.312,1,0.03785,102,mt_tests_organic.csv,0.8178,1,0.7986,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime2,ex_infl,2.093,1,0.148,92,mt_tests_organic.csv,1,1,1,1
+og_volume_drivers,og|no_fx_seknok__yoy|realtime2,post2008,3.132,1,0.07679,74,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h0,full,4.086,2,0.1357,100,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h0,ex_infl,16.47,2,0.0005635,90,mt_tests_organic.csv,0.0603,0.02648,0.02965,0.5297
+og_granger_volproxy,nw_real_wage_yoy|h0,full,6.05,2,0.05358,100,mt_tests_organic.csv,0.9369,1,1,1
+og_granger_volproxy,nw_real_wage_yoy|h0,ex_infl,19.61,2,0.0001574,90,mt_tests_organic.csv,0.03369,0.007555,0.01138,0.1547
+og_granger_volproxy,w_cons_conf_z|h0,full,3.647,2,0.1675,100,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z|h0,ex_infl,2.115,2,0.3523,90,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z_d4|h0,full,9.011,2,0.01368,100,mt_tests_organic.csv,0.5856,0.6019,0.3643,1
+og_granger_volproxy,w_cons_conf_z_d4|h0,ex_infl,3.548,2,0.1763,90,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h0,full,3.227,2,0.205,100,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h0,ex_infl,0.3467,2,0.8412,90,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h0,full,12.72,2,0.002624,100,mt_tests_organic.csv,0.1872,0.1207,0.1069,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h0,ex_infl,4.53,2,0.1105,90,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_hh_real_inc_yoy|h0,full,7.855,2,0.02477,72,mt_tests_organic.csv,0.688,1,0.572,1
+og_granger_volproxy,w_hh_real_inc_yoy|h0,ex_infl,4.745,2,0.1033,62,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_unemp_d4|h0,full,2.564,2,0.2825,100,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_unemp_d4|h0,ex_infl,0.5976,2,0.7425,90,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h1,full,1.644,2,0.4428,99,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h1,ex_infl,0.7641,2,0.6837,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,nw_real_wage_yoy|h1,full,0.8499,2,0.6551,99,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,nw_real_wage_yoy|h1,ex_infl,1.642,2,0.4437,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z|h1,full,5.377,2,0.07356,99,mt_tests_organic.csv,0.984,1,1,1
+og_granger_volproxy,w_cons_conf_z|h1,ex_infl,1.925,2,0.3864,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z_d4|h1,full,6.963,2,0.03507,99,mt_tests_organic.csv,0.7506,1,0.7533,1
+og_granger_volproxy,w_cons_conf_z_d4|h1,ex_infl,1.852,2,0.4005,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h1,full,3.568,2,0.1739,99,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h1,ex_infl,7.417,2,0.02893,89,mt_tests_organic.csv,0.688,1,0.6465,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h1,full,10.61,2,0.006692,99,mt_tests_organic.csv,0.3581,0.3011,0.2208,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h1,ex_infl,2.466,2,0.2971,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_hh_real_inc_yoy|h1,full,2.308,2,0.3221,71,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_hh_real_inc_yoy|h1,ex_infl,6.923,2,0.03893,61,mt_tests_organic.csv,0.7574,1,0.8121,1
+og_granger_volproxy,w_unemp_d4|h1,full,2.392,2,0.3073,99,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_unemp_d4|h1,ex_infl,1.938,2,0.3841,89,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h2,full,1.317,2,0.5201,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_real_wage_yoy|h2,ex_infl,5.951,2,0.05691,88,mt_tests_organic.csv,0.9369,1,1,1
+og_granger_volproxy,nw_real_wage_yoy|h2,full,1.494,2,0.4767,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,nw_real_wage_yoy|h2,ex_infl,7.597,2,0.02671,88,mt_tests_organic.csv,0.688,1,0.6067,1
+og_granger_volproxy,w_cons_conf_z|h2,full,7.967,2,0.02211,98,mt_tests_organic.csv,0.688,0.9507,0.5251,1
+og_granger_volproxy,w_cons_conf_z|h2,ex_infl,3.935,2,0.1467,88,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z_d4|h2,full,3.888,2,0.1493,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_cons_conf_z_d4|h2,ex_infl,2.507,2,0.2913,88,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h2,full,2.707,2,0.2638,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_retail_food_vol_yoy|h2,ex_infl,5.531,2,0.06921,88,mt_tests_organic.csv,0.984,1,1,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h2,full,4.688,2,0.102,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_food_rel_xvat_yoy|h2,ex_infl,0.6577,2,0.7207,88,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_hh_real_inc_yoy|h2,full,0.5602,2,0.7567,70,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_hh_real_inc_yoy|h2,ex_infl,5.777,2,0.065,60,mt_tests_organic.csv,0.984,1,1,1
+og_granger_volproxy,w_unemp_d4|h2,full,2.442,2,0.3,98,mt_tests_organic.csv,1,1,1,1
+og_granger_volproxy,w_unemp_d4|h2,ex_infl,0.8522,2,0.6546,88,mt_tests_organic.csv,1,1,1,1
+og_cpi_passthrough,w_food_cpi_xvat_inclIN_yoy,full,87.44,1,8.678e-21,102,mt_tests_organic.csv,1.174e-19,1.18e-19,1.031e-17,9.468e-18
+og_cpi_passthrough,w_food_cpi_xvat_inclIN_yoy,ex_infl,7.915,1,0.004903,92,mt_tests_organic.csv,0.02411,0.02942,0.1734,1
+og_cpi_passthrough,w_food_cpi_xvat_inclIN_yoy,post2008,89.72,1,2.742e-21,74,mt_tests_organic.csv,7.416e-20,4.113e-20,5.699e-18,3e-18
+og_cpi_passthrough,w_food_cpi_xvat_inclIN_yoy,pre2021,12.45,1,0.0004187,82,mt_tests_organic.csv,0.002516,0.00335,0.02486,0.4011
+og_cpi_passthrough,w_food_cpi_xvat_yoy,full,87.5,1,8.428e-21,102,mt_tests_organic.csv,1.174e-19,1.18e-19,1.031e-17,9.212e-18
+og_cpi_passthrough,w_food_cpi_xvat_yoy,ex_infl,7.501,1,0.006166,92,mt_tests_organic.csv,0.02779,0.03083,0.2067,1
+og_cpi_passthrough,w_food_cpi_xvat_yoy,post2008,90.07,1,2.299e-21,74,mt_tests_organic.csv,7.416e-20,3.678e-20,5.699e-18,2.52e-18
+og_cpi_passthrough,w_food_cpi_xvat_yoy,pre2021,11.5,1,0.0006958,82,mt_tests_organic.csv,0.003764,0.004871,0.03615,0.6527
+og_cpi_passthrough,nw_food_cpi_xvat_yoy,full,55.99,1,7.274e-14,102,mt_tests_organic.csv,5.621e-13,7.274e-13,4.651e-11,7.892e-11
+og_cpi_passthrough,nw_food_cpi_xvat_yoy,ex_infl,6.236,1,0.01252,92,mt_tests_organic.csv,0.05209,0.05008,0.3379,1
+og_cpi_passthrough,nw_food_cpi_xvat_yoy,post2008,52.86,1,3.582e-13,74,mt_tests_organic.csv,2.422e-12,3.224e-12,2.127e-10,3.883e-10
+og_cpi_passthrough,nw_food_cpi_xvat_yoy,pre2021,4.716,1,0.02989,82,mt_tests_organic.csv,0.1078,0.05978,0.6608,1
+og_cpi_passthrough,w_food_ppi_yoy,full,67.32,1,2.31e-16,102,mt_tests_organic.csv,2.499e-15,2.772e-15,1.92e-13,2.513e-13
+og_cpi_passthrough,w_food_ppi_yoy,ex_infl,2.645,1,0.1039,92,mt_tests_organic.csv,0.3513,0.1039,1,1
+og_cpi_passthrough,w_food_ppi_yoy,post2008,64.88,1,7.952e-16,74,mt_tests_organic.csv,7.169e-15,8.747e-15,6.01e-13,8.644e-13
+og_cpi_passthrough,w_food_ppi_yoy,pre2021,5.543,1,0.01856,82,mt_tests_organic.csv,0.07171,0.05568,0.4606,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_border_trade_exp_mnok_s1__yoy|L0,excl_2020_22,0.4622,1,0.4966,60,mt_tests_organic.csv,1,1,1,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_border_trade_exp_mnok_s1__yoy|L1,excl_2020_22,1.651,1,0.1988,59,mt_tests_organic.csv,1,1,1,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_border_trade_exp_mnok_s1__yoy|L2,excl_2020_22,4.141,1,0.04185,58,mt_tests_organic.csv,1,0.5022,0.8654,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_fx_seknok__yoy|L0,excl_2020_22,0.3369,1,0.5616,90,mt_tests_organic.csv,1,1,1,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_fx_seknok__yoy|L1,excl_2020_22,2.259,1,0.1329,90,mt_tests_organic.csv,1,1,1,1
+og_crossborder,no_retail_foodstores_vol_sa_idx__yoy~no_fx_seknok__yoy|L2,excl_2020_22,3.473,1,0.06239,90,mt_tests_organic.csv,1,0.6863,1,1
+og_crossborder,vol_proxy_in~no_border_trade_exp_mnok_s1__yoy|L0,excl_2020_22,0.1557,1,0.6932,60,mt_tests_organic.csv,1,1,1,1
+og_crossborder,vol_proxy_in~no_border_trade_exp_mnok_s1__yoy|L1,excl_2020_22,0.014,1,0.9058,59,mt_tests_organic.csv,1,1,1,1
+og_crossborder,vol_proxy_in~no_border_trade_exp_mnok_s1__yoy|L2,excl_2020_22,0.07805,1,0.78,58,mt_tests_organic.csv,1,1,1,1
+og_crossborder,vol_proxy_in~no_fx_seknok__yoy|L0,excl_2020_22,0.004387,1,0.9472,90,mt_tests_organic.csv,1,1,1,1
+og_crossborder,vol_proxy_in~no_fx_seknok__yoy|L1,excl_2020_22,0.8283,1,0.3628,90,mt_tests_organic.csv,1,1,1,1
+og_crossborder,vol_proxy_in~no_fx_seknok__yoy|L2,excl_2020_22,0.645,1,0.4219,90,mt_tests_organic.csv,1,1,1,1
+text_event_study,cost_up|raw_mat_wloc_yoy,full,,1,0.1158,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|eu_agri_basket_wloc_yoy,full,,1,0.3579,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|fao_ffpi_wloc_yoy,full,,1,0.05208,102,mt_tests_text.csv,0.5763,1,1,1
+text_event_study,cost_up|w_food_ppi_yoy,full,,1,0.08421,101,mt_tests_text.csv,0.8444,1,1,1
+text_event_study,cost_up|packaging_eu_yoy,full,,1,0.09474,101,mt_tests_text.csv,0.9212,1,1,1
+text_event_study,cost_up|cost_idx_calib_yoy,full,,1,0.1263,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|se_ppi_food_impi_idx__yoy,full,,1,0.03125,102,mt_tests_text.csv,0.4178,1,0.6811,1
+text_event_study,cost_up|glob_fao_ffpi__yoy,full,,1,0.4583,102,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|raw_mat_wloc_yoy,full,,1,0.4632,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|eu_agri_basket_wloc_yoy,full,,1,0.9789,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|cost_idx_calib_yoy,full,,1,0.3684,101,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|packaging_eu_yoy,full,,1,0.1158,101,mt_tests_text.csv,1,1,1,1
+text_event_study,price_lag|raw_mat_wloc_yoy,full,,1,0.01053,101,mt_tests_text.csv,0.2275,0.6981,0.3019,1
+text_event_study,price_lag|cost_idx_calib_yoy,full,,1,0.01053,101,mt_tests_text.csv,0.2275,0.6981,0.3019,1
+text_event_study,price_lag|gap_raw_xvat_wloc,full,,1,0.01053,101,mt_tests_text.csv,0.2275,0.6981,0.3019,1
+text_event_study,fx_weak|w_fx_vs_eur_yoy,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,fx_weak|w_fx_vs_usd_yoy,full,,1,0.04167,102,mt_tests_text.csv,0.5143,1,0.8639,1
+text_event_study,fx_weak|se_eursek__yoy,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,fx_weak|no_fx_eurnok__yoy,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,fx_strong|w_fx_vs_eur_yoy,full,,1,0.1458,102,mt_tests_text.csv,1,1,1,1
+text_event_study,fx_strong|no_fx_eurnok__yoy,full,,1,0.02083,102,mt_tests_text.csv,0.3283,1,0.4976,1
+text_event_study,energy|elec_nordic_loc_yoy,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,energy|natgas_eu_eur_yoy,full,,1,0.01205,89,mt_tests_text.csv,0.2275,0.6981,0.3274,1
+text_event_study,energy|brent_nok_yoy,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,price_up|w_food_cpi_xvat_yoy,full,,1,0.04626,102,mt_tests_text.csv,0.533,1,0.925,1
+text_event_study,price_up|w_food_ppi_yoy,full,,1,0.0114,102,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,price_up|w_ec_food_ind_sell_price_exp_lvl,full,,1,0.01042,102,mt_tests_text.csv,0.2275,0.6981,0.3018,1
+text_event_study,volume_weak|w_retail_food_vol_yoy,full,,1,0.25,102,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|nw_retail_food_vol_yoy,full,,1,0.6042,102,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_real_wage_yoy,full,,1,0.5312,102,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_cons_conf_z,full,,1,0.3646,102,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_food_rel_xvat_yoy,full,,1,0.1525,102,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_real_wage_yoy,full,,1,0.3338,102,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_cons_conf_z,full,,1,0.5381,102,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_food_rel_xvat_yoy,full,,1,0.4087,102,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|raw_mat_wloc_yoy,ex_infl,,1,0.1412,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|eu_agri_basket_wloc_yoy,ex_infl,,1,0.7529,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|fao_ffpi_wloc_yoy,ex_infl,,1,0.06977,92,mt_tests_text.csv,0.7222,1,1,1
+text_event_study,cost_up|w_food_ppi_yoy,ex_infl,,1,0.02353,91,mt_tests_text.csv,0.3283,1,0.5495,1
+text_event_study,cost_up|packaging_eu_yoy,ex_infl,,1,0.02353,91,mt_tests_text.csv,0.3283,1,0.5495,1
+text_event_study,cost_up|cost_idx_calib_yoy,ex_infl,,1,0.1294,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_up|se_ppi_food_impi_idx__yoy,ex_infl,,1,0.01801,92,mt_tests_text.csv,0.3211,0.9005,0.4483,1
+text_event_study,cost_up|glob_fao_ffpi__yoy,ex_infl,,1,0.4419,92,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|raw_mat_wloc_yoy,ex_infl,,1,0.7765,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|eu_agri_basket_wloc_yoy,ex_infl,,1,0.8,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|cost_idx_calib_yoy,ex_infl,,1,0.6235,91,mt_tests_text.csv,1,1,1,1
+text_event_study,cost_relief|packaging_eu_yoy,ex_infl,,1,0.06233,91,mt_tests_text.csv,0.6667,1,1,1
+text_event_study,price_lag|raw_mat_wloc_yoy,ex_infl,,1,0.02353,91,mt_tests_text.csv,0.3283,1,0.5495,1
+text_event_study,price_lag|cost_idx_calib_yoy,ex_infl,,1,0.02353,91,mt_tests_text.csv,0.3283,1,0.5495,1
+text_event_study,price_lag|gap_raw_xvat_wloc,ex_infl,,1,0.03529,91,mt_tests_text.csv,0.453,1,0.7561,1
+text_event_study,fx_weak|w_fx_vs_eur_yoy,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,fx_weak|w_fx_vs_usd_yoy,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,fx_weak|se_eursek__yoy,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,fx_weak|no_fx_eurnok__yoy,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,fx_strong|w_fx_vs_eur_yoy,ex_infl,,1,0.1628,92,mt_tests_text.csv,1,1,1,1
+text_event_study,fx_strong|no_fx_eurnok__yoy,ex_infl,,1,0.04651,92,mt_tests_text.csv,0.533,1,0.925,1
+text_event_study,price_up|w_food_cpi_xvat_yoy,ex_infl,,1,0.1114,92,mt_tests_text.csv,1,1,1,1
+text_event_study,price_up|w_food_ppi_yoy,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,price_up|w_ec_food_ind_sell_price_exp_lvl,ex_infl,,1,0.01163,92,mt_tests_text.csv,0.2275,0.6981,0.318,1
+text_event_study,volume_weak|w_retail_food_vol_yoy,ex_infl,,1,0.2093,92,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|nw_retail_food_vol_yoy,ex_infl,,1,0.6977,92,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_real_wage_yoy,ex_infl,,1,0.7674,92,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_cons_conf_z,ex_infl,,1,0.8605,92,mt_tests_text.csv,1,1,1,1
+text_event_study,volume_weak|w_food_rel_xvat_yoy,ex_infl,,1,0.7104,92,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_real_wage_yoy,ex_infl,,1,0.6512,92,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_cons_conf_z,ex_infl,,1,0.1512,92,mt_tests_text.csv,1,1,1,1
+text_event_study,buying_power|w_food_rel_xvat_yoy,ex_infl,,1,0.186,92,mt_tests_text.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h0",all OOS quarters,-0.3347,1,0.6311,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h0",excl. 2021Q3-2023Q4,-0.09907,1,0.5395,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h0",all OOS quarters,0.1528,1,0.4393,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h0",excl. 2021Q3-2023Q4,-1.446,1,0.9259,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h0",all OOS quarters,0.05336,1,0.4787,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h0",excl. 2021Q3-2023Q4,0.2076,1,0.4178,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h0",all OOS quarters,1.876,1,0.0303,66,rt_oos.csv,1,1,0.6672,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h0",excl. 2021Q3-2023Q4,1.711,1,0.04355,56,rt_oos.csv,1,1,0.8873,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h0",all OOS quarters,-0.7744,1,0.7807,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h0",excl. 2021Q3-2023Q4,-0.1925,1,0.5763,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h0",all OOS quarters,0.2816,1,0.3891,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h0",excl. 2021Q3-2023Q4,0.1462,1,0.4419,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h0",all OOS quarters,0.03133,1,0.4875,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h0",excl. 2021Q3-2023Q4,-0.3754,1,0.6463,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h0,all OOS quarters,0.9108,1,0.1812,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h0,excl. 2021Q3-2023Q4,0.6731,1,0.2504,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h0,all OOS quarters,1.464,1,0.07165,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h0,excl. 2021Q3-2023Q4,1.096,1,0.1366,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h0",all OOS quarters,2.298,1,0.01079,66,rt_oos.csv,1,0.9387,0.3051,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h0",excl. 2021Q3-2023Q4,2.865,1,0.002084,56,rt_oos.csv,0.928,0.1834,0.0893,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h0",all OOS quarters,0.3215,1,0.3739,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h0",excl. 2021Q3-2023Q4,0.5517,1,0.2906,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h1",all OOS quarters,-1.272,1,0.8983,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h1",excl. 2021Q3-2023Q4,-0.8134,1,0.792,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h1",all OOS quarters,-1.213,1,0.8875,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h1",excl. 2021Q3-2023Q4,-0.9122,1,0.8192,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h1",all OOS quarters,-0.9807,1,0.8366,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h1",excl. 2021Q3-2023Q4,-0.4749,1,0.6826,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h1",all OOS quarters,1.996,1,0.02298,65,rt_oos.csv,1,1,0.5443,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h1",excl. 2021Q3-2023Q4,1.439,1,0.07505,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h1",all OOS quarters,-1.392,1,0.9181,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h1",excl. 2021Q3-2023Q4,-0.7463,1,0.7723,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h1",all OOS quarters,-0.7022,1,0.7587,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h1",excl. 2021Q3-2023Q4,-0.6467,1,0.7411,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h1",all OOS quarters,-2.313,1,0.9897,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h1",excl. 2021Q3-2023Q4,-1.806,1,0.9646,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h1,all OOS quarters,0.09496,1,0.4622,64,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h1,excl. 2021Q3-2023Q4,0.2886,1,0.3865,54,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h1,all OOS quarters,0.3592,1,0.3597,64,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h1,excl. 2021Q3-2023Q4,0.5207,1,0.3013,54,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h1",all OOS quarters,1.124,1,0.1305,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h1",excl. 2021Q3-2023Q4,1.272,1,0.1017,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h1",all OOS quarters,-0.3216,1,0.6261,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h1",excl. 2021Q3-2023Q4,-0.1916,1,0.576,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h2",all OOS quarters,-1.318,1,0.9063,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h2",excl. 2021Q3-2023Q4,-0.7721,1,0.78,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h2",all OOS quarters,-0.2987,1,0.6174,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h2",excl. 2021Q3-2023Q4,0.3132,1,0.3771,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h2",all OOS quarters,-0.8149,1,0.7924,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h2",excl. 2021Q3-2023Q4,-0.2084,1,0.5826,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h2",all OOS quarters,1.863,1,0.03127,63,rt_oos.csv,1,1,0.6811,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h2",excl. 2021Q3-2023Q4,1.274,1,0.1013,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h2",all OOS quarters,-0.4482,1,0.673,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h2",excl. 2021Q3-2023Q4,-0.06853,1,0.5273,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h2",all OOS quarters,-0.7814,1,0.7827,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h2",excl. 2021Q3-2023Q4,-0.6396,1,0.7388,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h2",all OOS quarters,-1.996,1,0.977,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h2",excl. 2021Q3-2023Q4,-1.703,1,0.9557,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h2,all OOS quarters,-0.3638,1,0.642,62,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h2,excl. 2021Q3-2023Q4,-0.07218,1,0.5288,52,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h2,all OOS quarters,-0.5616,1,0.7128,62,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h2,excl. 2021Q3-2023Q4,0.3416,1,0.3663,52,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h2",all OOS quarters,-0.65,1,0.7421,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h2",excl. 2021Q3-2023Q4,-0.9395,1,0.8263,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h2",all OOS quarters,0.3697,1,0.3558,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h2",excl. 2021Q3-2023Q4,0.3895,1,0.3485,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h4",all OOS quarters,-1.112,1,0.867,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials local ccy, PDL L0-6|h4",excl. 2021Q3-2023Q4,-0.7617,1,0.7769,49,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h4",all OOS quarters,-0.5881,1,0.7218,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"FAO food index local ccy, PDL L0-6|h4",excl. 2021Q3-2023Q4,-0.4183,1,0.6621,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h4",all OOS quarters,-0.735,1,0.7688,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"calibrated cost index, PDL L0-6|h4",excl. 2021Q3-2023Q4,-0.4815,1,0.6849,49,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h4",all OOS quarters,0.1296,1,0.4484,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"packaging EU, PDL L0-6|h4",excl. 2021Q3-2023Q4,0.687,1,0.2461,49,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h4",all OOS quarters,0.5178,1,0.3023,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"cost index + food CPI ex VAT, PDL|h4",excl. 2021Q3-2023Q4,0.5709,1,0.284,49,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h4",all OOS quarters,0.2309,1,0.4087,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI ex VAT - cost index, PDL|h4",excl. 2021Q3-2023Q4,-0.1854,1,0.5735,49,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h4",all OOS quarters,-1.522,1,0.936,63,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"gap: CPI - agri basket (panel), avg L0-2|h4",excl. 2021Q3-2023Q4,-1.204,1,0.8857,53,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h4,all OOS quarters,-1.541,1,0.9384,58,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,cost-index acceleration (avg L0-3 - L4-7)|h4,excl. 2021Q3-2023Q4,-1.574,1,0.9422,48,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h4,all OOS quarters,-0.4886,1,0.6874,58,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,packaging acceleration|h4,excl. 2021Q3-2023Q4,0.8933,1,0.1858,48,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h4",all OOS quarters,-0.1196,1,0.5476,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"EUR/SEK, PDL L0-6|h4",excl. 2021Q3-2023Q4,-0.148,1,0.5588,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h4",all OOS quarters,0.8005,1,0.2117,59,rt_oos.csv,1,1,1,1
+rt_clark_west_d_margin,"raw materials + packaging + EUR/SEK, PDL|h4",excl. 2021Q3-2023Q4,1.007,1,0.1569,49,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h0,all OOS quarters,1.221,1,0.111,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h0,excl. 2021Q3-2023Q4,0.8813,1,0.1891,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h0,all OOS quarters,1.03,1,0.1514,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h0,excl. 2021Q3-2023Q4,0.4549,1,0.3246,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h0,all OOS quarters,1.397,1,0.08114,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h0,excl. 2021Q3-2023Q4,0.7234,1,0.2347,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h0,all OOS quarters,1.631,1,0.05148,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h0,excl. 2021Q3-2023Q4,1.097,1,0.1362,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h0,all OOS quarters,1.434,1,0.07572,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h0,excl. 2021Q3-2023Q4,1.298,1,0.09714,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + real wage|h0,all OOS quarters,1.644,1,0.05006,66,rt_oos.csv,1,1,0.9861,1
+rt_clark_west_og,food CPI NO+SE + real wage|h0,excl. 2021Q3-2023Q4,1.695,1,0.04506,56,rt_oos.csv,1,1,0.9114,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h0,all OOS quarters,1.438,1,0.07517,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h0,excl. 2021Q3-2023Q4,0.8132,1,0.2081,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h1,all OOS quarters,-1.962,1,0.9751,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h1,excl. 2021Q3-2023Q4,-1.186,1,0.8822,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h1,all OOS quarters,-1.275,1,0.8989,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h1,excl. 2021Q3-2023Q4,-0.4028,1,0.6564,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h1,all OOS quarters,1.081,1,0.1398,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h1,excl. 2021Q3-2023Q4,0.238,1,0.4059,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h1,all OOS quarters,0.6892,1,0.2454,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h1,excl. 2021Q3-2023Q4,-0.6671,1,0.7477,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h1,all OOS quarters,0.2018,1,0.42,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h1,excl. 2021Q3-2023Q4,1.682,1,0.04627,56,rt_oos.csv,1,1,0.925,1
+rt_clark_west_og,food CPI NO+SE + real wage|h1,all OOS quarters,-1.128,1,0.8704,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + real wage|h1,excl. 2021Q3-2023Q4,0.1294,1,0.4485,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h1,all OOS quarters,1.405,1,0.07996,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h1,excl. 2021Q3-2023Q4,0.4014,1,0.3441,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h2,all OOS quarters,-1.638,1,0.9493,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h2,excl. 2021Q3-2023Q4,-1.286,1,0.9009,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h2,all OOS quarters,-0.9446,1,0.8276,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h2,excl. 2021Q3-2023Q4,-1.002,1,0.8418,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h2,all OOS quarters,-1.137,1,0.8723,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h2,excl. 2021Q3-2023Q4,-0.3741,1,0.6458,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h2,all OOS quarters,1.629,1,0.05161,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h2,excl. 2021Q3-2023Q4,1.42,1,0.07786,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h2,all OOS quarters,0.07589,1,0.4698,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h2,excl. 2021Q3-2023Q4,2.469,1,0.00677,56,rt_oos.csv,1,0.3791,0.2216,1
+rt_clark_west_og,food CPI NO+SE + real wage|h2,all OOS quarters,-1.407,1,0.9202,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + real wage|h2,excl. 2021Q3-2023Q4,-0.406,1,0.6576,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h2,all OOS quarters,1.489,1,0.06818,66,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h2,excl. 2021Q3-2023Q4,0.7043,1,0.2406,56,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h4,all OOS quarters,-1.547,1,0.9391,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT NO+SE (lag-0 data)|h4,excl. 2021Q3-2023Q4,-2.018,1,0.9782,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h4,all OOS quarters,-1.385,1,0.917,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI ex VAT Orkla-wtd|h4,excl. 2021Q3-2023Q4,-1.738,1,0.9589,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h4,all OOS quarters,-1.078,1,0.8596,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food PPI Orkla-wtd|h4,excl. 2021Q3-2023Q4,-0.7855,1,0.7839,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h4,all OOS quarters,-0.2439,1,0.5964,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + relative food price|h4,excl. 2021Q3-2023Q4,-1.065,1,0.8566,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h4,all OOS quarters,-0.4211,1,0.6632,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + confidence d4|h4,excl. 2021Q3-2023Q4,0.02901,1,0.4884,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + real wage|h4,all OOS quarters,-0.5239,1,0.6998,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food CPI NO+SE + real wage|h4,excl. 2021Q3-2023Q4,1.097,1,0.1363,55,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h4,all OOS quarters,0.9513,1,0.1707,65,rt_oos.csv,1,1,1,1
+rt_clark_west_og,food mfr selling-price expectations (EC)|h4,excl. 2021Q3-2023Q4,0.1983,1,0.4214,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h0,all OOS quarters,0.6053,1,0.2725,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h0,excl. 2021Q3-2023Q4,0.4164,1,0.3385,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h0,all OOS quarters,0.4974,1,0.3094,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h0,excl. 2021Q3-2023Q4,0.7207,1,0.2355,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h0,all OOS quarters,2.391,1,0.008391,66,rt_oos.csv,0.7604,0.2014,0.2593,1
+rt_clark_west_d_og,d food PPI (dyoy)|h0,excl. 2021Q3-2023Q4,1.778,1,0.03769,56,rt_oos.csv,1,0.8669,0.7973,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h1,all OOS quarters,-1.238,1,0.8921,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h1,excl. 2021Q3-2023Q4,-1.307,1,0.9044,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h1,all OOS quarters,-1.685,1,0.954,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h1,excl. 2021Q3-2023Q4,-1.586,1,0.9436,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h1,all OOS quarters,1.594,1,0.05546,66,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h1,excl. 2021Q3-2023Q4,1.337,1,0.09059,56,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h2,all OOS quarters,-0.1755,1,0.5696,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h2,excl. 2021Q3-2023Q4,-1.595,1,0.9446,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h2,all OOS quarters,1.095,1,0.1367,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h2,excl. 2021Q3-2023Q4,-0.3497,1,0.6367,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h2,all OOS quarters,-0.7145,1,0.7626,65,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h2,excl. 2021Q3-2023Q4,-0.8542,1,0.8035,55,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h4,all OOS quarters,0.3973,1,0.3456,61,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT NO+SE (dyoy)|h4,excl. 2021Q3-2023Q4,0.1379,1,0.4452,51,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h4,all OOS quarters,0.3994,1,0.3448,61,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food CPI ex VAT Orkla-wtd (dyoy)|h4,excl. 2021Q3-2023Q4,0.2635,1,0.3961,51,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h4,all OOS quarters,-0.3466,1,0.6356,61,rt_oos.csv,1,1,1,1
+rt_clark_west_d_og,d food PPI (dyoy)|h4,excl. 2021Q3-2023Q4,-0.4149,1,0.6609,51,rt_oos.csv,1,1,1,1

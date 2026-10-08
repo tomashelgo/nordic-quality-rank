@@ -1,0 +1,10 @@
+target,feature,k,n,n_epi,share_cov_epi,corr_full,corr_ex
+d_margin,packaging_eu_yoy,0,102,10,0.7024,-0.4921,-0.307
+d_margin,no_govbond_10y__d4,0,102,10,0.373,-0.5717,-0.4643
+d_margin,eu_ppi_dom_c105_idx__yoy,6,96,10,0.1049,0.2819,0.3059
+d_margin,se_ppi_food_hmpi_idx__yoy,6,100,10,0.00887,0.2789,0.3381
+og,w_food_cpi_xvat_yoy,0,102,10,0.7003,0.5233,0.3308
+og,w_policy_rate_d4,3,102,10,0.246,0.4145,0.397
+d_og,ea_ec_food_ind_sell_price_exp__d4,4,98,10,0.1317,0.2897,0.3092
+og,w_unemp_d4,3,102,10,0.3232,-0.3958,-0.3631
+d_og,w_food_cpi_xvat_dyoy,0,98,10,0.3343,0.3477,0.3626

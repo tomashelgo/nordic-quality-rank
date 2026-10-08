@@ -1,0 +1,13 @@
+multi d_og h=0 ar done
+multi d_margin h=1 ar done
+multi d_margin h=2 ar done
+multi d_margin h=0 ar done
+multi og h=0 ar done
+multi d_og h=2 ar done
+multi d_og h=1 ar done
+multi d_margin_r4 h=0 ar done
+multi og h=1 ar done
+multi og h=2 ar done
+multi d_margin_r4 h=1 ar done
+multi d_margin_r4 h=2 ar done
+multi stage ar 727.8 s (9504, 7)

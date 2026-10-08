@@ -1,0 +1,268 @@
+{
+ "findings_path": "/home/user/nordic-quality-rank/research/orkla_foods/analysis/screen/findings.md",
+ "top_predictors": [
+  {
+   "target": "d_margin",
+   "feature": "packaging_eu_yoy (EU PPI paper+plastic packaging, y/y)",
+   "alignment": "coincident",
+   "sign": "negative",
+   "effect_size": "-0.59pp margin per 1 sd; r=-0.49",
+   "evidence": "HAC t=-9.6 (leverage-adjusted -9.1), BY q<0.001, rank #1 of 200 core. Adding the own lag gives -6.9. Same sign in 2001-12 (-2.2) and 2013-26 (-9.2). Excluding 2021Q3-23Q4: -3.1. Flagged robust. Sign reverses to positive at lags k=5-6 (delayed pass-through).",
+   "confidence": "high on direction; moderate on size, because the 2022-23 episode supplies most of the t"
+  },
+  {
+   "target": "d_margin",
+   "feature": "eu_ppi_plastic_products_idx__yoy",
+   "alignment": "realtime h=0 (nowcast); also h=1",
+   "sign": "negative",
+   "effect_size": "-0.57pp per 1 sd at h=0; -0.49pp at h=1",
+   "evidence": "h=0: t=-8.8 (leverage-adjusted -8.3), q<0.001; with own lag -7.7; without 2021Q3-23Q4 -3.0; robust. h=1: t=-4.4, q=0.03, but -1.9 without the episode, so not robust there.",
+   "confidence": "high at h=0; low-moderate at h=1"
+  },
+  {
+   "target": "d_margin",
+   "feature": "w_gov10y_d4 (Orkla-weighted 4Q change in 10y government yield)",
+   "alignment": "coincident / realtime h=0 (lag 0); h=1",
+   "sign": "negative",
+   "effect_size": "-0.64pp per 1 sd; r=-0.54",
+   "evidence": "t=-5.1, q<0.001, rank #4-5. 2001-12 -2.6, 2013-26 -4.5, without 2021Q3-23Q4 -3.1; robust. h=1: t=-3.7, q=0.07. Keeps t about -3 (also without the episode) after controlling for packaging PPI, food PPI or CPI acceleration.",
+   "confidence": "moderate-high; strongest result in the rates category"
+  },
+  {
+   "target": "d_margin",
+   "feature": "no_govbond_10y__d4 (Norway 10y yield, 4Q change)",
+   "alignment": "realtime h=1",
+   "sign": "negative",
+   "effect_size": "-0.59pp per 1 sd",
+   "evidence": "t=-4.1, q=0.04, rank #2 at h=1. Leverage-adjusted -3.9, own lag -4.3, 2001-12 -2.9, 2013-26 -3.5, without 2021Q3-23Q4 -2.7; robust.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "eu_ppi_dom_c105_idx__yoy (EU dairy PPI y/y)",
+   "alignment": "realtime lag k=6 (forecast about 6 quarters ahead)",
+   "sign": "positive (delayed pass-through: margins recover after a cost spike)",
+   "effect_size": "+0.39pp per 1 sd",
+   "evidence": "Lag scan t=+5.2, BY q=0.004 over the 1,386-test lag family. With own lag +4.5; without 2021Q3-23Q4 +5.6; 2001-12 +2.9, 2013-26 +3.1. Profile runs from -1.9 at k=0 to +5.2 at k=6. Same pattern for SE food PPI (k=6, +4.8), EU bakery PPI (k=5, +4.5) and SE CPI (k=6, +4.2).",
+   "confidence": "moderate-high"
+  },
+  {
+   "target": "d_margin",
+   "feature": "eu_ppi_dom_c107_idx__yoy (EU bakery/farinaceous PPI)",
+   "alignment": "realtime h=4",
+   "sign": "positive",
+   "effect_size": "+0.31pp per 1 sd",
+   "evidence": "Full sample t=+3.5 at h=4, q=0.24, so not significant after BY. Without 2021Q3-23Q4: +5.6 with q<0.001; 11 core features pass BY at h=4 in that sample, almost all lagged price/cost inflation with a positive sign.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_margin",
+   "feature": "se_real_wage_yoy_q__d4 (Swedish real-wage acceleration)",
+   "alignment": "realtime h=0, h=1",
+   "sign": "positive",
+   "effect_size": "+0.50pp per 1 sd",
+   "evidence": "t=+4.2, q=0.008, rank #9; without 2021Q3-23Q4 +4.1; robust. Drops to t of about 0 once SE CPI acceleration is controlled, so it is an inflation-deceleration proxy, not a demand effect.",
+   "confidence": "high that the relation exists; it should be read as a CPI proxy"
+  },
+  {
+   "target": "og",
+   "feature": "se_cpi_food_idx__yoy (Swedish food CPI y/y)",
+   "alignment": "coincident / realtime h=0 (lag 0); h=1",
+   "sign": "positive",
+   "effect_size": "+1.73pp of organic growth per 1 sd",
+   "evidence": "h=0: t=+11.5, q<0.001, rank #1; 2001-12 +4.2, 2013-26 +10.1, without 2021Q3-23Q4 +3.5; robust. h=1: t=+8.3, +3.7 without the episode.",
+   "confidence": "high"
+  },
+  {
+   "target": "og",
+   "feature": "w_food_cpi_xvat_yoy (Orkla-weighted food CPI ex VAT)",
+   "alignment": "coincident",
+   "sign": "positive",
+   "effect_size": "+1.71pp per 1 sd",
+   "evidence": "t=+8.5, q<0.001; without 2021Q3-23Q4 +2.6. Tracks Orkla's reported price effect at r=0.92 over 2022Q2-26Q2. Use this rather than w_food_cpi_yoy from 2026Q2, because of the Swedish VAT cut.",
+   "confidence": "high"
+  },
+  {
+   "target": "og",
+   "feature": "no_ssb_bts_consgoods_home_price_exp (SSB business survey, consumer-goods price expectations): lvl, and d4",
+   "alignment": "lvl at realtime h=2; d4 at realtime h=4",
+   "sign": "positive",
+   "effect_size": "+1.8pp per 1 sd (lvl, h=2); +1.5pp (d4, h=4)",
+   "evidence": "lvl h=2: t=+6.0, q<0.001, rank #1; without 2021Q3-23Q4 +2.75; robust. d4 h=4: t=+4.5, q=0.02, rank #1 at h=4; 2001-12 +5.0, 2013-26 +4.7, without the episode +2.7; robust.",
+   "confidence": "moderate-high"
+  },
+  {
+   "target": "og",
+   "feature": "se_ec_retail_sell_price_exp__lvl (EC survey, Swedish retail selling-price expectations; all-feature family)",
+   "alignment": "realtime h=1, h=2",
+   "sign": "positive",
+   "effect_size": "+2.2pp per 1 sd",
+   "evidence": "h=1: t=+9.0, q<0.001, rank #1 of about 1,400; without 2021Q3-23Q4 +3.0; robust. h=2: t=+8.0. 2001-12 t is only +1.1.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "og",
+   "feature": "nw_cons_conf_z (Nordic consumer confidence level)",
+   "alignment": "realtime h=0 to h=2",
+   "sign": "negative",
+   "effect_size": "-1.9pp per 1 sd",
+   "evidence": "h=0: t=-7.2, q<0.001; without 2021Q3-23Q4 -3.2; robust. With a food-CPI control: -3.2. No matching volume effect, so it reads as defensive food-at-home demand and inflation perception, not 'confidence drives sales'.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "og",
+   "feature": "w_real_wage_yoy (Orkla-weighted real wage growth)",
+   "alignment": "realtime h=0",
+   "sign": "negative",
+   "effect_size": "-1.8pp per 1 sd",
+   "evidence": "t=-7.6, q<0.001, rank #5; without 2021Q3-23Q4 -2.3; robust. Mostly the CPI term: with a food-CPI control, -2.9 full and -2.2 without the episode. 2001-12 t=-1.0.",
+   "confidence": "moderate; an inflation proxy"
+  },
+  {
+   "target": "og",
+   "feature": "w_policy_rate_d4 (Orkla-weighted policy-rate change)",
+   "alignment": "realtime h=2 to h=4",
+   "sign": "positive",
+   "effect_size": "+1.2 to +1.3pp per 1 sd",
+   "evidence": "h=2: t=+3.8, q=0.02; robust. h=4: t=+3.5, q=0.15. With a food-CPI control at h=4: +4.6 full and +5.4 without the episode. Central banks hike into inflation that later reaches Orkla prices. 2013-26 is weak at h=4 (+0.9).",
+   "confidence": "moderate-low"
+  },
+  {
+   "target": "og",
+   "feature": "se_oecd_bci__lvl (OECD business confidence, Sweden; all-feature family)",
+   "alignment": "realtime h=4",
+   "sign": "positive",
+   "effect_size": "+1.9pp per 1 sd",
+   "evidence": "t=+5.5, q<0.001, rank #4 of about 1,400. Without 2021Q3-23Q4: +4.8 with q=0.007. 2001-12 +3.9, 2013-26 +3.3; robust.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_og",
+   "feature": "eu_ppi_dom_c106_idx__dyoy (EU grain-mill PPI acceleration)",
+   "alignment": "realtime h=1, h=2",
+   "sign": "positive",
+   "effect_size": "+1.6pp per 1 sd",
+   "evidence": "h=2: t=+7.4, q<0.001; own lag +7.7; base-period og control +2.9; without 2021Q3-23Q4 +6.4; 2001-12 +3.7, 2013-26 +5.0; robust.",
+   "confidence": "moderate-high"
+  },
+  {
+   "target": "d_og",
+   "feature": "ea_ec_food_ind_sell_price_exp__d4 (euro-area food-industry selling-price expectations, 4Q change)",
+   "alignment": "realtime h=2, h=4",
+   "sign": "positive",
+   "effect_size": "+1.3 to +1.7pp per 1 sd",
+   "evidence": "h=4: t=+5.2, q<0.001; base-period og control +6.2; without 2021Q3-23Q4 +5.3; 2001-12 +4.6, 2013-26 +3.3; robust. h=2: t=+5.9.",
+   "confidence": "high"
+  },
+  {
+   "target": "d_og",
+   "feature": "w_real_wage_dyoy (Orkla-weighted real-wage acceleration)",
+   "alignment": "realtime h=0",
+   "sign": "negative",
+   "effect_size": "-1.9pp per 1 sd",
+   "evidence": "t=-5.5, q<0.001, rank #2; own lag -7.5; base-period og control -3.0; without 2021Q3-23Q4 -5.6; robust. With a food-CPI-acceleration control: -3.5. Falling real wages go with rising og growth, i.e. inflation pass-through, not demand.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_og",
+   "feature": "se_ec_cons_conf__d4 (Swedish consumer confidence, 4Q change)",
+   "alignment": "realtime h=0, h=1",
+   "sign": "negative",
+   "effect_size": "-1.6pp per 1 sd",
+   "evidence": "h=0: t=-5.1, q<0.001; base-period og control -4.0; without 2021Q3-23Q4 -4.9; robust. With a food-CPI-acceleration control: -3.8 at h=0 and -5.5 at h=1.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_og",
+   "feature": "w_food_cpi_yoy (food inflation 5 quarters back)",
+   "alignment": "realtime h=4",
+   "sign": "negative (base effect)",
+   "effect_size": "-1.3pp per 1 sd",
+   "evidence": "t=-5.1, q<0.001; base-period og control -4.1; without 2021Q3-23Q4 -4.7. corr(d_og, og_{t-4}) = -0.64.",
+   "confidence": "high; mechanical base effect"
+  },
+  {
+   "target": "d_og",
+   "feature": "g7_oecd_bci__d4 (OECD G7 business confidence change; all-feature family) and packaging_us_dyoy (core)",
+   "alignment": "realtime h=4",
+   "sign": "positive",
+   "effect_size": "+1.9pp (BCI) and +1.5pp (packaging) per 1 sd",
+   "evidence": "BCI: t=+7.2, q<0.001; base-period og control +6.3; without 2021Q3-23Q4 +6.2. US packaging acceleration: t=+5.6, base control +5.3, without the episode +4.2. Both robust.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "d_og",
+   "feature": "w_gdp_vol_dyoy (core) / ea_gdp_vol_idx__yoy (all-feature family)",
+   "alignment": "realtime h=2",
+   "sign": "positive",
+   "effect_size": "+1.9 to +2.1pp per 1 sd",
+   "evidence": "Core: t=+5.5, q<0.001, without 2021Q3-23Q4 +3.2. EA GDP: t=+9.7, without the episode +7.1, base-period og control +4.3. Both robust.",
+   "confidence": "moderate"
+  },
+  {
+   "target": "vol_proxy",
+   "feature": "se_na_hhcons_food_sa__yoy (Swedish household food consumption volume) and se_retail_grocery_vol_sa_idx__dyoy",
+   "alignment": "coincident only",
+   "sign": "positive",
+   "effect_size": "+1.6 to +1.7pp per 1 sd",
+   "evidence": "t=+6.4 and +5.1, q<0.001; without 2021Q3-23Q4 +3.6 and +4.9; both robust. No core feature passes BY from h=1 onwards.",
+   "confidence": "moderate (coincident, explanatory only)"
+  },
+  {
+   "target": "d_margin_r4",
+   "feature": "eu_ppi_plastic_products_idx__yoy; se_real_wage_yoy_q__d4",
+   "alignment": "realtime h=2",
+   "sign": "negative (plastics PPI); positive (real-wage acceleration)",
+   "effect_size": "-0.51pp and +0.43pp of rolling-4Q margin per 1 sd",
+   "evidence": "Plastics: t=-10.5, but -2.4 without 2021Q3-23Q4. Real-wage acceleration: t=+5.3, +5.4 without the episode; this is a CPI proxy. Rolling windows overlap, so these t-stats are descriptive.",
+   "confidence": "moderate-low"
+  }
+ ],
+ "negative_findings": [
+  "Real wages (Orkla-weighted, Nordic, NO, SE) and real disposable income show no robust positive (demand) effect on the implied volume proxy at any horizon. The full-sample t-stats of 0.6-1.9 turn negative without 2021Q3-23Q4.",
+  "Real-wage associations with margins and organic growth come from their CPI component. The SE real-wage-acceleration effect on d_margin drops to t of about 0 once SE CPI acceleration is controlled.",
+  "Consumer confidence (levels or changes; Orkla-weighted, Nordic, Finans Norge, EC Sweden) has no BY-significant relation with d_margin at any alignment, and no robust positive relation with volume.",
+  "Consumer confidence relates negatively to og, the opposite of a 'confidence drives sales' story.",
+  "Policy-rate levels and bond-yield levels are uninformative for d_margin (|t|<1.5 at every alignment).",
+  "Yield levels relate only weakly to the volume proxy: t about -2.8 at h=1, BY q=0.45.",
+  "For quarterly d_margin, no core feature is BY-significant at h=2 or h=4 in the full sample. Predictability beyond 1 quarter comes only from the delayed pass-through in the lag scan, and from the sample without 2021Q3-23Q4 at h=4.",
+  "The volume proxy is unpredictable in real time: 0 core features pass BY at h=1, h=2 or h=4. The lag scan finds only the mechanical food-CPI term at k=0.",
+  "og predictability is largely the 2021Q3-2023Q4 episode: within the ex-inflation families only 0-3 of 200 core features pass BY at each alignment, although signs persist with t of about 2-3.7.",
+  "FX (Orkla-weighted, NOK and SEK crosses): no FX feature passes BY for d_margin, og or volume. The only BY hits are for d_og at h=4, a base effect via imported inflation.",
+  "Energy (Nordic electricity, EU gas, Brent in NOK) is never BY-significant for d_margin or og. EU gas and electricity do lead d_og at h=1-4.",
+  "Nominal wage growth (w_wage_yoy/dyoy, SE wage index, NO food-manufacturing earnings) is insignificant for margins (|t|<2).",
+  "Unemployment change predicts same-quarter margin gains (t=+4.2), but this falls to t=+1.7 (+0.5 at h=0) once packaging-cost inflation is controlled.",
+  "Many all-family hits are likely spurious or very-small-weight series: RO, LV and LT bond yields, the CZ policy rate, NO border-trade series (2009+), and short EU cereal series (n<40)."
+ ],
+ "key_numbers": [
+  "Discovery tests: 5,964 core (200 features x 6 targets x 5 alignments, minus n<30); 42,180 all-feature; 8,316 lag scan (200 x 7 lags x 6 targets). BY is applied within each target x alignment family of about 200 or about 1,400 tests.",
+  "Global BY across all 5,964 core tests: 844 survive at q<0.10. Across the 2,982 primary-target tests: 406 survive.",
+  "BY-significant / robust core features by alignment (coin, h=0, h=1, h=2, h=4):",
+  "  d_margin: 26/16, 16/12, 12/2, 0/0, 0/0",
+  "  og: 33/12, 39/15, 44/19, 33/9, 3/2",
+  "  d_og: 42/26, 52/35, 57/32, 47/35, 56/44",
+  "  vol_proxy: 12/4, 10/0, 0/0, 0/0, 0/0",
+  "Episode dependence: packaging PPI vs d_margin has t=-9.6 in the full sample but -3.1 without 2021Q3-23Q4. SE food CPI vs og: +11.5 full, +3.5 without the episode.",
+  "Delayed margin pass-through: cost/price inflation 6-7 quarters back has t=+4.2 to +5.2 vs d_margin, with own lag +3.4 to +4.5 and without 2021Q3-23Q4 +4.3 to +5.6.",
+  "Base effect: corr(d_og_t, og_{t-4}) = -0.64, against -0.37 for d_og's own lag 4.",
+  "Implied volume proxy vs reported volume/mix (2022Q2-26Q2, n=17): r=0.83, MAE 1.85pp, bias -0.35pp. Weighted food CPI ex VAT vs reported price: r=0.92 (Nordic version 0.95).",
+  "The numpy HAC estimator matches common.nw_ols to 1.2e-13 in t-stats.",
+  "Effect sizes per 1 sd of the feature: input-cost features move d_margin by about 0.5-0.6pp; food CPI moves og by about 1.7pp; the best d_og predictors move it by 1.3-2.1pp."
+ ],
+ "caveats": [
+  "The 2022-23 inflation episode is the only large, well-measured cost shock. It forms a high-leverage cluster that inflates HAC t-stats; the leverage-adjusted HAC t and the sample without 2021Q3-23Q4 are the honest tests and are reported for every feature.",
+  "Even with HAC, small-sample t-stats on about 100 autocorrelated quarters are optimistic. The rolling-4Q targets (d_margin_r4, d_og_r4) overlap heavily, so their t-stats are descriptive only.",
+  "A univariate screen cannot separate proxies from causes. Real wages and confidence mostly proxy inflation, and yield changes proxy the cost/inflation cycle, though they survive cost controls. Only targeted two-variable conditional checks were run.",
+  "Many d_og predictors work through the base effect. The +base column (control for og_{t-L}) should be checked before treating a d_og predictor as new information.",
+  "Macro data are latest vintage: publication lags are respected, revisions are not.",
+  "The Orkla-weighted composites use geographic weights from annual reports published after year end (mild look-ahead), and confidence z-scores use full-sample scaling.",
+  "Definition mix is only partly handled by dummies and quality weights: India inside the headline 2014Q4-2022Q2; Rieber, Hame and Eastern acquisitions inside d_margin; distribution agreements counted as organic in 2015-16; low-precision og in 2001-05.",
+  "Easter controls (easter_shift) are proxies, and the sign of the Easter effect is ambiguous.",
+  "The volume proxy fails in 2025, when consumer food CPI (about 4%) ran ahead of Orkla's own pricing (about 1%). Features correlated with food CPI also correlate mechanically negatively with the proxy.",
+  "Features are highly redundant (FAO/WB indices in several currencies, packaging sub-indices), so the number of independent signals is far smaller than the test count. The figures de-duplicate at |corr|>0.9.",
+  "common.py note 1: d_og_r4 compares headline og_est with og_est shifted 4 quarters, so it crosses definitions in 2008Q1-09Q1, 2013Q1-15Q4 and 2022Q3-24Q1. That includes the D->E break that d_og itself avoids, and no flag is provided. Worked around locally with a constructed d_og_r4_break control; common.py was not modified.",
+  "common.py note 2: nw_ols drops NaN and zero-weight rows, so quarters on either side of a gap are treated as adjacent in the Newey-West lags. The effect is minor and was replicated for consistency.",
+  "Deliverables: screen_results_core.csv, screen_results_all.csv, lag_profiles.csv, lag_best.csv, and 18 PNGs in figures/ (top10_<target>_{coincident,realtime}.png and lagprofile_<target>.png for 6 targets).",
+  "Scripts (reproducible, about 4 minutes): screen_lib.py, run_screen.py, make_figures.py, write_findings.py."
+ ]
+}

@@ -1,0 +1,18 @@
+period,theme,rule,final,reason
+2001Q3,price_offset,0,1,"SEK weaker hit import costs; fish raw material prices up, partly priced through"
+2001Q4,cost_up,1,0,early-2001 raw material rises largely offset by price increases (backward-looking: no current pressure)
+2002Q2,volume_weak,0,1,"seafood raw material costs drove prices above substitutes, volumes fell; strong NOK"
+2002Q3,volume_weak,0,1,"seafood prices up on raw materials, demand down; stronger NOK"
+2006Q1,buying_power,0,1,higher herring prices; falling Swedish grocery prices
+2009Q4,price_up,1,0,"""much lower price contribution"" = price growth fading, not a price increase"
+2011Q3,cost_up,0,1,BCG-level price increases compensated raw material costs
+2014Q3,cost_up,0,1,weaker SEK/FX costs
+2015Q3,volume_weak,1,0,"weaker NOK raising purchasing costs; ""weak Q3-14"" is the base, not weak volume (regex false positive)"
+2019Q3,cost_up,0,1,prices offset weak SEK/NOK and raw materials
+2019Q3,price_up,0,1,prices offset weak SEK/NOK and raw materials
+2020Q4,cost_up,0,1,lagged price increases for earlier cost rises; raw materials still rising
+2021Q2,price_offset,0,1,"input cost inflation offset by pricing so far; ""lapping 2020 Covid cost savings"" is a headwind, not a cost programme"
+2021Q2,cost_programme,1,0,"input cost inflation offset by pricing so far; ""lapping 2020 Covid cost savings"" is a headwind, not a cost programme"
+2023Q1,cost_up,0,1,meat/dairy/sugar/glass/metal inflation; weak NOK/SEK; price-driven; weak volumes
+2023Q3,cost_up,0,1,raw material prices stabilising but high; weak NOK/SEK
+2025Q2,cost_relief,1,0,input cost rises largely offset
