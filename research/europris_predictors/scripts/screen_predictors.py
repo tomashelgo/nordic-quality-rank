@@ -49,7 +49,7 @@ TARGETS = {
     "rev_yoy":      ("revenue", "q",   ["easter_share_d4", "covid_d4"]),
     "lfl":          ("revenue", "q",   ["easter_share_d4", "covid_d4"]),
     "rev_ltm_yoy":  ("revenue", "ltm", ["covid_ltm_d4"]),
-    "gm_d4":        ("margin",  "q",   ["easter_share_d4", "covid_d4"]),
+    "gm_d4":        ("margin",  "q",   ["easter_share_d4", "covid_d4", "stocktaking_d4"]),
     "gm_ltm_d4":    ("margin",  "ltm", ["covid_ltm_d4"]),
     "ebitm_d4":     ("profit",  "q",   ["easter_share_d4", "covid_d4", "ifrs16_d4"]),
     "ebitm_ltm_d4": ("profit",  "ltm", ["covid_ltm_d4", "ifrs16_ltm_d4"]),
@@ -82,6 +82,8 @@ def add_event_controls(df: pd.DataFrame) -> pd.DataFrame:
         df["covid_d4"] = cov - cov.shift(4)
         ltm = cov.rolling(4, min_periods=1).mean()
         df["covid_ltm_d4"] = ltm - ltm.shift(4)
+    if "ev_stocktaking_d4" in df:
+        df["stocktaking_d4"] = df["ev_stocktaking_d4"]
     if "ev_easter_share_d4" in df:
         df["easter_share_d4"] = df["ev_easter_share_d4"]
     ifrs = df.get("ev_ifrs16")

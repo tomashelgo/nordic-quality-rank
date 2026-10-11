@@ -105,6 +105,10 @@ def load_events() -> pd.DataFrame:
         in_q = np.where(qn == 1, s, np.where(qn == 2, 1 - s, 0.0))
         out["easter_share_in_q"] = in_q
         out["easter_share_d4"] = out["easter_share_in_q"] - out["easter_share_in_q"].shift(4)
+    # annual stocktaking true-up booked in one quarter (until 2022; quarterly from 2023)
+    stock_q = {"2014Q4", "2015Q3", "2016Q3", "2017Q3", "2018Q3", "2019Q3", "2020Q4", "2021Q4", "2022Q3"}
+    out["stocktaking"] = [1.0 if str(q) in stock_q else 0.0 for q in out.index]
+    out["stocktaking_d4"] = out["stocktaking"] - out["stocktaking"].shift(4)
     if "covid_border_restrictions" in out:
         out["covid_d4"] = out["covid_border_restrictions"] - out["covid_border_restrictions"].shift(4)
     if "ifrs16" in out:
