@@ -22,6 +22,7 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import inference  # noqa: E402
 import screen_predictors as sp  # noqa: E402
 from top5 import PICKS, RUNNERS_UP  # noqa: E402
 
@@ -33,7 +34,7 @@ FIG.mkdir(parents=True, exist_ok=True)
 INK, INK2, MUTED, GRID, SURF = "#0b0b0b", "#52514e", "#898781", "#e4e3dd", "#fcfcfb"
 S1, S2, S3 = "#2a78d6", "#eb6834", "#1baf7a"
 TNAME = {"rev_yoy": "Norway sales growth y/y (%)", "lfl": "Like-for-like growth (%)",
-         "gm_d4": "Gross margin y/y change (pp)", "ebitm_d4": "EBIT margin y/y change (pp)"}
+         "gm_d4": "gross margin y/y (pp)", "ebitm_d4": "EBIT margin y/y (pp)"}
 
 
 def style(ax):
@@ -79,7 +80,7 @@ def main():
                     def g(d, k):
                         return d[k].iloc[0] if len(d) else np.nan
                     cards.append({"rank": p["rank"], "key": p["key"], "target": y, "h": h, "selected_h": h in p["hs"],
-                                  "t_is": g(e, "t"), "p_is": g(e, "p_boot"), "t_isc": g(c, "t"), "p_isc": g(c, "p_boot"),
+                                  "t_is": g(e, "t"), "p_is": g(e, "p"), "n_is": g(e, "n"), "t_isc": g(c, "t"), "p_isc": g(c, "p"),
                                   "beta_std": g(c, "beta_std"), "cv_r2": g(e, "cv_r2"), "cvc_r2": g(c, "cv_r2"),
                                   "hold_r2": g(e, "hold_r2"), "holdc_r2": g(c, "hold_r2")})
                 else:
@@ -87,8 +88,16 @@ def main():
                     if r.empty:
                         continue
                     r = r.iloc[0]
+                    # robustness: two extra own lags of y in the primary spec (v3 audit)
+                    f, cols = frames[(y, h)]["exclude"]
+                    f = f.copy()
+                    f["l1"], f["l2"] = panel[y].shift(1).reindex(f.index), panel[y].shift(2).reindex(f.index)
+                    sim = inference.simulate(X[p["feature"]], 20000, p["feature"])
+                    t_ol, p_ol, _, _ = sp.boot_stats(f, cols + ["l1", "l2"], X[p["feature"]], sim)
                     cards.append({"rank": p["rank"], "key": p["key"], "target": y, "h": h, "selected_h": h in p["hs"],
-                                  "t_is": r.t_is, "p_is": r.p_is, "t_isc": r.t_isc, "p_isc": r.p_isc, "q_eu": r.q_eu,
+                                  "t_is": r.t_is, "p_is": r.p_is, "n_is": r.n_is, "t_isc": r.t_isc, "p_isc": r.p_isc,
+                                  "q_bh": r.q_bh, "t_ownlags": t_ol, "p_ownlags": p_ol,
+                                  "t_pxpre": r.get("t_pxpre"), "p_pxpre": r.get("p_pxpre"),
                                   "beta_std": r.beta_std_c, "t_no16": r.t_no16, "tc_no16": r.tc_no16,
                                   "t_px": r.get("t_px"), "p_px": r.get("p_px"), "t_pxl": r.get("t_pxl"), "p_pxl": r.get("p_pxl"),
                                   "cv_r2": r.get("cv_r2"), "cvc_r2": r.get("cvc_r2"),
@@ -144,11 +153,11 @@ def figures(cards, preds, panel, pxp, X):
     fig.savefig(FIG / "holdout_forecasts.png", dpi=150, facecolor=SURF)
     plt.close(fig)
 
-    # 2. evidence by horizon: -log10 bootstrap p (COVID-control spec)
+    # 2. evidence by horizon: -log10 p (primary spec; control spec where the primary is not computable)
     fig, axes = plt.subplots(1, len(picks), figsize=(2.5 * len(picks), 2.9), sharey=True, facecolor=SURF)
     for ax, p in zip(np.atleast_1d(axes), picks):
         c = cards[(cards.key == p["key"]) & (cards.target == p["targets"][0])].sort_values("h")
-        val = -np.log10(c.p_isc.clip(lower=1e-4))
+        val = -np.log10(c.p_is.fillna(c.p_isc).clip(lower=1e-4))
         cols = [S1 if s else "#b7d3f6" for s in c.selected_h]
         ax.bar(c.h, val, color=cols, width=0.7)
         ax.axhline(-np.log10(0.05), color=S2, lw=1, ls="--")
@@ -156,8 +165,8 @@ def figures(cards, preds, panel, pxp, X):
         ax.set_xticks(sp.HORIZONS)
         ax.set_title(f"#{p['rank']} {p['short']}\n→ {p['targets'][0]}", fontsize=8.3, color=INK)
         ax.set_xlabel("quarters ahead", fontsize=8, color=INK2)
-    np.atleast_1d(axes)[0].set_ylabel("-log10 bootstrap p (higher = stronger)", fontsize=8, color=INK2)
-    fig.suptitle("Calibrated evidence by horizon (dark = selected horizons; dashed line = p 0.05)",
+    np.atleast_1d(axes)[0].set_ylabel("-log10 p (higher = stronger)", fontsize=8, color=INK2)
+    fig.suptitle("Calibrated evidence by horizon: -log10 p of the randomisation test (dark = selected horizons; dashed = p 0.05)",
                  fontsize=9.5, color=INK, x=0.01, ha="left")
     fig.tight_layout()
     fig.savefig(FIG / "evidence_by_horizon.png", dpi=150, facecolor=SURF)

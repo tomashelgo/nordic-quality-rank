@@ -1,0 +1,67 @@
+Clas Ohlson AB (CLAS B): quarterly net sales and gross margin, FY2001/02 Q4 to FY2025/26 Q4
+File: clas_ohlson_quarterly.csv (97 fiscal quarters; gross-margin y/y change available for 93 of them, FY2002/03 Q4 onwards)
+
+Fiscal year runs May-April: Q1 = May-Jul, Q2 = Aug-Oct, Q3 = Nov-Jan, Q4 = Feb-Apr. period_end is the last day of the quarter.
+
+COLUMNS
+  period_end, fiscal_quarter, net_sales_sek_m, gross_margin_pct, source   (the requested columns)
+  definition               old = COGS including handling/distribution costs (through FY2024/25);
+                           new = net sales minus goods for resale (from FY2025/26, when the income statement moved from
+                           function-based to nature-based. The FY2025/26 levels are about 6 pp higher. Not comparable with earlier levels.)
+  gross_margin_pct_newdef  FY2024/25 restated on the new definition (from the FY2025/26 reports) and FY2025/26
+  gm_yoy_pp                gross-margin y/y change in pp. Where possible this is current minus the prior-year comparative in the
+                           SAME report, so restatements (including the FY2025/26 definition change) are handled.
+                           Otherwise it is the difference of levels taken from different reports, as marked in gm_yoy_method.
+
+SOURCES
+  1. Report releases on news.cision.com/se/clas-ohlson and news.cision.com/clas-ohlson. The release list was paged
+     through /ListItems?pageIx=N&pageSize=50. Full interim and year-end PDFs came from mb.cision.com and from
+     feed.ne.cision.com/Commands/File.aspx redirects. mb.cision.com could be reached in this session.
+     The text was extracted with pdftotext -layout. We used the group income statement's 3-month columns: net
+     sales (Nettoomsättning/Försäljning) and gross profit (Bruttoresultat) for the current quarter and the prior-year
+     comparative. Gross margin = gross profit / net sales.
+     Check: sales + cost of goods sold = gross profit holds within 0.1 MSEK for every parsed report.
+  2. In 19 reports the text is drawn as vector outlines, so no text can be extracted. These are FY2014/15 Q1 to
+     FY2016/17 Q1, FY2016/17 Q3, FY2018/19 Q1-Q2, and FY2019/20 Q4 to FY2021/22 Q2. For them we rendered page 1 to PNG
+     and read the "3 Months" key-figure table: sales in MSEK as integers and gross margin to 1 decimal, current and
+     prior year. These rows are listed in data/manual_keyfigures.csv. All of them agree with the income-statement values
+     of adjacent reports wherever those exist.
+  3. The quarterly overview in the six-month report 2016/17 (Kvartalsöversikt, FY2014/15 Q2 to FY2016/17 Q2) was used
+     as a cross-check.
+  4. Table "Resultat per kvartal" in the year-end report 2003/04 (published 2004-06-16) gives FY2001/02 Q4 to FY2003/04 Q4
+     as sales and COGS.
+  5. Cision has no PDFs for FY2011/12 Q1-Q3. Those levels come from the prior-year comparatives in the FY2012/13 Q1-Q3 reports.
+  Vintage check: every old-definition observation of the same quarter (first report, the next year's comparative,
+  overview tables) agrees within 0.11 pp on margin and 0.5% on sales. Before FY2025/26 there were no restatements that
+  affect the gross margin.
+
+FX (data/panel.csv)
+  USD/SEK, NOK/SEK: Riksbank SWEA monthly averages (api.riksbank.se/swea/v1/ObservationAggregates/SEKUSDPMI|SEKNOKPMI/M/...).
+  CNY/SEK = Riksbank USD/SEK / FRED EXCHUS (CNY per USD, monthly average). Cross-check: FRED EXSDUS differs from the
+  Riksbank USD/SEK by at most 0.54% in any month. x for each fiscal quarter = mean of its 3 months, then
+  100*ln(x_t/x_{t-4}).
+
+HEDGING POLICY (from the reports' notes)
+  FY2009/10-FY2013/14 reports: "policy is to hedge 50% of expected flows during a catalogue period". Hedging was in USD,
+     HKD, (EUR) and NOK. The catalogue was annual, published in August, so prices were largely fixed for a year.
+  Dec 2016 to Sep 2019 reports: "hedge the expected flow in each currency every month, with six-month maturities".
+     Hedging in USD and NOK.
+  Dec 2019 to Jun 2026 reports: "hedges half of the expected flow in each currency on an ongoing basis", with forwards of
+     three to nine months.
+  Inventory: average 12-month inventory 2,356 MSEK in the FY2023/24 year-end report, which is about 4-5 months of COGS.
+     Reports from 2017/18 onwards attribute FX margin effects to "delays in inventory".
+  NOK is a sales currency and is also hedged. In FY2016/17 the margin decline (-2.4 pp in Q2) was attributed to
+     "negative effects from currency hedging (NOK) ... and currency effects related to delays in inventory".
+
+LARGE MARGIN MOVES AND ONE-OFFS
+  FY2008/09-09/10   USD/SEK +25-38% y/y (Nov 2008 to Apr 2009). The margin was only "negatively affected by currency
+                    effects, largely compensated by sales mix and more efficient purchasing" (Q2 09/10 -0.3 pp). FY2010/11 Q1
+                    was +2.4 pp, "positively impacted mainly by exchange-rate effects (USD)", after USD fell back.
+  FY2016/17 Q1-Q3   -1.3, -2.4 and -1.9 pp: NOK hedges and inventory-delayed FX after the 2014-15 USD/SEK rise.
+  FY2017/18 Q4      -5.4 pp (36.7% vs 42.0%). The report gives three equal parts: FX (inventory delays, NOK hedges, stronger
+                    USD), commercial investments, and other (sourcing costs). This is treated as an outlier in a robustness
+                    dummy.
+  FY2015/16 Q4      the 107 MSEK UK restructuring charge sits in other operating items, not in gross margin.
+  FY2022/23 Q1-Q3   -4.3, -5.4 and -3.3 pp: higher sourcing costs (freight, USD), campaign intensity, and "the previously
+                    positive exchange-rate effect did not materialise". FY2023/24 Q1-Q2 then rebounded +3.0 and +3.6 pp.
+  FY2025/26         definition change (see above). FY2025/26 y/y changes are measured against restated FY2024/25.

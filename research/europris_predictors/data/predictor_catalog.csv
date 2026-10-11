@@ -85,8 +85,6 @@ extra_white__lvl,extra_white,Finans Norge: share who would buy household applian
 extra_white__d4,extra_white,Finans Norge: share who would buy household appliances,sentiment,y/y change (pp),+,?,mkt_no_finansnorge_extra_money_white_goods,Q,-45.0,2001Q1
 regnet_total_next__lvl,regnet_total_next,"Regional Network: expected output growth, all sectors",sentiment,level (quarterly mean),+,?,mkt_no_regnet_output_total_next_q,Q,-14.0,2003Q1
 regnet_total_next__d4,regnet_total_next,"Regional Network: expected output growth, all sectors",sentiment,y/y change (pp),+,?,mkt_no_regnet_output_total_next_q,Q,-14.0,2004Q1
-gscpi__lvl,gscpi,NY Fed Global Supply Chain Pressure Index,global_costs,level (quarterly mean),?,-,mkt_gscpi,M,5.0,2000Q1
-gscpi__d4,gscpi,NY Fed Global Supply Chain Pressure Index,global_costs,y/y change (pp),?,-,mkt_gscpi,M,5.0,2001Q1
 freight_ppi__g4,freight_ppi,US PPI deep-sea freight,global_costs,y/y log growth (%),?,-,mkt_us_ppi_deep_sea_freight,M,12.0,2001Q1
 brent_nok__g4,brent_nok,Brent crude in NOK,global_costs,y/y log growth (%),-,-,mkt_brent_usd_avg / mkt_nok_per_usd_avg,M,0.0,2001Q1
 cotton__g4,cotton,Cotton price (USD),global_costs,y/y log growth (%),?,-,mkt_cotton_price_usc_lb,M,17.0,2001Q1

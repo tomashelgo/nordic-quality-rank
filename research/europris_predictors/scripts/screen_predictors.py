@@ -29,6 +29,8 @@ Inference (the code audit showed Newey-West t-stats are 2-15x oversized here):
   p_px / p_pxl   the same on the 25-year proxy target (SSB NACE 47.19 sales,
                  2001-2024; Europris is ~2/3 of this category, so this is
                  largely Europris's own pre-2014 history), quarterly / annual;
+  p_pxpre        the quarterly proxy restricted to targets <= 2014Q4, i.e.
+                 independent of the Europris sample;
   t_no16 / tc_no16  OLS t without 2016 targets (single-episode check);
   cv_* / cvc_*   hv-block CV R^2 (descriptive);
   sel_* / hold_* pseudo real-time expanding-window OOS R^2 on targets <= 2024Q2
@@ -225,7 +227,7 @@ def task(args):
         t, p, n, bstd = boot_stats(f, cols, x, Xsim)
         tc, pc, nc, bstdc = boot_stats(fc, colsc, x, Xsim)
         if not (np.isfinite(t) or np.isfinite(tc)):
-            continue
+            continue  # also skips features collinear with a benchmark term (e.g. store growth for rev_yoy)
         row = {"target": y, "family": fam, "kind": kind, "h": h, "feature": feat,
                "t_is": t, "p_is": p, "n_is": n, "beta_std": bstd,
                "t_isc": tc, "p_isc": pc, "n_isc": nc, "beta_std_c": bstdc}
@@ -243,7 +245,7 @@ def task(args):
         row["t_hac_c"] = insample(fc, colsc, x, h, kind, drop_covid=False).get("is_t_hac")
         for tag, (fp, colsp) in pframes.get((y, h), {}).items():
             tp, pp, npx, bp = boot_stats(fp, colsp, x, Xsim)
-            op, _ = run_rt(fp, colsp, x, h, "ltm" if tag == "pxl" else "q")
+            op, _ = run_rt(fp, colsp, x, h, "ltm" if tag == "pxl" else "q") if tag != "pxpre" else (None, None)
             row |= {f"t_{tag}": tp, f"p_{tag}": pp, f"n_{tag}": npx, f"beta_std_{tag}": bp,
                     f"oos_{tag}": op["sel_oos_r2"] if op else np.nan}
         rows.append(row)
@@ -259,7 +261,10 @@ def build_frames(panel, pxp):
             frames[(y, h)] = {m: frame(panel, y, h, controls, kind, m, ocontrols) for m in ("exclude", "control")}
             if y in PROXY:
                 pctl = [c for c in controls if not c.startswith("covid")]
-                pf = {"px": frame(pxp, PROXY[y], h, pctl, "q", "exclude")}
+                fpx = frame(pxp, PROXY[y], h, pctl, "q", "exclude")
+                pf = {"px": fpx,
+                      # independent of the Europris sample: proxy targets up to 2014Q4 only
+                      "pxpre": (fpx[0][fpx[0]["tdate"] <= pd.Period("2014Q4", "Q")], fpx[1])}
                 if h >= 4:
                     pf["pxl"] = frame(pxp, PROXY_LTM, h, [], "ltm", "exclude")
                 pframes[(y, h)] = pf

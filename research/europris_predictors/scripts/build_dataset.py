@@ -157,10 +157,10 @@ def load_events() -> pd.DataFrame:
         out["easter_share_in_q"] = in_q
         out["easter_share_d4"] = out["easter_share_in_q"] - out["easter_share_in_q"].shift(4)
     # annual stocktaking true-up booked in one quarter (until 2022; quarterly from 2023)
-    # quarters with a material stocktaking result per the extraction notes (2020Q3 +22, 2022Q4 +27.7 and
-    # 2023Q3 +59 included after the code audit; counts are booked continuously from 2023)
-    stock_q = {"2014Q4", "2015Q3", "2016Q3", "2017Q3", "2018Q3", "2019Q3", "2020Q3", "2020Q4", "2021Q4",
-               "2022Q3", "2022Q4", "2023Q3"}
+    # planned (ex-ante) timing of the annual stocktaking true-up: Q4 2014, then Q3 each year until
+    # calculation differences started being booked continuously in Q1 2023. Ex-post delays
+    # (2020Q4, 2021Q4, 2022Q4) are deliberately not used: they were not known at the forecast origin.
+    stock_q = {"2014Q4"} | {f"{y}Q3" for y in range(2015, 2023)}
     out["stocktaking"] = [1.0 if str(q) in stock_q else 0.0 for q in out.index]
     out["stocktaking_d4"] = out["stocktaking"] - out["stocktaking"].shift(4)
     out["tdays"] = [float(trading_days(q)) for q in out.index]

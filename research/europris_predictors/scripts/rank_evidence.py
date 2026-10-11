@@ -1,23 +1,25 @@
-"""Evidence synthesis (v3, calibrated inference). Holdout results are NOT used.
+"""Evidence synthesis (v3, calibrated). Holdout results are NOT used here.
 
-For each (feature, target, h), from results/screen_all.csv:
-  p_eu    Europris evidence: the larger of the two specs' bootstrap p-values
-          (COVID-excluded and COVID-control) when both exist and the signs
-          agree; 1.0 when the signs disagree; else the one available.
-  q_eu    Benjamini-Hochberg q of p_eu within each target (all features x
-          horizons, ~570 tests per target).
-  p_proxy 25-year category proxy (sales targets only): bootstrap p of the
-          quarterly proxy (h <= 3) or the better of quarterly / annual-window
-          proxy (h >= 4), same sign as Europris required.
+The COVID-excluded spec is primary; the COVID-control spec is a robustness
+check only (45-70% of its rows are COVID-era, where x and y are both driven by
+the pandemic and the independence null is not credible - v3 audit).
 
-Tiers:
-  ESTABLISHED  q_eu <= 0.10.
-  SUPPORTED    p_eu <= 0.05 with same-sign |t| >= 1.5 without 2016 (in either
-               spec), and, for sales targets, the proxy agrees (p_proxy <= 0.10)
-               — or, failing the proxy, both specs individually <= 0.05.
-  WEAK         min(p_is, p_isc) <= 0.05 with sign agreement, or proxy-only
-               (p_proxy <= 0.01 and same Europris sign).
-  none         otherwise.
+Outputs
+  results/evidence_all.csv          every (feature, target, h) with its stats
+  results/family_calibration.csv    per target: share of primary-spec p <= .05 / .01
+                                    vs nominal, and the BH result
+  results/exploratory_shortlist.csv strict shortlist, with the number of passes
+                                    expected by chance
+
+Strict shortlist rule (per test):
+  primary spec computable with n >= 15 and bootstrap p <= 0.05;
+  coefficient sign equal to a DIRECTIONAL prior written before the analysis
+  (candidates.py; '?' priors are excluded);
+  the COVID-control spec has the same sign;
+  if 2016 targets are in the sample, dropping them keeps the same sign with |t| >= 1.5;
+  for sales targets, the independent pre-2015 category proxy has the same sign.
+Under the null each test passes with probability ~ 0.05 x 0.5 x (share of
+same-sign follow-ups); the expected count is reported next to the observed one.
 """
 from __future__ import annotations
 
@@ -42,42 +44,41 @@ def main():
                              "group": "company", "prior_sales": "+", "prior_margin": "?"}])
     cat = pd.concat([cat, company], ignore_index=True)
     df = df.merge(cat[["feature", "concept", "label", "group", "prior_sales", "prior_margin"]], on="feature", how="left")
-
-    both = df.p_is.notna() & df.p_isc.notna()
-    agree = np.sign(df.t_is) == np.sign(df.t_isc)
-    df["sign"] = np.sign(df.t_isc.fillna(df.t_is))
-    df["p_eu"] = np.where(both, np.where(agree, np.maximum(df.p_is, df.p_isc), 1.0), df[["p_is", "p_isc"]].max(axis=1))
-    for y, g in df.groupby("target"):
-        df.loc[g.index, "q_eu"] = fcast.bh_fdr(g["p_eu"])
-    no16 = ((np.sign(df.t_no16) == df.sign) & (df.t_no16.abs() >= 1.5)) | ((np.sign(df.tc_no16) == df.sign) & (df.tc_no16.abs() >= 1.5))
-    df["robust_no16"] = no16
-    # proxy p with sign agreement
-    pq = np.where(np.sign(df.get("t_px")) == df.sign, df.get("p_px"), 1.0)
-    pl = np.where(np.sign(df.get("t_pxl")) == df.sign, df.get("p_pxl"), 1.0)
-    pq = pd.Series(pq, index=df.index).where(df.get("p_px").notna())
-    pl = pd.Series(pl, index=df.index).where(df.get("p_pxl").notna())
-    df["p_proxy"] = np.where(df.h >= 4, pd.concat([pq, pl], axis=1).min(axis=1), pq)
     sales = df.family == "revenue"
-    est = df.q_eu <= 0.10
-    sup_core = (df.p_eu <= 0.05) & df.robust_no16
-    sup = sup_core & np.where(sales, (df.p_proxy <= 0.10) | (both & agree & (df.p_is <= 0.05) & (df.p_isc <= 0.05)),
-                              both & agree & (df.p_is <= 0.05) & (df.p_isc <= 0.05) | (df.p_eu <= 0.05))
-    weak = ((df[["p_is", "p_isc"]].min(axis=1) <= 0.05) & (agree | ~both)) | (sales & (df.p_proxy <= 0.01))
-    df["tier"] = np.select([est, sup, weak], ["ESTABLISHED", "SUPPORTED", "WEAK"], "none")
+    df["prior"] = np.where(sales, df.prior_sales, df.prior_margin)
+    df["sign"] = np.sign(df.t_is)
+    for y, g in df.groupby("target"):
+        df.loc[g.index, "q_bh"] = fcast.bh_fdr(g["p_is"].where(g.n_is >= 15))
+    has16 = df.n_no16 < df.n_is
+    no16_ok = ~has16 | ((np.sign(df.t_no16) == df.sign) & (df.t_no16.abs() >= 1.5))
+    ctrl_ok = np.sign(df.t_isc) == df.sign
+    prior_ok = ((df.prior == "+") & (df.sign > 0)) | ((df.prior == "-") & (df.sign < 0))
+    pre_ok = ~sales | (np.sign(df.get("t_pxpre")) == df.sign)
+    eligible = (df.n_is >= 15) & df.p_is.notna() & df.prior.isin(["+", "-"])
+    df["shortlist"] = eligible & (df.p_is <= 0.05) & prior_ok & ctrl_ok & no16_ok & pre_ok
     df.to_csv(RES / "evidence_all.csv", index=False)
-    pd.set_option("display.width", 260)
-    show = ["tier", "concept", "feature", "target", "h", "sign", "t_is", "p_is", "t_isc", "p_isc", "q_eu", "t_no16", "tc_no16",
-            "t_px", "p_px", "t_pxl", "p_pxl", "cvc_r2"]
-    top = df[df.tier.isin(["ESTABLISHED", "SUPPORTED"])].sort_values(["tier", "p_eu"])
-    print(top[show].round(3).to_string(index=False))
-    print()
-    print(df.groupby(["target", "tier"]).size().unstack(fill_value=0))
-    summ = (df[df.tier != "none"].groupby(["concept", "tier"])
-              .agg(targets=("target", lambda s: ",".join(sorted(set(s)))),
-                   horizons=("h", lambda s: ",".join(str(int(x)) for x in sorted(set(s)))),
-                   best_p=("p_eu", "min"))
-              .reset_index().sort_values(["tier", "best_p"]))
-    summ.to_csv(RES / "evidence_concepts.csv", index=False)
+
+    cal = []
+    for y, g in df.groupby("target"):
+        gp = g[g.n_is >= 15]
+        cal.append({"target": y, "tests_primary": int(gp.p_is.notna().sum()),
+                    "share_p05": float((gp.p_is <= 0.05).mean()), "share_p01": float((gp.p_is <= 0.01).mean()),
+                    "nominal_p05": 0.05, "min_q_bh": float(g.q_bh.min()),
+                    "survive_bh_q10": int((g.q_bh <= 0.10).sum())})
+    cal = pd.DataFrame(cal)
+    cal.to_csv(RES / "family_calibration.csv", index=False)
+
+    el = df[eligible]
+    follow = (ctrl_ok & no16_ok & pre_ok)[eligible].mean()
+    expected = len(el) * 0.05 * 0.5 * follow
+    sl = df[df.shortlist].sort_values("p_is")
+    sl.assign(expected_by_chance=expected).to_csv(RES / "exploratory_shortlist.csv", index=False)
+    pd.set_option("display.width", 240)
+    print(cal.round(3).to_string(index=False))
+    print(f"\nexploratory shortlist: {len(sl)} passes vs ~{expected:.1f} expected by chance "
+          f"({len(el)} eligible tests with a directional prior)")
+    print(sl[["concept", "feature", "target", "h", "sign", "t_is", "p_is", "n_is", "t_isc", "p_isc", "t_no16",
+              "t_pxpre", "p_pxpre", "cv_r2", "cvc_r2"]].round(3).to_string(index=False))
 
 
 if __name__ == "__main__":

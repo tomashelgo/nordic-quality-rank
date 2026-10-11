@@ -5,10 +5,12 @@ overlapping y/y targets): pure-noise predictors reach |t| > 2.5 in 10-40% of
 draws (code audit). Instead we use a conditional randomisation test:
 
   H0: x is independent of y.
-  Simulate B series x* from an AR(p) model fitted to x (p by AIC, residual
-  bootstrap), keep x's NaN pattern, and recompute the OLS t-statistic of x* in
-  the SAME regression (same y, same controls, same rows). The p-value is the
-  share of |t*| >= |t|.
+  Simulate B series x* from an AR(p) model fitted to all non-NaN values of x
+  (p by AIC, residual bootstrap; explosive / unit-root fits are shrunk to a
+  maximum root modulus of 0.98), keep x's NaN pattern, and recompute the OLS
+  t-statistic of x* in the SAME regression (same y, same controls, same rows).
+  The p-value is the share of |t*| >= |t|. Degenerate cases (x collinear with
+  the controls, non-finite t, degenerate null) return NaN.
 
 Everything is vectorised over B with the Frisch-Waugh-Lovell theorem, so
 B = 20,000 per test is cheap. Simulations use a seed derived from the feature
@@ -41,15 +43,25 @@ def fit_ar(x: np.ndarray, pmax: int = 4):
     return best[1], best[2], best[3]
 
 
-def simulate(x: pd.Series, B: int, name: str, burn: int = 100) -> np.ndarray:
-    """Return array (len(x), B) of AR-sieve draws with x's NaN pattern (NaN elsewhere).
+def max_root(phi: np.ndarray) -> float:
+    p = len(phi)
+    C = np.zeros((p, p))
+    C[0] = phi
+    if p > 1:
+        C[1:, :-1] = np.eye(p - 1)
+    return float(np.abs(np.linalg.eigvals(C)).max())
 
-    The longest contiguous non-NaN run of x is used to fit the AR model; draws
-    fill all positions where x is observed (in order).
-    """
+
+def simulate(x: pd.Series, B: int, name: str, burn: int = 100, max_mod: float = 0.98) -> np.ndarray:
+    """Return array (len(x), B) of AR-sieve draws placed on x's observed positions (NaN elsewhere)."""
     obs = x.notna().to_numpy()
     vals = x.dropna().to_numpy(float)
     p, b, e = fit_ar(vals)
+    r = max_root(b[1:])
+    if r > max_mod:
+        b = b.copy()
+        b[1:] = b[1:] * (max_mod / r) ** np.arange(1, p + 1)
+        b[0] = vals.mean() * (1 - b[1:].sum())
     e = e - e.mean()
     rng = np.random.default_rng(_seed(name))
     n = len(vals)
@@ -80,8 +92,17 @@ def ols_t_many(y: np.ndarray, Z: np.ndarray, X: np.ndarray) -> np.ndarray:
 
 
 def boot_pvalue(y: np.ndarray, Z: np.ndarray, x: np.ndarray, Xsim: np.ndarray) -> tuple[float, float]:
-    """Two-sided bootstrap p-value of the OLS t of x, and the observed t."""
+    """Two-sided bootstrap p-value of the OLS t of x, and the observed t (NaN if degenerate)."""
+    Q, _ = np.linalg.qr(Z)
+    xc = x - x.mean()
+    mx = x - Q @ (Q.T @ x)
+    if (xc @ xc) == 0 or (mx @ mx) < 1e-8 * (xc @ xc):
+        return np.nan, np.nan
     t = ols_t_many(y, Z, x[:, None])[0]
+    if not np.isfinite(t):
+        return np.nan, t
     tb = ols_t_many(y, Z, Xsim)
     tb = tb[np.isfinite(tb)]
+    if len(tb) < 0.99 * Xsim.shape[1]:
+        return np.nan, t
     return (1 + np.sum(np.abs(tb) >= abs(t))) / (1 + len(tb)), t

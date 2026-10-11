@@ -142,8 +142,6 @@ CANDIDATES = [
     dict(key="regnet_total_next", label="Regional Network: expected output growth, all sectors",
          series="mkt_no_regnet_output_total_next_q", tf=["lvl", "d4"], prior=("+", "?"), group="sentiment"),
     # --- Global cost shocks --------------------------------------------------
-    dict(key="gscpi", label="NY Fed Global Supply Chain Pressure Index", series="mkt_gscpi",
-         tf=["lvl", "d4"], prior=("?", "-"), group="global_costs"),
     dict(key="freight_ppi", label="US PPI deep-sea freight", series="mkt_us_ppi_deep_sea_freight",
          tf=["g4"], prior=("?", "-"), group="global_costs"),
     dict(key="brent_nok", label="Brent crude in NOK", derived="brent_nok", tf=["g4"], prior=("-", "-"), group="global_costs"),
@@ -170,7 +168,10 @@ LAG_OVERRIDE = {"ssb_employees_register_all_sa_final": 54.0}
 
 # Excluded after the code audit: re-estimated over the full history each vintage,
 # so the downloaded history is not what was known in real time.
-EXCLUDED = {"fci": "Norges Bank FCI (mkt_no_fci_*) is model-based and re-estimated each vintage - not real-time."}
+EXCLUDED = {
+    "fci": "Norges Bank FCI (mkt_no_fci_*) is model-based and re-estimated each vintage - not real-time.",
+    "gscpi": "NY Fed GSCPI: whole history re-estimated with each release - not real-time.",
+}
 
 DERIVED = {
     "real_disp_income_exdiv": (["ssb_hh_disp_income_ex_div_nsa", "ssb_cpi_total"],
