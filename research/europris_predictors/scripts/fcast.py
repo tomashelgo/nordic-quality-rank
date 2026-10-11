@@ -164,3 +164,42 @@ def bh_fdr(p: pd.Series) -> pd.Series:
     res = p.copy()
     res[mask] = out
     return res
+
+
+def cv_forecasts(
+    data: pd.DataFrame,
+    y_col: str,
+    base_cols: list[str],
+    extra_cols: list[str],
+    gap: int,
+    block: np.ndarray,
+    pos: np.ndarray,
+    min_train: int = 12,
+    gap_future: int | None = None,
+):
+    """hv-block cross-validation (Racine 2000).
+
+    Each block (e.g. a calendar year of target dates) is predicted from a model
+    fitted on the other rows whose origin lies more than `gap` quarters before
+    or `gap_future` quarters after the block, so overlapping y/y windows (and
+    test targets reappearing as a training row's lagged regressor) cannot leak.
+    Returns DataFrame(origin -> y, f_bench, f_model).
+    """
+    gap_future = gap if gap_future is None else gap_future
+    y = data[y_col].to_numpy(float)
+    Xb = design(data, base_cols)
+    Xm = design(data, base_cols + extra_cols)
+    out = []
+    for b in np.unique(block):
+        test = np.where(block == b)[0]
+        lo, hi = pos[test].min() - gap, pos[test].max() + gap_future
+        train = np.where((pos < lo) | (pos > hi))[0]
+        if len(train) < min_train:
+            continue
+        keep_b = _varying(Xb[train])
+        keep_m = _varying(Xm[train])
+        bb = ols(y[train], Xb[train][:, keep_b])
+        bm = ols(y[train], Xm[train][:, keep_m])
+        for i in test:
+            out.append((data.index[i], y[i], Xb[i, keep_b] @ bb, Xm[i, keep_m] @ bm))
+    return pd.DataFrame(out, columns=["origin", "y", "f_bench", "f_model"]).set_index("origin")

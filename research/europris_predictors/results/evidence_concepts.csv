@@ -1,0 +1,14 @@
+concept,n,targets,horizons,best_score
+cnynok,2,gm_d4,"3,4",0.6620105594442707
+unemployment,2,gm_d4,"4,6",0.5631699744065439
+business_conf,1,ebitm_d4,3,0.48017822634539387
+usdnok,2,gm_d4,"3,4",0.46633720243204224
+i44,1,gm_d4,4,0.46361009870450526
+population,2,gm_d4,"3,4",0.44645816489153567
+china_prices_nok,2,gm_d4,"3,4",0.3888289720377704
+fci,5,gm_d4,"1,2,3",0.3820954459370697
+real_disp_income,1,ebitm_d4,1,0.2957813377947222
+rti_retail_exfuel_volume,3,"ebitm_d4,gm_d4","2,3",0.2933777779509372
+employment,1,gm_d4,1,0.22122771019596435
+house_prices,2,"lfl,rev_yoy",1,0.18003837980417553
+regnet_retail_next,1,rev_yoy,1,0.10468121547950507
