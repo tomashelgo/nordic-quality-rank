@@ -130,7 +130,7 @@ def figures(cards, preds, panel, X):
     for ax, p in zip(axes, picks):
         c = cards[(cards.key == p["key"]) & (cards.target == p["targets"][0])].sort_values("h")
         cols = [S1 if s else "#b7d3f6" for s in c.selected_h]
-        ax.bar(c.h, 100 * c.cvc_r2.clip(-60, None), color=cols, width=0.7)
+        ax.bar(c.h, (100 * c.cvc_r2).clip(-60, None), color=cols, width=0.7)
         ax.axhline(0, color=INK2, lw=0.8)
         style(ax)
         ax.set_title(f"#{p['rank']} {p['key']}\n→ {p['targets'][0]}", fontsize=8.5, color=INK)
@@ -143,24 +143,25 @@ def figures(cards, preds, panel, X):
     fig.savefig(FIG / "horizon_profiles.png", dpi=150, facecolor=SURF)
     plt.close(fig)
 
-    # 2. holdout: actual vs benchmark vs model, primary horizon, COVID-excluded spec
+    # 2. holdout only (8 quarters): actual vs benchmark vs model, COVID-excluded spec
     sel = [(p, p["targets"][0], p["hs"][-1] if p["key"] in ("cnynok",) else p["hs"][0]) for p in picks]
-    fig, axes = plt.subplots(2, 3, figsize=(11, 5.6), facecolor=SURF)
+    fig, axes = plt.subplots(2, 3, figsize=(11, 5.4), facecolor=SURF)
     for ax, (p, y, h) in zip(axes.ravel(), sel):
         r = preds.get((p["key"], y, h, "exclude"))
         style(ax)
         if r is None:
             ax.set_visible(False)
             continue
-        r = r[~r.covid_target.astype(bool)]
-        t = [q.to_timestamp(how="end") for q in r.tdate]
-        ax.plot(t, r.y, color=INK, lw=2, label="actual")
-        ax.plot(t, r.f_bench, color=MUTED, lw=1.5, ls="--", label="benchmark (AR + calendar)")
-        ax.plot(t, r.f_model, color=S1, lw=2, label=f"+ {p['key']}")
-        ax.axvspan(SEL_END.to_timestamp(how="end"), HOLD_END.to_timestamp(how="end"), color="#f1f0ec", zorder=0)
+        r = r[(r.tdate > SEL_END) & (r.tdate <= HOLD_END)]
+        xs = np.arange(len(r))
+        labels = [f"{q.year % 100}Q{q.quarter}" for q in r.tdate]
+        ax.plot(xs, r.y, color=INK, lw=2, marker="o", ms=4, label="actual")
+        ax.plot(xs, r.f_bench, color=MUTED, lw=1.5, ls="--", marker="o", ms=3, label="benchmark (AR + calendar)")
+        ax.plot(xs, r.f_model, color=S1, lw=2, marker="o", ms=4, label=f"+ {p['key']}")
+        ax.set_xticks(xs, labels)
         ax.set_title(f"#{p['rank']} {p['key']} → {TNAME[y]}, {h}q ahead", fontsize=8.5, color=INK)
         ax.legend(fontsize=6.5, frameon=False, loc="best")
-    fig.suptitle("Pseudo real-time forecasts (shaded = holdout 2024Q3-2026Q2, never used for selection)",
+    fig.suptitle("Holdout 2024Q3-2026Q2 (never used for selection): pseudo real-time forecasts vs actual",
                  fontsize=9.5, color=INK, x=0.01, ha="left")
     fig.tight_layout()
     fig.savefig(FIG / "holdout_forecasts.png", dpi=150, facecolor=SURF)
