@@ -96,7 +96,10 @@ def load_events() -> pd.DataFrame:
     out = pd.DataFrame(keep)
     # Easter controls usable for quarterly y/y targets: share of the Easter week in
     # the quarter minus the same share a year earlier (Q1 vs Q2 matters, Q3/Q4 = 0).
-    if "easter_week_split_q1_share" in out:
+    if "easter_q_yoy_effect14" in ev.columns:
+        # y/y change in the share of the 14-day Easter shopping window falling in the quarter
+        out["easter_share_d4"] = pd.to_numeric(ev["easter_q_yoy_effect14"], errors="coerce")
+    elif "easter_week_split_q1_share" in out:
         s = out["easter_week_split_q1_share"]
         qn = out.index.quarter
         in_q = np.where(qn == 1, s, np.where(qn == 2, 1 - s, 0.0))
