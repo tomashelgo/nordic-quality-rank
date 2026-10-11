@@ -1,5 +1,6 @@
 feature,concept,label,group,transform,prior_sales,prior_margin,source_series,freq,lag_days,first_obs
 rti_4719_value__g4,rti_4719_value,"Retail sales, non-specialised non-food stores (NACE 47.19), value",demand,y/y log growth (%),+,?,ssb_rti_4719_nonspec_nonfood_value_ca,M,28.0,2001Q1
+rti_4719_value_nsa__g4,rti_4719_value_nsa,"Retail sales NACE 47.19, value, unadjusted",demand,y/y log growth (%),+,?,ssb_rti_4719_nonspec_nonfood_value_nsa,M,28.0,2001Q1
 rti_4719_volume__g4,rti_4719_volume,"Retail sales NACE 47.19, volume",demand,y/y log growth (%),+,?,ssb_rti_4719_nonspec_nonfood_volume_ca,M,28.0,2001Q1
 rti_retail_exfuel_value__g4,rti_retail_exfuel_value,"Retail sales excl. fuel (NACE 47 ex 47.3), value",demand,y/y log growth (%),+,?,ssb_rti_47x473_retail_ex_fuel_value_ca,M,28.0,2001Q1
 rti_retail_exfuel_volume__g4,rti_retail_exfuel_volume,"Retail sales excl. fuel, volume",demand,y/y log growth (%),+,?,ssb_rti_47x473_retail_ex_fuel_volume_ca,M,28.0,2001Q1
@@ -14,9 +15,14 @@ imports_consumer_volume__g4,imports_consumer_volume,"Import volume, consumer goo
 real_disp_income__g4,real_disp_income,Household real disposable income (QNA),income,y/y log growth (%),+,?,ssb_hh_real_disp_income_2015p_nsa,Q,70.0,2001Q2
 saving_ratio__lvl,saving_ratio,Household saving ratio (SA),income,level (quarterly mean),-,?,ssb_hh_saving_ratio_sa,Q,70.0,2000Q2
 saving_ratio__d4,saving_ratio,Household saving ratio (SA),income,y/y change (pp),-,?,ssb_hh_saving_ratio_sa,Q,70.0,2001Q2
+saving_ratio_exdiv__lvl,saving_ratio_exdiv,Household saving ratio excl. dividends (SA),income,level (quarterly mean),?,?,ssb_hh_saving_ratio_ex_div_sa,Q,70.0,2000Q2
+saving_ratio_exdiv__d4,saving_ratio_exdiv,Household saving ratio excl. dividends (SA),income,y/y change (pp),?,?,ssb_hh_saving_ratio_ex_div_sa,Q,70.0,2001Q2
+real_disp_income_exdiv__g4,real_disp_income_exdiv,Household real disposable income excl. dividends (QNA / CPI),income,y/y log growth (%),+,?,ssb_hh_disp_income_ex_div_nsa / ssb_cpi_total,Q,70.0,2001Q2
 unemployment__lvl,unemployment,LFS unemployment rate (SA),labour,level (quarterly mean),?,?,ssb_lfs_unemp_rate_sa,M,23.0,2006Q1
 unemployment__d4,unemployment,LFS unemployment rate (SA),labour,y/y change (pp),?,?,ssb_lfs_unemp_rate_sa,M,23.0,2007Q1
-employment__g4,employment,"Employed persons, register (SA)",labour,y/y log growth (%),+,?,ssb_employees_register_all_sa_final,M,23.0,2004Q2
+employment__g4,employment,"Employed persons, register (SA)",labour,y/y log growth (%),+,?,ssb_employees_register_all_sa_final,M,54.0,2004Q3
+employment_rate__lvl,employment_rate,LFS employment rate (SA),labour,level (quarterly mean),+,?,ssb_lfs_employment_rate_sa,M,23.0,2009Q1
+employment_rate__d4,employment_rate,LFS employment rate (SA),labour,y/y change (pp),+,?,ssb_lfs_employment_rate_sa,M,23.0,2010Q1
 wage_bill__g4,wage_bill,"Total wages paid, nominal (QNA)",income,y/y log growth (%),+,-,ssb_qna_total_wages_nsa,Q,58.0,2001Q2
 real_wage_bill__g4,real_wage_bill,Real wage bill (QNA wages deflated by CPI),income,y/y log growth (%),+,?,ssb_qna_total_wages_nsa / ssb_cpi_total,Q,58.0,2001Q2
 labour_cost_trade__g4,labour_cost_trade,"Labour cost index, wholesale & retail trade",costs,y/y log growth (%),?,-,ssb_labour_cost_idx_trade,Q,51.0,2001Q2
@@ -27,6 +33,7 @@ cpi_food__g4,cpi_food,"CPI, food & non-alcoholic beverages",prices,y/y log growt
 cpi_furnishings__g4,cpi_furnishings,"CPI, furnishings & household equipment",prices,y/y log growth (%),+,+,ssb_cpi_coicop_05_furnishings_hh_equip,M,9.0,2001Q3
 cpi_nondurable_hh__g4,cpi_nondurable_hh,"CPI, non-durable household goods",prices,y/y log growth (%),+,+,ssb_cpi_coicop_0561_nondurable_hh_goods,M,9.0,2001Q3
 cpi_electricity__g4,cpi_electricity,"CPI, electricity",prices,y/y log growth (%),-,?,ssb_cpi_coicop_0451_electricity,M,9.0,2001Q3
+elec_price_hh__g4,elec_price_hh,"Household electricity price incl. grid and taxes, net of support",prices,y/y log growth (%),-,?,ssb_elec_hh_total_price_net_support,Q,48.0,2013Q2
 import_price_misc_manuf__g4,import_price_misc_manuf,"Import price index, misc. manufactured goods (SITC 8), NOK",costs,y/y log growth (%),+,-,ssb_import_price_idx_sitc8_misc_manufactured,M,9.0,2002Q1
 import_price_consumer__g4,import_price_consumer,"Import price index, consumer goods (BEC), NOK",costs,y/y log growth (%),+,-,ssb_imports_bec_consumer_goods_price_idx,Q,24.0,2001Q1
 ppi_consumer__g4,ppi_consumer,"PPI, domestic consumer goods",costs,y/y log growth (%),+,-,ssb_ppi_domestic_consumer_goods,M,9.0,2001Q1
@@ -41,8 +48,6 @@ nibor_3m__lvl,nibor_3m,3-month NIBOR,rates,level (quarterly mean),?,?,mkt_no_int
 nibor_3m__d4,nibor_3m,3-month NIBOR,rates,y/y change (pp),?,?,mkt_no_interbank_3m_rate_oecd,M,15.0,2001Q1
 govt_10y__lvl,govt_10y,10-year government bond yield,rates,level (quarterly mean),?,?,mkt_no_govt_10y_yield_oecd,M,15.0,2000Q1
 govt_10y__d4,govt_10y,10-year government bond yield,rates,y/y change (pp),?,?,mkt_no_govt_10y_yield_oecd,M,15.0,2001Q1
-fci__lvl,fci,Norges Bank financial conditions index,rates,level (quarterly mean),?,?,mkt_no_fci_total_avg,M,1.0,2002Q1
-fci__d4,fci,Norges Bank financial conditions index,rates,y/y change (pp),?,?,mkt_no_fci_total_avg,M,1.0,2003Q1
 usdnok__g4,usdnok,USD/NOK (NOK per USD; up = weaker krone),fx,y/y log growth (%),+,-,mkt_nok_per_usd_avg,M,0.0,2001Q1
 eurnok__g4,eurnok,EUR/NOK,fx,y/y log growth (%),+,-,mkt_nok_per_eur_avg,M,0.0,2001Q1
 cnynok__g4,cnynok,CNY/NOK,fx,y/y log growth (%),+,-,mkt_nok_per_100cny_avg,M,0.0,2006Q1
@@ -64,6 +69,22 @@ regnet_retail_next__lvl,regnet_retail_next,"Regional Network: retail expected ou
 regnet_retail_next__d4,regnet_retail_next,"Regional Network: retail expected output growth, next quarter",sentiment,y/y change (pp),+,?,mkt_no_regnet_output_retail_next_q,Q,-14.0,2004Q4
 regnet_retail_profit__lvl,regnet_retail_profit,Regional Network: retail profitability,sentiment,level (quarterly mean),+,+,mkt_no_regnet_profitability_retail,Q,-14.0,2005Q1
 regnet_retail_profit__d4,regnet_retail_profit,Regional Network: retail profitability,sentiment,y/y change (pp),+,+,mkt_no_regnet_profitability_retail,Q,-14.0,2006Q1
+cci_country_next__lvl,cci_country_next,Consumer confidence: Norway's economy next year (Finans Norge),sentiment,level (quarterly mean),+,+,mkt_no_finansnorge_cci_country_next_year,Q,-45.0,2000Q1
+cci_country_next__d4,cci_country_next,Consumer confidence: Norway's economy next year (Finans Norge),sentiment,y/y change (pp),+,+,mkt_no_finansnorge_cci_country_next_year,Q,-45.0,2001Q1
+cci_country_past__lvl,cci_country_past,Consumer confidence: Norway's economy vs a year ago (Finans Norge),sentiment,level (quarterly mean),+,+,mkt_no_finansnorge_cci_country_past_year,Q,-45.0,2000Q1
+cci_country_past__d4,cci_country_past,Consumer confidence: Norway's economy vs a year ago (Finans Norge),sentiment,y/y change (pp),+,+,mkt_no_finansnorge_cci_country_past_year,Q,-45.0,2001Q1
+cci_own_fin_past__lvl,cci_own_fin_past,Consumer confidence: own finances vs a year ago (Finans Norge),sentiment,level (quarterly mean),+,+,mkt_no_finansnorge_cci_own_finances_past_year,Q,-45.0,2000Q1
+cci_own_fin_past__d4,cci_own_fin_past,Consumer confidence: own finances vs a year ago (Finans Norge),sentiment,y/y change (pp),+,+,mkt_no_finansnorge_cci_own_finances_past_year,Q,-45.0,2001Q1
+extra_save__lvl,extra_save,Finans Norge: share who would save extra money,sentiment,level (quarterly mean),-,?,mkt_no_finansnorge_extra_money_save,Q,-45.0,2000Q1
+extra_save__d4,extra_save,Finans Norge: share who would save extra money,sentiment,y/y change (pp),-,?,mkt_no_finansnorge_extra_money_save,Q,-45.0,2001Q1
+extra_paydown__lvl,extra_paydown,Finans Norge: share who would pay down debt with extra money,sentiment,level (quarterly mean),-,?,mkt_no_finansnorge_extra_money_pay_down_debt,Q,-45.0,2000Q1
+extra_paydown__d4,extra_paydown,Finans Norge: share who would pay down debt with extra money,sentiment,y/y change (pp),-,?,mkt_no_finansnorge_extra_money_pay_down_debt,Q,-45.0,2001Q1
+extra_brown__lvl,extra_brown,Finans Norge: share who would buy consumer electronics,sentiment,level (quarterly mean),+,?,mkt_no_finansnorge_extra_money_brown_goods,Q,-45.0,2000Q1
+extra_brown__d4,extra_brown,Finans Norge: share who would buy consumer electronics,sentiment,y/y change (pp),+,?,mkt_no_finansnorge_extra_money_brown_goods,Q,-45.0,2001Q1
+extra_white__lvl,extra_white,Finans Norge: share who would buy household appliances,sentiment,level (quarterly mean),+,?,mkt_no_finansnorge_extra_money_white_goods,Q,-45.0,2000Q1
+extra_white__d4,extra_white,Finans Norge: share who would buy household appliances,sentiment,y/y change (pp),+,?,mkt_no_finansnorge_extra_money_white_goods,Q,-45.0,2001Q1
+regnet_total_next__lvl,regnet_total_next,"Regional Network: expected output growth, all sectors",sentiment,level (quarterly mean),+,?,mkt_no_regnet_output_total_next_q,Q,-14.0,2003Q1
+regnet_total_next__d4,regnet_total_next,"Regional Network: expected output growth, all sectors",sentiment,y/y change (pp),+,?,mkt_no_regnet_output_total_next_q,Q,-14.0,2004Q1
 gscpi__lvl,gscpi,NY Fed Global Supply Chain Pressure Index,global_costs,level (quarterly mean),?,-,mkt_gscpi,M,5.0,2000Q1
 gscpi__d4,gscpi,NY Fed Global Supply Chain Pressure Index,global_costs,y/y change (pp),?,-,mkt_gscpi,M,5.0,2001Q1
 freight_ppi__g4,freight_ppi,US PPI deep-sea freight,global_costs,y/y log growth (%),?,-,mkt_us_ppi_deep_sea_freight,M,12.0,2001Q1

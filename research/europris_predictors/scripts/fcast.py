@@ -107,8 +107,11 @@ def evaluate(res: pd.DataFrame, h: int) -> dict:
     adj = (res["f_bench"] - res["f_model"]) ** 2
     f_cw = eb ** 2 - (em ** 2 - adj)
     lags = max(h - 1, 0) + 1
-    cw_t = hac_mean_test(f_cw.to_numpy(), lags)
-    dm_t = hac_mean_test((eb ** 2 - em ** 2).to_numpy(), lags)
+    if len(res) >= 20:  # HAC mean tests are unreliable on shorter samples (code audit)
+        cw_t = hac_mean_test(f_cw.to_numpy(), lags)
+        dm_t = hac_mean_test((eb ** 2 - em ** 2).to_numpy(), lags)
+    else:
+        cw_t = dm_t = np.nan
     return {
         "n_oos": len(res),
         "oos_r2": 1 - mse_m / mse_b,

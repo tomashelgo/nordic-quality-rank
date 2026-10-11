@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from candidates import CANDIDATES, DERIVED  # noqa: E402
+from candidates import CANDIDATES, DERIVED, LAG_OVERRIDE  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -106,6 +106,18 @@ def easter_window_share_q1(year: int, days: int = 14) -> float:
     return float((window.month <= 3).mean())
 
 
+def trading_days(q: pd.Period) -> int:
+    """Norwegian shop trading days in a quarter: Mon-Sat excluding public holidays."""
+    from dateutil.easter import easter
+    y = q.year
+    e = pd.Timestamp(easter(y))
+    hol = {pd.Timestamp(y, 1, 1), e - pd.Timedelta(days=3), e - pd.Timedelta(days=2), e + pd.Timedelta(days=1),
+           pd.Timestamp(y, 5, 1), pd.Timestamp(y, 5, 17), e + pd.Timedelta(days=39), e + pd.Timedelta(days=50),
+           pd.Timestamp(y, 12, 25), pd.Timestamp(y, 12, 26)}
+    days = pd.date_range(q.start_time.normalize(), q.end_time.normalize())
+    return int(sum((d.weekday() < 6) and (d not in hol) for d in days))
+
+
 def load_events() -> pd.DataFrame:
     ev = pd.read_csv(DATA / "events_quarterly.csv")
     ev["q"] = pd.PeriodIndex(ev["quarter"].astype(str), freq="Q")
@@ -145,9 +157,14 @@ def load_events() -> pd.DataFrame:
         out["easter_share_in_q"] = in_q
         out["easter_share_d4"] = out["easter_share_in_q"] - out["easter_share_in_q"].shift(4)
     # annual stocktaking true-up booked in one quarter (until 2022; quarterly from 2023)
-    stock_q = {"2014Q4", "2015Q3", "2016Q3", "2017Q3", "2018Q3", "2019Q3", "2020Q4", "2021Q4", "2022Q3"}
+    # quarters with a material stocktaking result per the extraction notes (2020Q3 +22, 2022Q4 +27.7 and
+    # 2023Q3 +59 included after the code audit; counts are booked continuously from 2023)
+    stock_q = {"2014Q4", "2015Q3", "2016Q3", "2017Q3", "2018Q3", "2019Q3", "2020Q3", "2020Q4", "2021Q4",
+               "2022Q3", "2022Q4", "2023Q3"}
     out["stocktaking"] = [1.0 if str(q) in stock_q else 0.0 for q in out.index]
     out["stocktaking_d4"] = out["stocktaking"] - out["stocktaking"].shift(4)
+    out["tdays"] = [float(trading_days(q)) for q in out.index]
+    out["tdays_d4"] = out["tdays"] - out["tdays"].shift(4)
     if "covid_border_restrictions" in out:
         out["covid_d4"] = out["covid_border_restrictions"] - out["covid_border_restrictions"].shift(4)
     if "ifrs16" in out:
@@ -212,6 +229,8 @@ def realtime_quarterly(series: pd.Series, freq: str, lag_days: float, quarters: 
 def candidate_series(c: dict, long: pd.DataFrame, cat: pd.DataFrame):
     """Return (series, freq, lag_days, source description) for a candidate."""
     def lag_of(sid):
+        if sid in LAG_OVERRIDE:
+            return LAG_OVERRIDE[sid]
         v = pd.to_numeric(cat.loc[sid].get("typical_release_lag_days", np.nan), errors="coerce") if sid in cat.index else np.nan
         return 0.0 if pd.isna(v) else float(v)
 

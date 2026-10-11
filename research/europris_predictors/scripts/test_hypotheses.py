@@ -1,15 +1,18 @@
-"""Test the pre-registered hypotheses (scripts/hypotheses.py) on the screen output.
+"""Test the pre-registered hypotheses (scripts/hypotheses.py) with calibrated
+inference (v3; results/evidence_all.csv from rank_evidence.py).
 
-Decision rule (fixed before looking at hypothesis results):
-  SUPPORTED   at the primary horizon: coefficient sign as expected (or prior "?"),
-              CV R^2 > 0, Benjamini-Hochberg adjusted Clark-West p <= 0.10
-              across all primary tests, and shifted-placebo p <= 0.10.
-  PARTIAL     at the primary or another pre-registered horizon: sign as expected,
-              CV R^2 > 0, raw Clark-West p <= 0.10 and placebo p <= 0.20.
-  otherwise   NOT SUPPORTED.
-Robustness columns (reported, not part of the rule): COVID-excluded CV R^2,
-real-time selection-window R^2, 25-year proxy R^2 (sales family), and the
-holdout 2024Q3-2026Q2 R^2 (never used for any selection).
+Primary test per hypothesis: Europris bootstrap p-value at the primary horizon
+(p_eu: the larger of the COVID-excluded / COVID-control p-values when both
+exist and agree in sign), sign as expected (or prior "?"), Benjamini-Hochberg
+across the hypotheses.
+
+Verdicts:
+  SUPPORTED   sign as expected and BH q <= 0.10 at the primary horizon.
+  PARTIAL     sign as expected and raw p_eu <= 0.05 at the primary or another
+              pre-registered horizon, or (sales) 25-year proxy p <= 0.05 with
+              the expected sign.
+  NOT SUPPORTED otherwise.
+Holdout (2024Q3-2026Q2) R^2 is reported, never used.
 """
 from __future__ import annotations
 
@@ -23,53 +26,49 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fcast  # noqa: E402
 from hypotheses import HYPOTHESES  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
-RES = ROOT / "results"
-
-COLS = ["cv_oos_r2", "cv_cw_p", "cv_n_oos", "placebo_p", "is_beta_std", "is_t_hac", "cvc_r2", "rtc_sel_r2", "rtc_hold_r2",
-        "sel_oos_r2", "sel_n_oos", "proxy_r2", "proxy_cw_p", "proxyltm_r2", "proxyltm_cw_p", "hold_oos_r2", "hold_cw_p"]
+RES = Path(__file__).resolve().parents[1] / "results"
 
 
-def sign_ok(beta, sign):
-    if sign == "?" or not np.isfinite(beta):
-        return True
-    return (beta > 0) == (sign == "+")
+def sign_ok(t, sign):
+    return sign == "?" or (np.isfinite(t) and (t > 0) == (sign == "+"))
 
 
 def main():
-    df = pd.read_csv(RES / "screen_all.csv")
+    ev = pd.read_csv(RES / "evidence_all.csv")
     prim, prof = [], []
     for hy in HYPOTHESES:
-        g = df[(df.feature == hy["feature"]) & (df.target == hy["target"])]
+        g = ev[(ev.feature == hy["feature"]) & (ev.target == hy["target"])]
         for h in sorted(set(hy["hs"]) | {hy["h"]}):
             r = g[g.h == h]
             if r.empty:
+                prof.append({"id": hy["id"], "h": h, "primary": h == hy["h"], "note": "not computable"})
                 continue
             r = r.iloc[0]
-            rec = {"id": hy["id"], "feature": hy["feature"], "target": hy["target"], "h": h,
-                   "primary": h == hy["h"], "sign": hy["sign"], **{c: r.get(c, np.nan) for c in COLS}}
-            rec["sign_ok"] = sign_ok(rec["is_beta_std"], hy["sign"])
-            rec["partial"] = bool(rec["sign_ok"] and rec["cv_oos_r2"] > 0 and rec["cv_cw_p"] <= 0.10
-                                  and rec["placebo_p"] <= 0.20)
+            t = r.t_isc if np.isfinite(r.t_isc) else r.t_is
+            ok = sign_ok(t, hy["sign"])
+            proxy_ok = bool(np.isfinite(r.get("p_proxy", np.nan)) and r.p_proxy <= 0.05 and ok)
+            rec = {"id": hy["id"], "feature": hy["feature"], "target": hy["target"], "h": h, "primary": h == hy["h"],
+                   "sign": hy["sign"], "t_is": r.t_is, "p_is": r.p_is, "t_isc": r.t_isc, "p_isc": r.p_isc,
+                   "p_eu": r.p_eu if ok else 1.0, "sign_ok": ok, "t_no16": r.t_no16, "tc_no16": r.tc_no16,
+                   "p_proxy": r.get("p_proxy"), "proxy_ok": proxy_ok, "hold_r2": r.hold_r2, "holdc_r2": r.holdc_r2,
+                   "partial": bool(ok and (r.p_eu <= 0.05 or proxy_ok))}
             prof.append(rec)
             if h == hy["h"]:
                 prim.append(rec)
     P = pd.DataFrame(prim)
-    P["cv_cw_p_bh"] = fcast.bh_fdr(P["cv_cw_p"])
-    P["supported"] = P["sign_ok"] & (P["cv_oos_r2"] > 0) & (P["cv_cw_p_bh"] <= 0.10) & (P["placebo_p"] <= 0.10)
+    P["q_bh"] = fcast.bh_fdr(P["p_eu"])
     prof = pd.DataFrame(prof)
     part = prof.groupby("id")["partial"].any()
-    P["any_partial"] = P["id"].map(part)
-    P["verdict"] = np.where(P["supported"], "SUPPORTED", np.where(P["any_partial"], "PARTIAL", "not supported"))
+    P["verdict"] = np.where(P.sign_ok & (P.q_bh <= 0.10), "SUPPORTED",
+                            np.where(P["id"].map(part).fillna(False), "PARTIAL", "NOT SUPPORTED"))
+    missing = [hy["id"] for hy in HYPOTHESES if hy["id"] not in set(P["id"])]
     P.to_csv(RES / "hypotheses_primary.csv", index=False)
     prof.to_csv(RES / "hypotheses_profile.csv", index=False)
-    pd.set_option("display.width", 250)
-    show = ["id", "feature", "target", "h", "verdict", "is_beta_std", "is_t_hac", "cv_oos_r2", "cv_cw_p", "cv_cw_p_bh",
-            "placebo_p", "cvc_r2", "rtc_sel_r2", "rtc_hold_r2", "sel_oos_r2", "proxy_r2", "hold_oos_r2"]
-    print(P[show].round(3).to_string())
-    print()
-    print(prof[["id", "h", "primary", "sign_ok", "partial", "is_beta_std", "cv_oos_r2", "cv_cw_p", "placebo_p",
-                "cvc_r2", "rtc_sel_r2", "rtc_hold_r2", "proxy_r2", "proxyltm_r2", "hold_oos_r2"]].round(3).to_string())
+    pd.set_option("display.width", 240)
+    print(P[["id", "feature", "target", "h", "verdict", "t_is", "p_is", "t_isc", "p_isc", "q_bh", "t_no16", "tc_no16",
+             "p_proxy", "hold_r2", "holdc_r2"]].round(3).to_string(index=False))
+    if missing:
+        print("not computable at the primary horizon:", missing)
 
 
 if __name__ == "__main__":

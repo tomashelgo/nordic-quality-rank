@@ -16,6 +16,8 @@ CANDIDATES = [
     # --- Demand: retail sales & household consumption ---------------------
     dict(key="rti_4719_value", label="Retail sales, non-specialised non-food stores (NACE 47.19), value",
          series="ssb_rti_4719_nonspec_nonfood_value_ca", tf=["g4"], prior=("+", "?"), group="demand"),
+    dict(key="rti_4719_value_nsa", label="Retail sales NACE 47.19, value, unadjusted",
+         series="ssb_rti_4719_nonspec_nonfood_value_nsa", tf=["g4"], prior=("+", "?"), group="demand"),
     dict(key="rti_4719_volume", label="Retail sales NACE 47.19, volume",
          series="ssb_rti_4719_nonspec_nonfood_volume_ca", tf=["g4"], prior=("+", "?"), group="demand"),
     dict(key="rti_retail_exfuel_value", label="Retail sales excl. fuel (NACE 47 ex 47.3), value",
@@ -43,10 +45,16 @@ CANDIDATES = [
          series="ssb_hh_real_disp_income_2015p_nsa", tf=["g4"], prior=("+", "?"), group="income"),
     dict(key="saving_ratio", label="Household saving ratio (SA)",
          series="ssb_hh_saving_ratio_sa", tf=["lvl", "d4"], prior=("-", "?"), group="income"),
+    dict(key="saving_ratio_exdiv", label="Household saving ratio excl. dividends (SA)",
+         series="ssb_hh_saving_ratio_ex_div_sa", tf=["lvl", "d4"], prior=("?", "?"), group="income"),
+    dict(key="real_disp_income_exdiv", label="Household real disposable income excl. dividends (QNA / CPI)",
+         derived="real_disp_income_exdiv", tf=["g4"], prior=("+", "?"), group="income"),
     dict(key="unemployment", label="LFS unemployment rate (SA)",
          series="ssb_lfs_unemp_rate_sa", tf=["lvl", "d4"], prior=("?", "?"), group="labour"),
     dict(key="employment", label="Employed persons, register (SA)",
          series="ssb_employees_register_all_sa_final", tf=["g4"], prior=("+", "?"), group="labour"),
+    dict(key="employment_rate", label="LFS employment rate (SA)",
+         series="ssb_lfs_employment_rate_sa", tf=["lvl", "d4"], prior=("+", "?"), group="labour"),
     dict(key="wage_bill", label="Total wages paid, nominal (QNA)",
          series="ssb_qna_total_wages_nsa", tf=["g4"], prior=("+", "-"), group="income"),
     dict(key="real_wage_bill", label="Real wage bill (QNA wages deflated by CPI)",
@@ -66,6 +74,8 @@ CANDIDATES = [
          series="ssb_cpi_coicop_0561_nondurable_hh_goods", tf=["g4"], prior=("+", "+"), group="prices"),
     dict(key="cpi_electricity", label="CPI, electricity", series="ssb_cpi_coicop_0451_electricity",
          tf=["g4"], prior=("-", "?"), group="prices"),
+    dict(key="elec_price_hh", label="Household electricity price incl. grid and taxes, net of support",
+         series="ssb_elec_hh_total_price_net_support", tf=["g4"], prior=("-", "?"), group="prices"),
     dict(key="import_price_misc_manuf", label="Import price index, misc. manufactured goods (SITC 8), NOK",
          series="ssb_import_price_idx_sitc8_misc_manufactured", tf=["g4"], prior=("+", "-"), group="costs"),
     dict(key="import_price_consumer", label="Import price index, consumer goods (BEC), NOK",
@@ -86,8 +96,6 @@ CANDIDATES = [
     dict(key="nibor_3m", label="3-month NIBOR", series="mkt_no_interbank_3m_rate_oecd",
          tf=["lvl", "d4"], prior=("?", "?"), group="rates"),
     dict(key="govt_10y", label="10-year government bond yield", series="mkt_no_govt_10y_yield_oecd",
-         tf=["lvl", "d4"], prior=("?", "?"), group="rates"),
-    dict(key="fci", label="Norges Bank financial conditions index", series="mkt_no_fci_total_avg",
          tf=["lvl", "d4"], prior=("?", "?"), group="rates"),
     # --- Currency ------------------------------------------------------------
     dict(key="usdnok", label="USD/NOK (NOK per USD; up = weaker krone)", series="mkt_nok_per_usd_avg",
@@ -117,6 +125,22 @@ CANDIDATES = [
          series="mkt_no_regnet_output_retail_next_q", tf=["lvl", "d4"], prior=("+", "?"), group="sentiment"),
     dict(key="regnet_retail_profit", label="Regional Network: retail profitability",
          series="mkt_no_regnet_profitability_retail", tf=["lvl", "d4"], prior=("+", "+"), group="sentiment"),
+    dict(key="cci_country_next", label="Consumer confidence: Norway's economy next year (Finans Norge)",
+         series="mkt_no_finansnorge_cci_country_next_year", tf=["lvl", "d4"], prior=("+", "+"), group="sentiment"),
+    dict(key="cci_country_past", label="Consumer confidence: Norway's economy vs a year ago (Finans Norge)",
+         series="mkt_no_finansnorge_cci_country_past_year", tf=["lvl", "d4"], prior=("+", "+"), group="sentiment"),
+    dict(key="cci_own_fin_past", label="Consumer confidence: own finances vs a year ago (Finans Norge)",
+         series="mkt_no_finansnorge_cci_own_finances_past_year", tf=["lvl", "d4"], prior=("+", "+"), group="sentiment"),
+    dict(key="extra_save", label="Finans Norge: share who would save extra money",
+         series="mkt_no_finansnorge_extra_money_save", tf=["lvl", "d4"], prior=("-", "?"), group="sentiment"),
+    dict(key="extra_paydown", label="Finans Norge: share who would pay down debt with extra money",
+         series="mkt_no_finansnorge_extra_money_pay_down_debt", tf=["lvl", "d4"], prior=("-", "?"), group="sentiment"),
+    dict(key="extra_brown", label="Finans Norge: share who would buy consumer electronics",
+         series="mkt_no_finansnorge_extra_money_brown_goods", tf=["lvl", "d4"], prior=("+", "?"), group="sentiment"),
+    dict(key="extra_white", label="Finans Norge: share who would buy household appliances",
+         series="mkt_no_finansnorge_extra_money_white_goods", tf=["lvl", "d4"], prior=("+", "?"), group="sentiment"),
+    dict(key="regnet_total_next", label="Regional Network: expected output growth, all sectors",
+         series="mkt_no_regnet_output_total_next_q", tf=["lvl", "d4"], prior=("+", "?"), group="sentiment"),
     # --- Global cost shocks --------------------------------------------------
     dict(key="gscpi", label="NY Fed Global Supply Chain Pressure Index", series="mkt_gscpi",
          tf=["lvl", "d4"], prior=("?", "-"), group="global_costs"),
@@ -141,7 +165,16 @@ COMPANY = [dict(key="store_growth", label="Europris chain store count, y/y growt
 # Derived series: name -> (component series, function of a dict of aligned series).
 # All components share one frequency; the derived publication lag is the max of
 # the components' lags.
+# Series whose catalog lag is the preliminary release but the final series is used.
+LAG_OVERRIDE = {"ssb_employees_register_all_sa_final": 54.0}
+
+# Excluded after the code audit: re-estimated over the full history each vintage,
+# so the downloaded history is not what was known in real time.
+EXCLUDED = {"fci": "Norges Bank FCI (mkt_no_fci_*) is model-based and re-estimated each vintage - not real-time."}
+
 DERIVED = {
+    "real_disp_income_exdiv": (["ssb_hh_disp_income_ex_div_nsa", "ssb_cpi_total"],
+                               lambda d: d["ssb_hh_disp_income_ex_div_nsa"] / d["ssb_cpi_total"]),
     "real_wage_bill": (["ssb_qna_total_wages_nsa", "ssb_cpi_total"],
                        lambda d: d["ssb_qna_total_wages_nsa"] / d["ssb_cpi_total"]),
     "real_seknok": (["mkt_nok_per_100sek_avg", "mkt_hicp_se_all_items_2015", "mkt_hicp_no_all_items_2015"],
