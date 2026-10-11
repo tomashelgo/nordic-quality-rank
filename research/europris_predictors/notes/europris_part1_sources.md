@@ -130,3 +130,16 @@ Other documents I read: the annual report 2015 (399674), for the write-down of c
 - The unrealised FX amounts cover both currency derivatives and inventory trade payables. The reports do not split them.
 - `easter_effect_pp` is mostly empty because management rarely quantified the effect before 2019.
 - Store splits are missing for 2014Q1 to Q3 and 2015Q1. The 2014Q1 store total is unknown.
+
+## Verification log
+- 2026-10-11, independent verifier (task europris-verify-p1). I listed issuer EPR messages on newsweb for 2015-2021 myself and downloaded the 2015-2020 interim reports again: 383379, 389237, 394831, 401937, 406964, 412614, 420458, 425742, 431362, 437631, 443231, 449042, 455545, 462430, 468352, 475037, 481309, 488371, 494202, 501532, 509653, 516777 and 523770, plus 383921 (analyst presentation). I re-extracted all 24 quarters, comparing each against its own report and against the following year's comparatives. Every figure, including LFL, chain sales and store split, matched the CSV except one.
+- FIX 2014Q3 `norway_revenue_nok_m` / `group_revenue_nok_m`: changed 1054.3 to **1054.2**, and recomputed `gross_margin_pct` from 41.03 to **41.04**. The EBITDA and EBIT margins are unchanged.
+  - Why: the column is defined as the IFRS line "Total operating income (group revenue)".
+    - In the Q3 2015 report (msg 389237) the income statement shows the Q3 2014 column as 1,054,168 thousand.
+    - A second calculation gives the same figure: YTD Q3 2014 of 2,961,371 (389237) minus H1 2014 of 1,907,202 (Q2 2015 report, 383379) = 1,054,169 thousand.
+    - The 1,054.3 in the key-figure table is the sum of rounded components (784.5 + 244.1 + 25.7).
+  - Gross profit (432.6), EBITDA (108.8) and EBIT (77.1) are unchanged.
+  - Q3 2015 y/y growth computed from the CSV is now 7.64%, against the 7.6% reported.
+- Kept (not errors):
+  - 2015Q4 keeps the original Q4 2015 report values, as documented. The audited comparatives in Q4 2016 (420458) are chain sales 1,591.4, opex 362.9 and operating profit 265,195 thousand.
+  - Margin cells differ from rounded value / rounded revenue by up to 0.008 pp, because they were computed from figures in NOK thousand.
