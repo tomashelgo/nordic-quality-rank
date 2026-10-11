@@ -19,15 +19,17 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import sys
+
 import numpy as np
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from candidates import CANDIDATES, DERIVED  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 ORIGIN_DAYS = 45
-
-RATE_HINTS = ("percent", "%", "rate", "per cent", "balance", "net ", "points", "pp", "yield")
-
 
 def load_europris() -> pd.DataFrame:
     parts = [pd.read_csv(DATA / f) for f in ("europris_part1.csv", "europris_part2.csv") if (DATA / f).exists()]
@@ -113,18 +115,22 @@ def load_long() -> tuple[pd.DataFrame, pd.DataFrame]:
         if (DATA / lf).exists():
             longs.append(pd.read_csv(DATA / lf, dtype={"period": str}))
             cats.append(pd.read_csv(DATA / cf))
-    return pd.concat(longs, ignore_index=True), pd.concat(cats, ignore_index=True)
+    return pd.concat(longs, ignore_index=True), pd.concat(cats, ignore_index=True).drop_duplicates("series_id").set_index("series_id")
 
 
-def is_rate(row: pd.Series, values: pd.Series) -> bool:
-    unit = str(row.get("unit", "")).lower()
-    sid = str(row.get("series_id", "")).lower()
-    if any(k in unit for k in ("index", "nok", "usd", "eur", "sek", "level", "persons", "number", "million", "price")) \
-            and "points" not in unit and "balance" not in unit and "percent" not in unit:
-        return False
-    if any(k in unit for k in RATE_HINTS) or any(k in sid for k in ("rate", "yield", "nibor", "unemp", "conf", "gscpi", "growth", "saving")):
-        return True
-    return bool((values <= 0).any())
+def series_from_long(long: pd.DataFrame, sid: str) -> tuple[pd.Series, str]:
+    g = long[long["series_id"] == sid]
+    if g.empty:
+        raise KeyError(sid)
+    freq = str(g["freq"].iloc[0]).upper()[0]
+    idx = pd.PeriodIndex(g["period"].astype(str), freq=freq)
+    s = pd.Series(pd.to_numeric(g["value"], errors="coerce").to_numpy(), index=idx).dropna()
+    return s[~s.index.duplicated(keep="last")].sort_index(), freq
+
+
+def to_quarterly(s: pd.Series) -> pd.Series:
+    q = s.groupby(s.index.asfreq("Q")).agg(["mean", "count"])
+    return q["mean"][q["count"] == 3]
 
 
 def month_end(p: pd.Period) -> pd.Timestamp:
@@ -132,28 +138,22 @@ def month_end(p: pd.Period) -> pd.Timestamp:
 
 
 def realtime_quarterly(series: pd.Series, freq: str, lag_days: float, quarters: pd.PeriodIndex):
-    """Return (window_mean, window_mean_one_year_earlier) per origin quarter."""
+    """Return (window mean, same window one year earlier) per origin quarter."""
     cur, prev = [], []
-    if freq == "M":
-        s = series.sort_index()
-        for q in quarters:
-            origin = q.to_timestamp(how="end").normalize() + pd.Timedelta(days=ORIGIN_DAYS)
+    s = series.sort_index()
+    for q in quarters:
+        origin = q.to_timestamp(how="end").normalize() + pd.Timedelta(days=ORIGIN_DAYS)
+        if freq == "M":
             last_m = pd.Period(q.end_time, freq="M")
-            cand = s.index[(s.index <= last_m)]
-            avail = [m for m in cand if month_end(m) + pd.Timedelta(days=lag_days) <= origin]
+            avail = [m for m in s.index if m <= last_m and month_end(m) + pd.Timedelta(days=lag_days) <= origin]
             if not avail:
                 cur.append(np.nan); prev.append(np.nan); continue
             m = max(avail)
-            win = pd.period_range(m - 2, m, freq="M")
-            win_prev = pd.period_range(m - 14, m - 12, freq="M")
-            v = s.reindex(win)
-            vp = s.reindex(win_prev)
+            v = s.reindex(pd.period_range(m - 2, m, freq="M"))
+            vp = s.reindex(pd.period_range(m - 14, m - 12, freq="M"))
             cur.append(v.mean() if v.notna().sum() >= 2 else np.nan)
             prev.append(vp.mean() if vp.notna().sum() >= 2 else np.nan)
-    else:
-        s = series.sort_index()
-        for q in quarters:
-            origin = q.to_timestamp(how="end").normalize() + pd.Timedelta(days=ORIGIN_DAYS)
+        else:
             avail = [p for p in s.index if p <= q and p.to_timestamp(how="end").normalize() + pd.Timedelta(days=lag_days) <= origin]
             if not avail:
                 cur.append(np.nan); prev.append(np.nan); continue
@@ -163,47 +163,75 @@ def realtime_quarterly(series: pd.Series, freq: str, lag_days: float, quarters: 
     return pd.Series(cur, index=quarters), pd.Series(prev, index=quarters)
 
 
+def candidate_series(c: dict, long: pd.DataFrame, cat: pd.DataFrame):
+    """Return (series, freq, lag_days, source description) for a candidate."""
+    def lag_of(sid):
+        v = pd.to_numeric(cat.loc[sid].get("typical_release_lag_days", np.nan), errors="coerce") if sid in cat.index else np.nan
+        return 0.0 if pd.isna(v) else float(v)
+
+    if "series" in c:
+        s, f = series_from_long(long, c["series"])
+        return s, f, lag_of(c["series"]), c["series"]
+    comps, fn = DERIVED[c["derived"]]
+    parts = {sid: series_from_long(long, sid) for sid in comps}
+    freqs = {f for _, f in parts.values()}
+    if len(freqs) > 1:  # mixed frequencies -> quarterly
+        aligned = {sid: (to_quarterly(s) if f == "M" else s) for sid, (s, f) in parts.items()}
+        freq = "Q"
+    else:
+        aligned = {sid: s for sid, (s, _) in parts.items()}
+        freq = freqs.pop()
+    df = pd.DataFrame(aligned).dropna()
+    s = fn({k: df[k] for k in df.columns}).dropna()
+    return s, freq, max(lag_of(sid) for sid in comps), " / ".join(comps)
+
+
 def build_predictors(quarters: pd.PeriodIndex):
     long, cat = load_long()
-    cat = cat.drop_duplicates("series_id").set_index("series_id")
     feats, rows = {}, []
-    for sid, g in long.groupby("series_id"):
-        if sid not in cat.index:
-            continue
-        info = cat.loc[sid]
-        freq = str(g["freq"].iloc[0]).upper()[0]
-        vals = pd.to_numeric(g["value"], errors="coerce")
+    for c in CANDIDATES:
         try:
-            if freq == "M":
-                idx = pd.PeriodIndex(g["period"].astype(str), freq="M")
-            elif freq == "Q":
-                idx = pd.PeriodIndex(g["period"].astype(str).str.replace("-Q", "Q"), freq="Q")
-            else:
-                continue
-        except Exception:
+            s, freq, lag, src = candidate_series(c, long, cat)
+        except KeyError as e:
+            print(f"skip {c['key']}: missing {e}")
             continue
-        s = pd.Series(vals.to_numpy(), index=idx).dropna()
-        s = s[~s.index.duplicated(keep="last")]
-        if len(s) < 12:
-            continue
-        lag = pd.to_numeric(info.get("typical_release_lag_days", np.nan), errors="coerce")
-        lag = 0.0 if pd.isna(lag) else float(lag)
         cur, prev = realtime_quarterly(s, freq, lag, quarters)
-        rate = is_rate(info.to_dict() | {"series_id": sid}, s)
-        base = {"series_id": sid, "description": info.get("description", ""), "source": info.get("source", ""),
-                "freq": freq, "lag_days": lag, "unit": info.get("unit", ""), "sa": info.get("seasonal_adjustment", "")}
-        if rate:
-            feats[f"{sid}__lvl"] = cur
-            rows.append(base | {"feature": f"{sid}__lvl", "transform": "level (3m/qtr mean)"})
-            feats[f"{sid}__d4"] = cur - prev
-            rows.append(base | {"feature": f"{sid}__d4", "transform": "y/y change (pp)"})
-        else:
-            if (s <= 0).any():
-                continue
-            feats[f"{sid}__g4"] = 100 * np.log(cur / prev)
-            rows.append(base | {"feature": f"{sid}__g4", "transform": "y/y log growth (%)"})
+        for tf in c["tf"]:
+            name = f"{c['key']}__{tf}"
+            if tf == "g4":
+                feats[name] = 100 * np.log(cur / prev)
+                desc = "y/y log growth (%)"
+            elif tf == "lvl":
+                feats[name] = cur
+                desc = "level (quarterly mean)"
+            else:
+                feats[name] = cur - prev
+                desc = "y/y change (pp)"
+            rows.append({"feature": name, "concept": c["key"], "label": c["label"], "group": c["group"],
+                         "transform": desc, "prior_sales": c["prior"][0], "prior_margin": c["prior"][1],
+                         "source_series": src, "freq": freq, "lag_days": lag,
+                         "first_obs": str(feats[name].first_valid_index())})
     X = pd.DataFrame(feats, index=quarters)
     return X, pd.DataFrame(rows)
+
+
+def build_proxy(events: pd.DataFrame) -> pd.DataFrame:
+    """25-year proxy target: SSB retail sales in Europris's own category (NACE 47.19)."""
+    long, _ = load_long()
+    out = {}
+    for name, sid in (("px", "ssb_rti_4719_nonspec_nonfood_value_ca"), ("pxvol", "ssb_rti_4719_nonspec_nonfood_volume_ca")):
+        s, _ = series_from_long(long, sid)
+        qsum = s.groupby(s.index.asfreq("Q")).agg(["sum", "count"])
+        qsum = qsum["sum"][qsum["count"] == 3]
+        out[f"{name}_yoy"] = 100 * np.log(qsum / qsum.shift(4))
+        ltm = qsum.rolling(4).sum()
+        out[f"{name}_ltm_yoy"] = 100 * np.log(ltm / ltm.shift(4))
+    px = pd.DataFrame(out)
+    px.index = pd.PeriodIndex(px.index, freq="Q")
+    ev = events.reindex(px.index)
+    for c in ev.columns:
+        px["ev_" + c] = ev[c]
+    return px
 
 
 def main():
@@ -215,6 +243,9 @@ def main():
     tg.to_csv(DATA / "targets_quarterly.csv")
     quarters = pd.period_range("2000Q1", tg.index.max(), freq="Q")
     X, cat = build_predictors(quarters)
+    px = build_proxy(ev)
+    px.index.name = "quarter"
+    px.to_csv(DATA / "proxy_quarterly.csv")
     X.index.name = "quarter"
     X.to_csv(DATA / "predictors_quarterly.csv")
     cat.to_csv(DATA / "predictor_catalog.csv", index=False)
