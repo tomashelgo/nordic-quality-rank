@@ -24,6 +24,7 @@ import pandas as pd  # noqa: E402
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import inference  # noqa: E402
 import screen_predictors as sp  # noqa: E402
+import test_new  # noqa: E402
 from top5 import PICKS, RUNNERS_UP  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,9 +64,14 @@ def forecasts(frames, X, p, y, h):
 
 def main():
     panel, pxp, X = sp.prepare()
+    # new-data candidates (round 4) are built exactly as in test_new.py
+    specs, long, cat = test_new.load_new(str(ROOT / "data" / "new" / "*_spec.csv"))
+    Xn, _ = test_new.build_features(specs, long, cat, X.index)
+    X = X.join(Xn, how="left")
     sp._init(X.index)
     frames, _ = sp.build_frames(panel, pxp)
-    ev = pd.read_csv(RES / "evidence_all.csv")
+    ev = pd.concat([pd.read_csv(RES / "evidence_all.csv"), pd.read_csv(RES / "new_candidates_screen.csv")],
+                   ignore_index=True)
     bc = pd.read_csv(RES / "benchmark_components.csv")
     cards, hold, preds = [], [], {}
     for p in PICKS + RUNNERS_UP:
@@ -96,7 +102,7 @@ def main():
                     t_ol, p_ol, _, _ = sp.boot_stats(f, cols + ["l1", "l2"], X[p["feature"]], sim)
                     cards.append({"rank": p["rank"], "key": p["key"], "target": y, "h": h, "selected_h": h in p["hs"],
                                   "t_is": r.t_is, "p_is": r.p_is, "n_is": r.n_is, "t_isc": r.t_isc, "p_isc": r.p_isc,
-                                  "q_bh": r.q_bh, "t_ownlags": t_ol, "p_ownlags": p_ol,
+                                  "q_bh": r.get("q_bh"), "t_ownlags": t_ol, "p_ownlags": p_ol,
                                   "t_pxpre": r.get("t_pxpre"), "p_pxpre": r.get("p_pxpre"),
                                   "beta_std": r.beta_std_c, "t_no16": r.t_no16, "tc_no16": r.tc_no16,
                                   "t_px": r.get("t_px"), "p_px": r.get("p_px"), "t_pxl": r.get("t_pxl"), "p_pxl": r.get("p_pxl"),

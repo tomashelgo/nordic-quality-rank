@@ -69,6 +69,34 @@ Every finalist replicated exactly from the raw files: predictor rebuilds matched
 | Finans Norge "Norway's economy next year" → gross margin | Fragile | Needs COVID rows; correlated with the krone |
 | House prices → sales/LFL, h=1 | Moderate | Category slope stable in every sub-period; Europris evidence only in the primary spec; sensitive to extra own lags |
 
+## Round 3: new non-calendar variables
+
+The user asked for two new variables instead of the calendar effects.
+
+**Data collection.** Four agents collected new data families, wrote down their transforms and expected signs before testing, and ran `scripts/test_new.py` once each. All four families were null at the evidence bar:
+
+| Family | Result |
+|---|---|
+| Europris inventory | Right sign for next-quarter gross margin, but p 0.07–0.08 |
+| Sea-freight prices / contract regime | No real Asia–Europe spot index was reachable; nothing at 4+ quarters |
+| Housing activity | Chance level |
+| Household interest burden, loan rate, relative share price | Significant only in the COVID-control spec |
+
+Combined: the share of p ≤ 0.05 was 0–7% per target. The one Benjamini–Hochberg survivor, excess inventory → sales at h=3, failed the holdout (R² −1.6).
+
+**Attack and horse race.** One agent attacked spending abroad and interest burden; another ran a uniform 15-check battery across six candidates. Every stored number replicated exactly.
+
+| Candidate | Verdict |
+|---|---|
+| Spending abroad | Spurious (travel, not cross-border shopping; wrong sign in the 25-year proxy; holdout reversed) |
+| Interest burden → sales h=3–4 | Weak (COVID-control spec only; consistent sign everywhere; survives the existing picks) |
+| Employment → LFL h=8 | Weak (p 0.06–0.08; best battery score) |
+| Consumer expectations → gross margin | Absorbed by existing picks |
+| Relative share price → EBIT | Absorbed by existing picks |
+| Saving ratio → LFL | Fails most checks |
+
+**Choice.** Interest burden and employment growth were taken as #4–#5, graded "weak".
+
 ## Final state (v3)
 
 | Check | Result |
