@@ -1,0 +1,4 @@
+key,series_id,transforms,prior_sales,prior_margin,label,group
+hhf_int_burden,new_hhfinance_hh_interest_burden,d4;lvl,-,-,"Household interest burden: interest expenses / (disposable income ex dividends + interest expenses), 4q sums, SSB 11020 (pp)",hh_finance
+hhf_loan_rate,new_hhfinance_hh_loan_rate,d4,-,-,"Average rate on outstanding household loans, banks and mortgage companies, end of quarter, SSB 07200 (pp)",hh_finance
+hhf_epr_rel_osebx,new_hhfinance_epr_rel_osebx,g4,+,+,"Europris total-return share price relative to OSEBX (gross index), y/y log % of quarterly mean",market_signal

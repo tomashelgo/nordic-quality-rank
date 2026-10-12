@@ -1,0 +1,73 @@
+quarter,easter_sunday,easter_in_q1,easter_week_split_q1_share,easter_shift_q1,covid_border_restrictions,covid_domestic_lockdown,ifrs16,oob_consolidated,other_events,notes,easter_window14_q1_share,easter_closed_days_q1,easter_q_yoy_effect14
+2010Q1,2010-04-04,0,0.5714,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.7857,0,0.5714
+2010Q2,2010-04-04,0,0.5714,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.7857,0,-0.5714
+2010Q3,2010-04-04,0,0.5714,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.7857,0,0.0
+2010Q4,2010-04-04,0,0.5714,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.7857,0,0.0
+2011Q1,2011-04-24,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,-0.7857
+2011Q2,2011-04-24,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,0.7857
+2011Q3,2011-04-24,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,0.0
+2011Q4,2011-04-24,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,0.0
+2012Q1,2012-04-08,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.5,0,0.5
+2012Q2,2012-04-08,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.5,0,-0.5
+2012Q3,2012-04-08,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.5,0,0.0
+2012Q4,2012-04-08,0,0.0,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.5,0,0.0
+2013Q1,2013-03-31,1,1.0,1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,1.0,2,0.5
+2013Q2,2013-03-31,1,1.0,1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,1.0,2,-0.5
+2013Q3,2013-03-31,1,1.0,1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,1.0,2,0.0
+2013Q4,2013-03-31,1,1.0,1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,1.0,2,0.0
+2014Q1,2014-04-20,0,0.0,-1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,-1.0
+2014Q2,2014-04-20,0,0.0,-1,0.0,0.0,0,0,,Easter 2014 (20 Apr) in Q2; Europris said 2015 Easter peak sales days were in March vs April in 2014 (newsweb 383379). | Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,1.0
+2014Q3,2014-04-20,0,0.0,-1,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.0,0,0.0
+2014Q4,2014-04-20,0,0.0,-1,0.0,0.0,0,0,Annual stocktaking booked in Q4 (positive calc. deviation NOK 25.4m); Rusta enters Norway (Oct 2014),"Stocktaking: Q3 2015 report (newsweb 389237). Rusta entry Oct 2014: Rusta press release (mynewsdesk, 403 when fetched; per search summary). | Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.",0.0,0,0.0
+2015Q1,2015-04-05,0,0.4286,0,0.0,0.0,0,0,,Pre-IPO: no Europris quarterly reports on newsweb before Q2 2015.,0.7143,0,0.7143
+2015Q2,2015-04-05,0,0.4286,0,0.0,0.0,0,0,IPO and listing on Oslo Bors 19 Jun 2015 (one-off IPO costs in Q2 EBITDA); unfavourable spring weather,newsweb 380593/383379.,0.7143,0,-0.7143
+2015Q3,2015-04-05,0,0.4286,0,0.0,0.0,0,0,Cold July hurt seasonal sales; annual stocktaking Aug-Oct (vs Sep-Nov 2014) with positive result,newsweb 389237.,0.7143,0,0.0
+2015Q4,2015-04-05,0,0.4286,0,0.0,0.0,0,0,"Three peaks: Halloween, Black Friday, Christmas",newsweb 394831.,0.7143,0,0.0
+2016Q1,2016-03-27,1,1.0,1,0.0,0.0,0,0,"Grocery chains price war on pick&mix candy (Easter); 2 fewer trading days; USD/NOK-driven gross margin pressure, retail price adjustments late in quarter",newsweb 401937 (body and Q1 2016 report).,1.0,3,0.2857
+2016Q2,2016-03-27,1,1.0,1,0.0,0.0,0,0,3 extra sales days vs Q2 2015 (Easter timing); FX price adjustments lift gross margin; good summer weather,newsweb 406964.,1.0,3,-0.2857
+2016Q3,2016-03-27,1,1.0,1,0.0,0.0,0,0,Soft July after strong spring (demand pulled forward); new central warehouse announced 5 Jul 2016,"newsweb 412614, 405425.",1.0,3,0.0
+2016Q4,2016-03-27,1,1.0,1,0.0,0.0,0,0,,,1.0,3,0.0
+2017Q1,2017-04-16,0,0.0,-1,0.0,0.0,0,0,8 franchise stores taken over; 3 extra sales days but Easter in Q2; warm start to winter,"newsweb 422931, 425742. Normal (Danish discount chain) opened its first Norwegian store in 2017 (finn.no job ads; exact quarter not verified).",0.0,0,-1.0
+2017Q2,2017-04-16,0,0.0,-1,0.0,0.0,0,0,Campaign-heavy quarter diluted gross margin; excess store inventory; mild-winter surplus stock carried over,newsweb 431362.,0.0,0,1.0
+2017Q3,2017-04-16,0,0.0,-1,0.0,0.0,0,0,Inventory reduction measures; stocktaking less positive than 2016,newsweb 437631.,0.0,0,0.0
+2017Q4,2017-04-16,0,0.0,-1,0.0,0.0,0,0,Slow start; unfavourable weather vs 2016; fewer selling days,newsweb 443231.,0.0,0,0.0
+2018Q1,2018-04-01,0,1.0,0,0.0,0.0,0,0,Sugar tax increase from 1 Jan 2018 (+NOK 5m gross profit from pre-bought stock); Easter fully in Q1; 2 fewer sales days,"newsweb 449042; sugar tax effect cited in Q1 2019 report (newsweb 475037). NB Easter Sunday was 1 Apr 2018 (easter_in_q1=0) but the whole Easter shopping week fell in March; Europris: ""Easter fell in the first quarter this year"".",1.0,2,1.0
+2018Q2,2018-04-01,0,1.0,0,0.0,0.0,0,0,Online shop launched 8 Jun 2018; 20% ÖoB stake + Nordic sourcing partnership announced 18 Jun 2018; 2 extra sales days; poor weather in north,"newsweb 453237, 453844, 455545.",1.0,2,-1.0
+2018Q3,2018-04-01,0,1.0,0,0.0,0.0,0,0,Exceptionally hot summer hurt early Q3; positive stocktaking NOK 24m; freight-cost recognition timing change (one-off opex NOK 14m); 1 fewer sales day,newsweb 462430.,1.0,2,0.0
+2018Q4,2018-04-01,0,1.0,0,0.0,0.0,0,0,Deliberate higher campaign share (GM 43.4 vs 44.0); Capital Markets Day 5 Dec 2018,"newsweb 468352, 465054.",1.0,2,0.0
+2019Q1,2019-04-21,0,0.0,0,0.0,0.0,1,0,"IFRS 16 from 1 Jan 2019; sugar tax cut from 1 Jan 2019 (one-off loss ~NOK 8m); central-warehouse high fill rate (extra opex NOK 11m); Easter shift to Q2 (~-5%, NOK 60m); mild winter",newsweb 475037.,0.0,0,-1.0
+2019Q2,2019-04-21,0,0.0,0,0.0,0.0,1,0,New central warehouse Moss: low-bay ops from late May; extra opex NOK 35m; supplier-bankruptcy provision (~0.4pp GM); Easter goods diluted GM ~0.8pp,newsweb 481309.,0.0,0,1.0
+2019Q3,2019-04-21,0,0.0,0,0.0,0.0,1,0,Warehouse overruns NOK 5m; positive stocktaking (GM 44.3 vs 42.6 ex stocktaking),newsweb 488371.,0.0,0,0.0
+2019Q4,2019-04-21,0,0.0,0,0.0,0.0,1,0,"20% ÖoB stake completed 13 Dec 2019 (associate, not consolidated); refinancing","newsweb 491657, 494202.",0.0,0,0.0
+2020Q1,2020-04-12,0,0.0,0,0.2,0.2,1,0,"Covid-19 from 12 Mar: hoarding of groceries, border closure from mid-March; unusually mild winter; CEO Wibe left, Eldal acting CEO 1 Apr","newsweb 498533, 501532, 499748. | Covid: border=0.2 (policy judgement; SSB 08460 same-day trips abroad -40% vs 2018-19 avg same quarter; OxCGRT C8/4=0.19); domestic=OxCGRT stringency/100.",0.2143,0,0.2143
+2020Q2,2020-04-12,0,0.0,0,1.0,0.6,1,0,"Covid: record sales (+34.6% LFL), closed Sweden border, staycation; NOK 350 low-value import VAT exemption removed 1 Apr 2020 (VOEC); new e-commerce platform",newsweb 509653; VOEC: regjeringen.no / skatteetaten.no. | Covid: border=1.0 (policy judgement; SSB 08460 same-day trips abroad -98% vs 2018-19 avg same quarter; OxCGRT C8/4=0.96); domestic=OxCGRT stringency/100.,0.2143,0,-0.2143
+2020Q3,2020-04-12,0,0.0,0,0.9,0.39,1,0,Covid: travel abroad virtually ceased except some Swedish regions for periods; strongest growth in central eastern Norway (border region),newsweb 516777. | Covid: border=0.9 (policy judgement; SSB 08460 same-day trips abroad -93% vs 2018-19 avg same quarter; OxCGRT C8/4=0.64); domestic=OxCGRT stringency/100.,0.2143,0,0.0
+2020Q4,2020-04-12,0,0.0,0,1.0,0.48,1,0,Covid demand; delayed stocktaking completed in Q4 (+NOK 21.5m); sugar tax change from 1 Jan 2021 -> inventory write-down NOK 17.9m; fixed 2021 freight agreement (price and volume) signed,newsweb 523770; 2020 annual report (newsweb 529162). | Covid: border=1.0 (policy judgement; SSB 08460 same-day trips abroad -96% vs 2018-19 avg same quarter; OxCGRT C8/4=0.5); domestic=OxCGRT stringency/100.,0.2143,0,0.0
+2021Q1,2021-04-04,0,0.5714,0,1.0,0.69,1,0,Covid store closures (avg 10% of stores; Oslo region Jan 23-Feb 3 and from 16 Mar); cold winter; Lunehjem consolidated from Mar 2021; fixed-rate inbound freight 2021,"newsweb 523084, 523700, 527864, 531534. | Covid: border=1.0 (policy judgement; SSB 08460 same-day trips abroad -98% vs 2018-19 avg same quarter; OxCGRT C8/4=0.67); domestic=OxCGRT stringency/100.",0.7857,0,0.5714
+2021Q2,2021-04-04,0,0.5714,0,1.0,0.62,1,0,"Covid store closures (22% of stores in April, avg 8%); GM +4.6pp from currency hedging and fixed inbound freight rates",newsweb 538131. | Covid: border=1.0 (policy judgement; SSB 08460 same-day trips abroad -98% vs 2018-19 avg same quarter; OxCGRT C8/4=0.75); domestic=OxCGRT stringency/100.,0.7857,0,-0.5714
+2021Q3,2021-04-04,0,0.5714,0,0.6,0.42,1,0,Lekekassen (67%) consolidated from 1 Aug 2021; Norway ended all Covid measures late Sep 2021; fixed freight agreement positive for GM,"newsweb 537165, 545906. | Covid: border=0.6 (policy judgement; SSB 08460 same-day trips abroad -67% vs 2018-19 avg same quarter; OxCGRT C8/4=0.51); domestic=OxCGRT stringency/100.",0.7857,0,0.0
+2021Q4,2021-04-04,0,0.5714,0,0.25,0.29,1,0,"Borders to Sweden fully open early Oct, restrictions reimposed mid-Dec; stocktaking +NOK 24.2m; GM 50% on fixed-rate freight and FX hedging",newsweb 552536. | Covid: border=0.25 (policy judgement; SSB 08460 same-day trips abroad -67% vs 2018-19 avg same quarter; OxCGRT C8/4=0.54); domestic=OxCGRT stringency/100.,0.7857,0,0.0
+2022Q1,2022-04-17,0,0.0,0,0.25,0.25,1,0,All Covid restrictions lifted mid-Feb 2022 -> cross-border trade resumes; new 2-yr inbound freight agreement from Mar 2022 (+NOK 170-200m annualised cost); mild winter; Ukraine war/inflation,newsweb 560306; 2021 annual report (newsweb 557584). | Covid: border=0.25 (policy judgement; SSB 08460 same-day trips abroad -46% vs 2018-19 avg same quarter; OxCGRT C8/4=0.12); domestic=OxCGRT stringency/100.,0.0,0,-0.7857
+2022Q2,2022-04-17,0,0.0,0,0.0,0.0,1,0,Cross-border trade picking up (border stores weaker); high-ticket items -25%; Strikkemekka acquired (closed 1 Jul),newsweb 566962.,0.0,0,0.7857
+2022Q3,2022-04-17,0,0.0,0,0.0,0.0,1,0,Strikkemekka consolidated from 1 Jul 2022; stocktaking timing +2.8pp GM; inbound freight -0.9pp underlying GM; electricity hedged 12-21 months ahead,newsweb 574601.,0.0,0,0.0
+2022Q4,2022-04-17,0,0.0,0,0.0,0.0,1,0,Higher inbound freight in COGS (GM 45.5 vs 50.0); Capital Markets Update 8 Dec 2022: new freight agreement from Jan 2023 at ~50% lower rates; new 5-yr outbound logistics deal,"newsweb 581191, 577619.",0.0,0,0.0
+2023Q1,2023-04-09,0,0.0,0,0.0,0.0,1,0,Hoarding late Jan ahead of 1 Feb grocery price rises; earlier Easter; remaining 33% of Lekekassen bought; stocktaking calc. differences booked quarterly from Q1 2023; intense price competition,newsweb 588704; 602805 (stocktaking change).,0.4286,0,0.4286
+2023Q2,2023-04-09,0,0.0,0,0.0,0.0,1,0,Seasonal carry-overs from 2022 at old (high) freight cost; price competition on consumables; refinancing,newsweb 595225.,0.4286,0,-0.4286
+2023Q3,2023-04-09,0,0.0,0,0.0,0.0,1,0,Higher campaign and consumables share; stocktaking calc. differences +NOK 59m (vs 62m),newsweb 602805.,0.4286,0,0.0
+2023Q4,2023-04-09,0,0.0,0,0.0,0.0,1,0,2 fewer sales days; too-low Christmas volumes (sell-outs); ÖoB arbitration award 18 Dec 2023; Red Sea rerouting via Cape (+up to 2 weeks transit),"newsweb 609575, 606982.",0.4286,0,0.0
+2024Q1,2024-03-31,1,1.0,1,0.0,0.0,1,0,Earlier Easter (record Easter sales); 2 fewer sales days; electricity hedges raised opex y/y; weaker NOK raised input costs; Red Sea rerouting continues,newsweb 616738.,1.0,2,0.5714
+2024Q2,2024-03-31,1,1.0,1,0.0,0.0,1,1,"ÖoB 100% acquired, consolidated from 2 May 2024 (segment Sweden); 2 more sales days; Red Sea container constraints and war surcharges","newsweb 617600, 623406.",1.0,2,-0.5714
+2024Q3,2024-03-31,1,1.0,1,0.0,0.0,1,1,Inbound freight surcharges (Red Sea) and weak NOK pressure GM,newsweb 630818.,1.0,2,0.0
+2024Q4,2024-03-31,1,1.0,1,0.0,0.0,1,1,1 extra sales day; Black Week shift Nov vs Dec; intense grocery price competition; ÖoB clearance sale,newsweb 637305.,1.0,2,0.0
+2025Q1,2025-04-20,0,0.0,-1,0.0,0.0,1,1,Later Easter + 1 fewer calendar day (leap-year comp) ~-4-5pp sales; unrealised FX loss NOK 34m; mild winter/early spring; tariff/geopolitical uncertainty,newsweb 643362.,0.0,0,-1.0
+2025Q2,2025-04-20,0,0.0,-1,0.0,0.0,1,1,Later Easter boosts Q2 (Norway +11.7%); Norges Bank and Riksbank cut rates in June,newsweb 650986.,0.0,0,1.0
+2025Q3,2025-04-20,0,0.0,-1,0.0,0.0,1,1,Warm summer boosted seasonal sales in Norway (chain +12.1%),newsweb 658269.,0.0,0,0.0
+2025Q4,2025-04-20,0,0.0,-1,0.0,0.0,1,1,,newsweb 664387.,0.0,0,0.0
+2026Q1,2026-04-05,0,0.4286,0,0.0,0.0,1,1,"Earlier Easter (~+6pp group, ~+7pp Norway); inbound freight agreement renewed through summer 2027; higher energy prices",newsweb 671239.,0.7143,0,0.7143
+2026Q2,2026-04-05,0,0.4286,0,0.0,0.0,1,1,Easter timing ~-4.5pp group (~-5.5pp Norway); Norges Bank hiked to 4.25% in May; Sweden cut food VAT from 1 Apr 2026 (cross-border relevance); ÖoB remodelling closures,newsweb 677868; SSB grensehandel article 12 May 2026 (Swedish food VAT cut).,0.7143,0,-0.7143
+2026Q3,2026-04-05,0,0.4286,0,0.0,0.0,1,1,,Future/unreported quarter (as of 2026-10-11): only calendar items known.,0.7143,0,0.0
+2026Q4,2026-04-05,0,0.4286,0,0.0,0.0,1,1,,Future/unreported quarter (as of 2026-10-11): only calendar items known.,0.7143,0,0.0
+2027Q1,2027-03-28,1,1.0,1,0.0,0.0,1,1,,Future/unreported quarter (as of 2026-10-11): only calendar items known.,1.0,3,0.2857
+2027Q2,2027-03-28,1,1.0,1,0.0,0.0,1,1,,Future/unreported quarter (as of 2026-10-11): only calendar items known.,1.0,3,-0.2857
+2027Q3,2027-03-28,1,1.0,1,0.0,0.0,1,1,,Inbound freight agreement (renewed Q1 2026) runs through summer 2027 -> renewal risk around 2027Q3 (newsweb 671239). | Future/unreported quarter (as of 2026-10-11): only calendar items known.,1.0,3,0.0
+2027Q4,2027-03-28,1,1.0,1,0.0,0.0,1,1,,Future/unreported quarter (as of 2026-10-11): only calendar items known.,1.0,3,0.0

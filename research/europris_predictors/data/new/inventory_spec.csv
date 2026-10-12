@@ -1,0 +1,5 @@
+key,series_id,transforms,prior_sales,prior_margin,label,group
+inv_nor,new_inventory_norway,g4,+,-,"Europris Norway inventory at quarter end, y/y log growth",inventory
+inv_excess,new_inventory_norway_excess,lvl,?,-,"Excess inventory growth: inventory y/y growth minus LTM sales y/y growth (pp)",inventory
+inv_dio,new_inventory_norway_dio,d4,?,-,"Days of inventory (quarter-end stock / LTM COGS x 365), y/y change",inventory
+inv_dio4q,new_inventory_norway_dio4q,lvl,?,-,"Days of inventory on 4-quarter average stock / LTM COGS x 365, level",inventory

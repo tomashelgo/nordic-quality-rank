@@ -1,0 +1,681 @@
+{
+ "series": [
+  {
+   "q": "2001Q2",
+   "sales": -0.12,
+   "hp": 6.95,
+   "covid": false
+  },
+  {
+   "q": "2001Q3",
+   "sales": 1.52,
+   "hp": 4.71,
+   "covid": false
+  },
+  {
+   "q": "2001Q4",
+   "sales": 11.47,
+   "hp": 7.64,
+   "covid": false
+  },
+  {
+   "q": "2002Q1",
+   "sales": 6.32,
+   "hp": 7.41,
+   "covid": false
+  },
+  {
+   "q": "2002Q2",
+   "sales": 4.34,
+   "hp": 7.17,
+   "covid": false
+  },
+  {
+   "q": "2002Q3",
+   "sales": 4.67,
+   "hp": 6.45,
+   "covid": false
+  },
+  {
+   "q": "2002Q4",
+   "sales": 7.65,
+   "hp": 3.17,
+   "covid": false
+  },
+  {
+   "q": "2003Q1",
+   "sales": 4.83,
+   "hp": 2.73,
+   "covid": false
+  },
+  {
+   "q": "2003Q2",
+   "sales": 6.84,
+   "hp": 1.77,
+   "covid": false
+  },
+  {
+   "q": "2003Q3",
+   "sales": 11.03,
+   "hp": -1.08,
+   "covid": false
+  },
+  {
+   "q": "2003Q4",
+   "sales": 3.26,
+   "hp": 1.98,
+   "covid": false
+  },
+  {
+   "q": "2004Q1",
+   "sales": 14.31,
+   "hp": 3.96,
+   "covid": false
+  },
+  {
+   "q": "2004Q2",
+   "sales": 4.94,
+   "hp": 8.81,
+   "covid": false
+  },
+  {
+   "q": "2004Q3",
+   "sales": 6.26,
+   "hp": 9.75,
+   "covid": false
+  },
+  {
+   "q": "2004Q4",
+   "sales": 10.48,
+   "hp": 10.16,
+   "covid": false
+  },
+  {
+   "q": "2005Q1",
+   "sales": -0.11,
+   "hp": 10.04,
+   "covid": false
+  },
+  {
+   "q": "2005Q2",
+   "sales": 4.61,
+   "hp": 6.98,
+   "covid": false
+  },
+  {
+   "q": "2005Q3",
+   "sales": 7.12,
+   "hp": 8.16,
+   "covid": false
+  },
+  {
+   "q": "2005Q4",
+   "sales": 8.16,
+   "hp": 8.87,
+   "covid": false
+  },
+  {
+   "q": "2006Q1",
+   "sales": 17.35,
+   "hp": 7.69,
+   "covid": false
+  },
+  {
+   "q": "2006Q2",
+   "sales": 12.41,
+   "hp": 9.8,
+   "covid": false
+  },
+  {
+   "q": "2006Q3",
+   "sales": 12.13,
+   "hp": 11.84,
+   "covid": false
+  },
+  {
+   "q": "2006Q4",
+   "sales": 16.21,
+   "hp": 14.12,
+   "covid": false
+  },
+  {
+   "q": "2007Q1",
+   "sales": 12.57,
+   "hp": 15.36,
+   "covid": false
+  },
+  {
+   "q": "2007Q2",
+   "sales": 12.14,
+   "hp": 15.25,
+   "covid": false
+  },
+  {
+   "q": "2007Q3",
+   "sales": 14.42,
+   "hp": 14.16,
+   "covid": false
+  },
+  {
+   "q": "2007Q4",
+   "sales": 8.15,
+   "hp": 10.83,
+   "covid": false
+  },
+  {
+   "q": "2008Q1",
+   "sales": 2.99,
+   "hp": 7.31,
+   "covid": false
+  },
+  {
+   "q": "2008Q2",
+   "sales": 7.47,
+   "hp": 3.58,
+   "covid": false
+  },
+  {
+   "q": "2008Q3",
+   "sales": 1.29,
+   "hp": 1.12,
+   "covid": false
+  },
+  {
+   "q": "2008Q4",
+   "sales": 5.2,
+   "hp": -2.13,
+   "covid": false
+  },
+  {
+   "q": "2009Q1",
+   "sales": -3.71,
+   "hp": -7.16,
+   "covid": false
+  },
+  {
+   "q": "2009Q2",
+   "sales": 6.13,
+   "hp": -5.34,
+   "covid": false
+  },
+  {
+   "q": "2009Q3",
+   "sales": 5.21,
+   "hp": -1.54,
+   "covid": false
+  },
+  {
+   "q": "2009Q4",
+   "sales": 10.24,
+   "hp": 3.67,
+   "covid": false
+  },
+  {
+   "q": "2010Q1",
+   "sales": 6.38,
+   "hp": 10.97,
+   "covid": false
+  },
+  {
+   "q": "2010Q2",
+   "sales": 2.96,
+   "hp": 10.15,
+   "covid": false
+  },
+  {
+   "q": "2010Q3",
+   "sales": 5.01,
+   "hp": 8.77,
+   "covid": false
+  },
+  {
+   "q": "2010Q4",
+   "sales": 10.6,
+   "hp": 6.44,
+   "covid": false
+  },
+  {
+   "q": "2011Q1",
+   "sales": 4.35,
+   "hp": 6.31,
+   "covid": false
+  },
+  {
+   "q": "2011Q2",
+   "sales": 7.78,
+   "hp": 8.11,
+   "covid": false
+  },
+  {
+   "q": "2011Q3",
+   "sales": 7.5,
+   "hp": 7.11,
+   "covid": false
+  },
+  {
+   "q": "2011Q4",
+   "sales": 4.41,
+   "hp": 7.98,
+   "covid": false
+  },
+  {
+   "q": "2012Q1",
+   "sales": 11.45,
+   "hp": 7.63,
+   "covid": false
+  },
+  {
+   "q": "2012Q2",
+   "sales": 7.51,
+   "hp": 6.11,
+   "covid": false
+  },
+  {
+   "q": "2012Q3",
+   "sales": 7.53,
+   "hp": 6.63,
+   "covid": false
+  },
+  {
+   "q": "2012Q4",
+   "sales": 5.29,
+   "hp": 6.84,
+   "covid": false
+  },
+  {
+   "q": "2013Q1",
+   "sales": 5.02,
+   "hp": 6.64,
+   "covid": false
+  },
+  {
+   "q": "2013Q2",
+   "sales": 4.51,
+   "hp": 6.09,
+   "covid": false
+  },
+  {
+   "q": "2013Q3",
+   "sales": 2.78,
+   "hp": 5.58,
+   "covid": false
+  },
+  {
+   "q": "2013Q4",
+   "sales": 1.85,
+   "hp": 3.09,
+   "covid": false
+  },
+  {
+   "q": "2014Q1",
+   "sales": 1.04,
+   "hp": 1.01,
+   "covid": false
+  },
+  {
+   "q": "2014Q2",
+   "sales": 0.98,
+   "hp": 0.33,
+   "covid": false
+  },
+  {
+   "q": "2014Q3",
+   "sales": 3.91,
+   "hp": 1.37,
+   "covid": false
+  },
+  {
+   "q": "2014Q4",
+   "sales": 9.34,
+   "hp": 3.42,
+   "covid": false
+  },
+  {
+   "q": "2015Q1",
+   "sales": 7.08,
+   "hp": 5.64,
+   "covid": false
+  },
+  {
+   "q": "2015Q2",
+   "sales": 8.12,
+   "hp": 6.95,
+   "covid": false
+  },
+  {
+   "q": "2015Q3",
+   "sales": 5.59,
+   "hp": 6.41,
+   "covid": false
+  },
+  {
+   "q": "2015Q4",
+   "sales": 6.53,
+   "hp": 5.91,
+   "covid": false
+  },
+  {
+   "q": "2016Q1",
+   "sales": 1.96,
+   "hp": 4.44,
+   "covid": false
+  },
+  {
+   "q": "2016Q2",
+   "sales": 5.56,
+   "hp": 4.48,
+   "covid": false
+  },
+  {
+   "q": "2016Q3",
+   "sales": 4.59,
+   "hp": 5.37,
+   "covid": false
+  },
+  {
+   "q": "2016Q4",
+   "sales": 3.96,
+   "hp": 7.62,
+   "covid": false
+  },
+  {
+   "q": "2017Q1",
+   "sales": 8.03,
+   "hp": 9.61,
+   "covid": false
+  },
+  {
+   "q": "2017Q2",
+   "sales": 6.24,
+   "hp": 9.64,
+   "covid": false
+  },
+  {
+   "q": "2017Q3",
+   "sales": 3.58,
+   "hp": 6.68,
+   "covid": false
+  },
+  {
+   "q": "2017Q4",
+   "sales": 6.17,
+   "hp": 2.44,
+   "covid": false
+  },
+  {
+   "q": "2018Q1",
+   "sales": 2.62,
+   "hp": 0.73,
+   "covid": false
+  },
+  {
+   "q": "2018Q2",
+   "sales": 3.73,
+   "hp": -1.07,
+   "covid": false
+  },
+  {
+   "q": "2018Q3",
+   "sales": 3.11,
+   "hp": 1.65,
+   "covid": false
+  },
+  {
+   "q": "2018Q4",
+   "sales": 2.49,
+   "hp": 2.91,
+   "covid": false
+  },
+  {
+   "q": "2019Q1",
+   "sales": 2.56,
+   "hp": 2.25,
+   "covid": false
+  },
+  {
+   "q": "2019Q2",
+   "sales": 4.29,
+   "hp": 2.99,
+   "covid": false
+  },
+  {
+   "q": "2019Q3",
+   "sales": 3.31,
+   "hp": 1.96,
+   "covid": false
+  },
+  {
+   "q": "2019Q4",
+   "sales": -0.69,
+   "hp": 2.32,
+   "covid": false
+  },
+  {
+   "q": "2020Q1",
+   "sales": 3.43,
+   "hp": 2.55,
+   "covid": true
+  },
+  {
+   "q": "2020Q2",
+   "sales": 23.09,
+   "hp": 1.89,
+   "covid": true
+  },
+  {
+   "q": "2020Q3",
+   "sales": 18.77,
+   "hp": 2.66,
+   "covid": true
+  },
+  {
+   "q": "2020Q4",
+   "sales": 19.59,
+   "hp": 4.81,
+   "covid": true
+  },
+  {
+   "q": "2021Q1",
+   "sales": 6.53,
+   "hp": 7.27,
+   "covid": true
+  },
+  {
+   "q": "2021Q2",
+   "sales": -3.59,
+   "hp": 10.56,
+   "covid": true
+  },
+  {
+   "q": "2021Q3",
+   "sales": 1.36,
+   "hp": 11.68,
+   "covid": true
+  },
+  {
+   "q": "2021Q4",
+   "sales": -1.95,
+   "hp": 9.93,
+   "covid": true
+  },
+  {
+   "q": "2022Q1",
+   "sales": 6.71,
+   "hp": 7.68,
+   "covid": true
+  },
+  {
+   "q": "2022Q2",
+   "sales": -0.34,
+   "hp": 6.95,
+   "covid": true
+  },
+  {
+   "q": "2022Q3",
+   "sales": -2.38,
+   "hp": 6.16,
+   "covid": true
+  },
+  {
+   "q": "2022Q4",
+   "sales": 2.17,
+   "hp": 4.72,
+   "covid": true
+  },
+  {
+   "q": "2023Q1",
+   "sales": 3.51,
+   "hp": 2.58,
+   "covid": true
+  },
+  {
+   "q": "2023Q2",
+   "sales": 3.05,
+   "hp": -0.07,
+   "covid": false
+  },
+  {
+   "q": "2023Q3",
+   "sales": 3.99,
+   "hp": -0.14,
+   "covid": false
+  },
+  {
+   "q": "2023Q4",
+   "sales": 2.88,
+   "hp": -1.27,
+   "covid": false
+  },
+  {
+   "q": "2024Q1",
+   "sales": 2.51,
+   "hp": -0.73,
+   "covid": false
+  },
+  {
+   "q": "2024Q2",
+   "sales": 4.28,
+   "hp": 1.21,
+   "covid": false
+  },
+  {
+   "q": "2024Q3",
+   "sales": 3.12,
+   "hp": 1.5,
+   "covid": false
+  },
+  {
+   "q": "2024Q4",
+   "sales": 3.86,
+   "hp": 3.2,
+   "covid": false
+  },
+  {
+   "q": "2025Q1",
+   "sales": 6.95,
+   "hp": 4.73,
+   "covid": false
+  },
+  {
+   "q": "2025Q2",
+   "sales": 7.24,
+   "hp": 6.29,
+   "covid": false
+  },
+  {
+   "q": "2025Q3",
+   "sales": 8.78,
+   "hp": 4.44,
+   "covid": false
+  },
+  {
+   "q": "2025Q4",
+   "sales": 4.59,
+   "hp": 4.88,
+   "covid": false
+  },
+  {
+   "q": "2026Q1",
+   "sales": 5.44,
+   "hp": 5.77,
+   "covid": false
+  },
+  {
+   "q": "2026Q2",
+   "sales": 1.93,
+   "hp": 3.77,
+   "covid": false
+  }
+ ],
+ "periods": [
+  {
+   "label": "2001-07",
+   "who": "category",
+   "slope": 0.412,
+   "t": 1.57,
+   "n": 24
+  },
+  {
+   "label": "2008-14",
+   "who": "category",
+   "slope": 0.345,
+   "t": 2.01,
+   "n": 28
+  },
+  {
+   "label": "2015-24",
+   "who": "category",
+   "slope": 0.327,
+   "t": 2.06,
+   "n": 24
+  },
+  {
+   "label": "Europris LFL 2015-24",
+   "who": "europris",
+   "slope": 0.292,
+   "t": 2.01,
+   "n": 23
+  }
+ ],
+ "full": {
+  "slope": 0.387,
+  "t": 3.42,
+  "n": 76
+ },
+ "evidence": {
+  "proxy_p": 0.0045497725113744,
+  "proxy_slope": 0.387,
+  "proxy_n": 76,
+  "pxpre_p": 0.0444477776111194,
+  "eu_p_h1": 0.0198990050497475,
+  "eu_p_h1_control": 0.3237838108094595,
+  "eu_p_h2": 0.0426478676066196,
+  "corr_category": 0.53,
+  "hold_lfl": {
+   "h1_exclude": 0.149,
+   "h1_control": 0.181,
+   "h2_exclude": 0.221,
+   "h2_control": 0.272
+  },
+  "hold_rmse": {
+   "h1_exclude": [
+    3.28,
+    3.03
+   ],
+   "h1_control": [
+    3.28,
+    2.97
+   ],
+   "h2_exclude": [
+    3.35,
+    2.96
+   ],
+   "h2_control": [
+    3.44,
+    2.93
+   ]
+  },
+  "latest_hp": 4.31,
+  "latest_q": "2026Q2"
+ }
+}

@@ -1,0 +1,6 @@
+key,series_id,transforms,prior_sales,prior_margin,label,group
+hs_en_sold,new_housing_en_sold,g4,+,+,"Second-hand homes sold (Eiendom Norge, broker-confirmed sales), y/y log growth of the quarter's 3-month mean",housing_activity
+hs_ssb_trans,new_housing_ssb_trans,g4,+,+,"Registered dwelling-property sales in free sale (SSB 08968, title transfers ~ move date), y/y log growth",housing_activity
+hs_en_dom,new_housing_en_dom,d4,-,-,"Average days on market for homes sold (Eiendom Norge omsetningstid), y/y change in days",housing_activity
+hs_compl12,new_housing_ssb_compl12,g4,+,?,"Dwellings completed, rolling 12-month sum (SSB 03723), y/y log growth",housing_activity
+hs_uc,new_housing_ssb_uc,g4,+,?,"Dwellings under construction, stock (SSB 03723), y/y log growth: pipeline of future completions",housing_activity
