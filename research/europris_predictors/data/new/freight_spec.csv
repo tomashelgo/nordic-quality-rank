@@ -1,0 +1,4 @@
+key,series_id,transforms,prior_sales,prior_margin,label,group
+freight_fr_seafreight_ppi,new_freight_fr_seafreight_ppi_btob,g4,?,-,"Sea-freight price paid by French businesses (INSEE SPPI CPA 50.20 BtoB purchaser price), y/y log %",freight
+freight_fr_seafreight_ppi_4qavg,new_freight_fr_seafreight_ppi_btob_4qavg,g4,?,-,"Sea-freight price trailing 4-quarter mean vs a year earlier (contract-renewal proxy), log %",freight
+freight_epr_contract_regime,new_freight_epr_contract_regime,lvl,?,-,"Europris inbound-freight contract regime from announcements (+1 dearer / -1 cheaper y/y / 0)",freight
