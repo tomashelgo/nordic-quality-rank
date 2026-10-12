@@ -280,6 +280,8 @@ scripts/   candidates.py, hypotheses.py, fcast.py, inference.py
 results/   screen_all.csv, evidence_all.csv, family_calibration.csv, exploratory_shortlist.csv, new_candidates_screen.csv,
            benchmark_components.csv, calendar_joint.csv, hypotheses_*.csv,
            top5_evidence_cards.csv, top5_holdout.csv, figures/
+slides/    house_prices_indicator.pptx  one-page slide on house prices as a leading indicator
+           (house_prices_slide_data.py -> .json, then build_house_prices_slide.js, needs pptxgenjs)
 ```
 
 Run in order (Python 3.10+, pandas, numpy, scipy, matplotlib, python-dateutil; about 10 minutes on 4 cores):
@@ -292,6 +294,7 @@ python3 scripts/benchmark_components.py
 python3 scripts/test_hypotheses.py
 python3 scripts/test_new.py          # round-4 candidates from data/new/
 python3 scripts/evaluate_top.py
+python3 slides/house_prices_slide_data.py && node slides/build_house_prices_slide.js   # optional slide
 ```
 
 Sources:
